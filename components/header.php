@@ -168,6 +168,59 @@
         <!-- Page-specific CSS for KB22 Report -->
         <link rel="stylesheet" href="assets/css/pages/kb22-report.css">
     <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb19-about'): ?>
+        <!-- Page-specific CSS for KB19 About -->
+        <link rel="stylesheet" href="assets/css/pages/kb19-about.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb19-message-from-ceo'): ?>
+        <!-- Page-specific CSS for KB19 Message from CEO -->
+        <link rel="stylesheet" href="assets/css/pages/kb19-message-from-ceo.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb19-visitors-guide-app'): ?>
+        <!-- Page-specific CSS for KB19 Visitors Guide App -->
+        <link rel="stylesheet" href="assets/css/pages/kb19-visitors-guide-app.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb19-artists-and-venues'): ?>
+        <!-- Page-specific CSS for KB19 Artists and Venues -->
+        <link rel="stylesheet" href="assets/css/pages/kb19-artists-and-venues.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb19-programming'): ?>
+        <!-- Page-specific CSS for KB19 Programming -->
+        <link rel="stylesheet" href="assets/css/pages/kb19-programming.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb19-educational-program'): ?>
+        <!-- Page-specific CSS for KB19 Educational Program -->
+        <link rel="stylesheet" href="assets/css/pages/kb19-educational-program.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb19-curator'): ?>
+        <!-- Page-specific CSS for KB19 Curator -->
+        <link rel="stylesheet" href="assets/css/pages/kb19-curator.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb19-projects'): ?>
+        <!-- Page-specific CSS for KB19 Projects -->
+        <link rel="stylesheet" href="assets/css/pages/kb19-projects.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb19-partners'): ?>
+        <!-- Page-specific CSS for KB19 Partners -->
+        <link rel="stylesheet" href="assets/css/pages/kb19-partners.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb19-media'): ?>
+        <!-- Page-specific CSS for KB19 Media -->
+        <link rel="stylesheet" href="assets/css/pages/kb19-media.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb19-teams'): ?>
+        <!-- Page-specific CSS for KB19 Teams -->
+        <link rel="stylesheet" href="assets/css/pages/kb19-teams.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-friends-of-kb19'): ?>
+        <!-- Page-specific CSS for Friends of KB19 -->
+        <link rel="stylesheet" href="assets/css/pages/friends-of-kb19.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb19-catalogue'): ?>
+        <!-- Page-specific CSS for KB19 Catalogue -->
+        <link rel="stylesheet" href="assets/css/pages/kb19-catalogue.css">
+    <?php endif; ?>
+
 
 
 </head>
@@ -324,21 +377,21 @@
                                 </ul>
                             </li>
                             <li class="menu-item-has-children">
-                                <a href="https://karachibiennale.org.pk/kb19/">KB19</a>
+                                <a href="#">KB19</a>
                                 <ul class="sub-menu">
-                                    <li><a href="https://karachibiennale.org.pk/about-kb19/">KB19 – About</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb19-message-from-the-ceo/">KB19 – Message from the CEO</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb19app/">KB19 – Visitors Guide App</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb19-artistsandvenues/">KB19 – Artists and Venues</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb19-programming/">KB19 – Programming</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb19-educational-program/">KB19 – Educational Program</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb19-curator/">KB19 – Curator</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb19-projects/">KB19 – Projects</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/partners-kb19/">KB19 – Partners</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/media-kb19/">KB19 – Media</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb19-teams/">KB19 – Teams</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/friends-of-kb19/">Friends of KB19</a></li>
-                                    <li><a href="https://catalogue.karachibiennale.org.pk/">KB19 – Catalogue</a></li>
+                                    <li><a href="kb19-about.php">KB19 – About</a></li>
+                                    <li><a href="kb19-message-from-ceo.php">KB19 – Message from the CEO</a></li>
+                                    <li><a href="kb19-visitors-guide-app.php">KB19 – Visitors Guide App</a></li>
+                                    <li><a href="kb19-artists-and-venues.php">KB19 – Artists and Venues</a></li>
+                                    <li><a href="kb19-programming.php">KB19 – Programming</a></li>
+                                    <li><a href="kb19-educational-program.php">KB19 – Educational Program</a></li>
+                                    <li><a href="kb19-curator.php">KB19 – Curator</a></li>
+                                    <li><a href="kb19-projects.php">KB19 – Projects</a></li>
+                                    <li><a href="kb19-partners.php">KB19 – Partners</a></li>
+                                    <li><a href="kb19-media.php">KB19 – Media</a></li>
+                                    <li><a href="kb19-teams.php">KB19 – Teams</a></li>
+                                    <li><a href="friends-of-kb19.php">Friends of KB19</a></li>
+                                    <li><a href="kb19-catalogue.php">KB19 – Catalogue</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item-has-children">
@@ -476,21 +529,21 @@
                                                 </ul>
                                             </li>
                                             <li class="menu-item-has-children">
-                                                <a href="https://karachibiennale.org.pk/kb19/">KB19</a>
+                                                <a href="#">KB19</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="https://karachibiennale.org.pk/about-kb19/">KB19 – About</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb19-message-from-the-ceo/">KB19 – Message from the CEO</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb19app/">KB19 – Visitors Guide App</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb19-artistsandvenues/">KB19 – Artists and Venues</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb19-programming/">KB19 – Programming</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb19-educational-program/">KB19 – Educational Program</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb19-curator/">KB19 – Curator</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb19-projects/">KB19 – Projects</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/partners-kb19/">KB19 – Partners</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/media-kb19/">KB19 – Media</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb19-teams/">KB19 – Teams</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/friends-of-kb19/">Friends of KB19</a></li>
-                                                    <li><a href="https://catalogue.karachibiennale.org.pk/">KB19 – Catalogue</a></li>
+                                                    <li><a href="kb19-about.php">KB19 – About</a></li>
+                                                    <li><a href="kb19-message-from-ceo.php">KB19 – Message from the CEO</a></li>
+                                                    <li><a href="kb19-visitors-guide-app.php">KB19 – Visitors Guide App</a></li>
+                                                    <li><a href="kb19-artists-and-venues.php">KB19 – Artists and Venues</a></li>
+                                                    <li><a href="kb19-programming.php">KB19 – Programming</a></li>
+                                                    <li><a href="kb19-educational-program.php">KB19 – Educational Program</a></li>
+                                                    <li><a href="kb19-curator.php">KB19 – Curator</a></li>
+                                                    <li><a href="kb19-projects.php">KB19 – Projects</a></li>
+                                                    <li><a href="kb19-partners.php">KB19 – Partners</a></li>
+                                                    <li><a href="kb19-media.php">KB19 – Media</a></li>
+                                                    <li><a href="kb19-teams.php">KB19 – Teams</a></li>
+                                                    <li><a href="friends-of-kb19.php">Friends of KB19</a></li>
+                                                    <li><a href="kb19-catalogue.php">KB19 – Catalogue</a></li>
                                                 </ul>
                                             </li>
                                             <li class="menu-item-has-children">

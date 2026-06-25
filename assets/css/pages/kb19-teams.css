@@ -1,0 +1,280 @@
+/* Scoped CSS for KB19 Teams Page */
+
+.page-kb19-teams .kb19t-hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.page-kb19-teams .kb19t-hero-banner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0 80px;
+    position: relative;
+    text-align: center;
+}
+
+.page-kb19-teams .kb19t-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 10, 0.75);
+    z-index: 1;
+}
+
+.page-kb19-teams .kb19t-hero-banner .container {
+    position: relative;
+    z-index: 2;
+}
+
+.page-kb19-teams .kb19t-hero-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.page-kb19-teams .kb19t-hero-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: #d1d1d1;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+/* Breadcrumbs Styling */
+.page-kb19-teams .kb19t-breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 8px 24px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+.page-kb19-teams .kb19t-breadcrumbs li {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    font-weight: 500;
+}
+
+.page-kb19-teams .kb19t-breadcrumbs li a {
+    color: #ffb100;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.page-kb19-teams .kb19t-breadcrumbs li a:hover {
+    color: #ffffff;
+}
+
+.page-kb19-teams .kb19t-breadcrumbs li:not(:last-child)::after {
+    content: "/";
+    margin: 0 10px;
+    color: #a0a0a0;
+}
+
+.page-kb19-teams .kb19t-breadcrumbs li.active {
+    color: #ffffff;
+}
+
+/* Main Content Wrapper */
+.page-kb19-teams .kb19t-main-wrapper {
+    padding: 80px 0;
+    background-color: #fafafa;
+}
+
+.page-kb19-teams .kb19t-section-heading {
+    font-family: 'Jost', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.page-kb19-teams .kb19t-section-lead {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15rem;
+    color: #666666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Team Card styling */
+.page-kb19-teams .kb19t-team-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    border: 1px solid #f1f1f1;
+    overflow: hidden;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.page-kb19-teams .kb19t-team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+    border-color: #ffb100;
+}
+
+.page-kb19-teams .kb19t-card-header {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+}
+
+.page-kb19-teams .bg-gradient-yellow {
+    background: linear-gradient(135deg, #ffb100, #ff9400);
+}
+
+.page-kb19-teams .bg-gradient-teal {
+    background: linear-gradient(135deg, #00b4db, #0083b0);
+}
+
+.page-kb19-teams .bg-gradient-blue {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.page-kb19-teams .bg-gradient-purple {
+    background: linear-gradient(135deg, #7F00FF, #E100FF);
+}
+
+.page-kb19-teams .bg-gradient-orange {
+    background: linear-gradient(135deg, #f12711, #f5af19);
+}
+
+.page-kb19-teams .kb19t-card-body {
+    padding: 25px;
+}
+
+/* Member List */
+.page-kb19-teams .kb19t-member-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page-kb19-teams .kb19t-member-list li {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    border-bottom: 1px solid #f9f9f9;
+}
+
+.page-kb19-teams .kb19t-member-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.page-kb19-teams .kb19t-member-list li strong {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.05rem;
+    color: #222222;
+}
+
+.page-kb19-teams .kb19t-member-role {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    color: #888888;
+    margin-top: 2px;
+}
+
+/* Central Administration Board */
+.page-kb19-teams .kb19t-board-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    border: 1px solid #f1f1f1;
+    overflow: hidden;
+}
+
+.page-kb19-teams .kb19t-board-header {
+    background: #111111;
+    padding: 20px;
+    border-bottom: 2px solid #ffb100;
+}
+
+.page-kb19-teams .kb19t-board-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.page-kb19-teams .kb19t-board-body {
+    padding: 40px;
+}
+
+.page-kb19-teams .kb19t-board-member {
+    padding: 15px;
+    background: #fbfbfb;
+    border: 1px solid #f1f1f1;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.page-kb19-teams .kb19t-board-member:hover {
+    border-color: #ffb100;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.04);
+}
+
+.page-kb19-teams .kb19t-board-member strong {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.15rem;
+    color: #111111;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.page-kb19-teams .kb19t-board-member span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    color: #777777;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 991px) {
+    .page-kb19-teams .kb19t-hero-title {
+        font-size: 2.8rem;
+    }
+    .page-kb19-teams .kb19t-main-wrapper {
+        padding: 60px 0;
+    }
+    .page-kb19-teams .kb19t-board-body {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-kb19-teams .kb19t-hero-banner {
+        padding: 80px 0 60px;
+    }
+    .page-kb19-teams .kb19t-hero-title {
+        font-size: 2.2rem;
+    }
+    .page-kb19-teams .kb19t-section-heading {
+        font-size: 1.8rem;
+    }
+}

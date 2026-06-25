@@ -1,0 +1,329 @@
+/* Scoped CSS for KB19 About Page */
+
+.page-kb19-about .kb19a-hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.page-kb19-about .kb19a-hero-banner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0 80px;
+    position: relative;
+    text-align: center;
+}
+
+.page-kb19-about .kb19a-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 10, 0.75);
+    z-index: 1;
+}
+
+.page-kb19-about .kb19a-hero-banner .container {
+    position: relative;
+    z-index: 2;
+}
+
+.page-kb19-about .kb19a-hero-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.page-kb19-about .kb19a-hero-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: #d1d1d1;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+/* Breadcrumbs Styling */
+.page-kb19-about .kb19a-breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 8px 24px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+.page-kb19-about .kb19a-breadcrumbs li {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    font-weight: 500;
+}
+
+.page-kb19-about .kb19a-breadcrumbs li a {
+    color: #ffb100;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.page-kb19-about .kb19a-breadcrumbs li a:hover {
+    color: #ffffff;
+}
+
+.page-kb19-about .kb19a-breadcrumbs li:not(:last-child)::after {
+    content: "/";
+    margin: 0 10px;
+    color: #a0a0a0;
+}
+
+.page-kb19-about .kb19a-breadcrumbs li.active {
+    color: #ffffff;
+}
+
+/* Main Content Wrapper */
+.page-kb19-about .kb19a-main-wrapper {
+    padding: 80px 0;
+    background-color: #fafafa;
+}
+
+/* Essay Block */
+.page-kb19-about .kb19a-essay-block {
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f1f1f1;
+}
+
+.page-kb19-about .kb19a-paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: #444444;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.page-kb19-about .kb19a-paragraph.lead {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #222222;
+    font-weight: 400;
+}
+
+/* Dropcap */
+.page-kb19-about .kb19a-dropcap {
+    font-family: 'Jost', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 800;
+    float: left;
+    line-height: 0.8;
+    margin-right: 15px;
+    margin-top: 5px;
+    color: #ffb100;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* Pullquote Styling */
+.page-kb19-about .kb19a-pullquote {
+    border-left: 5px solid #ffb100;
+    background: #fffbef;
+    padding: 30px 40px;
+    margin: 0 0 35px 0;
+    border-radius: 0 12px 12px 0;
+}
+
+.page-kb19-about .kb19a-pullquote p {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    line-height: 1.6;
+    color: #333333;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Gibran Card */
+.page-kb19-about .kb19a-gibran-quote-card {
+    background: #f7f9fa;
+    border: 1px dashed #d1d8db;
+    border-radius: 8px;
+    padding: 35px;
+    margin: 40px 0;
+}
+
+.page-kb19-about .kb19a-gibran-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111111;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.page-kb19-about .kb19a-gibran-quote {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #555555;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Sidebar Facts Card */
+.page-kb19-about .kb19a-sidebar {
+    position: sticky;
+    top: 100px;
+}
+
+.page-kb19-about .kb19a-facts-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 40px 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f1f1f1;
+}
+
+.page-kb19-about .kb19a-facts-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #ffb100;
+    padding-bottom: 10px;
+}
+
+.page-kb19-about .kb19a-facts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 35px 0;
+}
+
+.page-kb19-about .kb19a-facts-list li {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.page-kb19-about .kb19a-facts-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.page-kb19-about .kb19a-fact-label {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888888;
+    margin-bottom: 5px;
+}
+
+.page-kb19-about .kb19a-fact-value {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #222222;
+    font-weight: 500;
+}
+
+.page-kb19-about .kb19a-fact-value a {
+    color: #111111;
+    text-decoration: none;
+    border-bottom: 1px solid #ffb100;
+    transition: color 0.3s ease;
+}
+
+.page-kb19-about .kb19a-fact-value a:hover {
+    color: #ffb100;
+}
+
+.page-kb19-about .text-theme {
+    color: #ffb100;
+}
+
+/* Quick links in sidebar */
+.page-kb19-about .kb19a-quick-links {
+    margin-top: 30px;
+    border-top: 1px solid #f1f1f1;
+    padding-top: 25px;
+}
+
+.page-kb19-about .kb19a-links-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #111111;
+    margin-bottom: 15px;
+}
+
+.page-kb19-about .kb19a-btn-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f7f9fa;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #333333;
+    text-decoration: none;
+    margin-bottom: 12px;
+    border: 1px solid #eef2f3;
+    transition: all 0.3s ease;
+}
+
+.page-kb19-about .kb19a-btn-link:hover {
+    background: #111111;
+    color: #ffffff;
+    border-color: #111111;
+    padding-left: 25px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 991px) {
+    .page-kb19-about .kb19a-hero-title {
+        font-size: 2.8rem;
+    }
+    .page-kb19-about .kb19a-essay-block {
+        padding: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-kb19-about .kb19a-hero-banner {
+        padding: 80px 0 60px;
+    }
+    .page-kb19-about .kb19a-hero-title {
+        font-size: 2.2rem;
+    }
+    .page-kb19-about .kb19a-essay-block {
+        padding: 25px;
+    }
+    .page-kb19-about .kb19a-pullquote {
+        padding: 20px 25px;
+    }
+    .page-kb19-about .kb19a-pullquote p {
+        font-size: 1.15rem;
+    }
+    .page-kb19-about .kb19a-gibran-quote-card {
+        padding: 25px;
+    }
+    .page-kb19-about .kb19a-facts-card {
+        padding: 30px 20px;
+    }
+}

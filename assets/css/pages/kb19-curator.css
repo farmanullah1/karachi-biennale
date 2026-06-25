@@ -1,0 +1,474 @@
+/* Scoped CSS for KB19 Curator Page */
+
+.page-kb19-curator .kb19u-hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.page-kb19-curator .kb19u-hero-banner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0 80px;
+    position: relative;
+    text-align: center;
+}
+
+.page-kb19-curator .kb19u-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 10, 0.75);
+    z-index: 1;
+}
+
+.page-kb19-curator .kb19u-hero-banner .container {
+    position: relative;
+    z-index: 2;
+}
+
+.page-kb19-curator .kb19u-hero-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.page-kb19-curator .kb19u-hero-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: #d1d1d1;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+/* Breadcrumbs Styling */
+.page-kb19-curator .kb19u-breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 8px 24px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+.page-kb19-curator .kb19u-breadcrumbs li {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    font-weight: 500;
+}
+
+.page-kb19-curator .kb19u-breadcrumbs li a {
+    color: #ffb100;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.page-kb19-curator .kb19u-breadcrumbs li a:hover {
+    color: #ffffff;
+}
+
+.page-kb19-curator .kb19u-breadcrumbs li:not(:last-child)::after {
+    content: "/";
+    margin: 0 10px;
+    color: #a0a0a0;
+}
+
+.page-kb19-curator .kb19u-breadcrumbs li.active {
+    color: #ffffff;
+}
+
+/* Main Wrapper */
+.page-kb19-curator .kb19u-main-wrapper {
+    padding: 80px 0;
+    background-color: #fafafa;
+}
+
+/* Curator Profile Section */
+.page-kb19-curator .kb19u-profile-card {
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f1f1f1;
+}
+
+.page-kb19-curator .kb19u-avatar-wrap {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 12px;
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eef2f3;
+}
+
+.page-kb19-curator .kb19u-avatar {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.page-kb19-curator .kb19u-avatar-badge {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: #ffb100;
+    color: #ffffff;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(255, 177, 0, 0.3);
+}
+
+.page-kb19-curator .kb19u-profile-info {
+    padding-left: 20px;
+}
+
+.page-kb19-curator .kb19u-profile-role {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #ffb100;
+    letter-spacing: 2px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.page-kb19-curator .kb19u-profile-name {
+    font-family: 'Jost', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 20px;
+}
+
+.page-kb19-curator .kb19u-profile-highlight {
+    font-family: 'Jost', sans-serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    color: #444444;
+    border-left: 4px solid #ffb100;
+    padding-left: 20px;
+    margin: 0 0 25px 0;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.page-kb19-curator .kb19u-profile-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #555555;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Curatorial Statement Card */
+.page-kb19-curator .kb19u-statement-card {
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f1f1f1;
+}
+
+.page-kb19-curator .kb19u-section-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.page-kb19-curator .kb19u-section-title i {
+    color: #ffb100;
+}
+
+.page-kb19-curator .kb19u-statement-body p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: #444444;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.page-kb19-curator .kb19u-statement-body p:last-child {
+    margin-bottom: 0;
+}
+
+/* Conversations on Karachi Section */
+.page-kb19-curator .kb19u-conversations-section {
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f1f1f1;
+}
+
+.page-kb19-curator .kb19u-conversations-header {
+    margin-bottom: 40px;
+}
+
+.page-kb19-curator .kb19u-section-intro {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #666666;
+    line-height: 1.7;
+    max-width: 900px;
+}
+
+/* 2.4 columns support for responsiveness */
+.page-kb19-curator .col-lg-2.4 {
+    flex: 0 0 auto;
+    width: 20%;
+}
+
+.page-kb19-curator .kb19u-expert-card {
+    text-align: center;
+    background: #fbfbfb;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    padding: 30px 15px;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.page-kb19-curator .kb19u-expert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border-color: #ffb100;
+}
+
+.page-kb19-curator .kb19u-expert-placeholder {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Gradient Classes for expert placeholder badges */
+.page-kb19-curator .bg-gradient-yellow {
+    background: linear-gradient(135deg, #ffb100, #ff9400);
+}
+
+.page-kb19-curator .bg-gradient-teal {
+    background: linear-gradient(135deg, #00b4db, #0083b0);
+}
+
+.page-kb19-curator .bg-gradient-blue {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.page-kb19-curator .bg-gradient-purple {
+    background: linear-gradient(135deg, #7F00FF, #E100FF);
+}
+
+.page-kb19-curator .bg-gradient-orange {
+    background: linear-gradient(135deg, #f12711, #f5af19);
+}
+
+.page-kb19-curator .kb19u-expert-name {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222222;
+    margin-bottom: 8px;
+}
+
+.page-kb19-curator .kb19u-expert-role {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    color: #777777;
+    display: block;
+    line-height: 1.4;
+}
+
+/* Research Trips and Studio Visits Sections */
+.page-kb19-curator .kb19u-research-section {
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f1f1f1;
+}
+
+.page-kb19-curator .kb19u-research-header {
+    margin-bottom: 35px;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 20px;
+}
+
+.page-kb19-curator .kb19u-meeting-link {
+    text-decoration: none;
+    display: block;
+}
+
+.page-kb19-curator .kb19u-meeting-card {
+    background: #ffffff;
+    border: 1px solid #eef2f3;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+.page-kb19-curator .kb19u-meeting-img-wrap {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    background: #f0f0f0;
+}
+
+.page-kb19-curator .kb19u-meeting-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.page-kb19-curator .kb19u-meeting-caption {
+    padding: 15px;
+    background: #ffffff;
+    border-top: 1px solid #f9f9f9;
+}
+
+.page-kb19-curator .kb19u-meeting-caption span {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333333;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: color 0.3s ease;
+}
+
+/* Hover States for Meetings Card */
+.page-kb19-curator .kb19u-meeting-link:hover .kb19u-meeting-card {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-color: #ffb100;
+}
+
+.page-kb19-curator .kb19u-meeting-link:hover .kb19u-meeting-img {
+    transform: scale(1.08);
+}
+
+.page-kb19-curator .kb19u-meeting-link:hover .kb19u-meeting-caption span {
+    color: #ffb100;
+}
+
+/* Credits Section */
+.page-kb19-curator .kb19u-credits-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f1f1f1;
+}
+
+.page-kb19-curator .kb19u-credits-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffb100;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.page-kb19-curator .kb19u-credits-list {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
+    color: #666666;
+    margin: 0;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1199px) {
+    .page-kb19-curator .col-lg-2.4 {
+        width: 33.333%;
+    }
+}
+
+@media (max-width: 991px) {
+    .page-kb19-curator .kb19u-hero-title {
+        font-size: 2.8rem;
+    }
+    .page-kb19-curator .kb19u-profile-card,
+    .page-kb19-curator .kb19u-statement-card,
+    .page-kb19-curator .kb19u-conversations-section,
+    .page-kb19-curator .kb19u-research-section {
+        padding: 35px;
+    }
+    .page-kb19-curator .kb19u-avatar {
+        width: 220px;
+        height: 220px;
+    }
+    .page-kb19-curator .kb19u-profile-info {
+        padding-left: 0;
+    }
+    .page-kb19-curator .kb19u-profile-name {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-kb19-curator .kb19u-hero-banner {
+        padding: 80px 0 60px;
+    }
+    .page-kb19-curator .kb19u-hero-title {
+        font-size: 2.2rem;
+    }
+    .page-kb19-curator .col-lg-2.4 {
+        width: 50%;
+    }
+    .page-kb19-curator .kb19u-profile-card,
+    .page-kb19-curator .kb19u-statement-card,
+    .page-kb19-curator .kb19u-conversations-section,
+    .page-kb19-curator .kb19u-research-section {
+        padding: 25px;
+    }
+    .page-kb19-curator .kb19u-profile-name {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .page-kb19-curator .col-lg-2.4 {
+        width: 100%;
+    }
+}
