@@ -1,0 +1,368 @@
+/*=======================================================================
+   KB27 Page-Specific Stylesheet
+   Scoped under body class .page-kb27 to prevent global conflicts
+=========================================================================*/
+
+/* Global Page Scoping */
+.page-kb27 {
+    background-color: var(--white-color);
+}
+
+/* Page Header Section */
+.kb27-page-header {
+    padding: 80px 0 10px;
+    background-color: var(--white-color);
+}
+
+.kb27-page-title {
+    font-family: var(--title-font);
+    font-size: 3.75rem;
+    font-weight: 800;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+/* 1. Hero / Visual Section */
+.kb27-hero-section {
+    padding: 60px 0 40px;
+    background-color: var(--white-color);
+}
+
+.kb27-hero-wrap {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+
+.kb27-hero-img {
+    width: 100%;
+    max-height: 650px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.8s ease;
+}
+
+.kb27-hero-wrap:hover .kb27-hero-img {
+    transform: scale(1.02);
+}
+
+.kb27-hero-caption {
+    font-family: var(--body-font);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--body-color);
+    margin-top: 15px;
+    padding-left: 5px;
+    border-left: 2px solid var(--theme-color);
+}
+
+/* 2. Curatorial Vision Section */
+.kb27-vision-section {
+    padding: 80px 0;
+    background-color: var(--white-color);
+}
+
+.kb27-section-header {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.kb27-main-heading {
+    font-family: var(--title-font);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.kb27-sub-heading {
+    font-family: var(--title-font);
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: var(--theme-color);
+    letter-spacing: 1.5px;
+}
+
+.kb27-sub-heading span.urdu-script {
+    font-family: inherit;
+    font-size: 2rem;
+    margin-left: 10px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.kb27-section-header::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: var(--theme-color);
+    margin: 25px auto 0;
+    border-radius: 2px;
+}
+
+.kb27-vision-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.kb27-col-left, .kb27-col-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.kb27-text-para {
+    font-family: var(--body-font);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--body-color);
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.kb27-text-para:last-child {
+    margin-bottom: 0;
+}
+
+/* Accent callout for Édouard Glissant quote */
+.kb27-quote-callout {
+    background-color: var(--smoke-color);
+    border-left: 4px solid var(--theme-color);
+    padding: 20px 25px;
+    border-radius: 0 8px 8px 0;
+    margin: 15px 0 25px;
+}
+
+.kb27-quote-callout p {
+    font-family: var(--title-font);
+    font-size: 1.15rem;
+    font-style: italic;
+    line-height: 1.6;
+    color: var(--title-color);
+    margin-bottom: 0;
+}
+
+/* 3. About the Curator Section */
+.kb27-curator-section {
+    padding: 100px 0;
+    background-color: var(--smoke-color);
+}
+
+.kb27-curator-card {
+    background-color: var(--white-color);
+    border-radius: 16px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.04);
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.kb27-curator-img-wrap {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.kb27-curator-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.kb27-curator-card:hover .kb27-curator-img {
+    transform: scale(1.03);
+}
+
+.kb27-curator-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.kb27-curator-title {
+    font-family: var(--title-font);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--theme-color);
+    margin-bottom: 8px;
+}
+
+.kb27-curator-name {
+    font-family: var(--title-font);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--title-color);
+    margin-bottom: 25px;
+}
+
+.kb27-curator-bio {
+    font-family: var(--body-font);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--body-color);
+    margin-bottom: 18px;
+}
+
+.kb27-curator-bio:last-child {
+    margin-bottom: 0;
+}
+
+/* 4. Press Release Section */
+.kb27-press-section {
+    padding: 80px 0 100px;
+    background-color: var(--white-color);
+    text-align: center;
+}
+
+.kb27-press-card {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: var(--smoke-color);
+    border-radius: 12px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.02);
+}
+
+.kb27-press-icon {
+    font-size: 2.5rem;
+    color: var(--theme-color);
+    margin-bottom: 15px;
+}
+
+.kb27-press-card h4 {
+    font-family: var(--title-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--title-color);
+    margin-bottom: 20px;
+}
+
+.kb27-press-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--theme-color);
+    color: var(--white-color) !important;
+    font-family: var(--title-font);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 14px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 136, 203, 0.2);
+    transition: all 0.3s ease;
+}
+
+.kb27-press-btn i {
+    font-size: 1.1rem;
+    margin-left: 8px;
+}
+
+.kb27-press-btn:hover {
+    background-color: var(--title-color);
+    box-shadow: 0 6px 20px rgba(35, 31, 32, 0.25);
+    transform: translateY(-2px);
+}
+
+
+/* =======================================================================
+   Responsive Breakpoints (Mobile First Overrides)
+=========================================================================*/
+
+/* Tablets and below (max-width: 991px) */
+@media (max-width: 991px) {
+    .kb27-page-title {
+        font-size: 2.75rem;
+    }
+    
+    .kb27-main-heading {
+        font-size: 2.5rem;
+    }
+    
+    .kb27-sub-heading {
+        font-size: 1.5rem;
+    }
+    
+    .kb27-vision-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .kb27-text-para {
+        margin-bottom: 20px;
+    }
+    
+    .kb27-curator-card {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 35px;
+    }
+    
+    .kb27-curator-img-wrap {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    
+    .kb27-curator-name {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+}
+
+/* Small mobile devices (max-width: 575px) */
+@media (max-width: 575px) {
+    .kb27-page-header {
+        padding: 50px 0 5px;
+    }
+    
+    .kb27-page-title {
+        font-size: 2.15rem;
+    }
+    
+    .kb27-hero-section {
+        padding: 30px 0 20px;
+    }
+    
+    .kb27-main-heading {
+        font-size: 2rem;
+    }
+    
+    .kb27-sub-heading {
+        font-size: 1.25rem;
+    }
+    
+    .kb27-sub-heading span.urdu-script {
+        font-size: 1.5rem;
+    }
+    
+    .kb27-curator-card {
+        padding: 25px;
+    }
+    
+    .kb27-curator-name {
+        font-size: 1.75rem;
+    }
+    
+    .kb27-press-card {
+        padding: 30px 20px;
+    }
+    
+    .kb27-press-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 20px;
+    }
+}

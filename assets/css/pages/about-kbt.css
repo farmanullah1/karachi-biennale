@@ -1,0 +1,342 @@
+/*=======================================================================
+   About KBT Page-Specific Stylesheet
+   Scoped under body class .page-about-kbt to prevent global conflicts
+=========================================================================*/
+
+/* Global Page scoping */
+.page-about-kbt {
+    background-color: var(--white-color);
+}
+
+/* 1. Page Header Section (Hero Area) */
+.akbt-hero-section {
+    padding: 100px 0 60px;
+    background-color: var(--smoke-color);
+    border-bottom: 1px solid var(--light-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.akbt-hero-title {
+    font-family: var(--title-font);
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.akbt-hero-subtitle {
+    font-family: var(--title-font);
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: var(--theme-color);
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* Breadcrumbs Styling */
+.akbt-breadcrumbs {
+    display: inline-block;
+    background-color: var(--white-color);
+    padding: 10px 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.akbt-breadcrumbs ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.akbt-breadcrumbs li {
+    font-family: var(--title-font);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--body-color);
+}
+
+.akbt-breadcrumbs li a {
+    color: var(--body-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.akbt-breadcrumbs li a:hover {
+    color: var(--theme-color);
+}
+
+/* Breadcrumbs separator */
+.akbt-breadcrumbs li:not(:last-child)::after {
+    content: "/";
+    margin-left: 12px;
+    color: var(--light-color);
+    font-weight: 400;
+}
+
+.akbt-breadcrumbs li.active {
+    color: var(--theme-color);
+    font-weight: 600;
+}
+
+/* 2. About Section - Main Content Grid */
+.akbt-content-section {
+    padding: 100px 0;
+    background-color: var(--white-color);
+}
+
+.akbt-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 70px;
+    align-items: start;
+}
+
+/* Image Gallery Layout */
+.akbt-image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.akbt-image-card {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.akbt-image-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.akbt-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* Text block typography styling */
+.akbt-text-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.akbt-pullquote {
+    background-color: var(--smoke-color);
+    border-left: 4px solid var(--theme-color);
+    padding: 25px 30px;
+    border-radius: 0 12px 12px 0;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
+}
+
+.akbt-pullquote p {
+    font-family: var(--title-font);
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--title-color);
+    margin: 0;
+}
+
+.akbt-paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.akbt-paragraph {
+    font-family: var(--body-font);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--body-color);
+    margin: 0;
+    text-align: justify;
+}
+
+/* 3. Microtonal Section – Featured Art Installation */
+.akbt-video-section {
+    padding: 100px 0;
+    background-color: var(--smoke-color);
+    border-top: 1px solid var(--light-color);
+}
+
+.akbt-video-card {
+    background-color: var(--white-color);
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.04);
+    padding: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.akbt-badge {
+    display: inline-block;
+    background-color: rgba(0, 136, 203, 0.08);
+    color: var(--theme-color);
+    font-family: var(--title-font);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 6px 18px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+
+.akbt-video-title {
+    font-family: var(--title-font);
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--title-color);
+    margin-bottom: 20px;
+}
+
+.akbt-title-divider {
+    width: 60px;
+    height: 3px;
+    background-color: var(--theme-color);
+    margin: 0 auto 40px;
+    border-radius: 2px;
+}
+
+/* Responsive 16:9 aspect-ratio video wrapper */
+.akbt-video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.akbt-video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.akbt-video-desc {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.akbt-video-p {
+    font-family: var(--body-font);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--body-color);
+    margin-bottom: 15px;
+}
+
+.akbt-video-p strong {
+    color: var(--title-color);
+}
+
+.akbt-video-caption {
+    font-family: var(--title-font);
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--theme-color);
+    margin-top: 20px;
+}
+
+
+/* =======================================================================
+   Responsive Breakpoints (Mobile First Overrides)
+=========================================================================*/
+
+/* Tablets and below (max-width: 991px) */
+@media (max-width: 991px) {
+    .akbt-hero-section {
+        padding: 80px 0 50px;
+    }
+    
+    .akbt-hero-title {
+        font-size: 3rem;
+    }
+    
+    .akbt-hero-subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .akbt-content-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    
+    .akbt-image-gallery {
+        flex-direction: row;
+        gap: 20px;
+    }
+    
+    .akbt-image-card {
+        flex: 1;
+    }
+    
+    .akbt-video-card {
+        padding: 40px;
+    }
+}
+
+/* Small mobile devices (max-width: 767px) */
+@media (max-width: 767px) {
+    .akbt-image-gallery {
+        flex-direction: column;
+    }
+}
+
+/* Extra small mobile devices (max-width: 575px) */
+@media (max-width: 575px) {
+    .akbt-hero-section {
+        padding: 60px 0 40px;
+    }
+    
+    .akbt-hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .akbt-hero-subtitle {
+        font-size: 1.25rem;
+    }
+    
+    .akbt-breadcrumbs {
+        padding: 8px 20px;
+    }
+    
+    .akbt-breadcrumbs li {
+        font-size: 0.85rem;
+    }
+    
+    .akbt-pullquote {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .akbt-pullquote p {
+        font-size: 1.1rem;
+    }
+    
+    .akbt-video-card {
+        padding: 25px 15px;
+    }
+    
+    .akbt-video-title {
+        font-size: 1.75rem;
+    }
+}

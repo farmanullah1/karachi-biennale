@@ -1,423 +1,5 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
+<?php include 'components/header.php'; ?>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Karachi Biennale Trust &#8211; A global platform for excellence, criticality and innovation in the visual arts.</title>
-    <meta name="description" content="Karachi Biennale Trust - A global platform for excellence, criticality and innovation in the visual arts.">
-    <meta name="keywords" content="Karachi Biennale Trust, Karachi Biennale, KB27, Fifth Karachi Biennale, Biennale, Visual Arts, Art, Culture, Pakistan, Karachi">
-    <meta name="robots" content="INDEX,FOLLOW">
-
-    <!-- Mobile Specific Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Favicons - Place favicon.ico in the root directory -->
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/biennale-images/KBT_logo.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/img/biennale-images/KBT_logo.png">
-    <meta name="theme-color" content="#ffffff">
-
-    <!--==============================
-	  Google Fonts
-	============================== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-
-    <!--==============================
-	    All CSS File
-	============================== -->
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- Fontawesome Icon -->
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <!-- Magnific Popup -->
-    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
-    <!-- Slick Slider -->
-    <link rel="stylesheet" href="assets/css/slick.min.css">
-    <!-- Odometer -->
-    <link rel="stylesheet" href="assets/css/odometer.css">
-    <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-</head>
-
-<body>
-    <!--********************************
-   		Code Start From Here 
-	******************************** -->
-
-
-    <!-- Cursor -->
-    <div class="cursor"></div>
-    <div class="cursor-follower"></div>
-    <!-- Cursor End -->
-
-    <!--==============================
-     Preloader
-    ==============================-->
-    <div class="preloader ">
-        <div class="preloader-inner">
-            <img src="assets/img/biennale-images/KBT_logo.png" alt="Karachi Biennale Trust">
-            <span class="loader"></span>
-        </div>
-    </div>
-
-    <!--==============================
-    Product Lightbox
-    ==============================-->
-    <div id="QuickView" class="white-popup mfp-hide">
-        <div class="container bg-white">
-            <div class="row gx-50">
-                <div class="col-lg-6">
-                    <div class="product-big-img">
-                        <div class="img"><img src="assets/img/product/product-details1.png" alt="Product Image"></div>
-                    </div>
-                </div>
-                <div class="col-lg-6 align-self-center">
-                    <div class="product-about">
-                        <p class="price">$150.00</p>
-                        <h2 class="product-title">Premium Museum Masterpieces</h2>
-                        <div class="product-rating">
-                            <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span> customer rating</span></div>
-                            <a href="shop-details.html" class="woocommerce-review-link">(<span class="count">2</span> customer reviews)</a>
-                        </div>
-                        <p class="text">Syndicate customized growth strategies prospective human capital leverage other's optimal e-markets without transparent catalysts for change. Credibly coordinate highly efficient methods of empowerment cross unit solutions.</p>
-                        <div class="checklist">
-                            <ul>
-                                <li><i class="far fa-check-circle"></i> Lifetime structural, one year finish warranty</li>
-                                <li><i class="far fa-check-circle"></i> Mapped from “Center Caps” under ” tment” tab</li>
-                                <li><i class="far fa-check-circle"></i> Fully copatible with OEM equimpent</li>
-                            </ul>
-                        </div>
-                        <div class="actions">
-                            <div class="quantity">
-                                <input type="number" class="qty-input" step="1" min="1" max="100" name="quantity" value="1" title="Qty">
-                                <button class="quantity-plus qty-btn"><i class="fas fa-chevron-up"></i></button>
-                                <button class="quantity-minus qty-btn"><i class="fas fa-chevron-down"></i></button>
-                            </div>
-                            <button class="btn">ADD TO CART <i class="fas fa-shopping-bag ms-2"></i></button>
-                        </div>
-                        <div class="product_meta">
-                            <span class="sku_wrapper">SKU: <span class="sku">Artist</span></span>
-                            <span class="posted_in">Category: <a href="shop.html" rel="tag">Art & Exhibition</a></span>
-                            <span>Tags: <a href="shop.html">Museum</a><a href="shop.html">Exhibition</a></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button title="Close (Esc)" type="button" class="mfp-close">×</button>
-        </div>
-    </div>
-
-    <div class="sidemenu-wrapper">
-        <div class="sidemenu-content">
-            <button class="closeButton sideMenuCls"><i class="fas fa-times"></i></button>
-            <div class="widget footer-widget">
-                <div class="widget widget-about footer-widget">
-                    <div class="footer-logo">
-                        <a href="index.html"><img src="assets/img/biennale-images/KBT_logo.png" alt="logo"></a>
-                    </div>
-                    <p class="about-text mb-4 text-white">A small business can be better than a big business because of agility and adaptability due to their size and scale.</p>
-                    
-                    <p class="footer-text text-white">
-                        <a href="tel:+92 21 35157566"><i class="fas fa-phone-alt me-2"></i>+92 21 35157566</a>
-                    </p>
-                    <!-- <p class="contact-text text-white"><i class="fa fa-map-marker-alt me-2"></i> 401, 4th Floor, Olympia Tower, Hasan Square, Karachi</p> -->
-                    <p class="footer-text text-white"><a href="mailto:info@karachibiennale.org.pk"><i class="fas fa-envelope me-2"></i>info@karachibiennale.org.pk</a></p>
-                    <div class="social-btn style2 mt-30">
-                        <a href="https://www.facebook.com/KarachiBiennaleTrust/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://x.com/khi_Biennale" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/karachi_biennale/"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--==============================
-    Mobile Menu
-    ============================== -->
-    <div class="mobile-menu-wrapper">
-        <div class="mobile-menu-area text-center">
-            <button class="menu-toggle"><i class="fas fa-times"></i></button>
-            <div class="mobile-logo">
-                <a href="index.html"><img src="assets/img/biennale-images/KBT_logo.png" alt="Karachi Biennale Trust"></a>
-            </div>
-            <div class="mobile-menu">
-                <ul>
-                    <li><a href="https://karachibiennale.org.pk/">Home</a></li>
-                    <li class="menu-item-has-children">
-                        <a href="https://karachibiennale.org.pk/about/">About</a>
-                        <ul class="sub-menu">
-                            <li><a href="https://karachibiennale.org.pk/about/">About KBT</a></li>
-                            <li><a href="https://karachibiennale.org.pk/kbt-founders/">KBT Founders</a></li>
-                            <li><a href="https://karachibiennale.org.pk/kbt-patrons/">KBT Patrons</a></li>
-                            <li><a href="https://karachibiennale.org.pk/kbt-trustees/">KBT Trustees</a></li>
-                            <li><a href="https://karachibiennale.org.pk/kbt-team/">Our Team</a></li>
-                            <li><a href="https://karachibiennale.org.pk/kb-support-team/">KBT Support Team</a></li>
-                            <li><a href="https://karachibiennale.org.pk/weclome-note/">Welcome Note</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a href="https://karachibiennale.org.pk/">KB27</a>
-                        <ul class="sub-menu">
-                            <li><a href="https://karachibiennale.org.pk/curator/">KB27 Curatorial Vision</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="https://karachibiennale.org.pk/partners/">KB24 Partners</a></li>
-                    <li class="menu-item-has-children">
-                        <a href="#">Past Biennale</a>
-                        <ul class="sub-menu">
-                            <li class="menu-item-has-children">
-                                <a href="#">KB24</a>
-                                <ul class="sub-menu">
-                                    <li><a href="https://karachibiennale.org.pk/kb24-at-a-glance/">KB24 – At A Glance</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb24-outreach/">KB24 Outreach</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb24-venues/">KB24 Exhibition Venues</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb24-artistslist/">KB24 Artists List</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb24-highlights-and-projects/">KB24 – Highlights and Projects</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb24-media/">KB24 – Media</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb24-art-prize-winners/">KB24 – Art Prize Winners</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb24-catalogue/">KB24 – Catalogue</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item-has-children">
-                                <a href="#">KB22</a>
-                                <ul class="sub-menu">
-                                    <li><a href="https://karachibiennale.org.pk/kb22-at-a-glance/">KB22 – At A Glance</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb22-partners/">KB22- Partners</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb22-outreach/">KB22 – Outreach</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb22-curator/">KB22- Curator</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb22-venues/">KB22 – Exhibition Venues</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb22-artistslist/">KB22- Artists List</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb22-programming/">KB22 – Programming</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb22-curatorial-team/">KB22 – Curatorial Team</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb22-highlights-and-projects/">KB22 – Highlights and Projects</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb22-art-prize-winners/">KB22 – Art Prize Winners</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb22-media/">KB22 – Media</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/wp-content/uploads/2023/05/Third-Karachi-Biennale-Report.pdf">KB22 Report</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item-has-children">
-                                <a href="https://karachibiennale.org.pk/kb19/">KB19</a>
-                                <ul class="sub-menu">
-                                    <li><a href="https://karachibiennale.org.pk/about-kb19/">KB19 – About</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb19-message-from-the-ceo/">KB19 – Message from the CEO</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb19app/">KB19 – Visitors Guide App</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb19-artistsandvenues/">KB19 – Artists and Venues</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb19-programming/">KB19 – Programming</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb19-educational-program/">KB19 – Educational Program</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb19-curator/">KB19 – Curator</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb19-projects/">KB19 – Projects</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/partners-kb19/">KB19 – Partners</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/media-kb19/">KB19 – Media</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb19-teams/">KB19 – Teams</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/friends-of-kb19/">Friends of KB19</a></li>
-                                    <li><a href="https://catalogue.karachibiennale.org.pk/">KB19 – Catalogue</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item-has-children">
-                                <a href="#">KB17</a>
-                                <ul class="sub-menu">
-                                    <li><a href="https://karachibiennale.org.pk/kb17-about-biennale/">KB17 – About</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb17-message-from-the-ceo/">KB17 – Message from the CEO</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb17-curator/">KB17 – Curator</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb17-projects/">KB17 – Projects</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb17teams/">KB17 – Teams</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb17-sponsors/">KB17 – Partners</a></li>
-                                    <li class="menu-item-has-children">
-                                        <a href="http://www.kbcuratorial.com/">KB17 – Curatorial (Website)</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">Karachi Biennale 2022</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="https://karachibiennale.org.pk/wp-content/uploads/2020/10/KB-catalogue-proofread-edit.pdf">KB17 – Karachi Biennale Catalogue</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="https://karachibiennale.org.pk/contact/">Contact Us</a></li>
-                    <li><a href="https://karachiartdirectory.com/">Karachi Art Directory</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!--==============================
-	Header Area
-    ==============================-->
-    <header class="nav-header header-layout1">
-        <div class="header-top d-md-block d-none">
-            <div class="container">
-                <div class="row justify-content-center justify-content-lg-between align-items-center gy-2">
-                    <div class="col-auto">
-                        <div class="header-links">
-                            <ul>
-                                <li><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15 11.0312L11.9375 9.71875C11.25 9.40625 10.4688 9.625 10 10.1875L9.15625 11.2188C7.75 10.4062 6.59375 9.25 5.78125 7.875L6.84375 7.03125C7.375 6.5625 7.59375 5.78125 7.3125 5.125L5.96875 2C5.65625 1.28125 4.875 0.875 4.09375 1.0625L1.25 1.71875C0.5 1.875 0 2.53125 0 3.3125C0 10.875 6.125 17 13.6875 17C14.4688 17 15.125 16.5 15.25 15.75L15.9062 12.9062C16.125 12.125 15.7188 11.3438 15 11.0312ZM14.4688 12.5625L13.8125 15.4062C13.8125 15.4375 13.75 15.5 13.6875 15.5C6.96875 15.5 1.46875 10.0312 1.46875 3.3125C1.46875 3.25 1.53125 3.1875 1.59375 3.1875L4.4375 2.53125L4.46875 2.5C4.53125 2.5 4.5625 2.5625 4.59375 2.59375L5.90625 5.65625C5.9375 5.71875 5.9375 5.78125 5.875 5.8125L4.34375 7.0625C4.09375 7.28125 4 7.65625 4.15625 7.96875C5.1875 10.0625 6.90625 11.7812 9 12.8125C9.3125 12.9688 9.71875 12.9062 9.9375 12.625L11.1875 11.0938C11.2188 11.0625 11.2812 11.0312 11.3438 11.0625L14.4062 12.375C14.4688 12.4375 14.5 12.5 14.4688 12.5625Z" fill="inherit"/>
-                                    </svg>
-                                        <a href="tel:+92 21 35157566">+92 21 35157566</a></li>
-                                <li><a href="mailto:info@karachibiennale.org.pk"><i class="fas fa-envelope me-2"></i>info@karachibiennale.org.pk</a></li>
-                                <!-- <li><i class="far fa-clock"></i>Mon - Fri: 8:00AM - 6:00PM</li> -->
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-auto d-none d-lg-block">
-                        <div class="header-links header-links-right">
-                            <ul>
-                                <!-- <li>
-                                    <i class="fas fa-globe"></i><a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink6" data-bs-toggle="dropdown" aria-expanded="false">English</a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink6">
-                                        <li>
-                                            <a href="#">German</a>
-                                            <a href="#">French</a>
-                                            <a href="#">Italian</a>
-                                            <a href="#">Latvian</a>
-                                            <a href="#">Spanish</a>
-                                            <a href="#">Greek</a>
-                                        </li>
-                                    </ul>
-                                </li> -->
-                                <li>
-                                    <button type="button" class="sidebar-btn sideMenuToggler">
-                                        <span class="line"></span>                                        
-                                    </button>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="sticky-wrapper">
-            <!-- Main Menu Area -->
-            <div class="menu-area">
-                <div class="container">
-                    <div class="row align-items-center justify-content-between">
-                        <div class="col-auto">
-                            <div class="header-logo">
-                                <a href="index.html"><img src="assets/img/biennale-images/KBT_logo.png" alt="Karachi Biennale Trust"></a>
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                            <nav class="main-menu d-none d-lg-inline-block" aria-label="Main Menu">
-                                <ul>
-                                    <li><a href="https://karachibiennale.org.pk/">Home</a></li>
-                                    <li class="menu-item-has-children">
-                                        <a href="https://karachibiennale.org.pk/about/">About</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="https://karachibiennale.org.pk/about/">About KBT</a></li>
-                                            <li><a href="https://karachibiennale.org.pk/kbt-founders/">KBT Founders</a></li>
-                                            <li><a href="https://karachibiennale.org.pk/kbt-patrons/">KBT Patrons</a></li>
-                                            <li><a href="https://karachibiennale.org.pk/kbt-trustees/">KBT Trustees</a></li>
-                                            <li><a href="https://karachibiennale.org.pk/kbt-team/">Our Team</a></li>
-                                            <li><a href="https://karachibiennale.org.pk/kb-support-team/">KBT Support Team</a></li>
-                                            <li><a href="https://karachibiennale.org.pk/weclome-note/">Welcome Note</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="https://karachibiennale.org.pk/">KB27</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="https://karachibiennale.org.pk/curator/">KB27 Curatorial Vision</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="https://karachibiennale.org.pk/partners/">KB24 Partners</a></li>
-                                    <li class="menu-item-has-children">
-                                        <a href="#">Past Biennale</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item-has-children">
-                                                <a href="#">KB24</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="https://karachibiennale.org.pk/kb24-at-a-glance/">KB24 – At A Glance</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb24-outreach/">KB24 Outreach</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb24-venues/">KB24 Exhibition Venues</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb24-artistslist/">KB24 Artists List</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb24-highlights-and-projects/">KB24 – Highlights and Projects</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb24-media/">KB24 – Media</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb24-art-prize-winners/">KB24 – Art Prize Winners</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb24-catalogue/">KB24 – Catalogue</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item-has-children">
-                                                <a href="#">KB22</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="https://karachibiennale.org.pk/kb22-at-a-glance/">KB22 – At A Glance</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb22-partners/">KB22- Partners</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb22-outreach/">KB22 – Outreach</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb22-curator/">KB22- Curator</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb22-venues/">KB22 – Exhibition Venues</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb22-artistslist/">KB22- Artists List</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb22-programming/">KB22 – Programming</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb22-curatorial-team/">KB22 – Curatorial Team</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb22-highlights-and-projects/">KB22 – Highlights and Projects</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb22-art-prize-winners/">KB22 – Art Prize Winners</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb22-media/">KB22 – Media</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/wp-content/uploads/2023/05/Third-Karachi-Biennale-Report.pdf">KB22 Report</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item-has-children">
-                                                <a href="https://karachibiennale.org.pk/kb19/">KB19</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="https://karachibiennale.org.pk/about-kb19/">KB19 – About</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb19-message-from-the-ceo/">KB19 – Message from the CEO</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb19app/">KB19 – Visitors Guide App</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb19-artistsandvenues/">KB19 – Artists and Venues</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb19-programming/">KB19 – Programming</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb19-educational-program/">KB19 – Educational Program</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb19-curator/">KB19 – Curator</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb19-projects/">KB19 – Projects</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/partners-kb19/">KB19 – Partners</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/media-kb19/">KB19 – Media</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb19-teams/">KB19 – Teams</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/friends-of-kb19/">Friends of KB19</a></li>
-                                                    <li><a href="https://catalogue.karachibiennale.org.pk/">KB19 – Catalogue</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item-has-children">
-                                                <a href="#">KB17</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="https://karachibiennale.org.pk/kb17-about-biennale/">KB17 – About</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb17-message-from-the-ceo/">KB17 – Message from the CEO</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb17-curator/">KB17 – Curator</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb17-projects/">KB17 – Projects</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb17teams/">KB17 – Teams</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb17-sponsors/">KB17 – Partners</a></li>
-                                                    <li class="menu-item-has-children">
-                                                        <a href="http://www.kbcuratorial.com/">KB17 – Curatorial (Website)</a>
-                                                        <ul class="sub-menu">
-                                                            <li><a href="#">Karachi Biennale 2022</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="https://karachibiennale.org.pk/wp-content/uploads/2020/10/KB-catalogue-proofread-edit.pdf">KB17 – Karachi Biennale Catalogue</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="https://karachibiennale.org.pk/contact/">Contact Us</a></li>
-                                    <li><a href="https://karachiartdirectory.com/">Karachi Art Directory</a></li>
-                                </ul>
-                            </nav>
-                            <div class="navbar-right d-inline-flex d-lg-none">
-                                <button type="button" class="menu-toggle icon-btn"><i class="fas fa-bars"></i></button>
-                            </div>
-                        </div>
-                        <div class="col-auto d-none d-xl-block">
-                            <div class="header-button">
-                                <a href="contact.html" class="btn d-none d-xl-block">
-                                    TICKET & ADMISSION 
-                                </a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div id="smooth-wrapper">
-        <div id="smooth-content">
         <!--==============================
         Hero Area
         ==============================-->
@@ -437,7 +19,8 @@
                                     <h1 class="hero-title" data-ani="slider-custom-anim-right" data-ani-delay="0.15s">KB27 <span class="text-stroke"></span></h1>
                                     <h1 class="hero-title" data-ani="slider-custom-anim-left" data-ani-delay="0.2s">Fifth Karachi</h1>
                                     <h1 class="hero-title title-bg-thumb" data-bg-src="assets/img/hero/hero_1_text-bg.png" data-ani="slider-custom-anim-right" data-ani-delay="0.25s">Biennale</h1>
-                                    <div class="hero-social-wrap" data-ani="slider-custom-anim-left" data-ani-delay="0.3s">
+                                    <h4 class="text-white mt-4" data-ani="slider-custom-anim-left" data-ani-delay="0.3s">Connecting art, the city and its people</h4>
+                                    <div class="hero-social-wrap" data-ani="slider-custom-anim-left" data-ani-delay="0.35s">
                                         <span>Follow Us On: </span>
                                         <a href="https://www.facebook.com/KarachiBiennaleTrust/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                                         <a href="https://x.com/khi_Biennale" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -463,7 +46,8 @@
                                     <h1 class="hero-title" data-ani="slider-custom-anim-right" data-ani-delay="0.15s">KB27 <span class="text-stroke"></span></h1>
                                     <h1 class="hero-title" data-ani="slider-custom-anim-left" data-ani-delay="0.2s">Fifth Karachi</h1>
                                     <h1 class="hero-title title-bg-thumb" data-bg-src="assets/img/hero/hero_1_text-bg.png" data-ani="slider-custom-anim-right" data-ani-delay="0.25s">Biennale</h1>
-                                    <div class="hero-social-wrap" data-ani="slider-custom-anim-left" data-ani-delay="0.3s">
+                                    <h4 class="text-white mt-4" data-ani="slider-custom-anim-left" data-ani-delay="0.3s">Self, Jamil Baloch (KB19) / Unvoiced, Tazeen Qayum (KB17)</h4>
+                                    <div class="hero-social-wrap" data-ani="slider-custom-anim-left" data-ani-delay="0.35s">
                                         <span>Follow Us On: </span>
                                         <a href="https://www.facebook.com/KarachiBiennaleTrust/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                                         <a href="https://x.com/khi_Biennale" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -489,7 +73,8 @@
                                     <h1 class="hero-title" data-ani="slider-custom-anim-right" data-ani-delay="0.15s">KB27 <span class="text-stroke"></span></h1>
                                     <h1 class="hero-title" data-ani="slider-custom-anim-left" data-ani-delay="0.2s">Fifth Karachi</h1>
                                     <h1 class="hero-title title-bg-thumb" data-bg-src="assets/img/hero/hero_1_text-bg.png" data-ani="slider-custom-anim-right" data-ani-delay="0.25s">Biennale</h1>
-                                    <div class="hero-social-wrap" data-ani="slider-custom-anim-left" data-ani-delay="0.3s">
+                                    <h4 class="text-white mt-4" data-ani="slider-custom-anim-left" data-ani-delay="0.3s">River Biographies, Lundhal &amp; Seitl (KB24) / Vanishing Creature, Enora Lalet (KB24)</h4>
+                                    <div class="hero-social-wrap" data-ani="slider-custom-anim-left" data-ani-delay="0.35s">
                                         <span>Follow Us On: </span>
                                         <a href="https://www.facebook.com/KarachiBiennaleTrust/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                                         <a href="https://x.com/khi_Biennale" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -515,7 +100,8 @@
                                     <h1 class="hero-title" data-ani="slider-custom-anim-right" data-ani-delay="0.15s">KB27 <span class="text-stroke"></span></h1>
                                     <h1 class="hero-title" data-ani="slider-custom-anim-left" data-ani-delay="0.2s">Fifth Karachi</h1>
                                     <h1 class="hero-title title-bg-thumb" data-bg-src="assets/img/hero/hero_1_text-bg.png" data-ani="slider-custom-anim-right" data-ani-delay="0.25s">Biennale</h1>
-                                    <div class="hero-social-wrap" data-ani="slider-custom-anim-left" data-ani-delay="0.3s">
+                                    <h4 class="text-white mt-4" data-ani="slider-custom-anim-left" data-ani-delay="0.3s">Timeline, Victorine Müller (KB19) / Picnic, Irfan Gul Dhari (KB19)</h4>
+                                    <div class="hero-social-wrap" data-ani="slider-custom-anim-left" data-ani-delay="0.35s">
                                         <span>Follow Us On: </span>
                                         <a href="https://www.facebook.com/KarachiBiennaleTrust/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                                         <a href="https://x.com/khi_Biennale" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -563,6 +149,59 @@
             </div>
         </div>
         <!--======== / Hero Section ========-->
+
+        <!-- Curatorial Vision Section -->
+        <section class="space bg-smoke vision-section">
+            <div class="container">
+                <div class="row align-items-center curatorial-vision-row gy-40">
+                    <div class="col-lg-6">
+                        <div class="vision-content">
+                            <h2 class="vision-title">KB27 Thematic</h2>
+                            <p class="vision-text">The 5th edition of Karachi Biennale, is presented as a maiden voyage for Tomorrow, positing Karachi as an urban archipelago of invention, mythologies, and habitats, where sediments of the past and horizons of the future mingle in brackish currents. KB27 is a dedication for the hopeful Tomorrow.</p>
+                            <a href="kb27.php" class="vision-cta">
+                                <span class="cta-line"></span>
+                                <span class="cta-text">READ MORE</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="vision-img-wrap">
+                            <img src="assets/img/biennale-images/Curatorial-VIsion-Statement.webp" alt="Curatorial Vision Statement">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Highlight Section -->
+        <section class="space bg-white video-highlight-section">
+            <div class="container">
+                <div class="row align-items-center video-highlight-row gy-40">
+                    <div class="col-lg-6">
+                        <div class="video-highlight-text">
+                            <h2 class="sec-title">Fourth Karachi Biennale</h2>
+                            <div class="video-detail-item">
+                                <span class="detail-label">KB24 Dates</span>
+                                <span class="detail-val">October 27 to November 10, 2024</span>
+                                <span class="detail-val-sub">International exhibitions at 5 venues</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="video-player-wrap">
+                        <iframe 
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                                src="https://www.youtube.com/embed/wPInXVvEREM" 
+                                title="Fourth Karachi Biennale Video Highlight" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+     </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!--==============================
         Exhibition Area  
@@ -1076,165 +715,4 @@
             </div>
         </div>  
 
-        <!--==============================
-            Footer Area
-        ==============================-->
-        <footer class="footer-wrapper footer-layout1 overflow-hidden">    
-            <div class="shape-mockup footer1-shape1 jump" data-top="20%" data-left="-2%">
-                <img src="assets/img/normal/footer-1-shape1.png" alt="img">
-            </div>
-            <div class="container">
-                <div class="footer-top">
-                    <div class="row align-items-center justify-content-between">
-                        <div class="col-sm-auto">
-                            <div class="footer-logo mb-40 mb-sm-0">
-                                <a href="index.html"><img src="assets/img/biennale-images/KBT_logo.png" alt="Karachi Biennale Trust"></a>
-                            </div>
-                        </div>
-                        <div class="col-sm-auto">
-                            <div class="social-btn style2">
-                                <a href="https://www.facebook.com/KarachiBiennaleTrust/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://x.com/khi_Biennale" target="_blank"><i class="fab fa-twitter"></i></a>
-                                <a href="https://www.instagram.com/karachi_biennale/"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="widget-area">
-                    <div class="row justify-content-between">
-                        <div class="col-md-6 col-xl-3 col-lg-4">
-                            <div class="widget footer-widget">
-                                <div class="widget-contact">
-                                    <h3 class="widget_title">Contact Info</h3>
-                                    <ul class="contact-info-list">
-                                        <li>Phone: +92 21 35157566</li>
-                                        <li>E-mail: info@karachibiennale.org.pk</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-auto col-lg-4">
-                            <div class="widget widget_nav_menu footer-widget">
-                                <h3 class="widget_title">Information</h3>
-                                <div class="menu-all-pages-container">
-                                    <ul class="menu">
-                                        <li><a href="team.html">Our Team</a></li>
-                                        <li><a href="contact.html">Faq’s</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="project.html">What we do</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-auto col-lg-4">
-                            <div class="widget widget_nav_menu footer-widget">
-                                <h3 class="widget_title">Visitor Info </h3>
-                                <div class="menu-all-pages-container">
-                                    <ul class="menu">
-                                        <li><a href="contact.html">How To Find Us</a></li>
-                                        <li><a href="contact.html">Get Ticket</a></li>
-                                        <li><a href="event.html">Join Events</a></li>
-                                        <li><a href="event.html">Tours</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="widget footer-widget">
-                                <h3 class="widget_title">Subscribe Now</h3>
-                                <p class="footer-text">Don’t worry we don’t spam your email</p>
-                                <form class="newsletter-form">
-                                    <div class="form-group">
-                                        <input class="form-control" type="email" placeholder="Email Address" required="">
-                                    </div>
-                                    <button type="submit" class="btn">SUBSCRIBE</button>
-                                </form>
-                            </div>
-                        </div>                    
-                    </div>
-                </div>
-                <div class="footer-menu-area">
-                    <ul class="footer-menu-list">
-                        <li>
-                            <a href="index.html">HOME</a>
-                        </li>
-                        <li>
-                            <a href="project.html">EXHIBITIONS</a>
-                        </li>
-                        <li>
-                            <a href="event.html">EVENTS</a>
-                        </li>
-                        <li>
-                            <a href="about.html">ABOUT</a>
-                        </li>
-                        <li>
-                            <a href="shop.html">SHOP</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyright-wrap text-center">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-auto align-self-center">
-                            <p class="copyright-text text-white">© 2023 </p>
-                            <p class="copyright-text text-white"><a href="#">Artvista.</a> All Rights Reserved.</p></div>
-                    </div>                
-                </div>
-            </div>
-        </footer>
-
-        </div>
-    </div>
-
-    <!--********************************
-			Code End  Here 
-	******************************** -->
-
-    <!-- Scroll To Top -->
-    <div class="scroll-top">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
-        </svg>
-    </div>
-
-    <!--==============================
-    All Js File
-    ============================== -->
-    <!-- Jquery -->
-    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
-    <!-- Slick Slider -->
-    <script src="assets/js/slick.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- Magnific Popup -->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <!-- Counter Up -->
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <!-- Range Slider -->
-    <script src="assets/js/jquery-ui.min.js"></script>
-    
-    <!-- Isotope Filter -->
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    
-    <!-- ScrollTrigger -->
-    <script src="assets/js/ScrollTrigger.min.js"></script>
-    <!-- ScrollSmoother -->
-    <script src="assets/js/ScrollSmoother.min.js"></script>
-    <!-- ScrollToPlugin -->
-    <script src="assets/js/ScrollToPlugin.min.js"></script>
-    <!-- SplitText -->
-    <script src="assets/js/SplitText.min.js"></script>
-    <!-- Gsap -->
-    <script src="assets/js/gsap.min.js"></script>
-
-    <!-- WOW JS -->
-    <script src="assets/js/waypoints.js"></script>
-    <script src="assets/js/wow.js"></script>
-    
-    <!-- Main Js File -->
-    <script src="assets/js/main.js"></script>
-</body>
-
-</html>
+<?php include 'components/footer.php'; ?>
