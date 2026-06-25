@@ -1,0 +1,561 @@
+/*=======================================================================
+   KB22 Partners Page-Specific Stylesheet
+   Scoped under body class .page-kb22-partners to prevent global conflicts
+  =========================================================================*/
+
+/* Global Page Scoping */
+.page-kb22-partners {
+    background-color: var(--white-color);
+}
+
+/* 1. Page Header Section (Hero Area) */
+.kb22p-hero-section {
+    padding: 100px 0 60px;
+    background-color: var(--smoke-color);
+    border-bottom: 1px solid var(--light-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.kb22p-hero-title {
+    font-family: var(--title-font);
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.kb22p-hero-subtitle {
+    font-family: var(--title-font);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--theme-color);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.kb22p-hero-intro {
+    font-family: var(--body-font);
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: var(--body-color);
+    max-width: 900px;
+    margin: 0 auto 35px;
+}
+
+/* Breadcrumbs Styling */
+.kb22p-breadcrumbs {
+    display: inline-block;
+    background-color: var(--white-color);
+    padding: 10px 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.kb22p-breadcrumbs ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.kb22p-breadcrumbs li {
+    font-family: var(--title-font);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--body-color);
+}
+
+.kb22p-breadcrumbs li a {
+    color: var(--body-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.kb22p-breadcrumbs li a:hover {
+    color: var(--theme-color);
+}
+
+/* Breadcrumbs separator */
+.kb22p-breadcrumbs li:not(:last-child)::after {
+    content: "/";
+    margin-left: 12px;
+    color: var(--light-color);
+    font-weight: 400;
+}
+
+.kb22p-breadcrumbs li.active {
+    color: var(--theme-color);
+    font-weight: 600;
+}
+
+/* 2. Quick Jump Bar */
+.kb22p-jump-bar-wrap {
+    background-color: var(--white-color);
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 90px; /* Offset for sticky header if exists, fallback value */
+    z-index: 100;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+}
+
+.kb22p-jump-bar {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 20px;
+    background-color: var(--smoke-color);
+    padding: 10px 25px;
+    border-radius: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.kb22p-jump-title {
+    font-family: var(--title-font);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--title-color);
+    letter-spacing: 0.5px;
+}
+
+.kb22p-jump-link {
+    font-family: var(--title-font);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--body-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.kb22p-jump-link:hover {
+    color: var(--white-color);
+    background-color: var(--theme-color);
+}
+
+/* 3. Section Headers & Wrapping */
+.kb22p-sections-wrap {
+    background-color: var(--white-color);
+    padding: 40px 0 60px;
+}
+
+.kb22p-section {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.kb22p-section.space {
+    padding-top: 40px;
+}
+
+.kb22p-section.space-bottom {
+    padding-bottom: 60px;
+}
+
+.kb22p-section-header {
+    margin-bottom: 45px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.kb22p-section-header::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background-color: var(--theme-color);
+}
+
+.kb22p-section-title {
+    font-family: var(--title-font);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--title-color);
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.kb22p-section-title i {
+    color: var(--theme-color);
+}
+
+.kb22p-sub-section {
+    margin-bottom: 40px;
+}
+
+.kb22p-sub-section:last-child {
+    margin-bottom: 0;
+}
+
+.kb22p-sub-category {
+    margin-bottom: 40px;
+}
+
+.kb22p-sub-title {
+    font-family: var(--title-font);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--title-color);
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 15px;
+    display: inline-block;
+}
+
+.kb22p-sub-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 18px;
+    background-color: var(--theme-color);
+    border-radius: 2px;
+}
+
+/* 4. Tiers Styling (Corporate) */
+.kb22p-tier-wrap {
+    margin-bottom: 50px;
+}
+
+.kb22p-tier-wrap:last-child {
+    margin-bottom: 0;
+}
+
+.kb22p-tier-title {
+    margin-bottom: 30px;
+}
+
+.kb22p-tier-badge {
+    font-family: var(--title-font);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 8px 24px;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.kb22p-tier-badge-gold {
+    background: linear-gradient(135deg, #d4af37, #f3e5ab);
+    color: #4a3c00;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+}
+
+.kb22p-tier-badge-silver {
+    background: linear-gradient(135deg, #c0c0c0, #f0f0f0);
+    color: #333333;
+    box-shadow: 0 4px 15px rgba(192, 192, 192, 0.2);
+    border: 1px solid rgba(192, 192, 192, 0.4);
+}
+
+.kb22p-tier-badge-bronze {
+    background: linear-gradient(135deg, #cd7f32, #f0d5c0);
+    color: #4e2906;
+    box-shadow: 0 4px 15px rgba(205, 127, 50, 0.2);
+    border: 1px solid rgba(205, 127, 50, 0.4);
+}
+
+/* 5. Logo Grid Configuration */
+.kb22p-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+}
+
+.kb22p-grid-center {
+    justify-content: center;
+    grid-template-columns: repeat(1, 280px);
+}
+
+.kb22p-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.kb22p-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.kb22p-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.kb22p-grid-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* Individual Logo Cards */
+.kb22p-logo-card {
+    background-color: var(--white-color);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    height: 140px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.015);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+    overflow: hidden;
+    text-align: center;
+}
+
+.kb22p-logo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    border-color: rgba(0, 136, 203, 0.25);
+}
+
+.kb22p-logo {
+    max-height: 90px;
+    max-width: 85%;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.kb22p-logo-card:hover .kb22p-logo {
+    transform: scale(1.04);
+}
+
+/* Logo Labels & Footnotes inside Cards */
+.kb22p-logo-label {
+    display: block;
+    font-family: var(--title-font);
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--body-color);
+    margin-top: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.kb22p-logo-footnote {
+    font-family: var(--title-font);
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--body-color);
+    margin-top: 8px;
+    opacity: 0.8;
+}
+
+/* In-Kind Badges */
+.kb22p-badge {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    background-color: var(--theme-color);
+    color: var(--white-color);
+    font-family: var(--title-font);
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 136, 203, 0.2);
+    z-index: 2;
+}
+
+/* Text Cards (Supporters without logos) */
+.kb22p-text-logo-card {
+    background-color: var(--smoke-color);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.kb22p-card-text {
+    font-family: var(--title-font);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--title-color);
+    line-height: 1.3;
+}
+
+/* Friends of Biennale Name Cards */
+.kb22p-names-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.kb22p-name-card {
+    background-color: var(--smoke-color);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.kb22p-name-card:hover {
+    transform: translateY(-3px);
+    background-color: var(--white-color);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+    border-color: rgba(0, 136, 203, 0.2);
+}
+
+.kb22p-badge-label {
+    font-family: var(--title-font);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--theme-color);
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.kb22p-supporter-name {
+    font-family: var(--title-font);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--title-color);
+}
+
+/* =======================================================================
+   Responsive Breakpoints (Mobile First Overrides)
+ =========================================================================*/
+
+/* Large screens and below (max-width: 1199px) */
+@media (max-width: 1199px) {
+    .kb22p-grid-5 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .kb22p-grid-4 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Tablets and below (max-width: 991px) */
+@media (max-width: 991px) {
+    .kb22p-hero-section {
+        padding: 80px 0 50px;
+    }
+    
+    .kb22p-hero-title {
+        font-size: 3rem;
+    }
+    
+    .kb22p-hero-subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .kb22p-hero-intro {
+        font-size: 1.05rem;
+        margin-bottom: 30px;
+    }
+    
+    .kb22p-jump-bar-wrap {
+        position: relative;
+        top: 0;
+        padding: 15px 0;
+    }
+    
+    .kb22p-grid-5 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .kb22p-grid-4 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .kb22p-grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .kb22p-names-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small mobile devices (max-width: 767px) */
+@media (max-width: 767px) {
+    .kb22p-grid-5 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .kb22p-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .kb22p-grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .kb22p-grid-2 {
+        grid-template-columns: 1fr;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    
+    .kb22p-section-title {
+        font-size: 1.8rem;
+    }
+    
+    .kb22p-sub-title {
+        font-size: 1.25rem;
+    }
+}
+
+/* Extra small mobile viewports (max-width: 575px) */
+@media (max-width: 575px) {
+    .kb22p-hero-section {
+        padding: 60px 0 40px;
+    }
+    
+    .kb22p-hero-title {
+        font-size: 2.4rem;
+    }
+    
+    .kb22p-hero-subtitle {
+        font-size: 1.25rem;
+    }
+    
+    .kb22p-breadcrumbs {
+        padding: 8px 20px;
+    }
+    
+    .kb22p-breadcrumbs li {
+        font-size: 0.85rem;
+    }
+    
+    .kb22p-jump-bar {
+        padding: 8px 15px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .kb22p-jump-title {
+        margin-bottom: 2px;
+    }
+    
+    .kb22p-grid, .kb22p-grid-5, .kb22p-grid-4, .kb22p-grid-3, .kb22p-grid-2 {
+        grid-template-columns: 1fr !important;
+        max-width: 290px;
+        margin: 0 auto;
+    }
+    
+    .kb22p-names-grid {
+        grid-template-columns: 1fr;
+        max-width: 290px;
+        margin: 0 auto;
+    }
+}

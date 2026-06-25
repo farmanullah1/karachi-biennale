@@ -1,0 +1,304 @@
+/*=======================================================================
+   KB22 Art Prize Winners Page-Specific Stylesheet
+   Scoped under body class .page-kb22-art-prize-winners to prevent conflicts
+  =========================================================================*/
+
+.page-kb22-art-prize-winners {
+    background-color: var(--white-color);
+}
+
+/* 1. Hero Area */
+.kb22w-hero-section {
+    padding: 100px 0 60px;
+    background-color: var(--smoke-color);
+    border-bottom: 1px solid var(--light-color);
+}
+
+.kb22w-hero-title {
+    font-family: var(--title-font);
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.kb22w-hero-subtitle {
+    font-family: var(--title-font);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--theme-color);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.kb22w-hero-intro {
+    font-family: var(--body-font);
+    font-size: 1.15rem;
+    line-height: 1.75;
+    color: var(--body-color);
+    max-width: 900px;
+    margin: 0 auto 35px;
+}
+
+/* Breadcrumbs Styling */
+.kb22w-breadcrumbs {
+    display: inline-block;
+    background-color: var(--white-color);
+    padding: 10px 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.kb22w-breadcrumbs ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.kb22w-breadcrumbs li {
+    font-family: var(--title-font);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--body-color);
+}
+
+.kb22w-breadcrumbs li a {
+    color: var(--body-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.kb22w-breadcrumbs li a:hover {
+    color: var(--theme-color);
+}
+
+/* Breadcrumbs separator */
+.kb22w-breadcrumbs li:not(:last-child)::after {
+    content: "/";
+    margin-left: 12px;
+    color: var(--light-color);
+}
+
+.kb22w-breadcrumbs li.active {
+    color: var(--theme-color);
+    font-weight: 600;
+}
+
+/* 2. Main Wrapper & Cards Grid */
+.kb22w-sections-wrap {
+    padding: 80px 0 100px;
+    background-color: var(--white-color);
+}
+
+.kb22w-prize-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.kb22w-prize-card {
+    background-color: var(--white-color);
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 16px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.015);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.kb22w-prize-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 136, 203, 0.25);
+}
+
+.kb22w-prize-img-wrap {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    background-color: var(--smoke-color);
+}
+
+.kb22w-prize-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.kb22w-prize-card:hover .kb22w-prize-img {
+    transform: scale(1.04);
+}
+
+.kb22w-prize-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: linear-gradient(135deg, #d4af37 0%, #f3e5ab 100%);
+    color: #4a3c00;
+    font-family: var(--title-font);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.kb22w-prize-badge i {
+    margin-right: 6px;
+}
+
+/* Make some badges look silver/bronze for variety */
+.kb22w-prize-card:nth-child(2) .kb22w-prize-badge {
+    background: linear-gradient(135deg, #b8b8b8 0%, #e6e6e6 100%);
+    color: #333333;
+    box-shadow: 0 4px 10px rgba(184, 184, 184, 0.3);
+    border-color: rgba(184, 184, 184, 0.4);
+}
+
+.kb22w-prize-card:nth-child(3) .kb22w-prize-badge {
+    background: linear-gradient(135deg, #cd7f32 0%, #f0d5c0 100%);
+    color: #4e2906;
+    box-shadow: 0 4px 10px rgba(205, 127, 50, 0.3);
+    border-color: rgba(205, 127, 50, 0.4);
+}
+
+.kb22w-prize-card:nth-child(4) .kb22w-prize-badge {
+    background: linear-gradient(135deg, #8c43c7 0%, #cfa6f3 100%);
+    color: #2b0447;
+    box-shadow: 0 4px 10px rgba(140, 67, 199, 0.3);
+    border-color: rgba(140, 67, 199, 0.4);
+}
+
+.kb22w-prize-card:nth-child(5) .kb22w-prize-badge {
+    background: linear-gradient(135deg, var(--theme-color) 0%, #7dc9ec 100%);
+    color: #003652;
+    box-shadow: 0 4px 10px rgba(0, 136, 203, 0.3);
+    border-color: rgba(0, 136, 203, 0.4);
+}
+
+.kb22w-prize-body {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.kb22w-winner-title {
+    font-family: var(--title-font);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--theme-color);
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.kb22w-winner-name {
+    font-family: var(--title-font);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--title-color);
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.kb22w-prize-desc {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--body-color);
+    margin: 0;
+}
+
+/* =======================================================================
+   Responsive Breakpoints
+  =========================================================================*/
+
+@media (max-width: 1199px) {
+    .kb22w-hero-title {
+        font-size: 3.2rem;
+    }
+    
+    .kb22w-prize-grid {
+        gap: 30px;
+    }
+    
+    .kb22w-prize-img-wrap {
+        height: 240px;
+    }
+}
+
+@media (max-width: 991px) {
+    .kb22w-hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .kb22w-hero-intro {
+        font-size: 1.05rem;
+    }
+    
+    .kb22w-prize-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .kb22w-prize-img-wrap {
+        height: 250px;
+    }
+}
+
+@media (max-width: 767px) {
+    .kb22w-hero-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .kb22w-hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .kb22w-hero-subtitle {
+        font-size: 1.25rem;
+    }
+    
+    .kb22w-breadcrumbs {
+        padding: 8px 20px;
+    }
+    
+    .kb22w-breadcrumbs li {
+        font-size: 0.85rem;
+    }
+    
+    .kb22w-prize-img-wrap {
+        height: 200px;
+    }
+    
+    .kb22w-prize-body {
+        padding: 20px;
+    }
+    
+    .kb22w-winner-name {
+        font-size: 1.4rem;
+    }
+}

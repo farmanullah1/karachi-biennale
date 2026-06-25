@@ -1,0 +1,363 @@
+/*=======================================================================
+   KB22 Media Coverage Page-Specific Stylesheet
+   Scoped under body class .page-kb22-media to prevent conflicts
+  =========================================================================*/
+
+.page-kb22-media {
+    background-color: var(--white-color);
+}
+
+/* 1. Hero Area */
+.kb22m-hero-section {
+    padding: 100px 0 60px;
+    background-color: var(--smoke-color);
+    border-bottom: 1px solid var(--light-color);
+}
+
+.kb22m-hero-title {
+    font-family: var(--title-font);
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.kb22m-hero-subtitle {
+    font-family: var(--title-font);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--theme-color);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.kb22m-hero-intro {
+    font-family: var(--body-font);
+    font-size: 1.15rem;
+    line-height: 1.75;
+    color: var(--body-color);
+    max-width: 900px;
+    margin: 0 auto 35px;
+}
+
+/* Breadcrumbs Styling */
+.kb22m-breadcrumbs {
+    display: inline-block;
+    background-color: var(--white-color);
+    padding: 10px 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.kb22m-breadcrumbs ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.kb22m-breadcrumbs li {
+    font-family: var(--title-font);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--body-color);
+}
+
+.kb22m-breadcrumbs li a {
+    color: var(--body-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.kb22m-breadcrumbs li a:hover {
+    color: var(--theme-color);
+}
+
+/* Breadcrumbs separator */
+.kb22m-breadcrumbs li:not(:last-child)::after {
+    content: "/";
+    margin-left: 12px;
+    color: var(--light-color);
+}
+
+.kb22m-breadcrumbs li.active {
+    color: var(--theme-color);
+    font-weight: 600;
+}
+
+/* 2. Quick Jump Bar */
+.kb22m-jump-bar-wrap {
+    background-color: var(--white-color);
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 90px;
+    z-index: 100;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+}
+
+.kb22m-jump-bar {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 20px;
+    background-color: var(--smoke-color);
+    padding: 10px 25px;
+    border-radius: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.kb22m-jump-title {
+    font-family: var(--title-font);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--title-color);
+    letter-spacing: 0.5px;
+}
+
+.kb22m-jump-link {
+    font-family: var(--title-font);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--body-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.kb22m-jump-link:hover {
+    color: var(--white-color);
+    background-color: var(--theme-color);
+}
+
+/* 3. Sections Configuration */
+.kb22m-sections-wrap {
+    padding: 60px 0 100px;
+    background-color: var(--white-color);
+}
+
+.kb22m-section {
+    padding: 40px 0;
+}
+
+.kb22m-divider {
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    margin: 50px 0;
+}
+
+.kb22m-section-header {
+    margin-bottom: 40px;
+    position: relative;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    padding-bottom: 15px;
+}
+
+.kb22m-section-header::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background-color: var(--theme-color);
+}
+
+.kb22m-section-title {
+    font-family: var(--title-font);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--title-color);
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.kb22m-section-title i {
+    color: var(--theme-color);
+}
+
+/* 4. Media Card Styles */
+.kb22m-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.kb22m-media-card {
+    background-color: var(--white-color);
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 16px;
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.015);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.kb22m-media-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 136, 203, 0.25);
+}
+
+.kb22m-source-badge {
+    font-family: var(--title-font);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--theme-color);
+    background-color: rgba(0, 136, 203, 0.08);
+    padding: 3px 12px;
+    border-radius: 12px;
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
+
+/* Specific Badges styling */
+.kb22m-source-badge.badge-tv {
+    background-color: rgba(111, 66, 193, 0.08);
+    color: #6f42c1;
+}
+
+.kb22m-source-badge.badge-radio {
+    background-color: rgba(253, 126, 20, 0.08);
+    color: #fd7e14;
+}
+
+.kb22m-source-badge.badge-social {
+    background-color: rgba(232, 62, 140, 0.08);
+    color: #e83e8c;
+}
+
+.kb22m-article-title {
+    font-family: var(--title-font);
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--title-color);
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.kb22m-article-excerpt {
+    font-family: var(--body-font);
+    font-size: 0.98rem;
+    line-height: 1.6;
+    color: var(--body-color);
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.kb22m-read-btn {
+    font-family: var(--title-font);
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--theme-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+    margin-top: auto;
+}
+
+.kb22m-read-btn i {
+    transition: transform 0.3s ease;
+}
+
+.kb22m-read-btn:hover {
+    color: var(--title-color);
+}
+
+.kb22m-read-btn:hover i {
+    transform: translate(2px, -2px);
+}
+
+/* =======================================================================
+   Responsive Breakpoints
+  =========================================================================*/
+
+@media (max-width: 1199px) {
+    .kb22m-hero-title {
+        font-size: 3.2rem;
+    }
+    
+    .kb22m-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .kb22m-hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .kb22m-hero-intro {
+        font-size: 1.05rem;
+    }
+    
+    .kb22m-jump-bar-wrap {
+        position: relative;
+        top: 0;
+        padding: 15px 0;
+    }
+    
+    .kb22m-media-card {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .kb22m-hero-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .kb22m-hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .kb22m-hero-subtitle {
+        font-size: 1.25rem;
+    }
+    
+    .kb22m-breadcrumbs {
+        padding: 8px 20px;
+    }
+    
+    .kb22m-breadcrumbs li {
+        font-size: 0.85rem;
+    }
+    
+    .kb22m-jump-bar {
+        padding: 8px 15px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .kb22m-jump-title {
+        margin-bottom: 2px;
+    }
+    
+    .kb22m-grid {
+        grid-template-columns: 1fr;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}

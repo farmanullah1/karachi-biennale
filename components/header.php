@@ -88,6 +88,87 @@
         <!-- Page-specific CSS for KB24 Partners -->
         <link rel="stylesheet" href="assets/css/pages/kb24-partners.css">
     <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb24-at-a-glance'): ?>
+        <!-- Page-specific CSS for KB24 At A Glance -->
+        <link rel="stylesheet" href="assets/css/pages/kb24-at-a-glance.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb24-outreach'): ?>
+        <!-- Page-specific CSS for KB24 Outreach -->
+        <link rel="stylesheet" href="assets/css/pages/kb24-outreach.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb24-exhibition-venues'): ?>
+        <!-- Page-specific CSS for KB24 Exhibition Venues -->
+        <link rel="stylesheet" href="assets/css/pages/kb24-exhibition-venues.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb24-artists-list'): ?>
+        <!-- Page-specific CSS for KB24 Artists List -->
+        <link rel="stylesheet" href="assets/css/pages/kb24-artists-list.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb24-highlights'): ?>
+        <!-- Page-specific CSS for KB24 Highlights -->
+        <link rel="stylesheet" href="assets/css/pages/kb24-highlights.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb24-media'): ?>
+        <!-- Page-specific CSS for KB24 Media -->
+        <link rel="stylesheet" href="assets/css/pages/kb24-media.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb24-art-prize-winners'): ?>
+        <!-- Page-specific CSS for KB24 Art Prize Winners -->
+        <link rel="stylesheet" href="assets/css/pages/kb24-art-prize-winners.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb24-catalogue'): ?>
+        <!-- Page-specific CSS for KB24 Catalogue -->
+        <link rel="stylesheet" href="assets/css/pages/kb24-catalogue.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb22-at-a-glance'): ?>
+        <!-- Page-specific CSS for KB22 At A Glance -->
+        <link rel="stylesheet" href="assets/css/pages/kb22-at-a-glance.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb22-partners'): ?>
+        <!-- Page-specific CSS for KB22 Partners -->
+        <link rel="stylesheet" href="assets/css/pages/kb22-partners.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb22-outreach'): ?>
+        <!-- Page-specific CSS for KB22 Outreach -->
+        <link rel="stylesheet" href="assets/css/pages/kb22-outreach.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb22-curator'): ?>
+        <!-- Page-specific CSS for KB22 Curator -->
+        <link rel="stylesheet" href="assets/css/pages/kb22-curator.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb22-exhibition-venues'): ?>
+        <!-- Page-specific CSS for KB22 Exhibition Venues -->
+        <link rel="stylesheet" href="assets/css/pages/kb22-exhibition-venues.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb22-artists-list'): ?>
+        <!-- Page-specific CSS for KB22 Artists List -->
+        <link rel="stylesheet" href="assets/css/pages/kb22-artists-list.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb22-programming'): ?>
+        <!-- Page-specific CSS for KB22 Programming -->
+        <link rel="stylesheet" href="assets/css/pages/kb22-programming.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb22-curatorial-team'): ?>
+        <!-- Page-specific CSS for KB22 Curatorial Team -->
+        <link rel="stylesheet" href="assets/css/pages/kb22-curatorial-team.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb22-highlights'): ?>
+        <!-- Page-specific CSS for KB22 Highlights -->
+        <link rel="stylesheet" href="assets/css/pages/kb22-highlights.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb22-art-prize-winners'): ?>
+        <!-- Page-specific CSS for KB22 Art Prize Winners -->
+        <link rel="stylesheet" href="assets/css/pages/kb22-art-prize-winners.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb22-media'): ?>
+        <!-- Page-specific CSS for KB22 Media -->
+        <link rel="stylesheet" href="assets/css/pages/kb22-media.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb22-report'): ?>
+        <!-- Page-specific CSS for KB22 Report -->
+        <link rel="stylesheet" href="assets/css/pages/kb22-report.css">
+    <?php endif; ?>
+
 
 </head>
 
@@ -215,31 +296,31 @@
                             <li class="menu-item-has-children">
                                 <a href="#">KB24</a>
                                 <ul class="sub-menu">
-                                    <li><a href="https://karachibiennale.org.pk/kb24-at-a-glance/">KB24 – At A Glance</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb24-outreach/">KB24 Outreach</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb24-venues/">KB24 Exhibition Venues</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb24-artistslist/">KB24 Artists List</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb24-highlights-and-projects/">KB24 – Highlights and Projects</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb24-media/">KB24 – Media</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb24-art-prize-winners/">KB24 – Art Prize Winners</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb24-catalogue/">KB24 – Catalogue</a></li>
+                                    <li><a href="kb24-at-a-glance.php">KB24 – At A Glance</a></li>
+                                    <li><a href="kb24-outreach.php">KB24 Outreach</a></li>
+                                    <li><a href="kb24-exhibition-venues.php">KB24 Exhibition Venues</a></li>
+                                    <li><a href="kb24-artists-list.php">KB24 Artists List</a></li>
+                                    <li><a href="kb24-highlights.php">KB24 – Highlights and Projects</a></li>
+                                    <li><a href="kb24-media.php">KB24 – Media</a></li>
+                                    <li><a href="kb24-art-prize-winners.php">KB24 – Art Prize Winners</a></li>
+                                    <li><a href="kb24-catalogue.php">KB24 – Catalogue</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="#">KB22</a>
                                 <ul class="sub-menu">
-                                    <li><a href="https://karachibiennale.org.pk/kb22-at-a-glance/">KB22 – At A Glance</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb22-partners/">KB22- Partners</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb22-outreach/">KB22 – Outreach</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb22-curator/">KB22- Curator</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb22-venues/">KB22 – Exhibition Venues</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb22-artistslist/">KB22- Artists List</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb22-programming/">KB22 – Programming</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb22-curatorial-team/">KB22 – Curatorial Team</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb22-highlights-and-projects/">KB22 – Highlights and Projects</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb22-art-prize-winners/">KB22 – Art Prize Winners</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb22-media/">KB22 – Media</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/wp-content/uploads/2023/05/Third-Karachi-Biennale-Report.pdf">KB22 Report</a></li>
+                                    <li><a href="kb22-at-a-glance.php">KB22 – At A Glance</a></li>
+                                    <li><a href="kb22-partners.php">KB22 – Partners</a></li>
+                                    <li><a href="kb22-outreach.php">KB22 – Outreach</a></li>
+                                    <li><a href="kb22-curator.php">KB22 – Curator</a></li>
+                                    <li><a href="kb22-exhibition-venues.php">KB22 – Exhibition Venues</a></li>
+                                    <li><a href="kb22-artists-list.php">KB22 – Artists List</a></li>
+                                    <li><a href="kb22-programming.php">KB22 – Programming</a></li>
+                                    <li><a href="kb22-curatorial-team.php">KB22 – Curatorial Team</a></li>
+                                    <li><a href="kb22-highlights.php">KB22 – Highlights and Projects</a></li>
+                                    <li><a href="kb22-art-prize-winners.php">KB22 – Art Prize Winners</a></li>
+                                    <li><a href="kb22-media.php">KB22 – Media</a></li>
+                                    <li><a href="kb22-report.php">KB22 Report</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item-has-children">
@@ -367,31 +448,31 @@
                                             <li class="menu-item-has-children">
                                                 <a href="#">KB24</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="https://karachibiennale.org.pk/kb24-at-a-glance/">KB24 – At A Glance</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb24-outreach/">KB24 Outreach</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb24-venues/">KB24 Exhibition Venues</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb24-artistslist/">KB24 Artists List</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb24-highlights-and-projects/">KB24 – Highlights and Projects</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb24-media/">KB24 – Media</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb24-art-prize-winners/">KB24 – Art Prize Winners</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb24-catalogue/">KB24 – Catalogue</a></li>
+                                                    <li><a href="kb24-at-a-glance.php">KB24 – At A Glance</a></li>
+                                                    <li><a href="kb24-outreach.php">KB24 Outreach</a></li>
+                                                    <li><a href="kb24-exhibition-venues.php">KB24 Exhibition Venues</a></li>
+                                                    <li><a href="kb24-artists-list.php">KB24 Artists List</a></li>
+                                                    <li><a href="kb24-highlights.php">KB24 – Highlights and Projects</a></li>
+                                                    <li><a href="kb24-media.php">KB24 – Media</a></li>
+                                                    <li><a href="kb24-art-prize-winners.php">KB24 – Art Prize Winners</a></li>
+                                                    <li><a href="kb24-catalogue.php">KB24 – Catalogue</a></li>
                                                 </ul>
                                             </li>
                                             <li class="menu-item-has-children">
                                                 <a href="#">KB22</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="https://karachibiennale.org.pk/kb22-at-a-glance/">KB22 – At A Glance</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb22-partners/">KB22- Partners</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb22-outreach/">KB22 – Outreach</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb22-curator/">KB22- Curator</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb22-venues/">KB22 – Exhibition Venues</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb22-artistslist/">KB22- Artists List</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb22-programming/">KB22 – Programming</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb22-curatorial-team/">KB22 – Curatorial Team</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb22-highlights-and-projects/">KB22 – Highlights and Projects</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb22-art-prize-winners/">KB22 – Art Prize Winners</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb22-media/">KB22 – Media</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/wp-content/uploads/2023/05/Third-Karachi-Biennale-Report.pdf">KB22 Report</a></li>
+                                                    <li><a href="kb22-at-a-glance.php">KB22 – At A Glance</a></li>
+                                                    <li><a href="kb22-partners.php">KB22 – Partners</a></li>
+                                                    <li><a href="kb22-outreach.php">KB22 – Outreach</a></li>
+                                                    <li><a href="kb22-curator.php">KB22 – Curator</a></li>
+                                                    <li><a href="kb22-exhibition-venues.php">KB22 – Exhibition Venues</a></li>
+                                                    <li><a href="kb22-artists-list.php">KB22 – Artists List</a></li>
+                                                    <li><a href="kb22-programming.php">KB22 – Programming</a></li>
+                                                    <li><a href="kb22-curatorial-team.php">KB22 – Curatorial Team</a></li>
+                                                    <li><a href="kb22-highlights.php">KB22 – Highlights and Projects</a></li>
+                                                    <li><a href="kb22-art-prize-winners.php">KB22 – Art Prize Winners</a></li>
+                                                    <li><a href="kb22-media.php">KB22 – Media</a></li>
+                                                    <li><a href="kb22-report.php">KB22 Report</a></li>
                                                 </ul>
                                             </li>
                                             <li class="menu-item-has-children">

@@ -1,0 +1,321 @@
+/*=======================================================================
+   KB22 Curator Page-Specific Stylesheet
+   Scoped under body class .page-kb22-curator to prevent conflicts
+  =========================================================================*/
+
+.page-kb22-curator {
+    background-color: var(--white-color);
+}
+
+/* 1. Hero Area */
+.kb22u-hero-section {
+    padding: 100px 0 60px;
+    background-color: var(--smoke-color);
+    border-bottom: 1px solid var(--light-color);
+}
+
+.kb22u-hero-title {
+    font-family: var(--title-font);
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.kb22u-hero-subtitle {
+    font-family: var(--title-font);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--theme-color);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.kb22u-hero-intro {
+    font-family: var(--body-font);
+    font-size: 1.15rem;
+    line-height: 1.75;
+    color: var(--body-color);
+    max-width: 900px;
+    margin: 0 auto 35px;
+}
+
+/* Breadcrumbs Styling */
+.kb22u-breadcrumbs {
+    display: inline-block;
+    background-color: var(--white-color);
+    padding: 10px 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.kb22u-breadcrumbs ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.kb22u-breadcrumbs li {
+    font-family: var(--title-font);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--body-color);
+}
+
+.kb22u-breadcrumbs li a {
+    color: var(--body-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.kb22u-breadcrumbs li a:hover {
+    color: var(--theme-color);
+}
+
+/* Breadcrumbs separator */
+.kb22u-breadcrumbs li:not(:last-child)::after {
+    content: "/";
+    margin-left: 12px;
+    color: var(--light-color);
+}
+
+.kb22u-breadcrumbs li.active {
+    color: var(--theme-color);
+    font-weight: 600;
+}
+
+/* 2. Page Content Styling */
+.kb22u-content-wrap {
+    padding: 80px 0 100px;
+    background-color: var(--white-color);
+}
+
+/* Sidebar Card */
+.kb22u-sidebar-card {
+    background-color: var(--white-color);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    padding: 35px 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    position: sticky;
+    top: 110px;
+}
+
+.kb22u-profile-img-wrap {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 25px;
+    border: 5px solid var(--smoke-color);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+.kb22u-profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kb22u-profile-name {
+    font-family: var(--title-font);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--title-color);
+    margin-bottom: 5px;
+}
+
+.kb22u-profile-title {
+    font-family: var(--title-font);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--theme-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.kb22u-profile-focus {
+    display: inline-block;
+    background-color: var(--smoke-color);
+    color: var(--body-color);
+    font-family: var(--body-font);
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 4px 15px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.kb22u-sidebar-info {
+    border-top: 1px solid rgba(0,0,0,0.06);
+    padding-top: 25px;
+}
+
+.kb22u-sidebar-heading {
+    font-family: var(--title-font);
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--title-color);
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+
+.kb22u-directives-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.kb22u-directives-list li {
+    font-family: var(--body-font);
+    font-size: 0.95rem;
+    color: var(--body-color);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.kb22u-directives-list li i {
+    color: var(--theme-color);
+    font-size: 1rem;
+    width: 20px;
+    text-align: center;
+}
+
+.kb22u-directives-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Essay and Biography Section */
+.kb22u-essay-section, .kb22u-bio-section {
+    margin-bottom: 40px;
+}
+
+.kb22u-section-title {
+    font-family: var(--title-font);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--title-color);
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgba(0,0,0,0.05);
+    padding-bottom: 12px;
+    position: relative;
+}
+
+.kb22u-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background-color: var(--theme-color);
+}
+
+.kb22u-essay-subtitle {
+    font-family: var(--title-font);
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: var(--theme-color);
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.kb22u-essay-body p, .kb22u-bio-body p {
+    font-family: var(--body-font);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--body-color);
+    margin-bottom: 20px;
+}
+
+.kb22u-essay-body p:last-child, .kb22u-bio-body p:last-child {
+    margin-bottom: 0;
+}
+
+.kb22u-essay-body strong, .kb22u-bio-body strong {
+    color: var(--title-color);
+}
+
+/* Drop-cap */
+.kb22u-dropcap {
+    font-family: var(--title-font);
+    font-size: 4.8rem;
+    font-weight: 800;
+    color: var(--theme-color);
+    float: left;
+    line-height: 0.85;
+    margin-right: 12px;
+    margin-top: 4px;
+}
+
+.kb22u-divider {
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    margin: 45px 0;
+}
+
+/* =======================================================================
+   Responsive Breakpoints
+  =========================================================================*/
+
+@media (max-width: 1199px) {
+    .kb22u-hero-title {
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .kb22u-hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .kb22u-sidebar-card {
+        position: relative;
+        top: 0;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .kb22u-hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .kb22u-section-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .kb22u-hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .kb22u-hero-subtitle {
+        font-size: 1.25rem;
+    }
+    
+    .kb22u-breadcrumbs {
+        padding: 8px 20px;
+    }
+    
+    .kb22u-breadcrumbs li {
+        font-size: 0.85rem;
+    }
+    
+    .kb22u-dropcap {
+        font-size: 3.8rem;
+        margin-right: 8px;
+    }
+}

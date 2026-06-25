@@ -1,0 +1,400 @@
+/*=======================================================================
+   KB24 Artists List Page-Specific Stylesheet
+   Scoped under body class .page-kb24-artists-list to prevent conflicts
+  =========================================================================*/
+
+.page-kb24-artists-list {
+    background-color: var(--white-color);
+}
+
+/* 1. Hero Banner Area */
+.kb24a-hero-banner-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.kb24a-banner-img-wrap {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    height: 50vh;
+    max-height: 500px;
+    background-color: var(--smoke-color);
+}
+
+.kb24a-banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.kb24a-banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.8) 100%);
+    z-index: 1;
+}
+
+.kb24a-banner-text-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 900px;
+    z-index: 2;
+    color: var(--white-color);
+}
+
+.kb24a-hero-title {
+    font-family: var(--title-font);
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--white-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.kb24a-hero-subtitle {
+    font-family: var(--title-font);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--theme-color);
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Breadcrumbs Styling */
+.kb24a-breadcrumbs {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 10px 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.kb24a-breadcrumbs ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.kb24a-breadcrumbs li {
+    font-family: var(--title-font);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--body-color);
+}
+
+.kb24a-breadcrumbs li a {
+    color: var(--body-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.kb24a-breadcrumbs li a:hover {
+    color: var(--theme-color);
+}
+
+/* Breadcrumbs separator */
+.kb24a-breadcrumbs li:not(:last-child)::after {
+    content: "/";
+    margin-left: 12px;
+    color: var(--light-color);
+}
+
+.kb24a-breadcrumbs li.active {
+    color: var(--theme-color);
+    font-weight: 600;
+}
+
+/* 2. Main Content Wrapper */
+.kb24a-main-wrapper {
+    background-color: var(--white-color);
+    padding: 80px 0 100px;
+}
+
+.kb24a-featured-section {
+    margin-bottom: 80px;
+}
+
+.kb24a-section-header {
+    margin-bottom: 40px;
+    position: relative;
+    border-bottom: 2px solid rgba(0,0,0,0.05);
+    padding-bottom: 15px;
+}
+
+.kb24a-section-header::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background-color: var(--theme-color);
+}
+
+.kb24a-featured-label {
+    font-family: var(--title-font);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--theme-color);
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.kb24a-section-title {
+    font-family: var(--title-font);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--title-color);
+    margin: 0;
+}
+
+.kb24a-section-intro {
+    font-family: var(--body-font);
+    font-size: 1.1rem;
+    color: var(--body-color);
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* Featured Card Styling */
+.kb24a-featured-card {
+    background-color: var(--smoke-color);
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.015);
+}
+
+.kb24a-featured-img-wrap {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.kb24a-featured-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--white-color);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.kb24a-country-badge {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    background-color: var(--theme-color);
+    color: var(--white-color);
+    font-family: var(--title-font);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 4px 14px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 136, 203, 0.3);
+}
+
+.kb24a-featured-details {
+    padding-left: 20px;
+}
+
+.kb24a-artwork-title {
+    font-family: var(--title-font);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--title-color);
+    margin-bottom: 10px;
+}
+
+.kb24a-artwork-meta {
+    font-family: var(--body-font);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--body-color);
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.kb24a-bio-text {
+    font-family: var(--body-font);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--body-color);
+    margin-bottom: 15px;
+}
+
+.kb24a-bio-text:last-child {
+    margin-bottom: 0;
+}
+
+/* 3. Grid Section & Card Badges */
+.kb24a-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.kb24a-card {
+    background-color: var(--white-color);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    padding: 30px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.01);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.kb24a-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.05);
+    border-color: rgba(0, 136, 203, 0.2);
+}
+
+.kb24a-avatar-wrap {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 3px solid var(--smoke-color);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    background-color: var(--smoke-color);
+    transition: border-color 0.3s ease;
+}
+
+.kb24a-card:hover .kb24a-avatar-wrap {
+    border-color: var(--theme-color);
+}
+
+.kb24a-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.kb24a-card:hover .kb24a-avatar {
+    transform: scale(1.06);
+}
+
+.kb24a-artist-name {
+    font-family: var(--title-font);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--title-color);
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.kb24a-card-country {
+    font-family: var(--title-font);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--theme-color);
+    background-color: rgba(0, 136, 203, 0.08);
+    padding: 3px 12px;
+    border-radius: 12px;
+}
+
+/* =======================================================================
+   Responsive Breakpoints
+  =========================================================================*/
+
+@media (max-width: 1199px) {
+    .kb24a-hero-title {
+        font-size: 3.2rem;
+    }
+    
+    .kb24a-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    
+    .kb24a-featured-img {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 991px) {
+    .kb24a-banner-img-wrap {
+        min-height: 300px;
+        height: 40vh;
+    }
+    
+    .kb24a-hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .kb24a-featured-card {
+        padding: 30px;
+    }
+    
+    .kb24a-featured-details {
+        padding-left: 0;
+        margin-top: 30px;
+    }
+    
+    .kb24a-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .kb24a-hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .kb24a-section-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .kb24a-hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .kb24a-hero-subtitle {
+        font-size: 1.25rem;
+    }
+    
+    .kb24a-breadcrumbs {
+        padding: 8px 20px;
+    }
+    
+    .kb24a-breadcrumbs li {
+        font-size: 0.85rem;
+    }
+    
+    .kb24a-grid {
+        grid-template-columns: 1fr;
+        max-width: 290px;
+        margin: 0 auto;
+    }
+}

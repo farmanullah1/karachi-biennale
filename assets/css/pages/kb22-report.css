@@ -1,0 +1,348 @@
+/*=======================================================================
+   KB22 Report Page-Specific Stylesheet
+   Scoped under body class .page-kb22-report to prevent conflicts
+  =========================================================================*/
+
+.page-kb22-report {
+    background-color: var(--white-color);
+}
+
+/* 1. Hero Area */
+.kb22e-hero-section {
+    padding: 100px 0 60px;
+    background-color: var(--smoke-color);
+    border-bottom: 1px solid var(--light-color);
+}
+
+.kb22e-hero-title {
+    font-family: var(--title-font);
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.kb22e-hero-subtitle {
+    font-family: var(--title-font);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--theme-color);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.kb22e-hero-intro {
+    font-family: var(--body-font);
+    font-size: 1.15rem;
+    line-height: 1.75;
+    color: var(--body-color);
+    max-width: 900px;
+    margin: 0 auto 35px;
+}
+
+/* Breadcrumbs Styling */
+.kb22e-breadcrumbs {
+    display: inline-block;
+    background-color: var(--white-color);
+    padding: 10px 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.kb22e-breadcrumbs ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.kb22e-breadcrumbs li {
+    font-family: var(--title-font);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--body-color);
+}
+
+.kb22e-breadcrumbs li a {
+    color: var(--body-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.kb22e-breadcrumbs li a:hover {
+    color: var(--theme-color);
+}
+
+/* Breadcrumbs separator */
+.kb22e-breadcrumbs li:not(:last-child)::after {
+    content: "/";
+    margin-left: 12px;
+    color: var(--light-color);
+}
+
+.kb22e-breadcrumbs li.active {
+    color: var(--theme-color);
+    font-weight: 600;
+}
+
+/* 2. Page Content Layout */
+.kb22e-content-wrap {
+    padding: 80px 0 100px;
+    background-color: var(--white-color);
+}
+
+.kb22e-report-card {
+    background-color: var(--white-color);
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+}
+
+/* Cover Box (Realistic Book Look) */
+.kb22e-cover-box {
+    background: linear-gradient(135deg, var(--smoke-color) 0%, rgba(0, 136, 203, 0.04) 100%);
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 16px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.02);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.kb22e-icon-wrap {
+    font-size: 5rem;
+    color: #dc3545; /* Red color for PDF */
+    margin-bottom: 25px;
+    filter: drop-shadow(0 8px 15px rgba(220, 53, 69, 0.2));
+    transition: transform 0.3s ease;
+}
+
+.kb22e-cover-box:hover .kb22e-icon-wrap {
+    transform: scale(1.05) translateY(-3px);
+}
+
+.kb22e-cover-title {
+    font-family: var(--title-font);
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: var(--title-color);
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.kb22e-cover-subtitle {
+    font-family: var(--title-font);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--theme-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.kb22e-file-size {
+    font-family: var(--body-font);
+    font-size: 0.85rem;
+    color: var(--body-color);
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
+
+/* Download / Action Buttons */
+.kb22e-actions {
+    width: 100%;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.kb22e-btn {
+    font-family: var(--title-font);
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 14px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    outline: none;
+}
+
+.kb22e-btn-primary {
+    background-color: var(--theme-color);
+    color: var(--white-color);
+    border: none;
+    box-shadow: 0 6px 15px rgba(0, 136, 203, 0.25);
+}
+
+.kb22e-btn-primary:hover {
+    background-color: var(--title-color);
+    color: var(--white-color);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.kb22e-btn-secondary {
+    background-color: var(--white-color);
+    color: var(--body-color);
+    border: 1px solid rgba(0,0,0,0.12);
+}
+
+.kb22e-btn-secondary:hover {
+    background-color: rgba(0, 136, 203, 0.06);
+    color: var(--theme-color);
+    border-color: var(--theme-color);
+    transform: translateY(-2px);
+}
+
+/* Right Details column */
+.kb22e-section-title {
+    font-family: var(--title-font);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--title-color);
+    margin-bottom: 25px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.kb22e-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background-color: var(--theme-color);
+}
+
+.kb22e-summary-text {
+    font-family: var(--body-font);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--body-color);
+    margin-bottom: 35px;
+}
+
+.kb22e-subtitle {
+    font-family: var(--title-font);
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--title-color);
+    margin-bottom: 20px;
+}
+
+/* Chapter Guide */
+.kb22e-chapter-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.kb22e-chapter-list li {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.kb22e-chapter-list li:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.kb22e-chapter-list li strong {
+    display: block;
+    font-family: var(--title-font);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--theme-color);
+    margin-bottom: 6px;
+}
+
+.kb22e-chapter-list li span {
+    font-family: var(--body-font);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--body-color);
+    display: block;
+}
+
+.mb-3 {
+    margin-bottom: 12px;
+}
+
+/* =======================================================================
+   Responsive Breakpoints
+  =========================================================================*/
+
+@media (max-width: 1199px) {
+    .kb22e-hero-title {
+        font-size: 3.2rem;
+    }
+    
+    .kb22e-report-card {
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    .kb22e-hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .kb22e-hero-intro {
+        font-size: 1.05rem;
+    }
+    
+    .kb22e-cover-box {
+        padding: 30px 20px;
+    }
+    
+    .kb22e-section-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .kb22e-hero-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .kb22e-hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .kb22e-hero-subtitle {
+        font-size: 1.25rem;
+    }
+    
+    .kb22e-breadcrumbs {
+        padding: 8px 20px;
+    }
+    
+    .kb22e-breadcrumbs li {
+        font-size: 0.85rem;
+    }
+    
+    .kb22e-report-card {
+        padding: 20px;
+    }
+}

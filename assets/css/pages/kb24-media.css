@@ -1,0 +1,346 @@
+/*=======================================================================
+   KB24 Media Coverage Page-Specific Stylesheet
+   Scoped under body class .page-kb24-media to prevent conflicts
+  =========================================================================*/
+
+.page-kb24-media {
+    background-color: var(--white-color);
+}
+
+/* 1. Hero Area */
+.kb24m-hero-section {
+    padding: 100px 0 60px;
+    background-color: var(--smoke-color);
+    border-bottom: 1px solid var(--light-color);
+}
+
+.kb24m-hero-title {
+    font-family: var(--title-font);
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.kb24m-hero-subtitle {
+    font-family: var(--title-font);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--theme-color);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.kb24m-hero-intro {
+    font-family: var(--body-font);
+    font-size: 1.15rem;
+    line-height: 1.75;
+    color: var(--body-color);
+    max-width: 900px;
+    margin: 0 auto 35px;
+}
+
+/* Breadcrumbs Styling */
+.kb24m-breadcrumbs {
+    display: inline-block;
+    background-color: var(--white-color);
+    padding: 10px 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.kb24m-breadcrumbs ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.kb24m-breadcrumbs li {
+    font-family: var(--title-font);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--body-color);
+}
+
+.kb24m-breadcrumbs li a {
+    color: var(--body-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.kb24m-breadcrumbs li a:hover {
+    color: var(--theme-color);
+}
+
+/* Breadcrumbs separator */
+.kb24m-breadcrumbs li:not(:last-child)::after {
+    content: "/";
+    margin-left: 12px;
+    color: var(--light-color);
+}
+
+.kb24m-breadcrumbs li.active {
+    color: var(--theme-color);
+    font-weight: 600;
+}
+
+/* 2. Quick Jump Bar */
+.kb24m-jump-bar-wrap {
+    background-color: var(--white-color);
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 90px;
+    z-index: 100;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+}
+
+.kb24m-jump-bar {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 20px;
+    background-color: var(--smoke-color);
+    padding: 10px 25px;
+    border-radius: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.kb24m-jump-title {
+    font-family: var(--title-font);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--title-color);
+    letter-spacing: 0.5px;
+}
+
+.kb24m-jump-link {
+    font-family: var(--title-font);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--body-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.kb24m-jump-link:hover {
+    color: var(--white-color);
+    background-color: var(--theme-color);
+}
+
+/* 3. Sections Configuration */
+.kb24m-sections-wrap {
+    padding: 60px 0 100px;
+    background-color: var(--white-color);
+}
+
+.kb24m-section {
+    padding: 40px 0;
+}
+
+.kb24m-divider {
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    margin: 50px 0;
+}
+
+.kb24m-section-header {
+    margin-bottom: 40px;
+    position: relative;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    padding-bottom: 15px;
+}
+
+.kb24m-section-header::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background-color: var(--theme-color);
+}
+
+.kb24m-section-title {
+    font-family: var(--title-font);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--title-color);
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.kb24m-section-title i {
+    color: var(--theme-color);
+}
+
+/* 4. Media Card Styles */
+.kb24m-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.kb24m-media-card {
+    background-color: var(--white-color);
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 16px;
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.015);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.kb24m-media-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 136, 203, 0.25);
+}
+
+.kb24m-source-badge {
+    font-family: var(--title-font);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--theme-color);
+    background-color: rgba(0, 136, 203, 0.08);
+    padding: 3px 12px;
+    border-radius: 12px;
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
+
+.kb24m-article-title {
+    font-family: var(--title-font);
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--title-color);
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.kb24m-article-excerpt {
+    font-family: var(--body-font);
+    font-size: 0.98rem;
+    line-height: 1.6;
+    color: var(--body-color);
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.kb24m-read-btn {
+    font-family: var(--title-font);
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--theme-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+    margin-top: auto;
+}
+
+.kb24m-read-btn i {
+    transition: transform 0.3s ease;
+}
+
+.kb24m-read-btn:hover {
+    color: var(--title-color);
+}
+
+.kb24m-read-btn:hover i {
+    transform: translate(2px, -2px);
+}
+
+/* =======================================================================
+   Responsive Breakpoints
+  =========================================================================*/
+
+@media (max-width: 1199px) {
+    .kb24m-hero-title {
+        font-size: 3.2rem;
+    }
+    
+    .kb24m-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .kb24m-hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .kb24m-hero-intro {
+        font-size: 1.05rem;
+    }
+    
+    .kb24m-jump-bar-wrap {
+        position: relative;
+        top: 0;
+        padding: 15px 0;
+    }
+    
+    .kb24m-media-card {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .kb24m-hero-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .kb24m-hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .kb24m-hero-subtitle {
+        font-size: 1.25rem;
+    }
+    
+    .kb24m-breadcrumbs {
+        padding: 8px 20px;
+    }
+    
+    .kb24m-breadcrumbs li {
+        font-size: 0.85rem;
+    }
+    
+    .kb24m-jump-bar {
+        padding: 8px 15px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .kb24m-jump-title {
+        margin-bottom: 2px;
+    }
+    
+    .kb24m-grid {
+        grid-template-columns: 1fr;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}
