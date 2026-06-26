@@ -9,7 +9,7 @@
 <a href="#kb19f-main-content" class="skip-link visually-hidden-focusable">Skip to content</a>
 
 <!-- 1. Hero Banner Area -->
-<section class="kb19f-hero-section">
+<section class="kb19f-hero-section wow custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.2s">
     <div class="kb19f-hero-banner" style="background-image: url('assets/img/bg/kb19-page-banner-2.jpg');">
         <div class="kb19f-hero-overlay"></div>
         <div class="container text-center">
@@ -30,13 +30,13 @@
 </section>
 
 <!-- 2. Main Content Area -->
-<main id="kb19f-main-content" class="kb19f-main-wrapper">
+<main id="kb19f-main-content" class="kb19f-main-wrapper wow custom-anim-up" data-wow-duration="1.5s" data-wow-delay="0.4s">
     <div class="container">
         
         <!-- Grid Split: Intro & Benefits -->
         <div class="row gy-5 align-items-center mb-5">
             <!-- Intro Left -->
-            <div class="col-lg-6">
+            <div class="col-lg-6 wow custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.6s">
                 <div class="kb19f-intro-content">
                     <span class="kb19f-tag">Patron Circle</span>
                     <h2 class="kb19f-section-heading">Join the Friends of Karachi Biennale</h2>
@@ -50,7 +50,7 @@
             </div>
 
             <!-- Benefits Card Right -->
-            <div class="col-lg-6">
+            <div class="col-lg-6 wow custom-anim-right" data-wow-duration="1.5s" data-wow-delay="0.8s">
                 <div class="kb19f-benefits-card">
                     <h3 class="kb19f-benefits-title"><i class="fas fa-gem me-2"></i>Exclusive Membership Benefits</h3>
                     <ul class="kb19f-benefits-list">
@@ -100,7 +100,7 @@
         </div>
 
         <!-- Join CTA Block -->
-        <section class="kb19f-cta-section text-center">
+        <section class="kb19f-cta-section text-center wow custom-anim-up" data-wow-duration="1.5s" data-wow-delay="1.0s">
             <div class="kb19f-cta-card">
                 <h3 class="kb19f-cta-title">Become a Friend of KB19 Today</h3>
                 <p class="kb19f-cta-desc">Support our public mission to bring contemporary visual art to the streets of Karachi. Registration queries and donations can be submitted online.</p>

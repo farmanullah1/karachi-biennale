@@ -1,0 +1,236 @@
+/* Scoped CSS for KB17 Curatorial Website Page */
+
+.page-kb17-curatorial-website .kb17cw-hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.page-kb17-curatorial-website .kb17cw-hero-banner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0 80px;
+    position: relative;
+    text-align: center;
+}
+
+.page-kb17-curatorial-website .kb17cw-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 10, 0.75);
+    z-index: 1;
+}
+
+.page-kb17-curatorial-website .kb17cw-hero-banner .container {
+    position: relative;
+    z-index: 2;
+}
+
+.page-kb17-curatorial-website .kb17cw-hero-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.page-kb17-curatorial-website .kb17cw-hero-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: #d1d1d1;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+/* Breadcrumbs Styling */
+.page-kb17-curatorial-website .kb17cw-breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 8px 24px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+.page-kb17-curatorial-website .kb17cw-breadcrumbs li {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    font-weight: 500;
+}
+
+.page-kb17-curatorial-website .kb17cw-breadcrumbs li a {
+    color: #ffb100;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.page-kb17-curatorial-website .kb17cw-breadcrumbs li a:hover {
+    color: #ffffff;
+}
+
+.page-kb17-curatorial-website .kb17cw-breadcrumbs li:not(:last-child)::after {
+    content: "/";
+    margin: 0 10px;
+    color: #a0a0a0;
+}
+
+.page-kb17-curatorial-website .kb17cw-breadcrumbs li.active {
+    color: #ffffff;
+}
+
+/* Main Content Wrapper */
+.page-kb17-curatorial-website .kb17cw-main-wrapper {
+    padding: 80px 0;
+    background-color: #fafafa;
+}
+
+.page-kb17-curatorial-website .kb17cw-section-heading {
+    font-family: 'Jost', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.page-kb17-curatorial-website .kb17cw-section-lead {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15rem;
+    color: #666666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Portal Cards styling */
+.page-kb17-curatorial-website .kb17cw-portal-card {
+    background: #ffffff;
+    border: 1px solid #eef2f3;
+    border-radius: 16px;
+    padding: 50px 40px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-kb17-curatorial-website .kb17cw-portal-card:hover {
+    transform: translateY(-8px);
+    border-color: #ffb100;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+}
+
+.page-kb17-curatorial-website .kb17cw-card-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.page-kb17-curatorial-website .bg-gradient-yellow {
+    background: linear-gradient(135deg, #ffb100, #ff9400);
+}
+
+.page-kb17-curatorial-website .bg-gradient-teal {
+    background: linear-gradient(135deg, #00b4db, #0083b0);
+}
+
+.page-kb17-curatorial-website .kb17cw-portal-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 20px;
+}
+
+.page-kb17-curatorial-website .kb17cw-portal-desc {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: #555555;
+    margin-bottom: 35px;
+    flex-grow: 1;
+}
+
+.page-kb17-curatorial-website .kb17cw-portal-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 32px;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.page-kb17-curatorial-website .btn-primary-gradient {
+    background: linear-gradient(135deg, #ffb100, #ff8c00);
+}
+
+.page-kb17-curatorial-website .btn-primary-gradient:hover {
+    background: linear-gradient(135deg, #ff8c00, #ff5000);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 140, 0, 0.3);
+}
+
+.page-kb17-curatorial-website .btn-secondary-gradient {
+    background: linear-gradient(135deg, #111111, #333333);
+}
+
+.page-kb17-curatorial-website .btn-secondary-gradient:hover {
+    background: linear-gradient(135deg, #333333, #555555);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Media Queries */
+@media (max-width: 991px) {
+    .page-kb17-curatorial-website .kb17cw-hero-title {
+        font-size: 2.8rem;
+    }
+    .page-kb17-curatorial-website .kb17cw-main-wrapper {
+        padding: 60px 0;
+    }
+    .page-kb17-curatorial-website .kb17cw-portal-card {
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-kb17-curatorial-website .kb17cw-hero-banner {
+        padding: 80px 0 60px;
+    }
+    .page-kb17-curatorial-website .kb17cw-hero-title {
+        font-size: 2.2rem;
+    }
+    .page-kb17-curatorial-website .kb17cw-section-heading {
+        font-size: 1.8rem;
+    }
+}

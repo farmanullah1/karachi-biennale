@@ -1,0 +1,310 @@
+/* Scoped CSS for KB17 Catalogue Page */
+
+.page-kb17-catalogue .kb17cat-hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.page-kb17-catalogue .kb17cat-hero-banner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0 80px;
+    position: relative;
+    text-align: center;
+}
+
+.page-kb17-catalogue .kb17cat-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 10, 0.75);
+    z-index: 1;
+}
+
+.page-kb17-catalogue .kb17cat-hero-banner .container {
+    position: relative;
+    z-index: 2;
+}
+
+.page-kb17-catalogue .kb17cat-hero-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.page-kb17-catalogue .kb17cat-hero-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: #d1d1d1;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+/* Breadcrumbs Styling */
+.page-kb17-catalogue .kb17cat-breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 8px 24px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+.page-kb17-catalogue .kb17cat-breadcrumbs li {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    font-weight: 500;
+}
+
+.page-kb17-catalogue .kb17cat-breadcrumbs li a {
+    color: #ffb100;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.page-kb17-catalogue .kb17cat-breadcrumbs li a:hover {
+    color: #ffffff;
+}
+
+.page-kb17-catalogue .kb17cat-breadcrumbs li:not(:last-child)::after {
+    content: "/";
+    margin: 0 10px;
+    color: #a0a0a0;
+}
+
+.page-kb17-catalogue .kb17cat-breadcrumbs li.active {
+    color: #ffffff;
+}
+
+/* Main Content Wrapper */
+.page-kb17-catalogue .kb17cat-main-wrapper {
+    padding: 80px 0;
+    background-color: #fafafa;
+}
+
+/* Book Cover Mockup */
+.page-kb17-catalogue .kb17cat-cover-wrap {
+    perspective: 1000px;
+    display: inline-block;
+}
+
+.page-kb17-catalogue .kb17cat-cover-mockup {
+    width: 280px;
+    height: 380px;
+    background: #1a1a1a;
+    border-radius: 4px 15px 15px 4px;
+    box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.25),
+                inset 5px 0 10px rgba(255, 255, 255, 0.1);
+    position: relative;
+    transform: rotateY(-15deg);
+    transition: transform 0.5s ease;
+    border: 1px solid #2a2a2a;
+}
+
+.page-kb17-catalogue .kb17cat-cover-mockup:hover {
+    transform: rotateY(0deg) scale(1.02);
+}
+
+/* Spine shadow line */
+.page-kb17-catalogue .kb17cat-cover-mockup::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 2px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 0 3px rgba(255, 255, 255, 0.08);
+}
+
+.page-kb17-catalogue .kb17cat-cover-inner {
+    padding: 40px 30px 40px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    text-align: left;
+    color: #ffffff;
+}
+
+.page-kb17-catalogue .kb17cat-cover-edition {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #ffb100;
+}
+
+.page-kb17-catalogue .kb17cat-cover-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 20px 0 10px;
+    letter-spacing: 2px;
+}
+
+.page-kb17-catalogue .kb17cat-cover-theme {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.15rem;
+    color: #cccccc;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    line-height: 1.4;
+    margin-bottom: auto;
+    font-weight: 600;
+}
+
+.page-kb17-catalogue .kb17cat-cover-year {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #888888;
+}
+
+/* Details Card */
+.page-kb17-catalogue .kb17cat-details-card {
+    background: #ffffff;
+    border: 1px solid #f1f1f1;
+    border-radius: 12px;
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.page-kb17-catalogue .kb17cat-tag {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #ffb100;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.page-kb17-catalogue .kb17cat-details-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.page-kb17-catalogue .kb17cat-details-desc {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #555555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Actions Wrapper */
+.page-kb17-catalogue .kb17cat-redirect-actions {
+    display: flex;
+    gap: 20px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+.page-kb17-catalogue .kb17cat-btn-primary {
+    font-family: 'Jost', sans-serif;
+    background: #ffb100;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 177, 0, 0.3);
+    border: 1px solid #ffb100;
+}
+
+.page-kb17-catalogue .kb17cat-btn-primary:hover {
+    background: #ffffff;
+    color: #111111;
+    border-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.page-kb17-catalogue .kb17cat-btn-secondary {
+    font-family: 'Jost', sans-serif;
+    background: transparent;
+    color: #111111;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    border: 1px solid #111111;
+}
+
+.page-kb17-catalogue .kb17cat-btn-secondary:hover {
+    background: #111111;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Responsive Media Queries */
+@media (max-width: 991px) {
+    .page-kb17-catalogue .kb17cat-hero-title {
+        font-size: 2.8rem;
+    }
+    .page-kb17-catalogue .kb17cat-main-wrapper {
+        padding: 60px 0;
+    }
+    .page-kb17-catalogue .kb17cat-details-card {
+        padding: 30px 20px;
+    }
+    .page-kb17-catalogue .kb17cat-details-title {
+        font-size: 1.8rem;
+    }
+    .page-kb17-catalogue .kb17cat-cover-mockup {
+        transform: none;
+        margin-bottom: 30px;
+    }
+    .page-kb17-catalogue .kb17cat-cover-mockup:hover {
+        transform: scale(1.02);
+    }
+}
+
+@media (max-width: 768px) {
+    .page-kb17-catalogue .kb17cat-hero-banner {
+        padding: 80px 0 60px;
+    }
+    .page-kb17-catalogue .kb17cat-hero-title {
+        font-size: 2.2rem;
+    }
+    .page-kb17-catalogue .kb17cat-redirect-actions {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .page-kb17-catalogue .kb17cat-btn-primary,
+    .page-kb17-catalogue .kb17cat-btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+}

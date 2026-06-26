@@ -1,0 +1,238 @@
+/* Scoped CSS for KB17 Message from CEO Page */
+
+.page-kb17-message-from-ceo .kb17m-hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.page-kb17-message-from-ceo .kb17m-hero-banner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0 80px;
+    position: relative;
+    text-align: center;
+}
+
+.page-kb17-message-from-ceo .kb17m-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 10, 0.75);
+    z-index: 1;
+}
+
+.page-kb17-message-from-ceo .kb17m-hero-banner .container {
+    position: relative;
+    z-index: 2;
+}
+
+.page-kb17-message-from-ceo .kb17m-hero-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.page-kb17-message-from-ceo .kb17m-hero-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: #d1d1d1;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+/* Breadcrumbs Styling */
+.page-kb17-message-from-ceo .kb17m-breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 8px 24px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+.page-kb17-message-from-ceo .kb17m-breadcrumbs li {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    font-weight: 500;
+}
+
+.page-kb17-message-from-ceo .kb17m-breadcrumbs li a {
+    color: #ffb100;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.page-kb17-message-from-ceo .kb17m-breadcrumbs li a:hover {
+    color: #ffffff;
+}
+
+.page-kb17-message-from-ceo .kb17m-breadcrumbs li:not(:last-child)::after {
+    content: "/";
+    margin: 0 10px;
+    color: #a0a0a0;
+}
+
+.page-kb17-message-from-ceo .kb17m-breadcrumbs li.active {
+    color: #ffffff;
+}
+
+/* Main Content Wrapper */
+.page-kb17-message-from-ceo .kb17m-main-wrapper {
+    padding: 80px 0;
+    background-color: #fafafa;
+}
+
+/* Content Card */
+.page-kb17-message-from-ceo .kb17m-content-card {
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f1f1f1;
+}
+
+/* Avatar Section */
+.page-kb17-message-from-ceo .kb17m-avatar-wrap {
+    display: inline-block;
+    background: #ffffff;
+    border: 1px solid #eef2f3;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+    max-width: 100%;
+}
+
+.page-kb17-message-from-ceo .kb17m-avatar {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.page-kb17-message-from-ceo .kb17m-avatar-details {
+    padding: 10px 0 5px;
+}
+
+.page-kb17-message-from-ceo .kb17m-avatar-name {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 5px;
+}
+
+.page-kb17-message-from-ceo .kb17m-avatar-role {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    color: #ffb100;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* Letter Section */
+.page-kb17-message-from-ceo .kb17m-letter-body {
+    padding-left: 20px;
+}
+
+.page-kb17-message-from-ceo .kb17m-letter-tag {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #ffb100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.page-kb17-message-from-ceo .kb17m-letter-heading {
+    font-family: 'Jost', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.page-kb17-message-from-ceo .kb17m-letter-text p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: #555555;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.page-kb17-message-from-ceo .kb17m-letter-text p:last-child {
+    margin-bottom: 0;
+}
+
+.page-kb17-message-from-ceo .kb17m-letter-text strong {
+    color: #111111;
+}
+
+/* Signature wrap */
+.page-kb17-message-from-ceo .kb17m-signature-wrap {
+    border-top: 1px solid #f1f1f1;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-kb17-message-from-ceo .kb17m-signature-name {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 5px;
+}
+
+.page-kb17-message-from-ceo .kb17m-signature-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
+    color: #777777;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 991px) {
+    .page-kb17-message-from-ceo .kb17m-hero-title {
+        font-size: 2.8rem;
+    }
+    .page-kb17-message-from-ceo .kb17m-content-card {
+        padding: 35px;
+    }
+    .page-kb17-message-from-ceo .kb17m-letter-body {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-kb17-message-from-ceo .kb17m-hero-banner {
+        padding: 80px 0 60px;
+    }
+    .page-kb17-message-from-ceo .kb17m-hero-title {
+        font-size: 2.2rem;
+    }
+    .page-kb17-message-from-ceo .kb17m-content-card {
+        padding: 25px;
+    }
+    .page-kb17-message-from-ceo .kb17m-letter-heading {
+        font-size: 1.8rem;
+    }
+}

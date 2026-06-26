@@ -220,6 +220,42 @@
         <!-- Page-specific CSS for KB19 Catalogue -->
         <link rel="stylesheet" href="assets/css/pages/kb19-catalogue.css">
     <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb17-about'): ?>
+        <!-- Page-specific CSS for KB17 About -->
+        <link rel="stylesheet" href="assets/css/pages/kb17-about.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb17-message-from-ceo'): ?>
+        <!-- Page-specific CSS for KB17 Message from CEO -->
+        <link rel="stylesheet" href="assets/css/pages/kb17-message-from-ceo.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb17-curator'): ?>
+        <!-- Page-specific CSS for KB17 Curator -->
+        <link rel="stylesheet" href="assets/css/pages/kb17-curator.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb17-projects'): ?>
+        <!-- Page-specific CSS for KB17 Projects -->
+        <link rel="stylesheet" href="assets/css/pages/kb17-projects.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb17-teams'): ?>
+        <!-- Page-specific CSS for KB17 Teams -->
+        <link rel="stylesheet" href="assets/css/pages/kb17-teams.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb17-partners'): ?>
+        <!-- Page-specific CSS for KB17 Partners -->
+        <link rel="stylesheet" href="assets/css/pages/kb17-partners.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb17-curatorial-website'): ?>
+        <!-- Page-specific CSS for KB17 Curatorial Website -->
+        <link rel="stylesheet" href="assets/css/pages/kb17-curatorial-website.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb17-catalogue'): ?>
+        <!-- Page-specific CSS for KB17 Catalogue -->
+        <link rel="stylesheet" href="assets/css/pages/kb17-catalogue.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-contact-us'): ?>
+        <!-- Page-specific CSS for Contact Us -->
+        <link rel="stylesheet" href="assets/css/pages/contact-us.css">
+    <?php endif; ?>
 
 
 
@@ -397,24 +433,24 @@
                             <li class="menu-item-has-children">
                                 <a href="#">KB17</a>
                                 <ul class="sub-menu">
-                                    <li><a href="https://karachibiennale.org.pk/kb17-about-biennale/">KB17 – About</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb17-message-from-the-ceo/">KB17 – Message from the CEO</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb17-curator/">KB17 – Curator</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb17-projects/">KB17 – Projects</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb17teams/">KB17 – Teams</a></li>
-                                    <li><a href="https://karachibiennale.org.pk/kb17-sponsors/">KB17 – Partners</a></li>
+                                    <li><a href="kb17-about.php">KB17 – About</a></li>
+                                    <li><a href="kb17-message-from-ceo.php">KB17 – Message from the CEO</a></li>
+                                    <li><a href="kb17-curator.php">KB17 – Curator</a></li>
+                                    <li><a href="kb17-projects.php">KB17 – Projects</a></li>
+                                    <li><a href="kb17-teams.php">KB17 – Teams</a></li>
+                                    <li><a href="kb17-partners.php">KB17 – Partners</a></li>
                                     <li class="menu-item-has-children">
-                                        <a href="http://www.kbcuratorial.com/">KB17 – Curatorial (Website)</a>
+                                        <a href="kb17-curatorial-website.php">KB17 – Curatorial (Website)</a>
                                         <ul class="sub-menu">
-                                            <li><a href="#">Karachi Biennale 2022</a></li>
+                                            <li><a href="kb22-curator.php">Karachi Biennale 2022</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="https://karachibiennale.org.pk/wp-content/uploads/2020/10/KB-catalogue-proofread-edit.pdf">KB17 – Karachi Biennale Catalogue</a></li>
+                                    <li><a href="kb17-catalogue.php">KB17 – Karachi Biennale Catalogue</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="https://karachibiennale.org.pk/contact/">Contact Us</a></li>
+                    <li><a href="contact-us.php">Contact Us</a></li>
                     <li><a href="https://karachiartdirectory.com/">Karachi Art Directory</a></li>
                 </ul>
             </div>
@@ -549,24 +585,24 @@
                                             <li class="menu-item-has-children">
                                                 <a href="#">KB17</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="https://karachibiennale.org.pk/kb17-about-biennale/">KB17 – About</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb17-message-from-the-ceo/">KB17 – Message from the CEO</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb17-curator/">KB17 – Curator</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb17-projects/">KB17 – Projects</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb17teams/">KB17 – Teams</a></li>
-                                                    <li><a href="https://karachibiennale.org.pk/kb17-sponsors/">KB17 – Partners</a></li>
+                                                    <li><a href="kb17-about.php">KB17 – About</a></li>
+                                                    <li><a href="kb17-message-from-ceo.php">KB17 – Message from the CEO</a></li>
+                                                    <li><a href="kb17-curator.php">KB17 – Curator</a></li>
+                                                    <li><a href="kb17-projects.php">KB17 – Projects</a></li>
+                                                    <li><a href="kb17-teams.php">KB17 – Teams</a></li>
+                                                    <li><a href="kb17-partners.php">KB17 – Partners</a></li>
                                                     <li class="menu-item-has-children">
-                                                        <a href="http://www.kbcuratorial.com/">KB17 – Curatorial (Website)</a>
+                                                        <a href="kb17-curatorial-website.php">KB17 – Curatorial (Website)</a>
                                                         <ul class="sub-menu">
-                                                            <li><a href="#">Karachi Biennale 2022</a></li>
+                                                            <li><a href="kb22-curator.php">Karachi Biennale 2022</a></li>
                                                         </ul>
                                                     </li>
-                                                    <li><a href="https://karachibiennale.org.pk/wp-content/uploads/2020/10/KB-catalogue-proofread-edit.pdf">KB17 – Karachi Biennale Catalogue</a></li>
+                                                    <li><a href="kb17-catalogue.php">KB17 – Karachi Biennale Catalogue</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><a href="https://karachibiennale.org.pk/contact/">Contact Us</a></li>
+                                    <li><a href="contact-us.php">Contact Us</a></li>
                                     <li><a href="https://karachiartdirectory.com/">Karachi Art Directory</a></li>
                                 </ul>
                             </nav>

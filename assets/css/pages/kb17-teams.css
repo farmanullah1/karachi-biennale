@@ -1,0 +1,278 @@
+/* Scoped CSS for KB17 Teams Page */
+
+.page-kb17-teams .kb17t-hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.page-kb17-teams .kb17t-hero-banner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0 80px;
+    position: relative;
+    text-align: center;
+}
+
+.page-kb17-teams .kb17t-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 10, 0.75);
+    z-index: 1;
+}
+
+.page-kb17-teams .kb17t-hero-banner .container {
+    position: relative;
+    z-index: 2;
+}
+
+.page-kb17-teams .kb17t-hero-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.page-kb17-teams .kb17t-hero-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: #d1d1d1;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+/* Breadcrumbs Styling */
+.page-kb17-teams .kb17t-breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 8px 24px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+.page-kb17-teams .kb17t-breadcrumbs li {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    font-weight: 500;
+}
+
+.page-kb17-teams .kb17t-breadcrumbs li a {
+    color: #ffb100;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.page-kb17-teams .kb17t-breadcrumbs li a:hover {
+    color: #ffffff;
+}
+
+.page-kb17-teams .kb17t-breadcrumbs li:not(:last-child)::after {
+    content: "/";
+    margin: 0 10px;
+    color: #a0a0a0;
+}
+
+.page-kb17-teams .kb17t-breadcrumbs li.active {
+    color: #ffffff;
+}
+
+/* Main Wrapper */
+.page-kb17-teams .kb17t-main-wrapper {
+    padding: 80px 0;
+    background-color: #fafafa;
+}
+
+.page-kb17-teams .kb17t-section-heading {
+    font-family: 'Jost', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.page-kb17-teams .kb17t-section-lead {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15rem;
+    color: #666666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Trustees Cards styling */
+.page-kb17-teams .kb17t-trustee-card {
+    background: #ffffff;
+    border: 1px solid #eef2f3;
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    height: 100%;
+}
+
+.page-kb17-teams .kb17t-trustee-card:hover {
+    transform: translateY(-8px);
+    border-color: #ffb100;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.06);
+}
+
+.page-kb17-teams .kb17t-avatar-wrap {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    border: 3px solid #f8f9fa;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.page-kb17-teams .kb17t-trustee-card:hover .kb17t-avatar-wrap {
+    border-color: #ffb100;
+    transform: scale(1.05);
+}
+
+.page-kb17-teams .kb17t-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page-kb17-teams .kb17t-trustee-name {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 5px;
+}
+
+.page-kb17-teams .kb17t-trustee-role {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    color: #ffb100;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    display: block;
+}
+
+/* Committees Cards styling */
+.page-kb17-teams .kb17t-team-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    border: 1px solid #f1f1f1;
+    overflow: hidden;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.page-kb17-teams .kb17t-team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+    border-color: #ffb100;
+}
+
+.page-kb17-teams .kb17t-card-header {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+}
+
+.page-kb17-teams .bg-gradient-yellow {
+    background: linear-gradient(135deg, #ffb100, #ff9400);
+}
+
+.page-kb17-teams .bg-gradient-teal {
+    background: linear-gradient(135deg, #00b4db, #0083b0);
+}
+
+.page-kb17-teams .bg-gradient-blue {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.page-kb17-teams .bg-gradient-purple {
+    background: linear-gradient(135deg, #7F00FF, #E100FF);
+}
+
+.page-kb17-teams .bg-gradient-orange {
+    background: linear-gradient(135deg, #f12711, #f5af19);
+}
+
+.page-kb17-teams .kb17t-card-body {
+    padding: 25px;
+}
+
+/* Member List */
+.page-kb17-teams .kb17t-member-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page-kb17-teams .kb17t-member-list li {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    border-bottom: 1px solid #f9f9f9;
+}
+
+.page-kb17-teams .kb17t-member-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.page-kb17-teams .kb17t-member-list li strong {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.05rem;
+    color: #222222;
+}
+
+.page-kb17-teams .kb17t-member-role {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    color: #888888;
+    margin-top: 2px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 991px) {
+    .page-kb17-teams .kb17t-hero-title {
+        font-size: 2.8rem;
+    }
+    .page-kb17-teams .kb17t-main-wrapper {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-kb17-teams .kb17t-hero-banner {
+        padding: 80px 0 60px;
+    }
+    .page-kb17-teams .kb17t-hero-title {
+        font-size: 2.2rem;
+    }
+    .page-kb17-teams .kb17t-section-heading {
+        font-size: 1.8rem;
+    }
+}

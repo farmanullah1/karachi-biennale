@@ -1,0 +1,277 @@
+/* Scoped CSS for KB17 Partners Page */
+
+.page-kb17-partners .kb17pt-hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.page-kb17-partners .kb17pt-hero-banner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0 80px;
+    position: relative;
+    text-align: center;
+}
+
+.page-kb17-partners .kb17pt-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 10, 0.75);
+    z-index: 1;
+}
+
+.page-kb17-partners .kb17pt-hero-banner .container {
+    position: relative;
+    z-index: 2;
+}
+
+.page-kb17-partners .kb17pt-hero-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.page-kb17-partners .kb17pt-hero-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: #d1d1d1;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+/* Breadcrumbs Styling */
+.page-kb17-partners .kb17pt-breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 8px 24px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+.page-kb17-partners .kb17pt-breadcrumbs li {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    font-weight: 500;
+}
+
+.page-kb17-partners .kb17pt-breadcrumbs li a {
+    color: #ffb100;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.page-kb17-partners .kb17pt-breadcrumbs li a:hover {
+    color: #ffffff;
+}
+
+.page-kb17-partners .kb17pt-breadcrumbs li:not(:last-child)::after {
+    content: "/";
+    margin: 0 10px;
+    color: #a0a0a0;
+}
+
+.page-kb17-partners .kb17pt-breadcrumbs li.active {
+    color: #ffffff;
+}
+
+/* Main Content Wrapper */
+.page-kb17-partners .kb17pt-main-wrapper {
+    padding: 80px 0;
+    background-color: #fafafa;
+}
+
+.page-kb17-partners .kb17pt-section-heading {
+    font-family: 'Jost', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.page-kb17-partners .kb17pt-section-lead {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15rem;
+    color: #666666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Tier section headings */
+.page-kb17-partners .kb17pt-tier-section {
+    position: relative;
+    border-top: 1px solid #eef2f3;
+    padding-top: 50px;
+}
+
+.page-kb17-partners .kb17pt-tier-section:first-of-type {
+    border-top: none;
+    padding-top: 20px;
+}
+
+.page-kb17-partners .kb17pt-tier-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+.page-kb17-partners .kb17pt-tier-title::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #ffb100;
+    margin: 8px auto 0;
+}
+
+/* Partner Card */
+.page-kb17-partners .kb17pt-partner-card {
+    background: #ffffff;
+    border: 1px solid #eef2f3;
+    border-radius: 12px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.01);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-kb17-partners .kb17pt-partner-card:hover {
+    transform: translateY(-5px);
+    border-color: #ffb100;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.page-kb17-partners .kb17pt-logo-wrap {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+.page-kb17-partners .kb17pt-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.page-kb17-partners .kb17pt-partner-card:hover .kb17pt-logo {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Placeholder for missing logos */
+.page-kb17-partners .kb17pt-logo-placeholder {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+}
+
+/* Gradients for placeholders */
+.page-kb17-partners .bg-gradient-yellow {
+    background: linear-gradient(135deg, #ffb100, #ff9400);
+}
+
+.page-kb17-partners .bg-gradient-teal {
+    background: linear-gradient(135deg, #00b4db, #0083b0);
+}
+
+.page-kb17-partners .bg-gradient-blue {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.page-kb17-partners .bg-gradient-purple {
+    background: linear-gradient(135deg, #7F00FF, #E100FF);
+}
+
+.page-kb17-partners .bg-gradient-orange {
+    background: linear-gradient(135deg, #f12711, #f5af19);
+}
+
+.page-kb17-partners .kb17pt-partner-name {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.page-kb17-partners .kb17pt-partner-detail {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.75rem;
+    color: #888888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 991px) {
+    .page-kb17-partners .kb17pt-hero-title {
+        font-size: 2.8rem;
+    }
+    .page-kb17-partners .kb17pt-main-wrapper {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-kb17-partners .kb17pt-hero-banner {
+        padding: 80px 0 60px;
+    }
+    .page-kb17-partners .kb17pt-hero-title {
+        font-size: 2.2rem;
+    }
+    .page-kb17-partners .kb17pt-section-heading {
+        font-size: 1.8rem;
+    }
+    .page-kb17-partners .kb17pt-logo-wrap {
+        height: 75px;
+    }
+}
