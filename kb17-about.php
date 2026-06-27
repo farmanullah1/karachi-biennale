@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
   $pageTitle = 'KB17 Who We Are - First Karachi Biennale';
   $metaDesc = 'Learn about the First Karachi Biennale KB17 and the theme WITNESS, showcasing contemporary art across heritage clusters in Karachi.';
   $bodyClass = 'page-kb17-about'; 
@@ -10,7 +10,7 @@
 
 <!-- 1. Hero Banner Area -->
 <section class="kb17a-hero-section">
-    <div class="kb17a-hero-banner" style="background-image: url('assets/img/KB17/kb19-page-banner-2.jpg');">
+    <div class="kb17a-hero-banner">
         <div class="kb17a-hero-overlay"></div>
         <div class="container text-center">
             <h1 class="kb17a-hero-title">KB17 – Who We Are</h1>

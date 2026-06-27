@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
   $pageTitle = 'KB17 Partners & Sponsors - First Karachi Biennale';
   $metaDesc = 'Explore the corporate sponsors, institutional partners, and media supporters of the First Karachi Biennale (KB17), whose contributions enabled our inaugural exhibition.';
   $bodyClass = 'page-kb17-partners'; 
@@ -10,7 +10,7 @@
 
 <!-- 1. Hero Banner Area -->
 <section class="kb17pt-hero-section">
-    <div class="kb17pt-hero-banner" style="background-image: url('assets/img/KB17/kb19-page-banner-2.jpg');">
+    <div class="kb17pt-hero-banner">
         <div class="kb17pt-hero-overlay"></div>
         <div class="container text-center">
             <h1 class="kb17pt-hero-title">KB17 Sponsors & Partners</h1>

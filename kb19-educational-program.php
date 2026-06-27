@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
   $pageTitle = 'KB19 Educational Program - Second Karachi Biennale';
   $metaDesc = 'Learn about the KB19 Educational Program supported by TPL, engaging school children and educators in ecology and contemporary art.';
   $bodyClass = 'page-kb19-educational-program'; 
@@ -10,7 +10,7 @@
 
 <!-- 1. Hero Banner Area -->
 <section class="kb19e-hero-section">
-    <div class="kb19e-hero-banner" style="background-image: url('assets/img/bg/kb19-page-banner-2.jpg');">
+    <div class="kb19e-hero-banner">
         <div class="kb19e-hero-overlay"></div>
         <div class="container text-center">
             <h1 class="kb19e-hero-title">Educational Program</h1>

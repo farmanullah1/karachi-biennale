@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
   $pageTitle = 'Friends of KB19 - Second Karachi Biennale';
   $metaDesc = 'Join the Friends of KB19 circle. Discover membership benefits, exclusive tours, exhibition previews, and support the Karachi Biennale.';
   $bodyClass = 'page-friends-of-kb19'; 
@@ -10,7 +10,7 @@
 
 <!-- 1. Hero Banner Area -->
 <section class="kb19f-hero-section wow custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.2s">
-    <div class="kb19f-hero-banner" style="background-image: url('assets/img/bg/kb19-page-banner-2.jpg');">
+    <div class="kb19f-hero-banner">
         <div class="kb19f-hero-overlay"></div>
         <div class="container text-center">
             <h1 class="kb19f-hero-title">Friends of KB19</h1>

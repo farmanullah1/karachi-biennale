@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
   $pageTitle = 'Contact Us - Karachi Biennale Trust';
   $metaDesc = 'Get in touch with the Karachi Biennale Trust. Reach out for general enquiries, international participation, partnerships, or program details.';
   $bodyClass = 'page-contact-us'; 
@@ -10,7 +10,7 @@
 
 <!-- 1. Hero Banner Area -->
 <section class="contact-us-hero-section">
-    <div class="contact-us-hero-banner" style="background-image: url('assets/img/bg/breadcrumb-bg.png');">
+    <div class="contact-us-hero-banner">
         <div class="contact-us-hero-overlay"></div>
         <div class="container text-center">
             <h1 class="contact-us-hero-title">Contact Us</h1>

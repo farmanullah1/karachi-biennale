@@ -154,7 +154,202 @@
     <!-- WOW JS -->
     <script src="assets/js/waypoints.js"></script>
     <script src="assets/js/wow.js"></script>
-    
+
+    <!-- ================================================================
+         KBT Global Auto-Animation Script
+         Runs BEFORE main.js initialises WOW.js.
+         Injects wow + directional animation classes onto structural
+         elements on every page. Skips elements already marked with
+         data-wow-duration (manually animated) and skips the home page
+         (index.php / root) which is annotated by hand.
+    ================================================================ -->
+    <script>
+    (function () {
+        'use strict';
+
+        /* ---- helpers ---- */
+        var path = window.location.pathname;
+        var isHome = (path === '/' || path.endsWith('index.php') || path.endsWith('/'));
+
+        /* Add wow class + data attributes to a single element.
+           Skips if already annotated or if it is inside the hero slider. */
+        function annotate(el, animClass, duration, delay) {
+            if (!el) return;
+            if (el.hasAttribute('data-wow-duration')) return;   // already done
+            if (el.closest('.hero-wrapper, .hero-slider, .hero-slider1')) return; // never touch sliders
+            el.classList.add('wow', animClass);
+            el.setAttribute('data-wow-duration', duration || '1.5s');
+            el.setAttribute('data-wow-delay',    delay    || '0.1s');
+        }
+
+        /* Format a delay value neatly */
+        function delay(base, step, i) {
+            return (base + step * (i % 6)).toFixed(2) + 's';
+        }
+
+        /* ---- home page: hero slider col-lg-8 already inside slider,
+               but outer content sections still benefit from annotation ---- */
+
+        /* ====================================================
+           1. HERO SECTIONS  →  slide in from top
+        ==================================================== */
+        document.querySelectorAll(
+            'section[class*="hero"], section[class*="-hero"]'
+        ).forEach(function (el, i) {
+            annotate(el, 'custom-anim-top', '1.5s', delay(0.1, 0.05, i));
+        });
+
+        /* ====================================================
+           2. HERO TITLES h1  →  slide in from left
+        ==================================================== */
+        document.querySelectorAll(
+            'h1[class*="hero-title"], h1[class*="page-title"], h1[class*="-title"]'
+        ).forEach(function (el, i) {
+            annotate(el, 'custom-anim-left', '1.5s', delay(0.2, 0.05, i));
+        });
+
+        /* ====================================================
+           3. HERO SUBTITLE / INTRO paragraphs  →  from right
+        ==================================================== */
+        document.querySelectorAll(
+            'p[class*="hero-subtitle"], p[class*="hero-intro"], p[class*="-intro"]'
+        ).forEach(function (el, i) {
+            annotate(el, 'custom-anim-right', '1.5s', delay(0.25, 0.05, i));
+        });
+
+        /* ====================================================
+           4. NON-HERO CONTENT SECTIONS  →  fade up from top
+        ==================================================== */
+        document.querySelectorAll(
+            'section:not([class*="hero"]):not([class*="-hero"])'
+        ).forEach(function (el, i) {
+            annotate(el, 'custom-anim-top', '1.5s', delay(0.15, 0.08, i));
+        });
+
+        /* ====================================================
+           5. MAIN CONTENT WRAPPER  →  fade up
+        ==================================================== */
+        document.querySelectorAll('main').forEach(function (el, i) {
+            annotate(el, 'custom-anim-top', '1.5s', delay(0.3, 0.1, i));
+        });
+
+        /* ====================================================
+           6. WIDE COLUMNS  col-lg-6/7/8/9/10/11  →  from left
+        ==================================================== */
+        document.querySelectorAll(
+            '.col-lg-6:not([data-wow-duration]), ' +
+            '.col-lg-7:not([data-wow-duration]), ' +
+            '.col-lg-8:not([data-wow-duration]), ' +
+            '.col-lg-9:not([data-wow-duration]), ' +
+            '.col-lg-10:not([data-wow-duration]), ' +
+            '.col-lg-11:not([data-wow-duration])'
+        ).forEach(function (el, i) {
+            /* Skip columns inside hero sliders */
+            if (el.closest('.hero-wrapper, .hero-slider1, [class*="hero-section"]')) return;
+            annotate(el, 'custom-anim-left', '1.5s', delay(0.2, 0.1, i));
+        });
+
+        /* ====================================================
+           7. NARROW / SIDEBAR COLUMNS  col-lg-3/4/5  →  from right
+        ==================================================== */
+        document.querySelectorAll(
+            '.col-lg-3:not([data-wow-duration]), ' +
+            '.col-lg-4:not([data-wow-duration]), ' +
+            '.col-lg-5:not([data-wow-duration])'
+        ).forEach(function (el, i) {
+            if (el.closest('.hero-wrapper, .hero-slider1, [class*="hero-section"]')) return;
+            annotate(el, 'custom-anim-right', '1.5s', delay(0.3, 0.12, i));
+        });
+
+        /* ====================================================
+           8. CARD ELEMENTS  article, div[class*="-card"]  →  from top
+        ==================================================== */
+        document.querySelectorAll(
+            'article[class*="card"], ' +
+            'div[class*="-card"]:not([data-wow-duration])'
+        ).forEach(function (el, i) {
+            if (el.closest('[data-wow-duration]')) return; // parent already animated
+            annotate(el, 'custom-anim-top', '1.5s', delay(0.1, 0.15, i));
+        });
+
+        /* ====================================================
+           9. BLOCKQUOTES / PULL-QUOTES  →  from top
+        ==================================================== */
+        document.querySelectorAll(
+            'blockquote:not([data-wow-duration])'
+        ).forEach(function (el, i) {
+            annotate(el, 'custom-anim-top', '1.5s', delay(0.25, 0.1, i));
+        });
+
+        /* ====================================================
+           10. FACTS CARD / INFO CARD / SIDEBAR  →  from right
+        ==================================================== */
+        document.querySelectorAll(
+            'div[class*="facts-card"]:not([data-wow-duration]), ' +
+            'aside[class*="sidebar"]:not([data-wow-duration]), ' +
+            'div[class*="-sidebar"]:not([data-wow-duration])'
+        ).forEach(function (el, i) {
+            annotate(el, 'custom-anim-right', '1.5s', delay(0.35, 0.1, i));
+        });
+
+        /* ====================================================
+           11. SECTION HEADINGS h2  →  from left
+        ==================================================== */
+        document.querySelectorAll(
+            'h2[class*="sec-title"]:not([data-wow-duration]), ' +
+            'h2[class*="-heading"]:not([data-wow-duration]), ' +
+            'h2[class*="-title"]:not([data-wow-duration])'
+        ).forEach(function (el, i) {
+            if (el.closest('[data-wow-duration]')) return;
+            annotate(el, 'custom-anim-left', '1.5s', delay(0.1, 0.05, i));
+        });
+
+        /* ====================================================
+           12. GRID / LIST WRAPPERS  →  from top
+        ==================================================== */
+        document.querySelectorAll(
+            'div[class*="-grid"]:not([data-wow-duration]), ' +
+            'div[class*="-list"]:not([data-wow-duration]), ' +
+            'div[class*="-gallery"]:not([data-wow-duration])'
+        ).forEach(function (el, i) {
+            annotate(el, 'custom-anim-top', '1.5s', delay(0.2, 0.1, i));
+        });
+
+        /* ====================================================
+           13. CTA / ACTION SECTIONS  →  from top
+        ==================================================== */
+        document.querySelectorAll(
+            'div[class*="cta-"]:not([data-wow-duration]), ' +
+            'section[class*="cta-"]:not([data-wow-duration])'
+        ).forEach(function (el, i) {
+            annotate(el, 'custom-anim-top', '1.5s', delay(0.4, 0.1, i));
+        });
+
+        /* ====================================================
+           14. PARTNER / SPONSOR LOGO ROWS  →  from top (staggered)
+        ==================================================== */
+        document.querySelectorAll(
+            'div[class*="-partner"]:not([data-wow-duration]), ' +
+            'div[class*="-sponsor"]:not([data-wow-duration]), ' +
+            'div[class*="partner-"]:not([data-wow-duration])'
+        ).forEach(function (el, i) {
+            annotate(el, 'custom-anim-top', '1.5s', delay(0.1, 0.15, i));
+        });
+
+        /* ====================================================
+           15. IMAGE WRAPPERS (vision, venue photos)  →  zoom-scale via top
+        ==================================================== */
+        document.querySelectorAll(
+            'div[class*="-img-wrap"]:not([data-wow-duration]), ' +
+            'div[class*="-photo"]:not([data-wow-duration]), ' +
+            'div[class*="-thumb"]:not([data-wow-duration]):not(.hero-thumb1):not(.hero-thumb2)'
+        ).forEach(function (el, i) {
+            annotate(el, 'custom-anim-top', '1.2s', delay(0.2, 0.1, i));
+        });
+
+    }());
+    </script>
+
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
 </body>

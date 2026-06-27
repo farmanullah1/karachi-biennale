@@ -1,329 +1,454 @@
-/* Scoped CSS for KB19 About Page */
+﻿@charset "UTF-8";
+/* ============================================================
+   PAGE: kb19-about
+   THEME: kb19
+   Scoped via: body.page-kb19-about
+   No inline CSS â€“ all class-based rules.
+   ============================================================ */
 
-.page-kb19-about .kb19a-hero-section {
+/* ---- CSS Custom Properties scoped to this page ---- */
+body.page-kb19-about {
+    --page-accent:      #1a6b4a;
+    --page-bg-tint:     #f4faf7;
+    --page-title-color: #0a1f16;
+    --hero-overlay:     linear-gradient(135deg, rgba(10,60,40,0.80) 0%, rgba(10,80,50,0.50) 100%);
+}
+
+/* ============================================================
+   SHARED PAGE FOUNDATION
+   Common layout, typography, and transitions used across all
+   non-home pages. Scoped via body class on every rule.
+   ============================================================ */
+
+/* Page scroll progress bar */
+.kbt-progress-bar {
+    position: fixed;
+    top: 0; left: 0;
+    height: 3px;
+    background: var(--page-accent, #c00);
+    z-index: 9999;
+    width: 0;
+    transition: width 0.1s linear;
+}
+
+/* ---- Hero Banner ---- */
+[class*="-hero-section"] {
     position: relative;
     overflow: hidden;
 }
 
-.page-kb19-about .kb19a-hero-banner {
+[class*="-hero-banner"] {
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
-    padding: 100px 0 80px;
+    min-height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    text-align: center;
 }
 
-.page-kb19-about .kb19a-hero-overlay {
+[class*="-hero-overlay"] {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(10, 10, 10, 0.75);
+    inset: 0;
+    background: var(--hero-overlay, linear-gradient(135deg, rgba(0,0,0,0.70) 0%, rgba(0,0,0,0.40) 100%));
     z-index: 1;
 }
 
-.page-kb19-about .kb19a-hero-banner .container {
+[class*="-hero-banner"] > .container {
     position: relative;
     z-index: 2;
 }
 
-.page-kb19-about .kb19a-hero-title {
-    font-family: 'Jost', sans-serif;
-    font-size: 3.5rem;
+[class*="-hero-title"] {
+    color: #fff;
+    font-size: clamp(2rem, 5vw, 3.25rem);
     font-weight: 700;
-    color: #ffffff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.35);
 }
 
-.page-kb19-about .kb19a-hero-subtitle {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.25rem;
-    color: #d1d1d1;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-bottom: 25px;
-}
-
-/* Breadcrumbs Styling */
-.page-kb19-about .kb19a-breadcrumbs ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: inline-flex;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.08);
-    padding: 8px 24px;
-    border-radius: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-}
-
-.page-kb19-about .kb19a-breadcrumbs li {
-    font-family: 'Jost', sans-serif;
-    font-size: 0.9rem;
-    color: #e0e0e0;
-    font-weight: 500;
-}
-
-.page-kb19-about .kb19a-breadcrumbs li a {
-    color: #ffb100;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.page-kb19-about .kb19a-breadcrumbs li a:hover {
-    color: #ffffff;
-}
-
-.page-kb19-about .kb19a-breadcrumbs li:not(:last-child)::after {
-    content: "/";
-    margin: 0 10px;
-    color: #a0a0a0;
-}
-
-.page-kb19-about .kb19a-breadcrumbs li.active {
-    color: #ffffff;
-}
-
-/* Main Content Wrapper */
-.page-kb19-about .kb19a-main-wrapper {
-    padding: 80px 0;
-    background-color: #fafafa;
-}
-
-/* Essay Block */
-.page-kb19-about .kb19a-essay-block {
-    background: #ffffff;
-    padding: 50px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
-    border: 1px solid #f1f1f1;
-}
-
-.page-kb19-about .kb19a-paragraph {
-    font-family: 'Roboto', sans-serif;
+[class*="-hero-subtitle"],
+[class*="-hero-intro"] {
+    color: rgba(255,255,255,0.88);
     font-size: 1.05rem;
-    line-height: 1.85;
-    color: #444444;
-    margin-bottom: 25px;
-    text-align: justify;
-}
-
-.page-kb19-about .kb19a-paragraph.lead {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #222222;
     font-weight: 400;
+    margin-bottom: 1.25rem;
 }
 
-/* Dropcap */
-.page-kb19-about .kb19a-dropcap {
-    font-family: 'Jost', sans-serif;
-    font-size: 4.5rem;
-    font-weight: 800;
-    float: left;
-    line-height: 0.8;
-    margin-right: 15px;
-    margin-top: 5px;
-    color: #ffb100;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.05);
-}
-
-/* Pullquote Styling */
-.page-kb19-about .kb19a-pullquote {
-    border-left: 5px solid #ffb100;
-    background: #fffbef;
-    padding: 30px 40px;
-    margin: 0 0 35px 0;
-    border-radius: 0 12px 12px 0;
-}
-
-.page-kb19-about .kb19a-pullquote p {
-    font-family: 'Jost', sans-serif;
-    font-size: 1.4rem;
-    font-style: italic;
-    line-height: 1.6;
-    color: #333333;
-    margin: 0;
-    font-weight: 500;
-}
-
-/* Gibran Card */
-.page-kb19-about .kb19a-gibran-quote-card {
-    background: #f7f9fa;
-    border: 1px dashed #d1d8db;
-    border-radius: 8px;
-    padding: 35px;
-    margin: 40px 0;
-}
-
-.page-kb19-about .kb19a-gibran-title {
-    font-family: 'Jost', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #111111;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    display: inline-flex;
-    align-items: center;
-}
-
-.page-kb19-about .kb19a-gibran-quote {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    line-height: 1.75;
-    color: #555555;
-    font-style: italic;
-    margin: 0;
-}
-
-/* Sidebar Facts Card */
-.page-kb19-about .kb19a-sidebar {
-    position: sticky;
-    top: 100px;
-}
-
-.page-kb19-about .kb19a-facts-card {
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 40px 35px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
-    border: 1px solid #f1f1f1;
-}
-
-.page-kb19-about .kb19a-facts-title {
-    font-family: 'Jost', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #111111;
-    margin-bottom: 25px;
-    border-bottom: 2px solid #ffb100;
-    padding-bottom: 10px;
-}
-
-.page-kb19-about .kb19a-facts-list {
+/* ---- Breadcrumbs ---- */
+[class*="-breadcrumbs"] ul {
     list-style: none;
     padding: 0;
-    margin: 0 0 35px 0;
-}
-
-.page-kb19-about .kb19a-facts-list li {
+    margin: 0;
     display: flex;
-    flex-direction: column;
-    padding: 15px 0;
-    border-bottom: 1px solid #f1f1f1;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    justify-content: center;
 }
 
-.page-kb19-about .kb19a-facts-list li:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
-}
-
-.page-kb19-about .kb19a-fact-label {
-    font-family: 'Jost', sans-serif;
-    font-size: 0.85rem;
+[class*="-breadcrumbs"] li {
+    color: rgba(255,255,255,0.65);
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #888888;
-    margin-bottom: 5px;
 }
 
-.page-kb19-about .kb19a-fact-value {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.1rem;
-    color: #222222;
-    font-weight: 500;
+[class*="-breadcrumbs"] li + li::before {
+    content: "â€º";
+    margin-right: 0.35rem;
+    opacity: 0.5;
 }
 
-.page-kb19-about .kb19a-fact-value a {
-    color: #111111;
+[class*="-breadcrumbs"] a {
+    color: rgba(255,255,255,0.80);
     text-decoration: none;
-    border-bottom: 1px solid #ffb100;
-    transition: color 0.3s ease;
+    transition: color 0.25s ease;
 }
 
-.page-kb19-about .kb19a-fact-value a:hover {
-    color: #ffb100;
+[class*="-breadcrumbs"] a:hover {
+    color: #fff;
 }
 
-.page-kb19-about .text-theme {
-    color: #ffb100;
+[class*="-breadcrumbs"] .active {
+    color: rgba(255,255,255,0.5);
 }
 
-/* Quick links in sidebar */
-.page-kb19-about .kb19a-quick-links {
-    margin-top: 30px;
-    border-top: 1px solid #f1f1f1;
-    padding-top: 25px;
+/* ---- Main Wrapper Spacing ---- */
+[class*="-main-wrapper"] {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
-.page-kb19-about .kb19a-links-title {
-    font-family: 'Jost', sans-serif;
-    font-size: 1.15rem;
+/* ---- Section headings ---- */
+[class*="-section-heading"],
+[class*="-essay-title"],
+[class*="-grid-title"],
+[class*="-facts-title"] {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--page-title-color, #1a1a2e);
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 3px solid var(--page-accent, #c00);
+    display: inline-block;
+}
+
+/* ---- Paragraph text ---- */
+[class*="-paragraph"],
+[class*="-text"],
+[class*="-bio"] {
+    font-size: 1rem;
+    line-height: 1.85;
+    color: #444;
+    margin-bottom: 1.1rem;
+}
+
+/* ---- Pull-quotes ---- */
+[class*="-pullquote"] {
+    border-left: 4px solid var(--page-accent, #c00);
+    padding: 1.25rem 1.5rem;
+    background: var(--page-bg-tint, #f9f5f5);
+    border-radius: 0 6px 6px 0;
+    margin: 2rem 0;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+[class*="-pullquote"] cite {
+    display: block;
+    margin-top: 0.75rem;
+    font-style: normal;
+    font-size: 0.85rem;
     font-weight: 600;
-    color: #111111;
-    margin-bottom: 15px;
+    color: var(--page-accent, #c00);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
-.page-kb19-about .kb19a-btn-link {
+/* ---- Info / Facts Card ---- */
+[class*="-facts-card"],
+[class*="-info-card"] {
+    background: var(--page-bg-tint, #f9f5f5);
+    border-radius: 10px;
+    padding: 2rem 1.75rem;
+    border-top: 4px solid var(--page-accent, #c00);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+}
+
+[class*="-facts-list"],
+[class*="-info-list"] {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+[class*="-facts-list"] li,
+[class*="-info-list"] li {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    font-size: 0.92rem;
+}
+
+[class*="-facts-list"] li:last-child,
+[class*="-info-list"] li:last-child {
+    border-bottom: none;
+}
+
+[class*="-fact-label"] {
+    color: #777;
+    flex-shrink: 0;
+}
+
+[class*="-fact-value"] {
+    color: #111;
+    text-align: right;
+}
+
+/* ---- Team / People Cards ---- */
+[class*="-card"] {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+}
+
+[class*="-card"]:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+}
+
+[class*="-avatar-wrap"],
+[class*="-thumb-wrap"] {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1rem;
+    border: 3px solid var(--page-accent, #c00);
+}
+
+[class*="-avatar"] {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+[class*="-card"]:hover [class*="-avatar"] {
+    transform: scale(1.08);
+}
+
+/* ---- Tags / Labels ---- */
+[class*="-tag"],
+[class*="-badge"] {
+    display: inline-block;
+    background: var(--page-accent, #c00);
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.75rem;
+    border-radius: 100px;
+    margin-bottom: 1rem;
+}
+
+/* ---- CTA / Action Button ---- */
+[class*="-cta-btn"],
+[class*="-action-btn"] {
+    display: inline-flex;
     align-items: center;
-    background: #f7f9fa;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-family: 'Jost', sans-serif;
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: #333333;
+    gap: 0.5rem;
+    background: var(--page-accent, #c00);
+    color: #fff;
+    padding: 0.75rem 1.75rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     text-decoration: none;
-    margin-bottom: 12px;
-    border: 1px solid #eef2f3;
-    transition: all 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
 }
 
-.page-kb19-about .kb19a-btn-link:hover {
-    background: #111111;
-    color: #ffffff;
-    border-color: #111111;
-    padding-left: 25px;
+[class*="-cta-btn"]:hover,
+[class*="-action-btn"]:hover {
+    background: transparent;
+    border-color: var(--page-accent, #c00);
+    color: var(--page-accent, #c00);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
-/* Responsive Media Queries */
-@media (max-width: 991px) {
-    .page-kb19-about .kb19a-hero-title {
-        font-size: 2.8rem;
-    }
-    .page-kb19-about .kb19a-essay-block {
-        padding: 35px;
-    }
+/* ---- More / Toggle Buttons ---- */
+[class*="-more-btn"] {
+    background: none;
+    border: 1px solid var(--page-accent, #c00);
+    color: var(--page-accent, #c00);
+    padding: 0.35rem 0.9rem;
+    border-radius: 3px;
+    font-size: 0.78rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 }
 
+[class*="-more-btn"]:hover {
+    background: var(--page-accent, #c00);
+    color: #fff;
+}
+
+/* ---- Drop-cap ---- */
+[class*="-dropcap"] {
+    float: left;
+    font-size: 3.5rem;
+    line-height: 0.85;
+    padding-right: 0.2rem;
+    font-weight: 800;
+    color: var(--page-accent, #c00);
+    font-family: Georgia, serif;
+}
+
+/* ---- Partner / Logo grid ---- */
+[class*="-partner-logo"],
+[class*="-logo-item"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    transition: box-shadow 0.35s ease, transform 0.35s ease;
+}
+
+[class*="-partner-logo"]:hover,
+[class*="-logo-item"]:hover {
+    box-shadow: 0 8px 28px rgba(0,0,0,0.10);
+    transform: translateY(-4px);
+}
+
+[class*="-partner-logo"] img,
+[class*="-logo-item"] img {
+    max-height: 70px;
+    width: auto;
+    filter: grayscale(50%);
+    transition: filter 0.35s ease;
+}
+
+[class*="-partner-logo"]:hover img,
+[class*="-logo-item"]:hover img {
+    filter: grayscale(0%);
+}
+
+/* ---- Media / Gallery images ---- */
+[class*="-media-img"],
+[class*="-gallery-img"] {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    overflow: hidden;
+}
+
+[class*="-media-item"]:hover [class*="-media-img"],
+[class*="-gallery-item"]:hover [class*="-gallery-img"] {
+    transform: scale(1.04);
+    filter: brightness(0.88);
+}
+
+/* ---- Section divider ---- */
+[class*="-section-divider"] {
+    width: 60px;
+    height: 3px;
+    background: var(--page-accent, #c00);
+    border-radius: 3px;
+    margin: 1.25rem 0;
+}
+
+/* ---- Skip link accessibility ---- */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-link:focus {
+    position: fixed;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: auto;
+    height: auto;
+    background: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    z-index: 99999;
+    border-radius: 4px;
+}
+
+/* ---- Responsive tweaks ---- */
 @media (max-width: 768px) {
-    .page-kb19-about .kb19a-hero-banner {
-        padding: 80px 0 60px;
+    [class*="-hero-banner"] {
+        min-height: 240px;
     }
-    .page-kb19-about .kb19a-hero-title {
-        font-size: 2.2rem;
+    [class*="-hero-title"] {
+        font-size: 1.75rem;
     }
-    .page-kb19-about .kb19a-essay-block {
-        padding: 25px;
-    }
-    .page-kb19-about .kb19a-pullquote {
-        padding: 20px 25px;
-    }
-    .page-kb19-about .kb19a-pullquote p {
-        font-size: 1.15rem;
-    }
-    .page-kb19-about .kb19a-gibran-quote-card {
-        padding: 25px;
-    }
-    .page-kb19-about .kb19a-facts-card {
-        padding: 30px 20px;
+    [class*="-main-wrapper"] {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
     }
 }
+
+/* ---- Group theme extras: kb19 ---- */
+/* KB19 Rounded card style */
+body[class*="page-kb19"] [class*="-card"],
+body[class*="page-friends"] [class*="-card"] {
+    border-radius: 14px;
+}
+/* KB19 Tag green */
+body[class*="page-kb19"] [class*="-tag"],
+body[class*="page-friends"] [class*="-tag"] {
+    background: #1a6b4a;
+}
+/* KB19 Quote left border green */
+body[class*="page-kb19"] [class*="-pullquote"],
+body[class*="page-friends"] [class*="-pullquote"] {
+    border-left-color: #1a6b4a;
+    background: #f0faf5;
+}
+/* KB19 Programme icon circles */
+body[class*="page-kb19"] [class*="-prog-icon"] {
+    background: #1a6b4a;
+    color: #fff;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+/* Scoped Hero Banner background image */
+body.page-kb19-about .kb19a-hero-banner {
+    background-image: url('../../img/bg/kb19-page-banner-2.jpg');
+}
+

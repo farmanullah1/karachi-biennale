@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
   $pageTitle = 'KB19 About - Second Karachi Biennale';
   $metaDesc = 'Learn about the Second Karachi Biennale KB19, exploring the theme Flight Interrupted: Eco-leaks from the Invasion Desk.';
   $bodyClass = 'page-kb19-about'; 
@@ -10,7 +10,7 @@
 
 <!-- 1. Hero Banner Area -->
 <section class="kb19a-hero-section">
-    <div class="kb19a-hero-banner" style="background-image: url('assets/img/bg/kb19-page-banner-2.jpg');">
+    <div class="kb19a-hero-banner">
         <div class="kb19a-hero-overlay"></div>
         <div class="container text-center">
             <h1 class="kb19a-hero-title">About – Karachi Biennale 19</h1>

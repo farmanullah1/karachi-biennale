@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
   $pageTitle = 'KB19 Media - Second Karachi Biennale';
   $metaDesc = 'Read press releases, media coverage, and download the official press kit gallery for the Second Karachi Biennale KB19.';
   $bodyClass = 'page-kb19-media'; 
@@ -10,7 +10,7 @@
 
 <!-- 1. Hero Banner Area -->
 <section class="kb19m-hero-section">
-    <div class="kb19m-hero-banner" style="background-image: url('assets/img/bg/kb19-page-banner-2.jpg');">
+    <div class="kb19m-hero-banner">
         <div class="kb19m-hero-overlay"></div>
         <div class="container text-center">
             <h1 class="kb19m-hero-title">KB19 Media</h1>

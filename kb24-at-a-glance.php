@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
   $pageTitle = 'KB24 At A Glance - Fourth Karachi Biennale';
   $metaDesc = 'Explore the curatorial vision, statistics, and highlights of the Fourth Karachi Biennale (KB24), curated by Waheeda Baloch under the theme Rizq | Risk.';
   $bodyClass = 'page-kb24-at-a-glance'; 
@@ -7,7 +7,7 @@
 
 <!-- 1. Page Header (Hero Banner) -->
 <section class="kb24g-hero-section">
-    <div class="kb24g-hero-banner" style="background-image: url('assets/img/KB24ArtPrizeWinner/KB-Cover-Web.png');">
+    <div class="kb24g-hero-banner">
         <div class="kb24g-hero-overlay"></div>
         <div class="container text-center">
             <h1 class="kb24g-hero-title">KB24 At A Glance</h1>

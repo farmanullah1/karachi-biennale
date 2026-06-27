@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
   $pageTitle = 'KB19 Projects - Second Karachi Biennale';
   $metaDesc = 'Explore the 12 collateral and educational projects of the Second Karachi Biennale KB19, including residencies, roundtables, and public art.';
   $bodyClass = 'page-kb19-projects'; 
@@ -10,7 +10,7 @@
 
 <!-- 1. Hero Banner Area -->
 <section class="kb19p-hero-section">
-    <div class="kb19p-hero-banner" style="background-image: url('assets/img/bg/kb19-page-banner-2.jpg');">
+    <div class="kb19p-hero-banner">
         <div class="kb19p-hero-overlay"></div>
         <div class="container text-center">
             <h1 class="kb19p-hero-title">KB19 Projects</h1>

@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
   $pageTitle = 'KB19 Teams - Second Karachi Biennale';
   $metaDesc = 'Meet the curatorial, educational, outreach, marketing, and operations team members who organized the Second Karachi Biennale KB19.';
   $bodyClass = 'page-kb19-teams'; 
@@ -10,7 +10,7 @@
 
 <!-- 1. Hero Banner Area -->
 <section class="kb19t-hero-section">
-    <div class="kb19t-hero-banner" style="background-image: url('assets/img/bg/kb19-page-banner-2.jpg');">
+    <div class="kb19t-hero-banner">
         <div class="kb19t-hero-overlay"></div>
         <div class="container text-center">
             <h1 class="kb19t-hero-title">KB19 Teams</h1>

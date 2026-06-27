@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
   $pageTitle = 'KB19 Chief Curator - Second Karachi Biennale';
   $metaDesc = 'Learn about Chief Curator Muhammad Zeeshan, his curatorial statement, and the research journals for the Second Karachi Biennale KB19.';
   $bodyClass = 'page-kb19-curator'; 
@@ -10,7 +10,7 @@
 
 <!-- 1. Hero Banner Area -->
 <section class="kb19u-hero-section">
-    <div class="kb19u-hero-banner" style="background-image: url('assets/img/bg/kb19-page-banner-2.jpg');">
+    <div class="kb19u-hero-banner">
         <div class="kb19u-hero-overlay"></div>
         <div class="container text-center">
             <h1 class="kb19u-hero-title">Chief Curator</h1>

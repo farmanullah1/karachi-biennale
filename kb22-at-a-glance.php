@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
   $pageTitle = 'KB22 At A Glance - Third Karachi Biennale';
   $metaDesc = 'Overview of the Third Karachi Biennale KB22, exploring the theme Collective Imagination, Now and the Next: An Intersection of Art and Technology.';
   $bodyClass = 'page-kb22-at-a-glance'; 
@@ -7,7 +7,7 @@
 
 <!-- 1. Page Header (Hero Area) -->
 <section class="kb22g-hero-section">
-    <div class="kb22g-hero-banner" style="background-image: url('assets/img/bg/KB-Cover-Web.png');">
+    <div class="kb22g-hero-banner">
         <div class="kb22g-hero-overlay"></div>
         <div class="container text-center">
             <h1 class="kb22g-hero-title">KB22 At A Glance</h1>
@@ -136,7 +136,7 @@
 
     <!-- 4. KB22 Round-up Section -->
     <section id="roundup" class="kb22g-section kb22g-roundup-section">
-        <div class="kb22g-roundup-banner" style="background-image: url('assets/img/bg/KB-Cover-Web.png');">
+        <div class="kb22g-roundup-banner">
             <div class="kb22g-roundup-overlay"></div>
             <div class="container text-center position-relative">
                 <span class="kb22g-roundup-tag">Biennale Summary</span>

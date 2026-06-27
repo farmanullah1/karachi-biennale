@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
   $pageTitle = 'KB17 Chief Curator - First Karachi Biennale';
   $metaDesc = 'Learn about Chief Curator Amin Gulgee, his curatorial statement, team structure, and international meetings for KB17.';
   $bodyClass = 'page-kb17-curator'; 
@@ -10,7 +10,7 @@
 
 <!-- 1. Hero Banner Area -->
 <section class="kb17u-hero-section">
-    <div class="kb17u-hero-banner" style="background-image: url('assets/img/KB17/kb19-page-banner-2.jpg');">
+    <div class="kb17u-hero-banner">
         <div class="kb17u-hero-overlay"></div>
         <div class="container text-center">
             <h1 class="kb17u-hero-title">Chief Curator</h1>

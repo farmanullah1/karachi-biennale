@@ -256,6 +256,10 @@
         <!-- Page-specific CSS for Contact Us -->
         <link rel="stylesheet" href="assets/css/pages/contact-us.css">
     <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-home'): ?>
+        <!-- Page-specific CSS for Home -->
+        <link rel="stylesheet" href="assets/css/pages/home.css">
+    <?php endif; ?>
 
 
 

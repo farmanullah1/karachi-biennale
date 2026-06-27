@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
   $pageTitle = 'KB17 Curatorial Website & KB22 - Karachi Biennale';
   $metaDesc = 'Access the First Karachi Biennale curatorial platform and explore curatorial statements, visions, and archives from both KB17 and KB22.';
   $bodyClass = 'page-kb17-curatorial-website'; 
@@ -10,7 +10,7 @@
 
 <!-- 1. Hero Banner Area -->
 <section class="kb17cw-hero-section">
-    <div class="kb17cw-hero-banner" style="background-image: url('assets/img/KB17/kb19-page-banner-2.jpg');">
+    <div class="kb17cw-hero-banner">
         <div class="kb17cw-hero-overlay"></div>
         <div class="container text-center">
             <h1 class="kb17cw-hero-title">Curatorial Platforms</h1>

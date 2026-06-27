@@ -1,0 +1,591 @@
+/* ==========================================================================
+   Karachi Biennale Trust (KBT) Homepage Stylesheet
+   Scope: body.page-home
+   ========================================================================== */
+
+/* 1. KB27 Curatorial Vision Section */
+body.page-home .kbi-vision-section {
+    background-color: #FAF9F6;
+    padding: 100px 0;
+}
+body.page-home .kbi-vision-content {
+    padding-right: 30px;
+}
+body.page-home .kbi-vision-title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--title-color, #1a1a1a);
+    margin-bottom: 24px;
+}
+body.page-home .kbi-vision-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--body-color, #4A4A4A);
+    margin-bottom: 30px;
+}
+body.page-home .kbi-vision-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--theme-color, #FBD451);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+body.page-home .kbi-cta-line {
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background-color: var(--theme-color, #FBD451);
+    transition: width 0.3s ease;
+}
+body.page-home .kbi-vision-cta:hover {
+    color: var(--title-color, #1a1a1a);
+}
+body.page-home .kbi-vision-cta:hover .kbi-cta-line {
+    width: 35px;
+    background-color: var(--title-color, #1a1a1a);
+}
+body.page-home .vision-img-wrap {
+    border: 12px solid #ffffff;
+    outline: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+body.page-home .vision-img-wrap img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.6s ease;
+}
+body.page-home .vision-img-wrap:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+body.page-home .vision-img-wrap:hover img {
+    transform: scale(1.03);
+}
+
+/* 2. KB24 Video Highlight Section */
+body.page-home .kbi-video-section {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+body.page-home .kbi-video-text h2.sec-title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--title-color, #1a1a1a);
+    margin-bottom: 20px;
+}
+body.page-home .kbi-video-dates {
+    font-size: 18px;
+    color: var(--body-color, #4A4A4A);
+    margin-bottom: 12px;
+}
+body.page-home .kbi-video-venues {
+    font-size: 16px;
+    color: #777777;
+    margin-bottom: 0;
+}
+body.page-home .kbi-video-thumb-wrap {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    background-color: #000000;
+}
+body.page-home .kbi-video-play-link {
+    display: block;
+    position: relative;
+}
+body.page-home .kbi-video-thumb-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    display: block;
+    opacity: 0.85;
+    transition: transform 0.6s ease, opacity 0.4s ease;
+}
+body.page-home .kbi-video-play-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 100%);
+    z-index: 1;
+    transition: opacity 0.4s ease;
+}
+body.page-home .kbi-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--theme-color, #FBD451);
+    color: var(--title-color, #1a1a1a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    z-index: 2;
+    box-shadow: 0 0 0 0 rgba(251, 212, 81, 0.5);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+body.page-home .kbi-video-play-link:hover .kbi-video-thumb-img {
+    transform: scale(1.05);
+    opacity: 0.95;
+}
+body.page-home .kbi-video-play-link:hover .kbi-play-btn {
+    transform: translate(-50%, -50%) scale(1.15);
+    background-color: var(--title-color, #1a1a1a);
+    color: var(--theme-color, #FBD451);
+    box-shadow: 0 0 20px 10px rgba(251, 212, 81, 0.3);
+}
+
+/* 3. KB24 Programmes & Activities Section */
+body.page-home .space.bg-title {
+    background-color: #151515 !important;
+    padding: 100px 0;
+}
+body.page-home .kbi-activity-row {
+    margin-top: 50px;
+}
+body.page-home .kbi-activity-card {
+    background-color: #1E1E1E;
+    padding: 40px 30px;
+    border-radius: 8px;
+    border-top: 3px solid var(--theme-color, #FBD451);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+body.page-home .kbi-activity-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(251, 212, 81, 0.1);
+}
+body.page-home .kbi-activity-icon {
+    font-size: 36px;
+    color: var(--theme-color, #FBD451);
+    margin-bottom: 25px;
+    transition: transform 0.4s ease;
+}
+body.page-home .kbi-activity-card:hover .kbi-activity-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+body.page-home .kbi-activity-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+body.page-home .kbi-activity-text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #BBBBBB;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+body.page-home .kbi-activity-link {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--theme-color, #FBD451);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease, gap 0.3s ease;
+}
+body.page-home .kbi-activity-link i {
+    font-size: 12px;
+}
+body.page-home .kbi-activity-link:hover {
+    color: #ffffff;
+    gap: 12px;
+}
+
+/* 4. Outreach Stats Section */
+body.page-home .kbi-stats-section {
+    padding: 120px 0;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+body.page-home .kbi-stats-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(17, 17, 17, 0.85);
+    z-index: -1;
+}
+body.page-home .kbi-stats-row {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+body.page-home .kbi-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+body.page-home .kbi-stat-item:hover {
+    transform: scale(1.08);
+}
+body.page-home .kbi-stat-number {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--theme-color, #FBD451);
+    line-height: 1;
+    margin-bottom: 10px;
+    font-family: var(--title-font, 'Jost', sans-serif);
+}
+body.page-home .kbi-stat-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 5. Educational Programming Section */
+body.page-home .kbi-edu-section {
+    background-color: #111111 !important;
+    padding: 100px 0;
+}
+body.page-home .kbi-edu-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: var(--theme-color, #FBD451) !important;
+}
+body.page-home .kbi-edu-videos-row {
+    margin-top: 50px;
+}
+body.page-home .kbi-edu-video-card {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    height: 100%;
+}
+body.page-home .kbi-edu-video-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(251, 212, 81, 0.1);
+}
+body.page-home .kbi-edu-thumb-link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+body.page-home .kbi-edu-thumb-img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+body.page-home .kbi-edu-thumb-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    transition: opacity 0.4s ease;
+}
+body.page-home .kbi-edu-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--theme-color, #FBD451);
+    color: var(--title-color, #1a1a1a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    z-index: 2;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s ease, color 0.3s ease;
+}
+body.page-home .kbi-edu-video-card:hover .kbi-edu-thumb-img {
+    transform: scale(1.06);
+}
+body.page-home .kbi-edu-video-card:hover .kbi-edu-play-btn {
+    transform: translate(-50%, -50%) scale(1.2);
+    background-color: #ffffff;
+    color: var(--title-color, #1a1a1a);
+}
+body.page-home .kbi-edu-video-label {
+    padding: 18px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    background-color: #1a1a1a;
+    transition: color 0.3s ease;
+}
+body.page-home .kbi-edu-video-card:hover .kbi-edu-video-label {
+    color: var(--theme-color, #FBD451);
+}
+
+/* 6. Trustees Carousel Section */
+body.page-home .portfolio-area-1.bg-title {
+    background-color: #181818 !important;
+    padding: 100px 0;
+}
+body.page-home .kbi-trustees-slider {
+    padding-bottom: 20px;
+}
+body.page-home .kbi-trustee-card {
+    background-color: #222222;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    margin: 10px 0;
+}
+body.page-home .kbi-trustee-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+body.page-home .kbi-trustee-thumb {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: #222222;
+}
+body.page-home .kbi-trustee-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease, filter 0.6s ease;
+    filter: grayscale(85%);
+}
+body.page-home .kbi-trustee-card:hover .kbi-trustee-thumb img {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+}
+body.page-home .kbi-trustee-details {
+    padding: 25px 20px;
+    text-align: center;
+    background-color: #222222;
+}
+body.page-home .kbi-trustee-details .portfilio-card-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+body.page-home .kbi-trustee-details .portfilio-card-title a {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+body.page-home .kbi-trustee-details .portfilio-card-title a:hover {
+    color: var(--theme-color, #FBD451);
+}
+body.page-home .kbi-trustee-details .btn-border.btn-radius {
+    font-size: 12px;
+    padding: 6px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #BBBBBB;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    display: inline-block;
+}
+body.page-home .kbi-trustee-card:hover .kbi-trustee-details .btn-border.btn-radius {
+    border-color: var(--theme-color, #FBD451);
+    color: var(--theme-color, #FBD451);
+    background-color: rgba(251, 212, 81, 0.05);
+}
+
+/* 7. Publications & Initiatives 3D Flipbox Section */
+body.page-home .kbi-flipbox-section {
+    background-color: #FAF9F6;
+    padding: 100px 0;
+}
+body.page-home .kbi-flipbox-row {
+    margin-top: 50px;
+}
+body.page-home .kbi-flipbox {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    perspective: 1500px;
+}
+body.page-home .kbi-flipbox-front,
+body.page-home .kbi-flipbox-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 8px;
+    backface-visibility: hidden;
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+body.page-home .kbi-flipbox-front {
+    transform: rotateY(0deg);
+    background-color: #ffffff;
+}
+body.page-home .kbi-flipbox-back {
+    transform: rotateY(180deg);
+    background-color: #1a1a1a;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid var(--theme-color, #FBD451);
+}
+body.page-home .kbi-flipbox:hover .kbi-flipbox-front {
+    transform: rotateY(-180deg);
+}
+body.page-home .kbi-flipbox:hover .kbi-flipbox-back {
+    transform: rotateY(0deg);
+}
+body.page-home .kbi-flipbox-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+body.page-home .kbi-flipbox-front::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 60%);
+    z-index: 1;
+}
+body.page-home .kbi-flipbox-front-label {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    z-index: 2;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    padding: 0 15px;
+}
+body.page-home .kbi-flipbox-back-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+body.page-home .kbi-flipbox-back-text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #BBBBBB;
+    margin-bottom: 25px;
+}
+body.page-home .kbi-flipbox-back-link {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--theme-color, #FBD451);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease, gap 0.3s ease;
+    margin-top: auto;
+    align-self: flex-start;
+}
+body.page-home .kbi-flipbox-back-link i {
+    font-size: 12px;
+}
+body.page-home .kbi-flipbox-back-link:hover {
+    color: #ffffff;
+    gap: 12px;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+@media (max-width: 1199px) {
+    body.page-home .kbi-vision-title,
+    body.page-home .kbi-video-text h2.sec-title {
+        font-size: 36px;
+    }
+    body.page-home .kbi-flipbox {
+        height: 380px;
+    }
+}
+
+@media (max-width: 991px) {
+    body.page-home .kbi-vision-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    body.page-home .kbi-video-text {
+        margin-bottom: 40px;
+    }
+    body.page-home .kbi-vision-title,
+    body.page-home .kbi-video-text h2.sec-title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    body.page-home .kbi-vision-section,
+    body.page-home .kbi-video-section,
+    body.page-home .space.bg-title,
+    body.page-home .kbi-edu-section,
+    body.page-home .portfolio-area-1.bg-title,
+    body.page-home .kbi-flipbox-section {
+        padding: 60px 0;
+    }
+    body.page-home .kbi-stat-number {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 575px) {
+    body.page-home .kbi-vision-title,
+    body.page-home .kbi-video-text h2.sec-title {
+        font-size: 28px;
+    }
+    body.page-home .kbi-stat-number {
+        font-size: 34px;
+    }
+    body.page-home .kbi-flipbox {
+        height: 360px;
+    }
+}

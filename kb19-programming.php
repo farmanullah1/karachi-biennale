@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
   $pageTitle = 'KB19 Programming Schedule - Second Karachi Biennale';
   $metaDesc = 'View the daily public programming calendar for KB19, featuring keynote lectures, guided walking tours, and educational workshops.';
   $bodyClass = 'page-kb19-programming'; 
@@ -10,7 +10,7 @@
 
 <!-- 1. Hero Banner Area -->
 <section class="kb19p-hero-section">
-    <div class="kb19p-hero-banner" style="background-image: url('assets/img/bg/kb19-page-banner-2.jpg');">
+    <div class="kb19p-hero-banner">
         <div class="kb19p-hero-overlay"></div>
         <div class="container text-center">
             <h1 class="kb19p-hero-title">Programming Calendar</h1>

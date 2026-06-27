@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
   $pageTitle = 'KB19 Exhibition Catalogue - Second Karachi Biennale';
   $metaDesc = 'View the digital publication, essays, and artist statements in the official catalogue of the Second Karachi Biennale KB19.';
   $bodyClass = 'page-kb19-catalogue'; 
@@ -10,7 +10,7 @@
 
 <!-- 1. Hero Banner Area -->
 <section class="kb19c-hero-section">
-    <div class="kb19c-hero-banner" style="background-image: url('assets/img/bg/kb19-page-banner-2.jpg');">
+    <div class="kb19c-hero-banner">
         <div class="kb19c-hero-overlay"></div>
         <div class="container text-center">
             <h1 class="kb19c-hero-title">Exhibition Catalogue</h1>

@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
   $pageTitle = 'Message from the CEO - Second Karachi Biennale (KB19)';
   $metaDesc = 'Read the message from Niilofur Farrukh, CEO of the Karachi Biennale Trust, outlining the curatorial direction and environmental theme of KB19.';
   $bodyClass = 'page-kb19-message-from-ceo'; 
@@ -10,7 +10,7 @@
 
 <!-- 1. Hero Banner Area -->
 <section class="kb19c-hero-section">
-    <div class="kb19c-hero-banner" style="background-image: url('assets/img/bg/kb19-page-banner-2.jpg');">
+    <div class="kb19c-hero-banner">
         <div class="kb19c-hero-overlay"></div>
         <div class="container text-center">
             <h1 class="kb19c-hero-title">Message from the CEO</h1>

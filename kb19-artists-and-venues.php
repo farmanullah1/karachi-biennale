@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
   $pageTitle = 'KB19 Artists and Venues - Second Karachi Biennale';
   $metaDesc = 'Explore the seven historical and cultural venues of the Second Karachi Biennale (KB19) and the artists who exhibited at each site.';
   $bodyClass = 'page-kb19-artists-and-venues'; 
@@ -10,7 +10,7 @@
 
 <!-- 1. Hero Banner Area -->
 <section class="kb19v-hero-section text-center">
-    <div class="kb19v-hero-banner" style="background-image: url('assets/img/bg/kb19-page-banner-2.jpg');">
+    <div class="kb19v-hero-banner">
         <div class="kb19v-hero-overlay"></div>
         <div class="container relative-z">
             <h1 class="kb19v-hero-title">Artists and Venues</h1>

@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
   $pageTitle = 'KB17 Exhibition Catalogue - First Karachi Biennale';
   $metaDesc = 'View and download the official publication of the First Karachi Biennale (KB17). Discover essays, artist biographies, and installation records under the theme WITNESS.';
   $bodyClass = 'page-kb17-catalogue'; 
@@ -10,7 +10,7 @@
 
 <!-- 1. Hero Banner Area -->
 <section class="kb17cat-hero-section">
-    <div class="kb17cat-hero-banner" style="background-image: url('assets/img/KB17/kb19-page-banner-2.jpg');">
+    <div class="kb17cat-hero-banner">
         <div class="kb17cat-hero-overlay"></div>
         <div class="container text-center">
             <h1 class="kb17cat-hero-title">Exhibition Catalogue</h1>

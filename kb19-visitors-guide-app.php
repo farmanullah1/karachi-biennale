@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
   $pageTitle = 'KB19 Visitors Guide App - Second Karachi Biennale';
   $metaDesc = 'Download the official KB19 Visitors Guide App to vote for your favourite artists, view schedule schedules, and purchase merchandise.';
   $bodyClass = 'page-kb19-visitors-guide-app'; 
@@ -10,7 +10,7 @@
 
 <!-- 1. Hero Banner Area -->
 <section class="kb19v-hero-section">
-    <div class="kb19v-hero-banner" style="background-image: url('assets/img/bg/kb19-page-banner-2.jpg');">
+    <div class="kb19v-hero-banner">
         <div class="kb19v-hero-overlay"></div>
         <div class="container text-center">
             <h1 class="kb19v-hero-title">Visitors Guide App</h1>
