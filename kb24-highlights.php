@@ -1,117 +1,134 @@
 <?php 
-  $pageTitle = 'KB24 Highlights & Projects - Fourth Karachi Biennale';
-  $metaDesc = 'Explore the core highlights, discursive sessions, live performances, and educational workshops of the Fourth Karachi Biennale (KB24).';
+  $pageTitle = 'KB24 Programs & Projects Overview - Fourth Karachi Biennale';
+  $metaDesc = 'Explore the programs, discursive sessions, educational tours, ceremonies, and workshops of the Fourth Karachi Biennale (KB24) under Rizq | Risk theme.';
   $bodyClass = 'page-kb24-highlights'; 
   include 'components/header.php'; 
 ?>
 
 <!-- 1. Page Header (Hero Area) -->
-<section class="kb24h-hero-section text-center">
-    <div class="container">
-        <h1 class="kb24h-hero-title">Highlights & Projects</h1>
-        <p class="kb24h-hero-subtitle">Fourth Karachi Biennale KB24</p>
-        <p class="kb24h-hero-intro">Beyond the static exhibitions, the Fourth Karachi Biennale (KB24) presented a dynamic range of discursive programs, live performative installations, international artist dialogues, and creative public forums that engaged the local community in dialogues around the "Rizq | Risk" theme.</p>
-        
-        <!-- Breadcrumbs -->
-        <nav class="kb24h-breadcrumbs" aria-label="breadcrumb">
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li>Past Biennale</li>
-                <li>KB24</li>
-                <li class="active" aria-current="page">Highlights & Projects</li>
-            </ul>
-        </nav>
+<section class="kb24h-hero-section">
+    <div class="kb24h-hero-banner">
+        <div class="kb24h-hero-overlay"></div>
+        <div class="container text-center">
+            <h1 class="kb24h-hero-title">Programs & Projects</h1>
+            <p class="kb24h-hero-subtitle">Fourth Karachi Biennale KB24</p>
+            
+            <!-- Breadcrumbs -->
+            <nav class="kb24h-breadcrumbs" aria-label="breadcrumb">
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li>Past Biennale</li>
+                    <li>KB24</li>
+                    <li class="active" aria-current="page">Programs & Projects Overview</li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </section>
 
 <div class="kb24h-main-wrapper">
     <div class="container">
         
+        <!-- Intro Header -->
+        <div class="kb24h-intro text-center mb-5">
+            <span class="kb24h-tag">Overview</span>
+            <h2 class="kb24h-section-title">KB24 Projects & Initiatives</h2>
+            <p class="kb24h-section-lead">The Fourth Karachi Biennale (KB24) expanded its theme of "Rizq | Risk" beyond static gallery installations into live dialogues, wellness programs, and educational excursions designed to bring visual arts closer to communities.</p>
+        </div>
+
         <!-- 2. Highlights Grid -->
         <div class="kb24h-grid">
             
-            <!-- Highlight 1: Thematic Exhibitions -->
+            <!-- Card 1: Art and Wellness Workshop -->
             <div class="kb24h-card">
-                <div class="kb24h-card-icon"><i class="fas fa-landmark"></i></div>
+                <div class="kb24h-card-icon"><i class="fas fa-heartbeat"></i></div>
                 <div class="kb24h-card-body">
-                    <h3 class="kb24h-card-title">Curatorial Exhibitions</h3>
-                    <p class="kb24h-card-desc">Exploring regional food security and environmental decay across five transformed public spaces, each curated under specialized concepts like "Riverine Resilience" and "Songs of Sisterhood."</p>
-                    <a href="kb24-exhibition-venues.php" class="kb24h-card-link">View Venues <i class="fas fa-arrow-right ms-2"></i></a>
+                    <h3 class="kb24h-card-title">Art and Wellness Workshop</h3>
+                    <p class="kb24h-card-desc">Blended art and emotional well-being to empower young creatives through modules, online lectures, and collaborative seed portrait installations.</p>
+                    <a href="kb24-art-and-well-being-sessions.php" class="kb24h-card-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
             
-            <!-- Highlight 2: Discursive Weekend -->
+            <!-- Card 2: Discursive Sessions -->
             <div class="kb24h-card">
                 <div class="kb24h-card-icon"><i class="fas fa-comments"></i></div>
                 <div class="kb24h-card-body">
-                    <h3 class="kb24h-card-title">Discursive Weekend</h3>
-                    <p class="kb24h-card-desc">A series of intensive panel discussions and presentations hosted at Sambara Art Gallery, exploring food justice, historical famine archives, and the decolonization of ecological knowledge.</p>
-                    <a href="https://karachibiennale.org.pk/" target="_blank" class="kb24h-card-link">Read Archive <i class="fas fa-arrow-right ms-2"></i></a>
+                    <h3 class="kb24h-card-title">Discursive Sessions</h3>
+                    <p class="kb24h-card-desc">Talks and presentations investigating the Bengal Famine visual archives, PAWPE archiving, and Waheeda Baloch's artist conversations.</p>
+                    <a href="kb24-discursive-sessions.php" class="kb24h-card-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
 
-            <!-- Highlight 3: Wisdom Conversations -->
+            <!-- Card 3: Educational Programming -->
+            <div class="kb24h-card">
+                <div class="kb24h-card-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="kb24h-card-body">
+                    <h3 class="kb24h-card-title">Educational Programming</h3>
+                    <p class="kb24h-card-desc">Guided school tours at Sambara Gallery, Frere Hall, and Bagh Ibne Qasim, engaging middle school and A-level students in visual art dialogs.</p>
+                    <a href="kb24-educational-programming.php" class="kb24h-card-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+
+            <!-- Card 4: Inaugural and Closing Ceremonies -->
+            <div class="kb24h-card">
+                <div class="kb24h-card-icon"><i class="fas fa-award"></i></div>
+                <div class="kb24h-card-body">
+                    <h3 class="kb24h-card-title">Inaugural and Closing Ceremonies</h3>
+                    <p class="kb24h-card-desc">Retrospective overview of Bagh Ibne Qasim bandstand launch, prize awards (Emerging, Juried, Performance, Collateral), and Jamshed Nusserwanjee Building closing.</p>
+                    <a href="kb24-inaugural-and-closing-ceremonies.php" class="kb24h-card-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+
+            <!-- Card 5: KB24 Collateral Exhibition -->
+            <div class="kb24h-card">
+                <div class="kb24h-card-icon"><i class="fas fa-clone"></i></div>
+                <div class="kb24h-card-body">
+                    <h3 class="kb24h-card-title">KB24 Collateral Exhibition</h3>
+                    <p class="kb24h-card-desc">Special exhibits hosted by partner galleries, expanding on the local ecology theme and featuring the work of textile and visual study graduates.</p>
+                    <a href="#" class="kb24h-card-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+
+            <!-- Card 6: Performative Art -->
+            <div class="kb24h-card">
+                <div class="kb24h-card-icon"><i class="fas fa-running"></i></div>
+                <div class="kb24h-card-body">
+                    <h3 class="kb24h-card-title">Performative Art</h3>
+                    <p class="kb24h-card-desc">Interactive installations, choreographed movement routines, and sonic situation events engaging visitors dynamically in public places.</p>
+                    <a href="#" class="kb24h-card-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+
+            <!-- Card 7: Reading Room -->
+            <div class="kb24h-card">
+                <div class="kb24h-card-icon"><i class="fas fa-book-reader"></i></div>
+                <div class="kb24h-card-body">
+                    <h3 class="kb24h-card-title">Reading Room</h3>
+                    <p class="kb24h-card-desc">Communal reading hubs set up at Bagh Ibne Qasim, offering access to printed catalogues, archives, and poetry texts on food insecurity.</p>
+                    <a href="#" class="kb24h-card-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+
+            <!-- Card 8: Wisdom Conversations -->
             <div class="kb24h-card">
                 <div class="kb24h-card-icon"><i class="fas fa-seedling"></i></div>
                 <div class="kb24h-card-body">
                     <h3 class="kb24h-card-title">Wisdom Conversations</h3>
-                    <p class="kb24h-card-desc">A hybrid academic seminar bringing together regional environmentalists, farmers, and scholars to discuss water governance, traditional seeds, and indigenous crop systems.</p>
-                    <a href="https://karachibiennale.org.pk/" target="_blank" class="kb24h-card-link">View Proceedings <i class="fas fa-arrow-right ms-2"></i></a>
-                </div>
-            </div>
-
-            <!-- Highlight 4: The Vanishing Creature -->
-            <div class="kb24h-card">
-                <div class="kb24h-card-icon"><i class="fas fa-theater-masks"></i></div>
-                <div class="kb24h-card-body">
-                    <h3 class="kb24h-card-title">"The Vanishing Creature"</h3>
-                    <p class="kb24h-card-desc">A sensory, edible performative installation by French artist Enora Lalet at Alliance Française, blending local culinary traditions, folklore, and live visual performances.</p>
-                    <a href="kb24-artists-list.php" class="kb24h-card-link">Artist Profile <i class="fas fa-arrow-right ms-2"></i></a>
-                </div>
-            </div>
-
-            <!-- Highlight 5: Live ArtSituation -->
-            <div class="kb24h-card">
-                <div class="kb24h-card-icon"><i class="fas fa-running"></i></div>
-                <div class="kb24h-card-body">
-                    <h3 class="kb24h-card-title">Live Art situations</h3>
-                    <p class="kb24h-card-desc">Conceptual situations constructed by German artist Tino Sehgal at Frere Hall, utilizing movement, sound, and local Sufi/Sindhi dance forms to engage the general public.</p>
-                    <a href="kb24-artists-list.php" class="kb24h-card-link">Explore Artists <i class="fas fa-arrow-right ms-2"></i></a>
-                </div>
-            </div>
-
-            <!-- Highlight 6: Communal Cooking -->
-            <div class="kb24h-card">
-                <div class="kb24h-card-icon"><i class="fas fa-utensils"></i></div>
-                <div class="kb24h-card-body">
-                    <h3 class="kb24h-card-title">Communal Gastronomy</h3>
-                    <p class="kb24h-card-desc">An interactive cooking ritual by Daniela Zambrano at NED University using historic sand-and-stone techniques to debate food migration, dispossession, and colonial memory.</p>
-                    <a href="https://karachibiennale.org.pk/" target="_blank" class="kb24h-card-link">Explore Performance <i class="fas fa-arrow-right ms-2"></i></a>
-                </div>
-            </div>
-
-            <!-- Highlight 7: Reading Rooms -->
-            <div class="kb24h-card">
-                <div class="kb24h-card-icon"><i class="fas fa-book"></i></div>
-                <div class="kb24h-card-body">
-                    <h3 class="kb24h-card-title">Reading Rooms</h3>
-                    <p class="kb24h-card-desc">Creative mobile libraries and reading areas installed in Bagh Ibne Qasim, offering public visitors catalog resources, historical documentation, and oral history archives.</p>
-                    <a href="kb24-catalogue.php" class="kb24h-card-link">Digital Catalogue <i class="fas fa-arrow-right ms-2"></i></a>
-                </div>
-            </div>
-
-            <!-- Highlight 8: "Rizq i Risk" Mushaira -->
-            <div class="kb24h-card">
-                <div class="kb24h-card-icon"><i class="fas fa-music"></i></div>
-                <div class="kb24h-card-body">
-                    <h3 class="kb24h-card-title">Multilingual Mushaira</h3>
-                    <p class="kb24h-card-desc">A grand poetry reading event hosted in the lawns of Frere Hall, bringing together Sindh's top poets to recite verses on food security, ecology, and land heritage.</p>
-                    <a href="https://karachibiennale.org.pk/" target="_blank" class="kb24h-card-link">Poetry Archive <i class="fas fa-arrow-right ms-2"></i></a>
+                    <p class="kb24h-card-desc">Interviews and discussions between environmentalists, historians, and artists regarding seed preservation, water systems, and local food security.</p>
+                    <a href="#" class="kb24h-card-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
 
         </div>
     </div>
 </div>
+
+<!-- Phone/Email Bottom Widget (Consistent across subpages) -->
+<footer class="kb24h-footer-contact">
+    <div class="container text-center">
+        <p class="mb-2"><i class="fas fa-phone-alt me-2 text-gold"></i> Phone: <strong>+92 21 35157566</strong></p>
+        <p class="mb-0"><i class="fas fa-envelope me-2 text-gold"></i> Email: <strong>info@karachibiennale.org.pk</strong></p>
+    </div>
+</footer>
 
 <?php include 'components/footer.php'; ?>

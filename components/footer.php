@@ -127,6 +127,45 @@
         </div>
     </div>
 
+<?php if (isset($bodyClass) && $bodyClass === 'page-kb24-artists-list'): ?>
+    <!-- Bio Modal Wrapper with Left and Right Navigation Arrows and copied link indicator -->
+    <div class="kb24a-modal-backdrop" id="artistModalBackdrop" onclick="closeArtistModal()">
+        <!-- Navigation Left (Desktop Only) -->
+        <button class="kb24a-carousel-arrow left" onclick="navigateArtist(-1); event.stopPropagation()" aria-label="Previous Artist">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        
+        <div class="kb24a-modal" id="artistModal" onclick="event.stopPropagation()">
+            <!-- Close Button -->
+            <button class="kb24a-modal-close" onclick="closeArtistModal()">&times;</button>
+            
+            <div class="kb24a-modal-content" id="artistModalContent">
+                <!-- Dynamically populated -->
+            </div>
+
+            <!-- Mobile Carousel Navigation (Inside Modal for spacing) -->
+            <div class="kb24a-mobile-nav">
+                <button class="kb24a-mobile-nav-btn" onclick="navigateArtist(-1)">
+                    <i class="fas fa-chevron-left me-2"></i> Previous
+                </button>
+                <button class="kb24a-mobile-nav-btn" onclick="navigateArtist(1)">
+                    Next <i class="fas fa-chevron-right ms-2"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Navigation Right (Desktop Only) -->
+        <button class="kb24a-carousel-arrow right" onclick="navigateArtist(1); event.stopPropagation()" aria-label="Next Artist">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <!-- Share Notification Toast -->
+        <div class="kb24a-toast" id="kb24aShareToast">
+            <i class="fas fa-check-circle me-2 text-success"></i> Direct artist link copied to clipboard!
+        </div>
+    </div>
+<?php endif; ?>
+
     <!--********************************
 			Code End  Here 
 	******************************** -->

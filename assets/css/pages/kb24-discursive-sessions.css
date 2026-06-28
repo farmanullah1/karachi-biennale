@@ -1,0 +1,198 @@
+/* ==========================================================================
+   Page-Specific Styles: KB24 Discursive Sessions
+   Scope: body.page-kb24-discursive
+   Identity: "Historical Bind" - Light Mode Custom Palette
+   ========================================================================== */
+
+body.page-kb24-discursive {
+    --theme-color: #0088cb;
+    --title-color: #231f20;
+    --body-color: #7B7E86;
+    --smoke-color: #FAF9F6;
+    --smoke-color2: #F8F8F8;
+    --smoke-color3: #F5F5F6;
+    --smoke-color4: #F4F4F4;
+    --smoke-color5: #F0F2F4;
+    --black-color: #1F2528;
+    --gray-color: #303030;
+    --white-color: #ffffff;
+    --light-color: #DDDDDC;
+
+    background-color: var(--smoke-color);
+    color: var(--body-color);
+}
+
+/* 1. Hero Banner overrides */
+body.page-kb24-discursive .kb24d-hero-section {
+    position: relative;
+    overflow: hidden;
+}
+body.page-kb24-discursive .kb24d-hero-banner {
+    background: linear-gradient(rgba(31, 37, 40, 0.75), rgba(31, 37, 40, 0.9)), url('../../img/KB24/kb24-banner.jpg') no-repeat center center / cover;
+    padding: 120px 0;
+    border-bottom: 2px solid var(--theme-color);
+    position: relative;
+}
+body.page-kb24-discursive .kb24d-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(2, 2, 2, 0.3);
+    z-index: 1;
+}
+body.page-kb24-discursive .kb24d-hero-banner > .container {
+    position: relative;
+    z-index: 2;
+}
+body.page-kb24-discursive .kb24d-hero-title {
+    font-family: 'Jost', sans-serif;
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 800;
+    color: var(--white-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+body.page-kb24-discursive .kb24d-hero-title span {
+    display: inline-block;
+}
+body.page-kb24-discursive .kb24d-hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--theme-color);
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+body.page-kb24-discursive .kb24d-breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+body.page-kb24-discursive .kb24d-breadcrumbs li {
+    font-size: 12px;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+body.page-kb24-discursive .kb24d-breadcrumbs li + li::before {
+    content: '/';
+    margin-right: 8px;
+    color: rgba(255,255,255,0.4);
+}
+body.page-kb24-discursive .kb24d-breadcrumbs a {
+    color: rgba(255,255,255,0.9);
+    transition: color 0.3s ease;
+}
+body.page-kb24-discursive .kb24d-breadcrumbs a:hover {
+    color: var(--theme-color);
+}
+
+/* 2. Main content layout */
+body.page-kb24-discursive .kb24d-main-wrapper {
+    background-color: var(--smoke-color);
+    padding: 80px 0 100px;
+}
+body.page-kb24-discursive .kb24d-article {
+    background-color: var(--white-color);
+    border: 1px solid var(--light-color);
+    border-radius: 12px;
+    padding: 50px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.02);
+}
+body.page-kb24-discursive .kb24d-lead {
+    font-size: 19px;
+    line-height: 1.8;
+    color: var(--black-color);
+    font-weight: 600;
+    border-left: 3px solid var(--theme-color);
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+body.page-kb24-discursive .kb24d-paragraph {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--body-color);
+    margin-bottom: 25px;
+    text-align: justify;
+}
+body.page-kb24-discursive .kb24d-section-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--title-color);
+    margin-top: 40px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Sidebar & Gallery Layout */
+body.page-kb24-discursive .kb24d-sidebar {
+    background-color: var(--white-color);
+    border: 1px solid var(--light-color);
+    border-radius: 12px;
+    padding: 35px 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.02);
+}
+body.page-kb24-discursive .kb24d-sidebar-title {
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    color: var(--title-color);
+    border-bottom: 1px dashed var(--light-color);
+    padding-bottom: 12px;
+}
+
+body.page-kb24-discursive .kb24d-gallery-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+body.page-kb24-discursive .kb24d-gallery-item {
+    transition: transform 0.4s ease;
+}
+body.page-kb24-discursive .kb24d-gallery-link {
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid var(--light-color);
+    background-color: var(--smoke-color5);
+}
+body.page-kb24-discursive .kb24d-gallery-link img {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0.9;
+    width: 100%;
+}
+body.page-kb24-discursive .kb24d-gallery-link:hover img {
+    transform: scale(1.04);
+    opacity: 1;
+}
+
+/* Phone/Email Footer Widget */
+body.page-kb24-discursive .kb24d-footer-contact {
+    background-color: var(--white-color);
+    border-top: 1px solid var(--light-color);
+    padding: 35px 0;
+    color: var(--body-color);
+}
+body.page-kb24-discursive .text-gold {
+    color: var(--theme-color) !important;
+}
+
+@media (max-width: 991px) {
+    body.page-kb24-discursive .kb24d-sidebar {
+        margin-top: 40px;
+    }
+}
+@media (max-width: 767px) {
+    body.page-kb24-discursive .kb24d-article {
+        padding: 30px 20px;
+    }
+}

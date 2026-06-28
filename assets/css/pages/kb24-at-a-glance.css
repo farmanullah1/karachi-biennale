@@ -1,15 +1,25 @@
 /* ==========================================================================
    Page-Specific Styles: KB24 At A Glance
    Scope: body.page-kb24-at-a-glance
-   Identity: "Rizq | Risk: Sustenance & Vulnerability" - Agrarian Organic
+   Identity: "Rizq | Risk: Sustenance & Vulnerability" - Light Mode Custom Palette
    ========================================================================== */
 
 body.page-kb24-at-a-glance {
-    --page-accent: #4f6d40; /* Olive Green */
-    --page-accent-gold: #c8a232; /* Clay Gold */
-    --page-bg-light: #faf9f6; /* Warm Ivory */
-    --page-bg-card: #ffffff;
-    --page-border: rgba(79, 109, 64, 0.15);
+    --theme-color: #0088cb;
+    --title-color: #231f20;
+    --body-color: #7B7E86;
+    --smoke-color: #FAF9F6;
+    --smoke-color2: #F8F8F8;
+    --smoke-color3: #F5F5F6;
+    --smoke-color4: #F4F4F4;
+    --smoke-color5: #F0F2F4;
+    --black-color: #1F2528;
+    --gray-color: #303030;
+    --white-color: #ffffff;
+    --light-color: #DDDDDC;
+
+    background-color: var(--smoke-color);
+    color: var(--body-color);
 }
 
 /* 1. Hero Banner overrides */
@@ -18,15 +28,15 @@ body.page-kb24-at-a-glance .kb24g-hero-section {
     overflow: hidden;
 }
 body.page-kb24-at-a-glance .kb24g-hero-banner {
-    background: linear-gradient(135deg, #1b2018 0%, #3a321d 100%);
-    padding: 90px 0;
-    border-bottom: 2px solid var(--page-accent);
+    background: linear-gradient(rgba(31, 37, 40, 0.75), rgba(31, 37, 40, 0.9)), url('../../img/KB24ArtistsList/kb24-banner.jpg') no-repeat center center / cover;
+    padding: 120px 0;
+    border-bottom: 2px solid var(--theme-color);
     position: relative;
 }
 body.page-kb24-at-a-glance .kb24g-hero-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.25);
+    background: rgba(0,0,0,0.1);
     z-index: 1;
 }
 body.page-kb24-at-a-glance .kb24g-hero-banner > .container {
@@ -35,316 +45,442 @@ body.page-kb24-at-a-glance .kb24g-hero-banner > .container {
 }
 body.page-kb24-at-a-glance .kb24g-hero-title {
     font-family: 'Jost', sans-serif;
-    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-size: clamp(2.5rem, 6vw, 4.2rem);
     font-weight: 800;
-    color: #ffffff;
+    color: var(--white-color);
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 10px;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
 body.page-kb24-at-a-glance .kb24g-hero-subtitle {
-    font-size: 1.1rem;
-    color: var(--page-accent-gold);
-    font-family: 'Georgia', serif;
-    font-style: italic;
-    letter-spacing: 1px;
+    font-size: 1.5rem;
+    color: var(--theme-color);
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.4);
 }
 body.page-kb24-at-a-glance .kb24g-breadcrumbs ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0 0;
+    margin: 25px 0 0;
     display: flex;
     justify-content: center;
     gap: 8px;
 }
 body.page-kb24-at-a-glance .kb24g-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255,255,255,0.7);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 body.page-kb24-at-a-glance .kb24g-breadcrumbs li + li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.4);
 }
 body.page-kb24-at-a-glance .kb24g-breadcrumbs a {
-    color: rgba(255,255,255,0.8);
+    color: rgba(255,255,255,0.9);
     transition: color 0.3s ease;
 }
 body.page-kb24-at-a-glance .kb24g-breadcrumbs a:hover {
-    color: var(--page-accent-gold);
+    color: var(--theme-color);
 }
 
 /* 2. Main Wrapper spacing */
 body.page-kb24-at-a-glance .kb24g-main-wrapper {
-    background-color: #fdfdfc;
+    background-color: var(--smoke-color);
     padding: 80px 0;
 }
-body.page-kb24-at-a-glance .kb24g-theme-section {
+body.page-kb24-at-a-glance .kb24g-section {
     margin-bottom: 80px;
 }
-body.page-kb24-at-a-glance .kb24g-section-header {
-    margin-bottom: 30px;
-}
 body.page-kb24-at-a-glance .kb24g-tag {
-    background-color: var(--page-accent);
-    color: #ffffff;
+    background-color: var(--theme-color);
+    color: var(--white-color);
     font-size: 10px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    padding: 4px 10px;
+    padding: 6px 14px;
     border-radius: 4px;
     display: inline-block;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
-body.page-kb24-at-a-glance .kb24g-section-title {
+body.page-kb24-at-a-glance .kb24g-theme-main-title {
+    font-family: 'Jost', sans-serif;
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    font-weight: 900;
+    color: var(--title-color);
+    line-height: 1.05;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+body.page-kb24-at-a-glance .kb24g-theme-sub-title {
     font-family: 'Georgia', serif;
-    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
-    font-weight: 700;
-    color: #1a1a1a;
-    line-height: 1.25;
+    font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+    color: var(--theme-color);
+    font-style: italic;
+    margin-bottom: 25px;
+}
+body.page-kb24-at-a-glance .kb24g-theme-dates {
+    font-size: 16px;
+    background-color: var(--white-color);
+    border: 1px solid var(--light-color);
+    padding: 12px 25px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 25px;
+    color: var(--black-color);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+body.page-kb24-at-a-glance .kb24g-theme-dates i {
+    color: var(--theme-color);
 }
 body.page-kb24-at-a-glance .kb24g-paragraph {
     font-size: 16px;
     line-height: 1.8;
-    color: #555555;
+    color: var(--body-color);
     margin-bottom: 20px;
 }
 body.page-kb24-at-a-glance .kb24g-paragraph.lead {
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--page-accent);
+    font-size: 19px;
+    color: var(--black-color);
+    border-left: 3px solid var(--theme-color);
+    padding-left: 20px;
 }
 
-/* Impact and Statistics Card */
-body.page-kb24-at-a-glance .kb24g-stats-highlight-card {
-    background-color: var(--page-bg-light);
-    border: 1px solid var(--page-border);
-    border-top: 4px solid var(--page-accent-gold);
-    border-radius: 12px;
-    padding: 40px;
-    box-shadow: 0 10px 30px rgba(79, 109, 64, 0.05);
+/* Image frame highlight */
+body.page-kb24-at-a-glance .kb24g-image-frame-wrap {
+    position: relative;
+    padding: 15px;
 }
-body.page-kb24-at-a-glance .kb24g-stats-card-title {
+body.page-kb24-at-a-glance .kb24g-frame-img {
+    border-radius: 12px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border: 1px solid var(--light-color);
+}
+body.page-kb24-at-a-glance .kb24g-frame-backdrop {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    right: -5px;
+    bottom: -5px;
+    background: repeating-linear-gradient(45deg, var(--light-color), var(--light-color) 2px, transparent 2px, transparent 10px);
+    border-radius: 12px;
+    z-index: 1;
+}
+
+/* 3. Quick Links Section styling */
+body.page-kb24-at-a-glance .kb24g-section-title {
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: var(--title-color);
+    margin-top: 10px;
+}
+body.page-kb24-at-a-glance .kb24g-section-desc {
+    color: var(--body-color);
+}
+body.page-kb24-at-a-glance .kb24g-portal-card {
+    background-color: var(--white-color);
+    border: 1px solid var(--light-color);
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.03);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+}
+body.page-kb24-at-a-glance .kb24g-portal-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--theme-color);
+    box-shadow: 0 15px 30px rgba(0, 136, 203, 0.15);
+}
+body.page-kb24-at-a-glance .kb24g-portal-header {
+    padding: 30px 25px;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+body.page-kb24-at-a-glance .kb24g-portal-header i {
+    font-size: 28px;
+}
+body.page-kb24-at-a-glance .kb24g-portal-header h3 {
     font-family: 'Jost', sans-serif;
     font-size: 20px;
     font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 30px;
-    text-align: center;
-    border-bottom: 1px dashed rgba(0,0,0,0.1);
-    padding-bottom: 15px;
-}
-body.page-kb24-at-a-glance .kb24g-stats-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin-bottom: 30px;
-}
-body.page-kb24-at-a-glance .kb24g-stat-item {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-body.page-kb24-at-a-glance .kb24g-stat-number {
-    font-size: 36px;
-    font-weight: 800;
-    color: var(--page-accent);
-    line-height: 1;
-    margin-bottom: 5px;
-    transition: transform 0.3s ease;
-}
-body.page-kb24-at-a-glance .kb24g-stat-item:hover .kb24g-stat-number {
-    transform: scale(1.1);
-    color: var(--page-accent-gold);
-}
-body.page-kb24-at-a-glance .kb24g-stat-label {
-    font-size: 12px;
-    font-weight: 700;
-    color: #777777;
+    margin: 0;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-body.page-kb24-at-a-glance .kb24g-dates-bar {
-    background-color: #ffffff;
-    border-radius: 6px;
-    padding: 12px 18px;
-    text-align: center;
-    font-size: 14px;
-    color: #444;
-    border: 1px solid rgba(0,0,0,0.04);
-}
-body.page-kb24-at-a-glance .kb24g-dates-bar i {
-    color: var(--page-accent-gold);
 }
 
-/* 3. Chief Curator Statement Card */
-body.page-kb24-at-a-glance .kb24g-curator-section {
-    margin-bottom: 80px;
+/* Gradients for Portal headers */
+body.page-kb24-at-a-glance .bg-gradient-forest {
+    background: linear-gradient(135deg, var(--theme-color) 0%, #005a87 100%);
 }
-body.page-kb24-at-a-glance .kb24g-curator-card {
-    background-color: #ffffff;
-    border: 1px solid rgba(0,0,0,0.06);
-    border-radius: 12px;
-    padding: 50px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.03);
+body.page-kb24-at-a-glance .bg-gradient-ochre {
+    background: linear-gradient(135deg, #f57c00 0%, #bb4d00 100%);
 }
-body.page-kb24-at-a-glance .kb24g-curator-avatar-wrap {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid var(--page-accent-gold);
-    padding: 10px;
-    margin: 0 auto;
+body.page-kb24-at-a-glance .bg-gradient-rust {
+    background: linear-gradient(135deg, #e91e63 0%, #ad1457 100%);
 }
-body.page-kb24-at-a-glance .kb24g-curator-logo {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    transition: transform 0.4s ease;
-}
-body.page-kb24-at-a-glance .kb24g-avatar-decor {
-    position: absolute;
-    inset: -6px;
-    border: 1px dashed var(--page-accent);
-    border-radius: 50%;
-    animation: kb27spin 15s linear infinite;
-}
-body.page-kb24-at-a-glance .kb24g-curator-card:hover .kb24g-curator-logo {
-    transform: scale(1.06);
-}
-body.page-kb24-at-a-glance .kb24g-curator-info {
-    padding-left: 15px;
-}
-body.page-kb24-at-a-glance .kb24g-curator-role {
-    font-size: 11px;
-    font-weight: 700;
-    color: var(--page-accent-gold);
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    display: inline-block;
-    margin-bottom: 6px;
-}
-body.page-kb24-at-a-glance .kb24g-curator-name {
-    font-family: 'Georgia', serif;
-    font-size: 26px;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 15px;
-}
-body.page-kb24-at-a-glance .kb24g-curator-bio {
-    font-size: 14.5px;
-    line-height: 1.7;
-    color: #666666;
-    margin-bottom: 15px;
-}
-body.page-kb24-at-a-glance .kb24g-curator-team-list {
-    font-size: 13.5px;
-    color: #555;
-    background-color: var(--page-bg-light);
-    padding: 8px 15px;
-    border-radius: 4px;
-    display: inline-block;
-    border: 1px solid var(--page-border);
+body.page-kb24-at-a-glance .bg-gradient-slate {
+    background: linear-gradient(135deg, var(--gray-color) 0%, var(--black-color) 100%);
 }
 
-/* Quote statement */
-body.page-kb24-at-a-glance .kb24g-quote {
-    border-top: 1px solid rgba(0,0,0,0.06);
-    margin-top: 35px;
-    padding-top: 30px;
-    text-align: center;
+body.page-kb24-at-a-glance .kb24g-portal-list {
+    list-style: none;
+    padding: 20px 25px;
+    margin: 0;
 }
-body.page-kb24-at-a-glance .kb24g-quote p {
-    font-family: 'Georgia', serif;
-    font-size: 18px;
-    line-height: 1.6;
-    color: var(--page-accent);
-    font-style: italic;
+body.page-kb24-at-a-glance .kb24g-portal-list li {
     margin-bottom: 12px;
 }
-body.page-kb24-at-a-glance .kb24g-quote cite {
-    font-size: 13px;
-    font-weight: 700;
-    color: #333333;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    font-style: normal;
+body.page-kb24-at-a-glance .kb24g-portal-list li:last-child {
+    margin-bottom: 0;
+}
+body.page-kb24-at-a-glance .kb24g-portal-list a {
+    color: var(--body-color);
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+    text-decoration: none;
+}
+body.page-kb24-at-a-glance .kb24g-portal-list a i {
+    font-size: 12px;
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+body.page-kb24-at-a-glance .kb24g-portal-list a:hover {
+    color: var(--theme-color);
+    padding-left: 5px;
+}
+body.page-kb24-at-a-glance .kb24g-portal-list a:hover i {
+    transform: translateX(4px);
+    color: var(--theme-color);
 }
 
-/* 4. Navigation Cards (Explore links grid) */
-body.page-kb24-at-a-glance .kb24g-nav-section-title {
-    font-family: 'Georgia', serif;
-    font-size: 24px;
+/* 4. Venues & Accessibility Section */
+body.page-kb24-at-a-glance .kb24g-venues-card {
+    background-color: var(--white-color);
+    border: 1px solid var(--light-color);
+    border-radius: 12px;
+    padding: 40px;
+    height: 100%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.02);
+}
+body.page-kb24-at-a-glance .kb24g-venues-title {
+    font-family: 'Jost', sans-serif;
     font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 40px;
+    font-size: 24px;
+    text-transform: uppercase;
+    border-bottom: 1px dashed var(--light-color);
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    color: var(--title-color);
 }
-body.page-kb24-at-a-glance .kb24g-links-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+body.page-kb24-at-a-glance .text-forest {
+    color: var(--theme-color) !important;
+}
+body.page-kb24-at-a-glance .kb24g-venue-item {
+    display: flex;
     gap: 20px;
+    margin-bottom: 30px;
 }
-body.page-kb24-at-a-glance .kb24g-nav-card {
-    background-color: #ffffff;
-    border: 1px solid rgba(0,0,0,0.05);
-    border-radius: 8px;
-    padding: 30px 20px;
+body.page-kb24-at-a-glance .kb24g-venue-item:last-child {
+    margin-bottom: 0;
+}
+body.page-kb24-at-a-glance .kb24g-venue-icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--smoke-color5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--theme-color);
+    font-size: 20px;
+    flex-shrink: 0;
+    border: 1px solid var(--light-color);
+}
+body.page-kb24-at-a-glance .kb24g-venue-info h4 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: var(--title-color);
+}
+body.page-kb24-at-a-glance .kb24g-venue-info p {
+    font-size: 14px;
+    color: var(--body-color);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Accessibility Card */
+body.page-kb24-at-a-glance .kb24g-access-card {
+    background-color: var(--white-color);
+    border: 1px solid var(--light-color);
+    border-radius: 12px;
+    padding: 50px 40px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.02);
+}
+body.page-kb24-at-a-glance .kb24g-access-card::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(0, 136, 203, 0.08), transparent 70%);
+    border-radius: 50%;
+}
+body.page-kb24-at-a-glance .kb24g-access-icon {
+    font-size: 55px;
+    color: var(--theme-color);
+    margin-bottom: 25px;
+}
+body.page-kb24-at-a-glance .kb24g-access-title {
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: var(--title-color);
+    margin-bottom: 20px;
+}
+body.page-kb24-at-a-glance .kb24g-access-text {
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: var(--body-color);
+    margin-bottom: 20px;
+}
+body.page-kb24-at-a-glance .kb24g-access-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+body.page-kb24-at-a-glance .kb24g-access-contacts a {
+    color: var(--black-color);
+    font-size: 15px;
     text-decoration: none;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.01);
-    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
-body.page-kb24-at-a-glance .kb24g-nav-card-icon {
-    font-size: 32px;
-    color: var(--page-accent);
-    margin-bottom: 15px;
-    transition: transform 0.4s ease, color 0.4s ease;
+body.page-kb24-at-a-glance .kb24g-access-contacts a:hover {
+    color: var(--theme-color);
 }
-body.page-kb24-at-a-glance .kb24g-nav-card-title {
-    font-size: 14px;
+
+/* 5. Social Media & Contact Section */
+body.page-kb24-at-a-glance .kb24g-social-box {
+    background-color: var(--white-color);
+    border: 1px solid var(--light-color);
+    border-radius: 12px;
+    padding: 60px 40px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.02);
+}
+body.page-kb24-at-a-glance .kb24g-social-title {
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    color: var(--title-color);
+}
+body.page-kb24-at-a-glance .kb24g-social-subtitle {
+    color: var(--body-color);
+}
+body.page-kb24-at-a-glance .kb24g-social-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+body.page-kb24-at-a-glance .kb24g-social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background-color: var(--smoke-color3);
+    border: 1px solid var(--light-color);
+    padding: 12px 30px;
+    border-radius: 50px;
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 15px;
     font-weight: 700;
-    color: #333;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
-body.page-kb24-at-a-glance .kb24g-nav-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(79,109,64,0.12);
-    border-color: rgba(79,109,64,0.25);
+body.page-kb24-at-a-glance .kb24g-social-link i {
+    font-size: 18px;
 }
-body.page-kb24-at-a-glance .kb24g-nav-card:hover .kb24g-nav-card-icon {
-    transform: scale(1.15) rotate(5deg);
-    color: var(--page-accent-gold);
+body.page-kb24-at-a-glance .kb24g-social-link:hover {
+    transform: translateY(-4px);
+    border-color: var(--theme-color);
+    color: var(--white-color);
+}
+body.page-kb24-at-a-glance .kb24g-social-link.twitter:hover {
+    background-color: #1da1f2;
+    border-color: #1da1f2;
+}
+body.page-kb24-at-a-glance .kb24g-social-link.facebook:hover {
+    background-color: #1877f2;
+    border-color: #1877f2;
+}
+body.page-kb24-at-a-glance .kb24g-social-link.instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285aec 90%);
+    border-color: transparent;
+}
+body.page-kb24-at-a-glance .kb24g-social-link.directory:hover {
+    background-color: var(--theme-color);
+    border-color: var(--theme-color);
 }
 
-@keyframes kb27spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+body.page-kb24-at-a-glance .kb24g-contact-details {
+    border-top: 1px solid var(--light-color);
+    padding-top: 40px;
+    max-width: 500px;
+    margin: 40px auto 0;
+}
+body.page-kb24-at-a-glance .kb24g-contact-title {
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--title-color);
+}
+body.page-kb24-at-a-glance .kb24g-contact-text {
+    font-size: 16px;
+    color: var(--body-color);
+    margin-bottom: 12px;
+}
+body.page-kb24-at-a-glance .kb24g-contact-text i {
+    color: var(--theme-color);
 }
 
-/* Responsive grid adjustments */
 @media (max-width: 991px) {
-    body.page-kb24-at-a-glance .kb24g-stats-highlight-card {
-        margin-top: 40px;
+    body.page-kb24-at-a-glance .kb24g-image-frame-wrap {
+        margin-top: 50px;
     }
 }
 @media (max-width: 767px) {
-    body.page-kb24-at-a-glance .kb24g-curator-card {
-        padding: 30px;
-    }
-    body.page-kb24-at-a-glance .kb24g-curator-info {
-        padding-left: 0;
-        text-align: center;
-        margin-top: 25px;
-    }
-    body.page-kb24-at-a-glance .kb24g-quote p {
-        font-size: 16px;
+    body.page-kb24-at-a-glance .kb24g-social-link {
+        width: 100%;
+        justify-content: center;
     }
 }

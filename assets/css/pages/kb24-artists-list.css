@@ -1,17 +1,28 @@
 /* ==========================================================================
    Page-Specific Styles: KB24 Artists List
    Scope: body.page-kb24-artists-list
-   Identity: "Vessel of Visionaries" - Artist Wall / Index
+   Identity: "Rizq | Risk: Sustenance & Vulnerability" - Light Mode Custom Palette
    ========================================================================== */
 
 body.page-kb24-artists-list {
-    --page-accent: #b38f3b; /* Warm Bronze */
-    --page-bg-light: #fafafa;
-    --page-bg-card: #ffffff;
-    --page-border: rgba(179, 143, 59, 0.15);
+    --theme-color: #0088cb;
+    --title-color: #231f20;
+    --body-color: #7B7E86;
+    --smoke-color: #FAF9F6;
+    --smoke-color2: #F8F8F8;
+    --smoke-color3: #F5F5F6;
+    --smoke-color4: #F4F4F4;
+    --smoke-color5: #F0F2F4;
+    --black-color: #1F2528;
+    --gray-color: #303030;
+    --white-color: #ffffff;
+    --light-color: #DDDDDC;
+
+    background-color: var(--smoke-color);
+    color: var(--body-color);
 }
 
-/* 1. Page Banner (Full Image Hero) */
+/* 1. Hero Banner overrides */
 body.page-kb24-artists-list .kb24a-hero-banner-section {
     position: relative;
     overflow: hidden;
@@ -19,45 +30,47 @@ body.page-kb24-artists-list .kb24a-hero-banner-section {
 body.page-kb24-artists-list .kb24a-banner-img-wrap {
     position: relative;
     width: 100%;
-    min-height: 380px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 320px;
 }
 body.page-kb24-artists-list .kb24a-banner-img {
-    position: absolute;
-    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 1;
 }
 body.page-kb24-artists-list .kb24a-banner-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(27,25,21,0.85) 0%, rgba(58,50,29,0.7) 100%);
-    z-index: 2;
+    background: linear-gradient(to bottom, rgba(31, 37, 40, 0.6) 0%, var(--smoke-color) 100%);
+    z-index: 1;
 }
 body.page-kb24-artists-list .kb24a-banner-text-wrap {
-    position: relative;
-    z-index: 3;
-    padding: 30px;
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 body.page-kb24-artists-list .kb24a-hero-title {
     font-family: 'Jost', sans-serif;
-    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
     font-weight: 800;
-    color: #ffffff;
+    color: var(--white-color);
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
 body.page-kb24-artists-list .kb24a-hero-subtitle {
-    font-size: 1.1rem;
-    color: var(--page-accent);
-    font-family: 'Georgia', serif;
-    font-style: italic;
-    letter-spacing: 1px;
+    font-size: 1.3rem;
+    color: var(--theme-color);
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.4);
 }
 body.page-kb24-artists-list .kb24a-breadcrumbs ul {
     list-style: none;
@@ -69,221 +82,493 @@ body.page-kb24-artists-list .kb24a-breadcrumbs ul {
 }
 body.page-kb24-artists-list .kb24a-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255,255,255,0.7);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 body.page-kb24-artists-list .kb24a-breadcrumbs li + li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.4);
 }
 body.page-kb24-artists-list .kb24a-breadcrumbs a {
-    color: rgba(255,255,255,0.8);
+    color: rgba(255,255,255,0.9);
     transition: color 0.3s ease;
 }
 body.page-kb24-artists-list .kb24a-breadcrumbs a:hover {
-    color: var(--page-accent);
+    color: var(--theme-color);
 }
 
-/* 2. Main Wrapper spacing */
+/* 2. Controls Bar (Search & Filter) */
 body.page-kb24-artists-list .kb24a-main-wrapper {
-    background-color: #fafbfc;
-    padding: 100px 0;
+    background-color: var(--smoke-color);
+    padding: 60px 0 100px;
 }
-
-/* Featured Spotlight */
-body.page-kb24-artists-list .kb24a-featured-section {
-    margin-bottom: 80px;
-}
-body.page-kb24-artists-list .kb24a-section-header {
-    margin-bottom: 35px;
-    border-bottom: 2px solid rgba(0,0,0,0.06);
-    padding-bottom: 15px;
-}
-body.page-kb24-artists-list .kb24a-featured-label {
-    background-color: var(--page-accent);
-    color: #ffffff;
-    font-size: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    padding: 4px 10px;
-    border-radius: 4px;
-    display: inline-block;
-    margin-bottom: 10px;
-}
-body.page-kb24-artists-list .kb24a-section-title {
-    font-family: 'Jost', sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin: 0;
-}
-body.page-kb24-artists-list .kb24a-section-title i {
-    color: var(--page-accent);
-}
-
-/* Featured Card */
-body.page-kb24-artists-list .kb24a-featured-card {
-    background-color: #ffffff;
-    border: 1px solid rgba(0,0,0,0.06);
-    border-top: 4px solid var(--page-accent);
+body.page-kb24-artists-list .kb24a-control-bar {
+    background-color: var(--white-color);
+    border: 1px solid var(--light-color);
     border-radius: 12px;
-    padding: 50px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.03);
+    padding: 25px 30px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.02);
 }
-body.page-kb24-artists-list .kb24a-featured-img-wrap {
+body.page-kb24-artists-list .kb24a-search-wrap {
     position: relative;
-    width: 240px;
-    height: 240px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 4px solid var(--page-accent);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1), 0 0 0 6px rgba(179, 143, 59, 0.15);
-    margin: 0 auto 20px;
-    transition: transform 0.4s ease;
 }
-body.page-kb24-artists-list .kb24a-featured-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-body.page-kb24-artists-list .kb24a-featured-card:hover .kb24a-featured-img-wrap {
-    transform: scale(1.03);
-}
-body.page-kb24-artists-list .kb24a-featured-card:hover .kb24a-featured-img {
-    transform: scale(1.06);
-}
-body.page-kb24-artists-list .kb24a-country-badge {
+body.page-kb24-artists-list .kb24a-search-wrap .search-icon {
     position: absolute;
-    bottom: 15px; left: 50%;
-    transform: translateX(-50%);
-    font-size: 9px;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: var(--body-color);
+    font-size: 16px;
+}
+body.page-kb24-artists-list #artistSearchInput {
+    width: 100%;
+    background-color: var(--smoke-color5);
+    border: 1px solid var(--light-color);
+    border-radius: 50px;
+    padding: 12px 20px 12px 50px;
+    color: var(--black-color);
+    font-size: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+body.page-kb24-artists-list #artistSearchInput:focus {
+    border-color: var(--theme-color);
+    box-shadow: 0 0 12px rgba(0, 136, 203, 0.2);
+    outline: none;
+}
+body.page-kb24-artists-list .kb24a-filter-btn-group {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+body.page-kb24-artists-list .kb24a-filter-btn {
+    background-color: var(--smoke-color5);
+    border: 1px solid var(--light-color);
+    color: var(--body-color);
+    padding: 10px 25px;
+    border-radius: 50px;
     font-weight: 700;
-    background-color: var(--page-accent);
-    color: #ffffff;
-    padding: 3px 10px;
-    border-radius: 3px;
+    font-size: 13.5px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+body.page-kb24-artists-list .kb24a-filter-btn:hover {
+    color: var(--black-color);
+    border-color: var(--body-color);
+}
+body.page-kb24-artists-list .kb24a-filter-btn.active {
+    background-color: var(--theme-color);
+    border-color: var(--theme-color);
+    color: var(--white-color);
+    box-shadow: 0 4px 15px rgba(0, 136, 203, 0.3);
 }
 
-/* Featured details */
-body.page-kb24-artists-list .kb24a-artwork-title {
-    font-family: 'Georgia', serif;
-    font-size: 24px;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 8px;
-}
-body.page-kb24-artists-list .kb24a-artwork-meta {
-    font-size: 13.5px;
-    line-height: 1.6;
-    color: #666;
-    background-color: #faf9f6;
-    padding: 10px 15px;
-    border-radius: 4px;
-    border-left: 3px solid var(--page-accent);
-    margin-bottom: 20px;
-}
-body.page-kb24-artists-list .kb24a-bio-text {
-    font-size: 15px;
-    line-height: 1.75;
-    color: #555555;
-    margin-bottom: 15px;
-    text-align: justify;
-}
-
-/* 3. Artist Grid Directory */
-body.page-kb24-artists-list .kb24a-grid-section {
-    margin-top: 60px;
-}
-body.page-kb24-artists-list .kb24a-section-intro {
-    font-size: 14.5px;
-    color: #777777;
-    margin-top: 8px;
-    margin-bottom: 0;
-}
+/* 3. Grid & Cards */
 body.page-kb24-artists-list .kb24a-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 30px;
 }
 body.page-kb24-artists-list .kb24a-card {
-    background-color: var(--page-bg-card);
-    border: 1px solid rgba(0,0,0,0.05);
-    border-radius: 10px;
-    padding: 30px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.01);
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.15), box-shadow 0.4s ease, border-color 0.4s ease;
+    background-color: var(--white-color);
+    border: 1px solid var(--light-color);
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.02);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border-color 0.4s ease, box-shadow 0.4s ease;
 }
 body.page-kb24-artists-list .kb24a-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(179, 143, 59, 0.12);
-    border-color: rgba(179, 143, 59, 0.25);
+    border-color: var(--theme-color);
+    box-shadow: 0 15px 30px rgba(0, 136, 203, 0.15);
 }
-
-/* Circular Avatars Grayscale */
 body.page-kb24-artists-list .kb24a-avatar-wrap {
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
+    position: relative;
+    width: 100%;
+    height: 280px;
     overflow: hidden;
-    border: 2px solid var(--page-accent);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-    margin-bottom: 18px;
-    transition: transform 0.4s ease;
+    background-color: var(--smoke-color5);
 }
 body.page-kb24-artists-list .kb24a-avatar {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: grayscale(100%);
-    transition: transform 0.5s ease, filter 0.5s ease;
-}
-body.page-kb24-artists-list .kb24a-card:hover .kb24a-avatar-wrap {
-    transform: scale(1.05);
+    filter: grayscale(40%);
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1), filter 0.6s ease;
 }
 body.page-kb24-artists-list .kb24a-card:hover .kb24a-avatar {
+    transform: scale(1.06);
     filter: grayscale(0%);
-    transform: scale(1.08);
 }
 
-/* Card metadata details */
-body.page-kb24-artists-list .kb24a-artist-name {
-    font-family: 'Jost', sans-serif;
-    font-size: 16px;
+/* Hover overlay element */
+body.page-kb24-artists-list .kb24a-card-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 136, 203, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+body.page-kb24-artists-list .kb24a-card:hover .kb24a-card-overlay {
+    opacity: 1;
+}
+body.page-kb24-artists-list .kb24a-view-details {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    font-size: 12px;
     font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 6px;
-    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 10px 24px;
+    border-radius: 4px;
+    transform: translateY(15px);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+body.page-kb24-artists-list .kb24a-card:hover .kb24a-view-details {
+    transform: translateY(0);
+}
+
+body.page-kb24-artists-list .kb24a-card-body {
+    padding: 25px;
+    border-top: 1px solid var(--light-color);
 }
 body.page-kb24-artists-list .kb24a-card-country {
     font-size: 11px;
-    font-weight: 600;
-    color: #888888;
+    font-weight: 700;
+    color: var(--theme-color);
     text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+body.page-kb24-artists-list .kb24a-badge-prize {
+    background-color: var(--theme-color);
+    color: var(--white-color);
+    font-size: 9px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 800;
     letter-spacing: 0.5px;
 }
+body.page-kb24-artists-list .kb24a-artist-name {
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--title-color);
+    margin-bottom: 6px;
+}
+body.page-kb24-artists-list .kb24a-card-artwork {
+    font-size: 13.5px;
+    color: var(--body-color);
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
-/* Responsive adjustments */
+/* 4. Elegant Glassmorphic Modal */
+body.page-kb24-artists-list .kb24a-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(31, 37, 40, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9999;
+    padding: 20px;
+    transition: opacity 0.4s ease;
+}
+body.page-kb24-artists-list .kb24a-modal-backdrop.active {
+    opacity: 1;
+    pointer-events: all;
+}
+body.page-kb24-artists-list .kb24a-modal {
+    background-color: var(--white-color);
+    border: 1px solid var(--light-color);
+    border-radius: 16px;
+    max-width: 950px;
+    width: 100%;
+    max-height: 85vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+    transform: translateY(30px) scale(0.96);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.3s ease;
+}
+body.page-kb24-artists-list .kb24a-modal.active {
+    transform: translateY(0) scale(1);
+}
+
+/* Custom Scrollbar for Modal */
+body.page-kb24-artists-list .kb24a-modal::-webkit-scrollbar {
+    width: 8px;
+}
+body.page-kb24-artists-list .kb24a-modal::-webkit-scrollbar-track {
+    background: var(--smoke-color5);
+    border-radius: 0 16px 16px 0;
+}
+body.page-kb24-artists-list .kb24a-modal::-webkit-scrollbar-thumb {
+    background: var(--theme-color);
+    border-radius: 10px;
+}
+
+body.page-kb24-artists-list .kb24a-modal-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background: var(--smoke-color5);
+    border: 1px solid var(--light-color);
+    color: var(--black-color);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 10;
+}
+body.page-kb24-artists-list .kb24a-modal-close:hover {
+    background-color: var(--theme-color);
+    color: var(--white-color);
+    transform: rotate(90deg);
+}
+
+body.page-kb24-artists-list .kb24a-modal-content {
+    padding: 60px 50px 30px;
+}
+
+/* Carousel arrows on sides */
+body.page-kb24-artists-list .kb24a-carousel-arrow {
+    background-color: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: var(--white-color);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+body.page-kb24-artists-list .kb24a-carousel-arrow:hover {
+    background-color: var(--theme-color);
+    border-color: var(--theme-color);
+    transform: scale(1.08);
+}
+body.page-kb24-artists-list .kb24a-carousel-arrow.left {
+    order: 1;
+}
+body.page-kb24-artists-list .kb24a-modal {
+    order: 2;
+}
+body.page-kb24-artists-list .kb24a-carousel-arrow.right {
+    order: 3;
+}
+
+/* Mobile carousel navigation inside modal */
+body.page-kb24-artists-list .kb24a-mobile-nav {
+    display: none;
+    justify-content: space-between;
+    padding: 15px 30px 25px;
+    border-top: 1px solid var(--light-color);
+    background-color: var(--smoke-color2);
+    border-radius: 0 0 16px 16px;
+}
+body.page-kb24-artists-list .kb24a-mobile-nav-btn {
+    background-color: var(--white-color);
+    border: 1px solid var(--light-color);
+    color: var(--black-color);
+    padding: 8px 18px;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+body.page-kb24-artists-list .kb24a-mobile-nav-btn:hover {
+    background-color: var(--theme-color);
+    color: var(--white-color);
+    border-color: var(--theme-color);
+}
+
+/* Copy Link Toast */
+body.page-kb24-artists-list .kb24a-toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(30px);
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14.5px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    z-index: 100000;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+body.page-kb24-artists-list .kb24a-toast.active {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Modal Inner Elements styling */
+body.page-kb24-artists-list .kb24a-modal-img-wrap {
+    border: 1px solid var(--light-color);
+    padding: 10px;
+    border-radius: 12px;
+    background-color: var(--smoke-color5);
+    display: inline-block;
+    max-width: 100%;
+}
+body.page-kb24-artists-list .kb24a-modal-img {
+    border-radius: 8px;
+    max-height: 400px;
+    object-fit: cover;
+}
+body.page-kb24-artists-list .kb24a-modal-country {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--theme-color);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: block;
+    margin-bottom: 5px;
+}
+body.page-kb24-artists-list .kb24a-modal-artist-name {
+    font-family: 'Jost', sans-serif;
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    font-weight: 850;
+    color: var(--title-color);
+    margin-bottom: 15px;
+}
+body.page-kb24-artists-list .kb24a-modal-prize {
+    background-color: var(--smoke-color5);
+    border: 1px solid var(--light-color);
+    color: var(--theme-color);
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 13.5px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+body.page-kb24-artists-list .kb24a-modal-section-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--title-color);
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--light-color);
+    padding-bottom: 6px;
+}
+body.page-kb24-artists-list .kb24a-modal-text {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--body-color);
+    margin-bottom: 25px;
+}
+body.page-kb24-artists-list .kb24a-modal-artwork-box {
+    background-color: var(--smoke-color5);
+    border: 1px solid var(--light-color);
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+body.page-kb24-artists-list .kb24a-modal-artwork-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--title-color);
+    margin-bottom: 8px;
+}
+body.page-kb24-artists-list .kb24a-modal-artwork-title strong {
+    color: var(--theme-color);
+}
+body.page-kb24-artists-list .kb24a-modal-medium {
+    font-size: 13.5px;
+    color: var(--body-color);
+    margin: 0 0 20px;
+}
+body.page-kb24-artists-list .kb24a-modal-web-btn {
+    background-color: var(--theme-color);
+    color: var(--white-color);
+    padding: 12px 30px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+body.page-kb24-artists-list .kb24a-modal-web-btn:hover {
+    background-color: var(--black-color);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Phone/Email Footer Widget */
+body.page-kb24-artists-list .kb24a-footer-contact {
+    background-color: var(--white-color);
+    border-top: 1px solid var(--light-color);
+    padding: 35px 0;
+    color: var(--body-color);
+}
+body.page-kb24-artists-list .text-gold {
+    color: var(--theme-color) !important;
+}
+
 @media (max-width: 991px) {
-    body.page-kb24-artists-list .kb24a-featured-card {
-        padding: 30px;
+    body.page-kb24-artists-list .kb24a-modal-content {
+        padding: 50px 30px;
+    }
+    body.page-kb24-artists-list .kb24a-modal-img-wrap {
+        margin-bottom: 20px;
+    }
+    body.page-kb24-artists-list .kb24a-carousel-arrow {
+        display: none;
+    }
+    body.page-kb24-artists-list .kb24a-mobile-nav {
+        display: flex;
     }
 }
 @media (max-width: 767px) {
-    body.page-kb24-artists-list .kb24a-hero-banner-section .kb24a-banner-img-wrap {
-        min-height: 260px;
+    body.page-kb24-artists-list .kb24a-control-bar {
+        padding: 20px;
     }
-    body.page-kb24-artists-list .kb24a-featured-details {
-        margin-top: 25px;
+    body.page-kb24-artists-list .kb24a-filter-btn-group {
+        justify-content: flex-start;
+    }
+    body.page-kb24-artists-list .kb24a-filter-btn {
+        width: 100%;
         text-align: center;
     }
 }

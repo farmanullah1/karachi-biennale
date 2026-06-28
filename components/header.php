@@ -262,6 +262,22 @@
         <!-- Page-specific CSS for Home -->
         <link rel="stylesheet" href="assets/css/pages/home.css">
     <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb24-wellness'): ?>
+        <!-- Page-specific CSS for KB24 Wellness -->
+        <link rel="stylesheet" href="assets/css/pages/kb24-art-and-well-being-sessions.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb24-discursive'): ?>
+        <!-- Page-specific CSS for KB24 Discursive -->
+        <link rel="stylesheet" href="assets/css/pages/kb24-discursive-sessions.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb24-educational'): ?>
+        <!-- Page-specific CSS for KB24 Educational -->
+        <link rel="stylesheet" href="assets/css/pages/kb24-educational-programming.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb24-ceremonies'): ?>
+        <!-- Page-specific CSS for KB24 Ceremonies -->
+        <link rel="stylesheet" href="assets/css/pages/kb24-inaugural-and-closing-ceremonies.css">
+    <?php endif; ?>
 
 
 
