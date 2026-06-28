@@ -37,14 +37,14 @@
             <div class="kb24c-flipbook-container-wrap">
                 <div class="kb24c-flipbook-container">
                     <!-- Heyzine Flipbook Embed Iframe. (Replace specific id in src if a new version is uploaded) -->
-                    <iframe src="https://heyzine.com/flip-book/b8398b5843.html" class="kb24c-iframe" title="Karachi Biennale KB24 Digital Flipbook Catalogue" allowfullscreen></iframe>
+                    <iframe src="https://heyzine.com/flip-book/9a48bd7959.html" class="kb24c-iframe" title="Karachi Biennale KB24 Digital Flipbook Catalogue" allowfullscreen></iframe>
                 </div>
             </div>
             
-            <div class="kb24c-download-wrap text-center">
+            <!-- <div class="kb24c-download-wrap text-center">
                 <p class="kb24c-download-text">Prefer an offline copy? You can download the complete catalogue in PDF format.</p>
                 <a href="https://karachibiennale.org.pk" target="_blank" class="kb24c-download-btn"><i class="fas fa-file-pdf me-2"></i> Download Catalogue PDF</a>
-            </div>
+            </div> -->
         </section>
 
     </div>

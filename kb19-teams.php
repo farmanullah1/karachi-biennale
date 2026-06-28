@@ -42,13 +42,13 @@
         <!-- Teams Grid -->
         <div class="row g-4 kb19t-grid">
             <!-- 1. Curatorial Committee -->
-            <div class="col-md-6 col-lg-4">
+            <div class="kp19">
                 <div class="kb19t-team-card">
-                    <div class="kb19t-card-header bg-gradient-yellow">
-                        <i class="fas fa-palette me-2"></i>Curatorial Committee
+                    <div class="kb19t-card-header bg-gradient-yellow"> 
+                        <i class="fas fa-palette me-2" ></i>Curatorial Committee
                     </div>
                     <div class="kb19t-card-body">
-                        <ul class="kb19t-member-list">
+                        <ul class="kb19t-member-list" >
                             <li><strong>Muhammad Zeeshan</strong> <span class="kb19t-member-role">Chief Curator</span></li>
                             <li><strong>Humayun Memon</strong> <span class="kb19t-member-role">Curatorial Associate</span></li>
                             <li><strong>Haya Faruqui</strong> <span class="kb19t-member-role">Assistant Curator</span></li>
@@ -59,7 +59,7 @@
             </div>
 
             <!-- 2. Prize Committee -->
-            <div class="col-md-6 col-lg-4">
+            <div class="kp19">
                 <div class="kb19t-team-card">
                     <div class="kb19t-card-header bg-gradient-teal">
                         <i class="fas fa-award me-2"></i>Prize Committee
@@ -76,7 +76,7 @@
             </div>
 
             <!-- 3. Discursive Committee -->
-            <div class="col-md-6 col-lg-4">
+            <div class="kp19">
                 <div class="kb19t-team-card">
                     <div class="kb19t-card-header bg-gradient-blue">
                         <i class="fas fa-comments me-2"></i>Discursive Committee
@@ -93,7 +93,7 @@
             </div>
 
             <!-- 4. Resource Mobilisation -->
-            <div class="col-md-6 col-lg-4">
+            <div class="kp19">
                 <div class="kb19t-team-card">
                     <div class="kb19t-card-header bg-gradient-purple">
                         <i class="fas fa-handshake me-2"></i>Resource Mobilisation
@@ -110,7 +110,7 @@
             </div>
 
             <!-- 5. Art Directory & Technical -->
-            <div class="col-md-6 col-lg-4">
+            <div class="kp19">
                 <div class="kb19t-team-card">
                     <div class="kb19t-card-header bg-gradient-orange">
                         <i class="fas fa-tools me-2"></i>Art Directory & Technical
@@ -127,7 +127,7 @@
             </div>
 
             <!-- 6. Educational Program -->
-            <div class="col-md-6 col-lg-4">
+            <div class="kp19">
                 <div class="kb19t-team-card">
                     <div class="kb19t-card-header bg-gradient-yellow">
                         <i class="fas fa-graduation-cap me-2"></i>Educational Program
@@ -144,7 +144,7 @@
             </div>
 
             <!-- 7. Outreach & PR Committee -->
-            <div class="col-md-6 col-lg-4">
+            <div class="kp19">
                 <div class="kb19t-team-card">
                     <div class="kb19t-card-header bg-gradient-teal">
                         <i class="fas fa-bullhorn me-2"></i>Outreach & Public Relations
@@ -161,7 +161,7 @@
             </div>
 
             <!-- 8. Marketing & Digital Media -->
-            <div class="col-md-6 col-lg-4">
+            <div class="kp19">
                 <div class="kb19t-team-card">
                     <div class="kb19t-card-header bg-gradient-blue">
                         <i class="fas fa-laptop-code me-2"></i>Marketing & Digital Media
@@ -178,7 +178,7 @@
             </div>
 
             <!-- 9. Operations & Logistics -->
-            <div class="col-md-6 col-lg-4">
+            <div class="kp19">
                 <div class="kb19t-team-card">
                     <div class="kb19t-card-header bg-gradient-purple">
                         <i class="fas fa-truck me-2"></i>Operations & Logistics

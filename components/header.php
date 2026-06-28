@@ -52,6 +52,8 @@
     <link rel="stylesheet" href="assets/css/odometer.css">
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Global Footer CSS -->
+    <link rel="stylesheet" href="assets/css/pages/footer.css">
     <?php if (isset($bodyClass) && $bodyClass === 'page-kb27'): ?>
         <!-- Page-specific CSS for KB27 -->
         <link rel="stylesheet" href="assets/css/pages/kb27.css">

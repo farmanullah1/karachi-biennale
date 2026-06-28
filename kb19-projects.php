@@ -42,7 +42,7 @@
         <!-- Projects Grid -->
         <div class="row g-4 kb19p-grid">
             <!-- Project 1 -->
-            <div class="col-md-6 col-lg-4">
+            <div class="kp19">
                 <div class="kb19p-card">
                     <div class="kb19p-card-icon-wrap bg-gradient-yellow">
                         <i class="fas fa-book-open"></i>
@@ -57,7 +57,7 @@
             </div>
 
             <!-- Project 2 -->
-            <div class="col-md-6 col-lg-4">
+            <div class="kp19">
                 <div class="kb19p-card">
                     <div class="kb19p-card-icon-wrap bg-gradient-teal">
                         <i class="fas fa-running"></i>
@@ -72,7 +72,7 @@
             </div>
 
             <!-- Project 3 -->
-            <div class="col-md-6 col-lg-4">
+            <div class="kp19">
                 <div class="kb19p-card">
                     <div class="kb19p-card-icon-wrap bg-gradient-blue">
                         <i class="fas fa-cut"></i>
@@ -87,7 +87,7 @@
             </div>
 
             <!-- Project 4 -->
-            <div class="col-md-6 col-lg-4">
+            <div class="kp19">
                 <div class="kb19p-card">
                     <div class="kb19p-card-icon-wrap bg-gradient-purple">
                         <i class="fas fa-award"></i>
@@ -102,7 +102,7 @@
             </div>
 
             <!-- Project 5 -->
-            <div class="col-md-6 col-lg-4">
+            <div class="kp19">
                 <div class="kb19p-card">
                     <div class="kb19p-card-icon-wrap bg-gradient-orange">
                         <i class="fas fa-users"></i>
@@ -117,7 +117,7 @@
             </div>
 
             <!-- Project 6 -->
-            <div class="col-md-6 col-lg-4">
+            <div class="kp19">
                 <div class="kb19p-card">
                     <div class="kb19p-card-icon-wrap bg-gradient-yellow">
                         <i class="fas fa-home"></i>
@@ -132,7 +132,7 @@
             </div>
 
             <!-- Project 7 -->
-            <div class="col-md-6 col-lg-4">
+            <div class="kp19">
                 <div class="kb19p-card">
                     <div class="kb19p-card-icon-wrap bg-gradient-teal">
                         <i class="fas fa-tree"></i>
@@ -147,7 +147,7 @@
             </div>
 
             <!-- Project 8 -->
-            <div class="col-md-6 col-lg-4">
+            <div class="kp19">
                 <div class="kb19p-card">
                     <div class="kb19p-card-icon-wrap bg-gradient-blue">
                         <i class="fas fa-paw"></i>
@@ -162,7 +162,7 @@
             </div>
 
             <!-- Project 9 -->
-            <div class="col-md-6 col-lg-4">
+            <div class="kp19">
                 <div class="kb19p-card">
                     <div class="kb19p-card-icon-wrap bg-gradient-purple">
                         <i class="fas fa-graduation-cap"></i>
@@ -177,7 +177,7 @@
             </div>
 
             <!-- Project 10 -->
-            <div class="col-md-6 col-lg-4">
+            <div class="kp19">
                 <div class="kb19p-card">
                     <div class="kb19p-card-icon-wrap bg-gradient-orange">
                         <i class="fas fa-university"></i>
@@ -192,7 +192,7 @@
             </div>
 
             <!-- Project 11 -->
-            <div class="col-md-6 col-lg-4">
+            <div class="kp19">
                 <div class="kb19p-card">
                     <div class="kb19p-card-icon-wrap bg-gradient-yellow">
                         <i class="fas fa-handshake"></i>
@@ -207,7 +207,7 @@
             </div>
 
             <!-- Project 12 -->
-            <div class="col-md-6 col-lg-4">
+            <div class="kp19">
                 <div class="kb19p-card">
                     <div class="kb19p-card-icon-wrap bg-gradient-teal">
                         <i class="fas fa-palette"></i>

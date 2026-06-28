@@ -1567,7 +1567,7 @@ progress {
     }
 
     .col-md-4 {
-        width: 33.33333333%
+        width: 33%
     }
 
     .col-md-4,
@@ -1781,7 +1781,7 @@ progress {
     }
 
     .col-lg-4 {
-        width: 33.33333333%
+        width: 100%
     }
 
     .col-lg-4,
@@ -2209,7 +2209,7 @@ progress {
     }
 
     .col-xxl-4 {
-        width: 33.33333333%
+        width: 100%
     }
 
     .col-xxl-4,

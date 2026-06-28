@@ -15,59 +15,76 @@
                         </div>
                         <div class="col-sm-auto">
                             <div class="social-btn style2">
-                                <a href="https://www.facebook.com/KarachiBiennaleTrust/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://x.com/khi_Biennale" target="_blank"><i class="fab fa-twitter"></i></a>
-                                <a href="https://www.instagram.com/karachi_biennale/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/KarachiBiennaleTrust/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://x.com/khi_Biennale" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/karachi_biennale/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="widget-area">
                     <div class="row justify-content-between">
-                        <div class="col-md-6 col-xl-3 col-lg-4">
+                        <!-- Column 1: KBT Info -->
+                        <div class="col-md-6 col-xl-4 col-lg-4">
                             <div class="widget footer-widget">
                                 <div class="widget-contact">
-                                    <h3 class="widget_title">Contact Info</h3>
+                                    <h3 class="widget_title">Karachi Biennale Trust</h3>
+                                    <p class="footer-info-text text-white">Karachi Biennale Trust is a global platform that brings together innovation, excellence, and criticality through a multiplicity of curatorial strategies to connect art, the city, and its people.</p>
                                     <ul class="contact-info-list">
-                                        <li>Phone: +92 21 35157566</li>
-                                        <li>E-mail: info@karachibiennale.org.pk</li>
+                                        <li>
+                                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                            <span>Karachi Biennale Trust, Karachi, Pakistan</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                                            <a href="tel:+922135157566">+92 21 35157566</a>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                                            <a href="mailto:info@karachibiennale.org.pk">info@karachibiennale.org.pk</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
+                        <!-- Column 2: Biennales -->
                         <div class="col-md-6 col-xl-auto col-lg-4">
                             <div class="widget widget_nav_menu footer-widget">
-                                <h3 class="widget_title">Information</h3>
+                                <h3 class="widget_title">Karachi Biennales</h3>
                                 <div class="menu-all-pages-container">
                                     <ul class="menu">
-                                        <li><a href="team.html">Our Team</a></li>
-                                        <li><a href="contact.html">Faq’s</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="project.html">What we do</a></li>
+                                        <li><a href="kb27.php">KB27 (Fifth Edition)</a></li>
+                                        <li><a href="kb24-at-a-glance.php">KB24 (Fourth Edition)</a></li>
+                                        <li><a href="kb22-at-a-glance.php">KB22 (Third Edition)</a></li>
+                                        <li><a href="kb19-about.php">KB19 (Second Edition)</a></li>
+                                        <li><a href="kb17-about.php">KB17 (First Edition)</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
+                        <!-- Column 3: KBT Organization -->
                         <div class="col-md-6 col-xl-auto col-lg-4">
                             <div class="widget widget_nav_menu footer-widget">
-                                <h3 class="widget_title">Visitor Info </h3>
+                                <h3 class="widget_title">Our Organization</h3>
                                 <div class="menu-all-pages-container">
                                     <ul class="menu">
-                                        <li><a href="contact.html">How To Find Us</a></li>
-                                        <li><a href="contact.html">Get Ticket</a></li>
-                                        <li><a href="event.html">Join Events</a></li>
-                                        <li><a href="event.html">Tours</a></li>
+                                        <li><a href="welcome-note.php">Welcome Note</a></li>
+                                        <li><a href="about-kbt.php">About KBT</a></li>
+                                        <li><a href="kbt-trustees.php">KBT Trustees</a></li>
+                                        <li><a href="kbt-founders.php">KBT Founders</a></li>
+                                        <li><a href="kbt-team.php">KBT Team</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
+                        <!-- Column 4: Newsletter -->
                         <div class="col-md-6 col-lg-4">
                             <div class="widget footer-widget">
                                 <h3 class="widget_title">Subscribe Now</h3>
-                                <p class="footer-text">Don’t worry we don’t spam your email</p>
-                                <form class="newsletter-form">
+                                <p class="footer-text">Stay updated with our latest news and event programming directly in your inbox.</p>
+                                <form class="newsletter-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
                                     <div class="form-group">
-                                        <input class="form-control" type="email" placeholder="Email Address" required="">
+                                        <input class="form-control" type="email" placeholder="Email Address" required>
                                     </div>
                                     <button type="submit" class="btn">SUBSCRIBE</button>
                                 </form>
@@ -75,22 +92,23 @@
                         </div>                    
                     </div>
                 </div>
+                <!-- Bottom navigation list -->
                 <div class="footer-menu-area">
                     <ul class="footer-menu-list">
                         <li>
                             <a href="index.php">HOME</a>
                         </li>
                         <li>
-                            <a href="project.html">EXHIBITIONS</a>
+                            <a href="kb27.php">KB27 BIENNALE</a>
                         </li>
                         <li>
-                            <a href="event.html">EVENTS</a>
+                            <a href="kb24-outreach.php">OUTREACH</a>
                         </li>
                         <li>
-                            <a href="about.html">ABOUT</a>
+                            <a href="kb24-partners.php">PARTNERS</a>
                         </li>
                         <li>
-                            <a href="shop.html">SHOP</a>
+                            <a href="contact-us.php">CONTACT US</a>
                         </li>
                     </ul>
                 </div>
@@ -99,8 +117,8 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-auto align-self-center">
-                            <p class="copyright-text text-white">© 2023 </p>
-                            <p class="copyright-text text-white"><a href="#">Artvista.</a> All Rights Reserved.</p></div>
+                            <p class="copyright-text text-white">© <?php echo date('Y'); ?> <a href="index.php">Karachi Biennale Trust</a>. All Rights Reserved.</p>
+                        </div>
                     </div>                
                 </div>
             </div>

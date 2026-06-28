@@ -1,442 +1,243 @@
-﻿@charset "UTF-8";
-/* ============================================================
-   PAGE: kb22-curator
-   THEME: kb22
-   Scoped via: body.page-kb22-curator
-   No inline CSS â€“ all class-based rules.
-   ============================================================ */
+/* ==========================================================================
+   Page-Specific Styles: KB22 Curator
+   Scope: body.page-kb22-curator
+   Identity: "The Architect of Data" - High-Contrast Blueprint (Art & Technology)
+   ========================================================================== */
 
-/* ---- CSS Custom Properties scoped to this page ---- */
 body.page-kb22-curator {
-    --page-accent:      #5c3d99;
-    --page-bg-tint:     #f7f4ff;
-    --page-title-color: #160a2a;
-    --hero-overlay:     linear-gradient(135deg, rgba(50,20,110,0.82) 0%, rgba(80,40,140,0.50) 100%);
+    --page-accent: #2ecc71; /* Electric Green */
+    --page-dark-indigo: #1e272c; /* Deep Indigo */
+    --page-bg-light: #fafbfc;
+    --page-bg-card: #ffffff;
+    --page-border: rgba(46, 204, 113, 0.2);
 }
 
-/* ============================================================
-   SHARED PAGE FOUNDATION
-   Common layout, typography, and transitions used across all
-   non-home pages. Scoped via body class on every rule.
-   ============================================================ */
-
-/* Page scroll progress bar */
-.kbt-progress-bar {
-    position: fixed;
-    top: 0; left: 0;
-    height: 3px;
-    background: var(--page-accent, #c00);
-    z-index: 9999;
-    width: 0;
-    transition: width 0.1s linear;
+/* 1. Page Header (Hero Area) */
+body.page-kb22-curator .kb22u-hero-section {
+    background: linear-gradient(135deg, #0d1418 0%, #1a2a32 100%);
+    padding: 85px 0;
+    border-bottom: 2px solid var(--page-accent);
 }
-
-/* ---- Hero Banner ---- */
-[class*="-hero-section"] {
-    position: relative;
-    overflow: hidden;
-}
-
-[class*="-hero-banner"] {
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-    min-height: 340px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-[class*="-hero-overlay"] {
-    position: absolute;
-    inset: 0;
-    background: var(--hero-overlay, linear-gradient(135deg, rgba(0,0,0,0.70) 0%, rgba(0,0,0,0.40) 100%));
-    z-index: 1;
-}
-
-[class*="-hero-banner"] > .container {
-    position: relative;
-    z-index: 2;
-}
-
-[class*="-hero-title"] {
-    color: #fff;
-    font-size: clamp(2rem, 5vw, 3.25rem);
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 1.15;
-    margin-bottom: 0.5rem;
-    text-shadow: 0 2px 12px rgba(0,0,0,0.35);
-}
-
-[class*="-hero-subtitle"],
-[class*="-hero-intro"] {
-    color: rgba(255,255,255,0.88);
-    font-size: 1.05rem;
-    font-weight: 400;
-    margin-bottom: 1.25rem;
-}
-
-/* ---- Breadcrumbs ---- */
-[class*="-breadcrumbs"] ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.35rem;
-    justify-content: center;
-}
-
-[class*="-breadcrumbs"] li {
-    color: rgba(255,255,255,0.65);
-    font-size: 0.8rem;
-    letter-spacing: 0.05em;
+body.page-kb22-curator .kb22u-hero-title {
+    font-family: 'Jost', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 3.8rem);
+    font-weight: 800;
+    color: #ffffff;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
 }
-
-[class*="-breadcrumbs"] li + li::before {
-    content: "â€º";
-    margin-right: 0.35rem;
-    opacity: 0.5;
-}
-
-[class*="-breadcrumbs"] a {
-    color: rgba(255,255,255,0.80);
-    text-decoration: none;
-    transition: color 0.25s ease;
-}
-
-[class*="-breadcrumbs"] a:hover {
-    color: #fff;
-}
-
-[class*="-breadcrumbs"] .active {
-    color: rgba(255,255,255,0.5);
-}
-
-/* ---- Main Wrapper Spacing ---- */
-[class*="-main-wrapper"] {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
-
-/* ---- Section headings ---- */
-[class*="-section-heading"],
-[class*="-essay-title"],
-[class*="-grid-title"],
-[class*="-facts-title"] {
-    font-size: clamp(1.4rem, 3vw, 2rem);
-    font-weight: 700;
-    line-height: 1.3;
-    color: var(--page-title-color, #1a1a2e);
-    margin-bottom: 1.25rem;
-    padding-bottom: 0.6rem;
-    border-bottom: 3px solid var(--page-accent, #c00);
-    display: inline-block;
-}
-
-/* ---- Paragraph text ---- */
-[class*="-paragraph"],
-[class*="-text"],
-[class*="-bio"] {
-    font-size: 1rem;
-    line-height: 1.85;
-    color: #444;
-    margin-bottom: 1.1rem;
-}
-
-/* ---- Pull-quotes ---- */
-[class*="-pullquote"] {
-    border-left: 4px solid var(--page-accent, #c00);
-    padding: 1.25rem 1.5rem;
-    background: var(--page-bg-tint, #f9f5f5);
-    border-radius: 0 6px 6px 0;
-    margin: 2rem 0;
-    font-style: italic;
+body.page-kb22-curator .kb22u-hero-subtitle {
     font-size: 1.1rem;
-    color: #333;
+    color: var(--page-accent);
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
 }
-
-[class*="-pullquote"] cite {
-    display: block;
-    margin-top: 0.75rem;
-    font-style: normal;
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--page-accent, #c00);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+body.page-kb22-curator .kb22u-hero-intro {
+    font-size: 15px;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 800px;
+    margin: 0 auto 25px;
 }
-
-/* ---- Info / Facts Card ---- */
-[class*="-facts-card"],
-[class*="-info-card"] {
-    background: var(--page-bg-tint, #f9f5f5);
-    border-radius: 10px;
-    padding: 2rem 1.75rem;
-    border-top: 4px solid var(--page-accent, #c00);
-    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
-}
-
-[class*="-facts-list"],
-[class*="-info-list"] {
+body.page-kb22-curator .kb22u-breadcrumbs ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-[class*="-facts-list"] li,
-[class*="-info-list"] li {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 0.75rem;
-    padding: 0.6rem 0;
-    border-bottom: 1px solid rgba(0,0,0,0.07);
-    font-size: 0.92rem;
+    justify-content: center;
+    gap: 8px;
+}
+body.page-kb22-curator .kb22u-breadcrumbs li {
+    font-size: 12px;
+    color: rgba(255,255,255,0.6);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+body.page-kb22-curator .kb22u-breadcrumbs li + li::before {
+    content: '/';
+    margin-right: 8px;
+    color: rgba(255,255,255,0.3);
+}
+body.page-kb22-curator .kb22u-breadcrumbs a {
+    color: rgba(255,255,255,0.8);
+    transition: color 0.3s ease;
+}
+body.page-kb22-curator .kb22u-breadcrumbs a:hover {
+    color: var(--page-accent);
 }
 
-[class*="-facts-list"] li:last-child,
-[class*="-info-list"] li:last-child {
-    border-bottom: none;
+/* 2. Main Content & Sidebar Layout */
+body.page-kb22-curator .kb22u-content-wrap {
+    background-color: #fafbfc;
+    padding: 90px 0;
 }
 
-[class*="-fact-label"] {
-    color: #777;
-    flex-shrink: 0;
+/* Sidebar Profile Card */
+body.page-kb22-curator .kb22u-sidebar-card {
+    background-color: var(--page-bg-card);
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 12px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+    position: relative;
+    /* Smooth paper lift transition */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
 }
-
-[class*="-fact-value"] {
-    color: #111;
-    text-align: right;
+body.page-kb22-curator .kb22u-sidebar-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(46, 204, 113, 0.1);
+    border-color: rgba(46, 204, 113, 0.25);
 }
-
-/* ---- Team / People Cards ---- */
-[class*="-card"] {
-    background: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.35s ease, box-shadow 0.35s ease;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
-}
-
-[class*="-card"]:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 40px rgba(0,0,0,0.12);
-}
-
-[class*="-avatar-wrap"],
-[class*="-thumb-wrap"] {
-    overflow: hidden;
+body.page-kb22-curator .kb22u-profile-img-wrap {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    margin: 0 auto 1rem;
-    border: 3px solid var(--page-accent, #c00);
+    overflow: hidden;
+    border: 4px solid var(--page-accent);
+    margin: 0 auto 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.4s ease;
 }
-
-[class*="-avatar"] {
+body.page-kb22-curator .kb22u-sidebar-card:hover .kb22u-profile-img-wrap {
+    transform: scale(1.03);
+}
+body.page-kb22-curator .kb22u-profile-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.4s ease;
 }
-
-[class*="-card"]:hover [class*="-avatar"] {
-    transform: scale(1.08);
+body.page-kb22-curator .kb22u-profile-details {
+    margin-bottom: 30px;
 }
-
-/* ---- Tags / Labels ---- */
-[class*="-tag"],
-[class*="-badge"] {
-    display: inline-block;
-    background: var(--page-accent, #c00);
-    color: #fff;
-    font-size: 0.72rem;
+body.page-kb22-curator .kb22u-profile-name {
+    font-family: 'Jost', sans-serif;
+    font-size: 22px;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    color: var(--page-dark-indigo);
+    margin-bottom: 5px;
+}
+body.page-kb22-curator .kb22u-profile-title {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: var(--page-accent);
     text-transform: uppercase;
-    padding: 0.25rem 0.75rem;
-    border-radius: 100px;
-    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+body.page-kb22-curator .kb22u-profile-focus {
+    font-size: 12px;
+    color: #777;
+    font-style: italic;
 }
 
-/* ---- CTA / Action Button ---- */
-[class*="-cta-btn"],
-[class*="-action-btn"] {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: var(--page-accent, #c00);
-    color: #fff;
-    padding: 0.75rem 1.75rem;
-    border-radius: 4px;
-    font-weight: 600;
-    font-size: 0.85rem;
-    letter-spacing: 0.06em;
+/* Curatorial Directives list */
+body.page-kb22-curator .kb22u-sidebar-info {
+    border-top: 1px dashed rgba(0,0,0,0.1);
+    padding-top: 25px;
+}
+body.page-kb22-curator .kb22u-sidebar-heading {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--page-dark-indigo);
     text-transform: uppercase;
-    text-decoration: none;
-    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    border: 2px solid transparent;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
 }
-
-[class*="-cta-btn"]:hover,
-[class*="-action-btn"]:hover {
-    background: transparent;
-    border-color: var(--page-accent, #c00);
-    color: var(--page-accent, #c00);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+body.page-kb22-curator .kb22u-directives-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-
-/* ---- More / Toggle Buttons ---- */
-[class*="-more-btn"] {
-    background: none;
-    border: 1px solid var(--page-accent, #c00);
-    color: var(--page-accent, #c00);
-    padding: 0.35rem 0.9rem;
-    border-radius: 3px;
-    font-size: 0.78rem;
-    cursor: pointer;
-    transition: all 0.25s ease;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-}
-
-[class*="-more-btn"]:hover {
-    background: var(--page-accent, #c00);
-    color: #fff;
-}
-
-/* ---- Drop-cap ---- */
-[class*="-dropcap"] {
-    float: left;
-    font-size: 3.5rem;
-    line-height: 0.85;
-    padding-right: 0.2rem;
-    font-weight: 800;
-    color: var(--page-accent, #c00);
-    font-family: Georgia, serif;
-}
-
-/* ---- Partner / Logo grid ---- */
-[class*="-partner-logo"],
-[class*="-logo-item"] {
+body.page-kb22-curator .kb22u-directives-list li {
+    font-size: 13.5px;
+    color: #555;
+    margin-bottom: 12px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 1.25rem;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-    transition: box-shadow 0.35s ease, transform 0.35s ease;
+    gap: 10px;
+}
+body.page-kb22-curator .kb22u-directives-list li i {
+    color: var(--page-accent);
+    font-size: 14px;
+    width: 20px;
+    text-align: center;
 }
 
-[class*="-partner-logo"]:hover,
-[class*="-logo-item"]:hover {
-    box-shadow: 0 8px 28px rgba(0,0,0,0.10);
-    transform: translateY(-4px);
+/* Essay and Biography blocks */
+body.page-kb22-curator .kb22u-essay-section,
+body.page-kb22-curator .kb22u-bio-section {
+    background-color: #ffffff;
+    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 12px;
+    padding: 45px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.01);
+}
+body.page-kb22-curator .kb22u-section-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--page-dark-indigo);
+    margin-bottom: 25px;
+    border-left: 4px solid var(--page-accent);
+    padding-left: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+body.page-kb22-curator .kb22u-essay-subtitle {
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #444;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+body.page-kb22-curator .kb22u-lead-paragraph {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #333333;
+    margin-bottom: 20px;
+}
+body.page-kb22-curator .kb22u-dropcap {
+    font-family: 'Georgia', serif;
+    font-size: 55px;
+    line-height: 45px;
+    float: left;
+    margin-top: 5px;
+    margin-right: 10px;
+    color: var(--page-accent);
+    font-weight: 700;
+}
+body.page-kb22-curator .kb22u-essay-body p,
+body.page-kb22-curator .kb22u-bio-body p {
+    font-size: 15.5px;
+    line-height: 1.8;
+    color: #555555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+body.page-kb22-curator .kb22u-essay-body p:last-child,
+body.page-kb22-curator .kb22u-bio-body p:last-child {
+    margin-bottom: 0;
 }
 
-[class*="-partner-logo"] img,
-[class*="-logo-item"] img {
-    max-height: 70px;
-    width: auto;
-    filter: grayscale(50%);
-    transition: filter 0.35s ease;
+body.page-kb22-curator .kb22u-divider {
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,0.06);
+    margin: 40px 0;
 }
 
-[class*="-partner-logo"]:hover img,
-[class*="-logo-item"]:hover img {
-    filter: grayscale(0%);
-}
-
-/* ---- Media / Gallery images ---- */
-[class*="-media-img"],
-[class*="-gallery-img"] {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 6px;
-    transition: transform 0.4s ease, filter 0.4s ease;
-    overflow: hidden;
-}
-
-[class*="-media-item"]:hover [class*="-media-img"],
-[class*="-gallery-item"]:hover [class*="-gallery-img"] {
-    transform: scale(1.04);
-    filter: brightness(0.88);
-}
-
-/* ---- Section divider ---- */
-[class*="-section-divider"] {
-    width: 60px;
-    height: 3px;
-    background: var(--page-accent, #c00);
-    border-radius: 3px;
-    margin: 1.25rem 0;
-}
-
-/* ---- Skip link accessibility ---- */
-.skip-link {
-    position: absolute;
-    left: -9999px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-
-.skip-link:focus {
-    position: fixed;
-    top: 0.5rem;
-    left: 0.5rem;
-    width: auto;
-    height: auto;
-    background: #000;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    z-index: 99999;
-    border-radius: 4px;
-}
-
-/* ---- Responsive tweaks ---- */
-@media (max-width: 768px) {
-    [class*="-hero-banner"] {
-        min-height: 240px;
-    }
-    [class*="-hero-title"] {
-        font-size: 1.75rem;
-    }
-    [class*="-main-wrapper"] {
-        padding-top: 2.5rem;
-        padding-bottom: 2.5rem;
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    body.page-kb22-curator .kb22u-essay-section,
+    body.page-kb22-curator .kb22u-bio-section {
+        padding: 30px;
     }
 }
-
-/* ---- Group theme extras: kb22 ---- */
-/* KB22 Angular card top-right clip */
-body[class*="page-kb22"] [class*="-card"] {
-    clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%);
-    border-radius: 0;
-}
-/* KB22 Dot-pattern section backgrounds */
-body[class*="page-kb22"] [class*="-section"]:nth-of-type(even) {
-    background-image: radial-gradient(circle, rgba(92,61,153,0.06) 1px, transparent 1px);
-    background-size: 20px 20px;
-}
-/* KB22 Geometric heading underline */
-body[class*="page-kb22"] [class*="-section-heading"]::after {
-    content: '';
-    display: block;
-    width: 40px;
-    height: 4px;
-    background: #5c3d99;
-    margin-top: 0.5rem;
-    transform: skewX(-20deg);
-}
-body[class*="page-kb22"] [class*="-section-heading"] {
-    border-bottom: none;
+@media (max-width: 767px) {
+    body.page-kb22-curator .kb22u-sidebar-card {
+        margin-bottom: 40px;
+    }
 }

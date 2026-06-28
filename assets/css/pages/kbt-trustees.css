@@ -1,443 +1,254 @@
-﻿@charset "UTF-8";
-/* ============================================================
-   PAGE: kbt-trustees
-   THEME: kbt
-   Scoped via: body.page-kbt-trustees
-   No inline CSS â€“ all class-based rules.
-   ============================================================ */
+/* ==========================================================================
+   Page-Specific Styles: KBT Trustees
+   Scope: body.page-kbt-trustees
+   Identity: Governance Board Layout / Executive Directory
+   ========================================================================== */
 
-/* ---- CSS Custom Properties scoped to this page ---- */
 body.page-kbt-trustees {
-    --page-accent:      #8b6914;
-    --page-bg-tint:     #fdf8ef;
-    --page-title-color: #1a1208;
-    --hero-overlay:     linear-gradient(135deg, rgba(60,40,5,0.82) 0%, rgba(90,60,10,0.55) 100%);
+    --page-accent: #c5a03a; /* Matte Gold */
+    --page-bg-light: #faf8f5;
+    --page-bg-card: #ffffff;
+    --page-border: rgba(197, 160, 58, 0.2);
 }
 
-/* ============================================================
-   SHARED PAGE FOUNDATION
-   Common layout, typography, and transitions used across all
-   non-home pages. Scoped via body class on every rule.
-   ============================================================ */
-
-/* Page scroll progress bar */
-.kbt-progress-bar {
-    position: fixed;
-    top: 0; left: 0;
-    height: 3px;
-    background: var(--page-accent, #c00);
-    z-index: 9999;
-    width: 0;
-    transition: width 0.1s linear;
+/* 1. Hero Banner overrides */
+body.page-kbt-trustees .kbtt-hero-section {
+    background: linear-gradient(135deg, #181b1c 0%, #2f2818 100%);
+    padding: 100px 0;
+    border-bottom: 2px solid var(--page-accent);
+}
+body.page-kbt-trustees .kbtt-hero-title {
+    font-family: 'Georgia', serif;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+body.page-kbt-trustees .kbtt-hero-intro {
+    font-size: 16px;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 850px;
+    margin: 0 auto 25px;
+}
+body.page-kbt-trustees .kbtt-breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+body.page-kbt-trustees .kbtt-breadcrumbs li {
+    font-size: 12px;
+    color: rgba(255,255,255,0.6);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+body.page-kbt-trustees .kbtt-breadcrumbs li + li::before {
+    content: '/';
+    margin-right: 8px;
+    color: rgba(255,255,255,0.3);
+}
+body.page-kbt-trustees .kbtt-breadcrumbs a {
+    color: rgba(255,255,255,0.8);
+    transition: color 0.3s ease;
+}
+body.page-kbt-trustees .kbtt-breadcrumbs a:hover {
+    color: var(--page-accent);
 }
 
-/* ---- Hero Banner ---- */
-[class*="-hero-section"] {
+/* 2. Trustees Grid / Profiles */
+body.page-kbt-trustees .kbtt-grid-section {
+    background-color: #fcfcfc;
+    padding: 100px 0;
+    /* Soft background micro-pattern grid */
+    background-image: radial-gradient(rgba(0,0,0,0.03) 1px, transparent 0);
+    background-size: 24px 24px;
+}
+body.page-kbt-trustees .kbtt-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 40px;
+}
+body.page-kbt-trustees .kbtt-card {
+    background-color: var(--page-bg-card);
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 8px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
     position: relative;
     overflow: hidden;
-}
-
-[class*="-hero-banner"] {
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-    min-height: 340px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    position: relative;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
 }
 
-[class*="-hero-overlay"] {
+/* Border-drawing outline trace hover effect */
+body.page-kbt-trustees .kbtt-card::after {
+    content: '';
     position: absolute;
-    inset: 0;
-    background: var(--hero-overlay, linear-gradient(135deg, rgba(0,0,0,0.70) 0%, rgba(0,0,0,0.40) 100%));
-    z-index: 1;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border: 2px solid var(--page-accent);
+    opacity: 0;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+body.page-kbt-trustees .kbtt-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(197, 160, 58, 0.15);
+}
+body.page-kbt-trustees .kbtt-card:hover::after {
+    opacity: 1;
 }
 
-[class*="-hero-banner"] > .container {
-    position: relative;
-    z-index: 2;
-}
-
-[class*="-hero-title"] {
-    color: #fff;
-    font-size: clamp(2rem, 5vw, 3.25rem);
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 1.15;
-    margin-bottom: 0.5rem;
-    text-shadow: 0 2px 12px rgba(0,0,0,0.35);
-}
-
-[class*="-hero-subtitle"],
-[class*="-hero-intro"] {
-    color: rgba(255,255,255,0.88);
-    font-size: 1.05rem;
-    font-weight: 400;
-    margin-bottom: 1.25rem;
-}
-
-/* ---- Breadcrumbs ---- */
-[class*="-breadcrumbs"] ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.35rem;
-    justify-content: center;
-}
-
-[class*="-breadcrumbs"] li {
-    color: rgba(255,255,255,0.65);
-    font-size: 0.8rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-}
-
-[class*="-breadcrumbs"] li + li::before {
-    content: "â€º";
-    margin-right: 0.35rem;
-    opacity: 0.5;
-}
-
-[class*="-breadcrumbs"] a {
-    color: rgba(255,255,255,0.80);
-    text-decoration: none;
-    transition: color 0.25s ease;
-}
-
-[class*="-breadcrumbs"] a:hover {
-    color: #fff;
-}
-
-[class*="-breadcrumbs"] .active {
-    color: rgba(255,255,255,0.5);
-}
-
-/* ---- Main Wrapper Spacing ---- */
-[class*="-main-wrapper"] {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
-
-/* ---- Section headings ---- */
-[class*="-section-heading"],
-[class*="-essay-title"],
-[class*="-grid-title"],
-[class*="-facts-title"] {
-    font-size: clamp(1.4rem, 3vw, 2rem);
-    font-weight: 700;
-    line-height: 1.3;
-    color: var(--page-title-color, #1a1a2e);
-    margin-bottom: 1.25rem;
-    padding-bottom: 0.6rem;
-    border-bottom: 3px solid var(--page-accent, #c00);
-    display: inline-block;
-}
-
-/* ---- Paragraph text ---- */
-[class*="-paragraph"],
-[class*="-text"],
-[class*="-bio"] {
-    font-size: 1rem;
-    line-height: 1.85;
-    color: #444;
-    margin-bottom: 1.1rem;
-}
-
-/* ---- Pull-quotes ---- */
-[class*="-pullquote"] {
-    border-left: 4px solid var(--page-accent, #c00);
-    padding: 1.25rem 1.5rem;
-    background: var(--page-bg-tint, #f9f5f5);
-    border-radius: 0 6px 6px 0;
-    margin: 2rem 0;
-    font-style: italic;
-    font-size: 1.1rem;
-    color: #333;
-}
-
-[class*="-pullquote"] cite {
-    display: block;
-    margin-top: 0.75rem;
-    font-style: normal;
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--page-accent, #c00);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-}
-
-/* ---- Info / Facts Card ---- */
-[class*="-facts-card"],
-[class*="-info-card"] {
-    background: var(--page-bg-tint, #f9f5f5);
-    border-radius: 10px;
-    padding: 2rem 1.75rem;
-    border-top: 4px solid var(--page-accent, #c00);
-    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
-}
-
-[class*="-facts-list"],
-[class*="-info-list"] {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-[class*="-facts-list"] li,
-[class*="-info-list"] li {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 0.75rem;
-    padding: 0.6rem 0;
-    border-bottom: 1px solid rgba(0,0,0,0.07);
-    font-size: 0.92rem;
-}
-
-[class*="-facts-list"] li:last-child,
-[class*="-info-list"] li:last-child {
-    border-bottom: none;
-}
-
-[class*="-fact-label"] {
-    color: #777;
-    flex-shrink: 0;
-}
-
-[class*="-fact-value"] {
-    color: #111;
-    text-align: right;
-}
-
-/* ---- Team / People Cards ---- */
-[class*="-card"] {
-    background: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.35s ease, box-shadow 0.35s ease;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
-}
-
-[class*="-card"]:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 40px rgba(0,0,0,0.12);
-}
-
-[class*="-avatar-wrap"],
-[class*="-thumb-wrap"] {
-    overflow: hidden;
+/* Avatar positions and frames */
+body.page-kbt-trustees .kbtt-avatar-wrap {
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    margin: 0 auto 1rem;
-    border: 3px solid var(--page-accent, #c00);
+    overflow: hidden;
+    border: 3px solid var(--page-accent);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
+    transition: transform 0.4s ease;
 }
-
-[class*="-avatar"] {
+body.page-kbt-trustees .kbtt-avatar {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.4s ease;
+    transition: transform 0.5s ease;
 }
-
-[class*="-card"]:hover [class*="-avatar"] {
+body.page-kbt-trustees .kbtt-card:hover .kbtt-avatar-wrap {
+    transform: scale(1.05);
+}
+body.page-kbt-trustees .kbtt-card:hover .kbtt-avatar {
     transform: scale(1.08);
 }
 
-/* ---- Tags / Labels ---- */
-[class*="-tag"],
-[class*="-badge"] {
-    display: inline-block;
-    background: var(--page-accent, #c00);
-    color: #fff;
-    font-size: 0.72rem;
+/* Trustee info styles */
+body.page-kbt-trustees .kbtt-name {
+    font-family: 'Georgia', serif;
+    font-size: 22px;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+}
+body.page-kbt-trustees .kbtt-role {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--page-accent);
     text-transform: uppercase;
-    padding: 0.25rem 0.75rem;
-    border-radius: 100px;
-    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: var(--page-bg-light);
+    border-radius: 30px;
+    border: 1px solid var(--page-border);
 }
 
-/* ---- CTA / Action Button ---- */
-[class*="-cta-btn"],
-[class*="-action-btn"] {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: var(--page-accent, #c00);
-    color: #fff;
-    padding: 0.75rem 1.75rem;
-    border-radius: 4px;
-    font-weight: 600;
-    font-size: 0.85rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    border: 2px solid transparent;
-}
-
-[class*="-cta-btn"]:hover,
-[class*="-action-btn"]:hover {
-    background: transparent;
-    border-color: var(--page-accent, #c00);
-    color: var(--page-accent, #c00);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-}
-
-/* ---- More / Toggle Buttons ---- */
-[class*="-more-btn"] {
-    background: none;
-    border: 1px solid var(--page-accent, #c00);
-    color: var(--page-accent, #c00);
-    padding: 0.35rem 0.9rem;
-    border-radius: 3px;
-    font-size: 0.78rem;
-    cursor: pointer;
-    transition: all 0.25s ease;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-}
-
-[class*="-more-btn"]:hover {
-    background: var(--page-accent, #c00);
-    color: #fff;
-}
-
-/* ---- Drop-cap ---- */
-[class*="-dropcap"] {
-    float: left;
-    font-size: 3.5rem;
-    line-height: 0.85;
-    padding-right: 0.2rem;
-    font-weight: 800;
-    color: var(--page-accent, #c00);
-    font-family: Georgia, serif;
-}
-
-/* ---- Partner / Logo grid ---- */
-[class*="-partner-logo"],
-[class*="-logo-item"] {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.25rem;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-    transition: box-shadow 0.35s ease, transform 0.35s ease;
-}
-
-[class*="-partner-logo"]:hover,
-[class*="-logo-item"]:hover {
-    box-shadow: 0 8px 28px rgba(0,0,0,0.10);
-    transform: translateY(-4px);
-}
-
-[class*="-partner-logo"] img,
-[class*="-logo-item"] img {
-    max-height: 70px;
-    width: auto;
-    filter: grayscale(50%);
-    transition: filter 0.35s ease;
-}
-
-[class*="-partner-logo"]:hover img,
-[class*="-logo-item"]:hover img {
-    filter: grayscale(0%);
-}
-
-/* ---- Media / Gallery images ---- */
-[class*="-media-img"],
-[class*="-gallery-img"] {
+/* Biography wraps */
+body.page-kbt-trustees .kbtt-bio-wrap {
+    text-align: justify;
     width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 6px;
-    transition: transform 0.4s ease, filter 0.4s ease;
-    overflow: hidden;
+    margin-top: 10px;
 }
-
-[class*="-media-item"]:hover [class*="-media-img"],
-[class*="-gallery-item"]:hover [class*="-gallery-img"] {
-    transform: scale(1.04);
-    filter: brightness(0.88);
+body.page-kbt-trustees .kbtt-bio {
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: #555555;
+    margin-bottom: 15px;
+    min-height: 100px;
 }
-
-/* ---- Section divider ---- */
-[class*="-section-divider"] {
-    width: 60px;
-    height: 3px;
-    background: var(--page-accent, #c00);
-    border-radius: 3px;
-    margin: 1.25rem 0;
-}
-
-/* ---- Skip link accessibility ---- */
-.skip-link {
-    position: absolute;
-    left: -9999px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-
-.skip-link:focus {
-    position: fixed;
-    top: 0.5rem;
-    left: 0.5rem;
-    width: auto;
-    height: auto;
-    background: #000;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    z-index: 99999;
+body.page-kbt-trustees .kbtt-more-btn {
+    background: none;
+    border: 1px solid var(--page-accent);
+    color: var(--page-accent);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 6px 18px;
     border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+body.page-kbt-trustees .kbtt-more-btn:hover {
+    background-color: var(--page-accent);
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(197, 160, 58, 0.2);
 }
 
-/* ---- Responsive tweaks ---- */
-@media (max-width: 768px) {
-    [class*="-hero-banner"] {
-        min-height: 240px;
-    }
-    [class*="-hero-title"] {
-        font-size: 1.75rem;
-    }
-    [class*="-main-wrapper"] {
-        padding-top: 2.5rem;
-        padding-bottom: 2.5rem;
-    }
+/* 3. Trustees Legacy Block */
+body.page-kbt-trustees .kbtt-legacy-section {
+    background-color: #fcfcfc;
+    padding-bottom: 80px;
+}
+body.page-kbt-trustees .kbtt-legacy-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 8px;
+    padding: 45px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.01);
+}
+body.page-kbt-trustees .kbtt-structure-wrap {
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+body.page-kbt-trustees .kbtt-structure-title {
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+body.page-kbt-trustees .kbtt-structure-text {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: #666666;
+    margin: 0;
+}
+body.page-kbt-trustees .kbtt-legacy-statement {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444444;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+body.page-kbt-trustees .kbtt-cta-wrap {
+    border-top: 1px solid rgba(0,0,0,0.06);
+    padding-top: 25px;
+}
+body.page-kbt-trustees .kbtt-cta-text {
+    font-size: 15px;
+    color: #555555;
+    margin: 0;
+}
+body.page-kbt-trustees .kbtt-cta-link {
+    color: #c5a03a;
+    font-weight: 700;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+body.page-kbt-trustees .kbtt-cta-link:hover {
+    color: #1a1a1a;
 }
 
-/* ---- Group theme extras: kbt ---- */
-/* KBT Institutional serif headings */
-body[class*="page-kbt"] [class*="-section-heading"],
-body[class*="page-kbt"] [class*="-hero-title"] {
-    font-family: 'Georgia', 'Times New Roman', serif;
-}
-/* KBT Gold shimmer card border */
-body[class*="page-kbt"] [class*="-card"] {
-    border: 1px solid rgba(139,105,20,0.18);
-}
-body[class*="page-kbt"] [class*="-card"]:hover {
-    border-color: rgba(139,105,20,0.45);
-    box-shadow: 0 8px 32px rgba(139,105,20,0.12);
-}
-/* KBT trustee avatar gold ring */
-body[class*="page-kbt"] [class*="-avatar-wrap"] {
-    border-color: #8b6914;
-    box-shadow: 0 0 0 3px rgba(139,105,20,0.20);
-}
-
-/* ---- Page-specific extras ----
-/* KBT Trustees â€“ gold monogram avatar fallback */
-.page-kbt-trustees [class*="-avatar-wrap"] {
-    box-shadow: 0 0 0 4px rgba(139,105,20,0.25), 0 0 0 8px rgba(139,105,20,0.08);
+/* Responsive grid fixes */
+@media (max-width: 575px) {
+    body.page-kbt-trustees .kbtt-grid {
+        grid-template-columns: 1fr;
+    }
+    body.page-kbt-trustees .kbtt-legacy-card {
+        padding: 25px;
+    }
 }
