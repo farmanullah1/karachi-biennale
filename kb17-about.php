@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
   $pageTitle = 'KB17 Who We Are - First Karachi Biennale';
   $metaDesc = 'Learn about the First Karachi Biennale KB17 and the theme WITNESS, showcasing contemporary art across heritage clusters in Karachi.';
   $bodyClass = 'page-kb17-about'; 
@@ -6,182 +6,186 @@
 ?>
 
 <!-- Skip Link for Accessibility -->
-<a href="#kb17a-main-content" class="skip-link visually-hidden-focusable">Skip to content</a>
+<a href="#kb17-about-main-content" class="skip-link visually-hidden-focusable">Skip to content</a>
 
-<!-- 1. Hero Banner Area -->
-<section class="kb17a-hero-section">
-    <div class="kb17a-hero-banner">
-        <div class="kb17a-hero-overlay"></div>
-        <div class="container text-center">
-            <h1 class="kb17a-hero-title">KB17 – Who We Are</h1>
-            <p class="kb17a-hero-subtitle">First Karachi Biennale</p>
-            
-            <!-- Breadcrumbs -->
-            <nav class="kb17a-breadcrumbs" aria-label="breadcrumb">
-                <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li>Past Biennale</li>
-                    <li>KB17</li>
-                    <li class="active" aria-current="page">About</li>
-                </ul>
-            </nav>
-        </div>
+<!-- Page Header (Hero Area) -->
+<section class="kb17-about-hero text-center position-relative">
+    <div class="kb17-about-hero-overlay"></div>
+    <div class="container position-relative z-index-2">
+        <!-- Main Logo -->
+        <img src="assets/img/KB17/kb17-logo.png" alt="Karachi Biennale 2017 Logo" class="kb17-about-logo wow custom-anim-top" data-wow-duration="1.2s">
+        <h1 class="kb17-about-hero-title wow custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.1s">KB17</h1>
+        <p class="kb17-about-hero-subtitle wow custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.25s">Who We Are</p>
+        
+        <!-- Breadcrumbs -->
+        <nav class="kb17-about-breadcrumbs" aria-label="breadcrumb">
+            <ul class="wow custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.4s">
+                <li><a href="index.php">Home</a></li>
+                <li>Past Biennale</li>
+                <li>KB17</li>
+                <li class="active" aria-current="page">Who We Are</li>
+            </ul>
+        </nav>
     </div>
 </section>
 
-<!-- 2. Main Content Area -->
-<main id="kb17a-main-content" class="kb17a-main-wrapper">
+<!-- Main Wrapper -->
+<main id="kb17-about-main-content" class="kb17-about-main-wrapper">
     <div class="container">
-        <div class="row gy-5">
-            <!-- Left: Curatorial & Thematic Essay -->
-            <div class="col-lg-8">
-                <div class="kb17a-essay-block">
-                    <blockquote class="kb17a-pullquote" aria-label="Thematic Opening Statement">
-                        <p>"The struggle of man against power is the struggle of memories against forgetting."</p>
-                        <cite>— Milan Kundera</cite>
-                    </blockquote>
+        
+        <div class="row g-5">
+            <!-- Left Side: Copy and Thematic Essay -->
+            <div class="col-lg-7">
+                <div class="kb17-about-copy-card wow custom-anim-left" data-wow-duration="1.2s">
+                    <h2 class="kb17-about-section-title"><i class="fas fa-landmark me-3 text-primary"></i>First Karachi Biennale – KB17</h2>
+                    <p class="kb17-about-dates-badge"><i class="fas fa-calendar-alt me-2"></i>October 22 – November 5, 2017</p>
                     
-                    <h3 class="kb17a-essay-title">About KB17</h3>
-                    <p class="kb17a-paragraph lead">
-                        <span class="kb17a-dropcap">T</span>he Biennale in Karachi, KB17, is a visionary platform that focuses on innovation, excellence, and criticality through curatorial strategies that will bring art from Pakistan and the rest of the world together for a large public audience. Its discursive interventions aim to cross-pollinate ideas and explore meaning and truth across disciplines and contexts.
+                    <p class="kb17-about-lead-text">
+                        The Biennale in Karachi, KB17, is a visionary platform that focuses on innovation, excellence, and criticality through curatorial strategies that bring art from Pakistan and the rest of the world together for a large public audience.
                     </p>
                     
-                    <p class="kb17a-paragraph">
-                        Artists are invited to respond to the theme <strong>WITNESS</strong>. Art as a testament of its time has always held significance, particularly in times when memory is heavily contested. The theme Witness has been chosen for its strong relevance to the politics of representation, erasure, and selective documentation.
-                    </p>
-                    
-                    <p class="kb17a-paragraph">
-                        The main venue of KB17 is the 160-year-old NJV School building, which is located within the historical precincts of one of the most populous cities of the world. This will give easy access to new audiences and also bring into discussion Karachi’s history, which has often been overshadowed by tensions of rapid growth.
-                    </p>
-                    
-                    <p class="kb17a-paragraph">
-                        Since the 1950s, as Karachi grew from a small harbor town to a mega urban center, it has attracted independent thinkers unburdened by an established canon. It embraced artists who wanted to respond to the personal and the political with greater freedom. Karachi has been home to many influential modernists and contemporary artists; its gallery circuit is unrivaled in the country and is one of the most vibrant in South Asia.
+                    <p class="kb17-about-body-text">
+                        Its discursive interventions aim to cross-pollinate ideas and explore meaning and truth across disciplines and contexts. Since the 1950s, as Karachi grew from a small harbour town to a mega-urban centre, it has attracted independent thinkers unburdened by an established canon, embracing artists who wanted to respond to the personal and political with greater freedom.
                     </p>
 
-                    <p class="kb17a-paragraph text-muted">
-                        With an architecture of exhibitions, discursive interventions, and extensive visitor programs during the KB17, art in Karachi will combine creative energies and spark new ones.
-                    </p>
+                    <!-- Theme Witness Section -->
+                    <div class="kb17-about-theme-box mt-4">
+                        <h3 class="kb17-about-theme-heading"><i class="fas fa-eye me-2"></i>Theme: WITNESS</h3>
+                        <p class="kb17-about-body-text">
+                            Artists were invited to respond to the theme <strong>WITNESS</strong>. Art as a testament of its time has always held significance, particularly in times when memory is heavily contested.
+                        </p>
+                        
+                        <blockquote class="kb17-about-quote my-4">
+                            "The struggle of man against power is the struggle of memories against forgetting."
+                            <span class="quote-author">— Milan Kundera</span>
+                        </blockquote>
+
+                        <p class="kb17-about-body-text">
+                            The theme Witness was chosen for its strong relevance to the politics of representation, erasure, and selective documentation. In a city like Karachi, where histories are often contested and narratives fragmented, the act of witnessing becomes both a personal and collective responsibility.
+                        </p>
+                    </div>
+
+                    <!-- Venue and Context -->
+                    <div class="kb17-about-venue-context mt-4">
+                        <h3 class="kb17-about-theme-heading"><i class="fas fa-map-marker-alt me-2"></i>Venue and Context</h3>
+                        <p class="kb17-about-body-text">
+                            The main venue of KB17 was the 160-year-old <strong>NJV Government Higher Secondary School</strong> building, located within the historical precincts of one of the most populous cities in the world. This location provided easy access to new audiences and also brought into discussion Karachi's history, which has often been overshadowed by the tensions of rapid growth.
+                        </p>
+                        <p class="kb17-about-body-text">
+                            Karachi has been home to many influential modernists and contemporary artists; its gallery circuit is unrivalled in the country and is one of the most vibrant in South Asia. With an architecture of exhibitions, discursive interventions, and extensive visitor programs during KB17, art in Karachi combined creative energies and sparked new ones.
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Right: Facts Card -->
-            <div class="col-lg-4">
-                <aside class="kb17a-sidebar">
-                    <div class="kb17a-facts-card">
-                        <h3 class="kb17a-facts-title"><i class="fas fa-info-circle me-2"></i>Quick Facts</h3>
-                        <ul class="kb17a-facts-list">
-                            <li>
-                                <span class="kb17a-fact-label">Year:</span>
-                                <strong class="kb17a-fact-value">2017</strong>
-                            </li>
-                            <li>
-                                <span class="kb17a-fact-label">Chief Curator:</span>
-                                <strong class="kb17a-fact-value"><a href="kb17-curator.php">Amin Gulgee</a></strong>
-                            </li>
-                            <li>
-                                <span class="kb17a-fact-label">Theme:</span>
-                                <strong class="kb17a-fact-value text-theme">WITNESS</strong>
-                            </li>
-                            <li>
-                                <span class="kb17a-fact-label">Main Venue:</span>
-                                <strong class="kb17a-fact-value">NJV School Building</strong>
-                            </li>
-                            <li>
-                                <span class="kb17a-fact-label">Venues:</span>
-                                <strong class="kb17a-fact-value">12 Locations in 4 Clusters</strong>
-                            </li>
-                        </ul>
-                        
-                        <div class="kb17a-quick-links">
-                            <h4 class="kb17a-links-title">Explore First Biennale</h4>
-                            <a href="kb17-curator.php" class="kb17a-btn-link">Curator Statement <i class="fas fa-chevron-right ms-1"></i></a>
-                            <a href="kb17-teams.php" class="kb17a-btn-link">Organizing Teams <i class="fas fa-chevron-right ms-1"></i></a>
-                            <a href="kb17-partners.php" class="kb17a-btn-link">Sponsors & Partners <i class="fas fa-chevron-right ms-1"></i></a>
-                        </div>
+            <!-- Right Side: Venue Map & Geographic Clusters -->
+            <div class="col-lg-5">
+                <div class="kb17-about-sidebar wow custom-anim-right" data-wow-duration="1.2s">
+                    <h3 class="kb17-about-sidebar-heading"><i class="fas fa-map-marked-alt me-2"></i>Karachi Venue Map</h3>
+                    <p class="text-muted small">Visual layout of KB17 exhibition points across the city:</p>
+                    
+                    <!-- Venue Map Zoom Link -->
+                    <div class="kb17-about-map-wrap mb-4 text-center">
+                        <a href="assets/img/KB17/venue-khi-01.png" class="popup-image" title="KB17 Karachi Venue Map">
+                            <img src="assets/img/KB17/venue-khi-01.png" alt="KB17 Venue Map" class="img-fluid rounded border" loading="lazy">
+                            <div class="map-zoom-overlay"><i class="fas fa-search-plus"></i> View Full Map</div>
+                        </a>
                     </div>
-                </aside>
+
+                    <!-- Venue Cluster Listing Table -->
+                    <h3 class="kb17-about-sidebar-heading mt-4"><i class="fas fa-list-ul me-2"></i>Exhibition Clusters</h3>
+                    <div class="table-responsive">
+                        <table class="table kb17-about-table">
+                            <thead>
+                                <tr>
+                                    <th>Cluster</th>
+                                    <th>Exhibition Venues</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Cluster A</strong></td>
+                                    <td>Karachi School of Art, VM Art Gallery, ZVMG Rangoonwala Trust</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Cluster B</strong></td>
+                                    <td>Capri Cinema, 63 Commissariat Lines, NJV Government School, Jamshed Memorial Hall, Pioneer Book House</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Cluster C</strong></td>
+                                    <td>Sadequain Gallery (Frere Hall), Claremont House, Mahvash &amp; Jahangir Siddiqui Gallery (Alliance Française)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Cluster D</strong></td>
+                                    <td>FOMMA DHA Art Center, IVS Gallery (Indus Valley School of Art &amp; Architecture)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- Section 3: Exhibition Clusters & Venues -->
-        <section class="kb17a-clusters-section mt-5">
-            <h2 class="kb17a-section-heading text-center mb-5">Exhibition Clusters & Venues</h2>
+        <!-- Cluster Maps Hotspot Grid -->
+        <section class="kb17-about-clusters-hotspots mt-5 pt-4">
+            <div class="kb17-about-section-tag text-center">
+                <span class="badge bg-primary">Interactive Mapping</span>
+            </div>
+            <h2 class="kb17-about-subheading text-center mb-4"><i class="fas fa-images me-2"></i>Cluster Maps</h2>
             
-            <div class="row g-4">
-                <!-- Cluster A -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="kb17a-cluster-card">
-                        <div class="kb17a-cluster-img-wrap">
-                            <img src="assets/img/KB17/a.png" alt="Map representing Cluster A venues" class="img-fluid kb17a-cluster-img">
-                            <div class="kb17a-cluster-badge">Cluster A</div>
-                        </div>
-                        <div class="kb17a-cluster-body">
-                            <h4 class="kb17a-cluster-title">Venues:</h4>
-                            <ul class="kb17a-venue-list">
-                                <li><i class="fas fa-map-marker-alt text-theme me-2"></i>Karachi School of Art</li>
-                                <li><i class="fas fa-map-marker-alt text-theme me-2"></i>VM Art Gallery <span class="d-block text-muted ms-4">(ZVMG Rangoonwala Trust)</span></li>
-                            </ul>
-                        </div>
+            <div class="kb17-about-cluster-grid">
+                
+                <!-- Cluster A card -->
+                <div class="kb17-about-cluster-item wow custom-anim-top" data-wow-delay="0.1s">
+                    <div class="cluster-img-wrap">
+                        <a href="assets/img/KB17/a.png" class="popup-image" title="Cluster A Hotspots Map">
+                            <img src="assets/img/KB17/a.png" alt="Cluster A Map" class="img-fluid" loading="lazy">
+                            <div class="hotspot-overlay"><i class="fas fa-search-plus"></i></div>
+                        </a>
                     </div>
+                    <h4>Cluster A Venues</h4>
+                    <p class="small text-muted mb-0">Rangoonwala, VM Gallery &amp; KSA</p>
                 </div>
 
-                <!-- Cluster B -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="kb17a-cluster-card">
-                        <div class="kb17a-cluster-img-wrap">
-                            <img src="assets/img/KB17/b.png" alt="Map representing Cluster B venues" class="img-fluid kb17a-cluster-img">
-                            <div class="kb17a-cluster-badge">Cluster B</div>
-                        </div>
-                        <div class="kb17a-cluster-body">
-                            <h4 class="kb17a-cluster-title">Venues:</h4>
-                            <ul class="kb17a-venue-list">
-                                <li><i class="fas fa-map-marker-alt text-theme me-2"></i>Capri Cinema</li>
-                                <li><i class="fas fa-map-marker-alt text-theme me-2"></i>63 Commissariat Lines</li>
-                                <li><i class="fas fa-map-marker-alt text-theme me-2"></i>NJV Gov. Higher Secondary School</li>
-                                <li><i class="fas fa-map-marker-alt text-theme me-2"></i>Jamshed Memorial Hall</li>
-                                <li><i class="fas fa-map-marker-alt text-theme me-2"></i>Pioneer Book House</li>
-                            </ul>
-                        </div>
+                <!-- Cluster B card -->
+                <div class="kb17-about-cluster-item wow custom-anim-top" data-wow-delay="0.2s">
+                    <div class="cluster-img-wrap">
+                        <a href="assets/img/KB17/b.png" class="popup-image" title="Cluster B Hotspots Map">
+                            <img src="assets/img/KB17/b.png" alt="Cluster B Map" class="img-fluid" loading="lazy">
+                            <div class="hotspot-overlay"><i class="fas fa-search-plus"></i></div>
+                        </a>
                     </div>
+                    <h4>Cluster B Venues</h4>
+                    <p class="small text-muted mb-0">NJV School, Capri, Pioneer Books &amp; Jamshed Hall</p>
                 </div>
 
-                <!-- Cluster C -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="kb17a-cluster-card">
-                        <div class="kb17a-cluster-img-wrap">
-                            <img src="assets/img/KB17/c.png" alt="Map representing Cluster C venues" class="img-fluid kb17a-cluster-img">
-                            <div class="kb17a-cluster-badge">Cluster C</div>
-                        </div>
-                        <div class="kb17a-cluster-body">
-                            <h4 class="kb17a-cluster-title">Venues:</h4>
-                            <ul class="kb17a-venue-list">
-                                <li><i class="fas fa-map-marker-alt text-theme me-2"></i>Sadequain Gallery, Frere Hall</li>
-                                <li><i class="fas fa-map-marker-alt text-theme me-2"></i>Claremont House</li>
-                                <li><i class="fas fa-map-marker-alt text-theme me-2"></i>Alliance Française <span class="d-block text-muted ms-4">(M&J Siddiqui Gallery)</span></li>
-                            </ul>
-                        </div>
+                <!-- Cluster C card -->
+                <div class="kb17-about-cluster-item wow custom-anim-top" data-wow-delay="0.3s">
+                    <div class="cluster-img-wrap">
+                        <a href="assets/img/KB17/c.png" class="popup-image" title="Cluster C Hotspots Map">
+                            <img src="assets/img/KB17/c.png" alt="Cluster C Map" class="img-fluid" loading="lazy">
+                            <div class="hotspot-overlay"><i class="fas fa-search-plus"></i></div>
+                        </a>
                     </div>
+                    <h4>Cluster C Venues</h4>
+                    <p class="small text-muted mb-0">Sadequain Gallery (Frere Hall) &amp; Alliance Française</p>
                 </div>
 
-                <!-- Cluster D -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="kb17a-cluster-card">
-                        <div class="kb17a-cluster-img-wrap">
-                            <img src="assets/img/KB17/d.png" alt="Map representing Cluster D venues" class="img-fluid kb17a-cluster-img">
-                            <div class="kb17a-cluster-badge">Cluster D</div>
-                        </div>
-                        <div class="kb17a-cluster-body">
-                            <h4 class="kb17a-cluster-title">Venues:</h4>
-                            <ul class="kb17a-venue-list">
-                                <li><i class="fas fa-map-marker-alt text-theme me-2"></i>FOMMA DHA Art Center</li>
-                                <li><i class="fas fa-map-marker-alt text-theme me-2"></i>IVS Gallery <span class="d-block text-muted ms-4">(Indus Valley School)</span></li>
-                            </ul>
-                        </div>
+                <!-- Cluster D card -->
+                <div class="kb17-about-cluster-item wow custom-anim-top" data-wow-delay="0.4s">
+                    <div class="cluster-img-wrap">
+                        <a href="assets/img/KB17/d.png" class="popup-image" title="Cluster D Hotspots Map">
+                            <img src="assets/img/KB17/d.png" alt="Cluster D Map" class="img-fluid" loading="lazy">
+                            <div class="hotspot-overlay"><i class="fas fa-search-plus"></i></div>
+                        </a>
                     </div>
+                    <h4>Cluster D Venues</h4>
+                    <p class="small text-muted mb-0">FOMMA &amp; IVS Gallery (Clifton/DHA)</p>
                 </div>
+
             </div>
         </section>
-        
+
     </div>
 </main>
 

@@ -1,0 +1,268 @@
+/* ==========================================================================
+   Page-Specific Styles: First KB19 Discursive Roundtable
+   Scope: body.page-the-first-kb19-discursive-roundtable
+   ========================================================================== */
+
+body.page-the-first-kb19-discursive-roundtable {
+    --theme-color: #0088cb;
+    --title-color: #231f20;
+    --body-color: #7B7E86;
+    --smoke-color: #FAF9F6;
+    --smoke-color2: #F8F8F8;
+    --smoke-color3: #F5F5F6;
+    --smoke-color4: #F4F4F4;
+    --smoke-color5: #F0F2F4;
+    --black-color: #1F2528;
+    --gray-color: #303030;
+    --white-color: #ffffff;
+    --light-color: #DDDDDC;
+
+    background-color: var(--smoke-color);
+    color: var(--body-color);
+}
+
+/* 1. Hero Banner */
+.kb19-roundtable-first-hero {
+    position: relative;
+    background: linear-gradient(rgba(10, 10, 10, 0.75), rgba(10, 10, 10, 0.85)), url('../../../assets/img/gallery/kb19-page-banner-2.jpg') no-repeat center center / cover;
+    padding: 130px 0;
+    border-bottom: 3px solid var(--theme-color);
+    overflow: hidden;
+}
+.kb19-roundtable-first-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(0, 136, 203, 0.2) 0%, transparent 80%);
+    z-index: 1;
+}
+.kb19-roundtable-first-hero-title {
+    font-family: 'Jost', sans-serif;
+    font-size: clamp(1.8rem, 4vw, 3.2rem);
+    font-weight: 850;
+    color: var(--white-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+.kb19-roundtable-first-hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--theme-color);
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+.kb19-roundtable-first-breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.kb19-roundtable-first-breadcrumbs li {
+    font-size: 12px;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.kb19-roundtable-first-breadcrumbs li + li::before {
+    content: '/';
+    margin-right: 8px;
+    color: rgba(255,255,255,0.4);
+}
+.kb19-roundtable-first-breadcrumbs a {
+    color: rgba(255,255,255,0.9);
+    transition: color 0.3s ease;
+}
+.kb19-roundtable-first-breadcrumbs a:hover {
+    color: var(--theme-color);
+}
+
+/* 2. Main content wrapper */
+.kb19-roundtable-first-main-wrapper {
+    background-color: var(--smoke-color);
+    padding: 80px 0 100px;
+}
+
+/* 3. Theme Block styling */
+.theme-block {
+    background: linear-gradient(135deg, var(--theme-color), #00c6ff);
+    color: var(--white-color);
+    padding: 40px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 136, 203, 0.2);
+}
+.theme-block-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: rgba(255,255,255,0.9);
+}
+.theme-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+.theme-text {
+    font-size: 15.5px;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+    color: rgba(255,255,255,0.9);
+}
+
+/* 4. Left Column: Copy Card */
+.kb19-roundtable-first-copy {
+    background-color: var(--white-color);
+    border: 1px solid var(--light-color);
+    border-radius: 16px;
+    padding: 45px;
+    height: 100%;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.02);
+}
+.section-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    font-weight: 850;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+.section-title .text-primary {
+    color: var(--theme-color) !important;
+}
+.meta-info {
+    font-size: 13.5px;
+    color: var(--body-color);
+    margin-bottom: 25px;
+    border-bottom: 2px solid var(--light-color);
+    padding-bottom: 15px;
+}
+.lead-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--black-color);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.body-text {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--body-color);
+    margin-bottom: 18px;
+}
+
+/* 5. Right Column: Sidebar */
+.kb19-roundtable-first-sidebar {
+    background: var(--white-color);
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid var(--light-color);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.02);
+    height: 100%;
+}
+.sidebar-heading {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+/* Table layout */
+.roundtable-table {
+    border: 1px solid var(--light-color);
+    margin-top: 15px;
+}
+.roundtable-table thead {
+    background-color: var(--smoke-color5);
+}
+.roundtable-table th {
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    font-size: 13.5px;
+    text-transform: uppercase;
+    color: var(--black-color);
+    border-bottom: 2px solid var(--light-color);
+    padding: 12px 15px;
+}
+.roundtable-table td {
+    font-size: 14px;
+    color: var(--body-color);
+    padding: 12px 15px;
+    vertical-align: middle;
+}
+.roundtable-table td strong {
+    color: var(--black-color);
+}
+
+/* 6. Carousel styling */
+.kb19-roundtable-first-carousel-wrap {
+    background-color: var(--white-color);
+    border: 1px solid var(--light-color);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.02);
+}
+.carousel-heading {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.kb19-roundtable-first-slide {
+    padding: 0 10px;
+}
+.kb19-roundtable-first-slide a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.kb19-roundtable-first-slide img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.kb19-roundtable-first-slide:hover img {
+    transform: scale(1.04);
+}
+.slide-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 136, 203, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: var(--white-color);
+    font-size: 24px;
+}
+.kb19-roundtable-first-slide:hover .slide-overlay {
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+    .theme-block {
+        padding: 30px 20px;
+    }
+    .kb19-roundtable-first-copy,
+    .kb19-roundtable-first-sidebar,
+    .kb19-roundtable-first-carousel-wrap {
+        padding: 30px 20px;
+    }
+}

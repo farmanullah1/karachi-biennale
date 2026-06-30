@@ -6,15 +6,15 @@
 ?>
 
 <!-- 1. Page Header (Hero Area) -->
-<section class="kb22h-hero-section text-center">
-    <div class="container">
-        <h1 class="kb22h-hero-title">Highlights &amp; Projects</h1>
-        <p class="kb22h-hero-subtitle">Third Karachi Biennale KB22</p>
-        <p class="kb22h-hero-intro">The Third Karachi Biennale (KB22) was an immersive exploration of the intersection between art and technology. Beyond static displays, the biennale activated the city with interactive projections, electronic soundscapes, and discursive panel assemblies that engaged Karachi citizens under the theme "Collective Imagination: Now and the Next".</p>
+<section class="kb22-highlights-hero text-center position-relative">
+    <div class="kb22-highlights-hero-overlay"></div>
+    <div class="container position-relative z-index-2">
+        <h1 class="kb22-highlights-hero-title wow custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.1s">Highlights and Projects</h1>
+        <p class="kb22-highlights-hero-subtitle wow custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.25s">Third Karachi Biennale KB22</p>
         
         <!-- Breadcrumbs -->
-        <nav class="kb22h-breadcrumbs" aria-label="breadcrumb">
-            <ul>
+        <nav class="kb22-highlights-breadcrumbs" aria-label="breadcrumb">
+            <ul class="wow custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.4s">
                 <li><a href="index.php">Home</a></li>
                 <li>Past Biennale</li>
                 <li>KB22</li>
@@ -24,90 +24,90 @@
     </div>
 </section>
 
-<div class="kb22h-main-wrapper">
+<!-- 2. Main Wrapper with Projects Grid -->
+<div class="kb22-highlights-main-wrapper">
     <div class="container">
         
-        <!-- 2. Highlights Grid -->
-        <div class="kb22h-grid mb-60">
+        <div class="kb22-highlights-grid row g-4 justify-content-center mb-60">
             
-            <!-- Highlight 1: Thematic Exhibitions -->
-            <div class="kb22h-card">
-                <div class="kb22h-card-icon"><i class="fas fa-landmark"></i></div>
-                <div class="kb22h-card-body">
-                    <h3 class="kb22h-card-title">Curatorial Exhibitions</h3>
-                    <p class="kb22h-card-desc">Showcasing the convergence of art and digital media across 9 transformed heritage, academic, and gallery sites in Karachi.</p>
-                    <a href="kb22-exhibition-venues.php" class="kb22h-card-link">View Venues <i class="fas fa-arrow-right ms-2"></i></a>
-                </div>
-            </div>
-            
-            <!-- Highlight 2: Discursive Forums -->
-            <div class="kb22h-card">
-                <div class="kb22h-card-icon"><i class="fas fa-comments"></i></div>
-                <div class="kb22h-card-body">
-                    <h3 class="kb22h-card-title">Discursive Assemblies</h3>
-                    <p class="kb22h-card-desc">Intensive panel talks hosted at IBA and Alliance Française, examining surveillance capitalism, virtual memory, and algorithmic art ethics.</p>
-                    <a href="kb22-programming.php" class="kb22h-card-link">View Calendar <i class="fas fa-arrow-right ms-2"></i></a>
+            <!-- Card 1: Ceremonies -->
+            <div class="col-lg-4 col-md-6">
+                <div class="kb22-highlight-card wow custom-anim-top" data-wow-delay="0.1s">
+                    <div class="card-icon"><i class="fas fa-award"></i></div>
+                    <h3>Inaugural and Closing Ceremonies</h3>
+                    <p class="card-desc">Relive the official assemblies, dignitary addresses, and art prize announcements hosted at the historical venues.</p>
+                    <a href="kb22-inaugural-and-closing-ceremonies.php" class="btn-learn-more">Read More <i class="fas fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
 
-            <!-- Highlight 3: Live sound art installations -->
-            <div class="kb22h-card">
-                <div class="kb22h-card-icon"><i class="fas fa-volume-up"></i></div>
-                <div class="kb22h-card-body">
-                    <h3 class="kb22h-card-title">Live Sound Installations</h3>
-                    <p class="kb22h-card-desc">Spatial audio structures and concerts at Jamshed Memorial Hall translating atmospheric readings and data streams into sound.</p>
-                    <a href="kb22-artists-list.php" class="kb22h-card-link">Explore Artists <i class="fas fa-arrow-right ms-2"></i></a>
+            <!-- Card 2: Discursive -->
+            <div class="col-lg-4 col-md-6">
+                <div class="kb22-highlight-card wow custom-anim-top" data-wow-delay="0.2s">
+                    <div class="card-icon"><i class="fas fa-comments"></i></div>
+                    <h3>Discursive Sessions</h3>
+                    <p class="card-desc">Review keynote discussions, panel talks on decolonisation, and tributes paid to legendary artists.</p>
+                    <a href="kb22-discursive-sessions.php" class="btn-learn-more">Read More <i class="fas fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
 
-            <!-- Highlight 4: Public projections -->
-            <div class="kb22h-card">
-                <div class="kb22h-card-icon"><i class="fas fa-video"></i></div>
-                <div class="kb22h-card-body">
-                    <h3 class="kb22h-card-title">Public Projection Mapping</h3>
-                    <p class="kb22h-card-desc">Activating Old Karachi public space with live visual projections on the stone facades of NJV School and Hamid Market.</p>
-                    <a href="kb22-outreach.php" class="kb22h-card-link">View Outreach <i class="fas fa-arrow-right ms-2"></i></a>
+            <!-- Card 3: Educational -->
+            <div class="col-lg-4 col-md-6">
+                <div class="kb22-highlight-card wow custom-anim-top" data-wow-delay="0.3s">
+                    <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Educational Programming</h3>
+                    <p class="card-desc">Empowering the youth through school tours, conversation circles, and creative art workshops.</p>
+                    <a href="kb22-educational-programming.php" class="btn-learn-more">Read More <i class="fas fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
 
-            <!-- Highlight 5: Eco Art mapping -->
-            <div class="kb22h-card">
-                <div class="kb22h-card-icon"><i class="fas fa-leaf"></i></div>
-                <div class="kb22h-card-body">
-                    <h3 class="kb22h-card-title">Eco-Arts &amp; Ecology</h3>
-                    <p class="kb22h-card-desc">Hands-on botanical mapping projects linking ecological datasets of Karachi heritage trees with interactive digital art loops.</p>
-                    <a href="kb22-outreach.php#environmental" class="kb22h-card-link">View Project <i class="fas fa-arrow-right ms-2"></i></a>
+            <!-- Card 4: Wellness -->
+            <div class="col-lg-4 col-md-6">
+                <div class="kb22-highlight-card wow custom-anim-top" data-wow-delay="0.4s">
+                    <div class="card-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h3>Art and Wellness Workshop</h3>
+                    <p class="card-desc">Integrating visual expressions with clinical therapies to address stress and build emotional resilience.</p>
+                    <a href="kb22-art-and-well-being-sessions.php" class="btn-learn-more">Read More <i class="fas fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
 
-            <!-- Highlight 6: Interactive Educational labs -->
-            <div class="kb22h-card">
-                <div class="kb22h-card-icon"><i class="fas fa-graduation-cap"></i></div>
-                <div class="kb22h-card-body">
-                    <h3 class="kb22h-card-title">Educational Labs</h3>
-                    <p class="kb22h-card-desc">Collaborative computational and design workshops conducted for school kids, culminating in public gallery displays.</p>
-                    <a href="kb22-outreach.php#educational" class="kb22h-card-link">Explore Labs <i class="fas fa-arrow-right ms-2"></i></a>
+            <!-- Card 5: Storytelling -->
+            <div class="col-lg-4 col-md-6">
+                <div class="kb22-highlight-card wow custom-anim-top" data-wow-delay="0.5s">
+                    <div class="card-icon"><i class="fas fa-book-open"></i></div>
+                    <h3>Storytelling by Artists</h3>
+                    <p class="card-desc">Communal gathering and poetry recitals where artists shared inspirations and cultural legacies.</p>
+                    <a href="kb22-storytelling.php" class="btn-learn-more">Read More <i class="fas fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
-            
+
+            <!-- Card 6: Khaadi -->
+            <div class="col-lg-4 col-md-6">
+                <div class="kb22-highlight-card wow custom-anim-top" data-wow-delay="0.6s">
+                    <div class="card-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Khaadi Meet and Greet</h3>
+                    <p class="card-desc">A networking reception hosted with Khaadi to connect artists, curators, and KBT organizers.</p>
+                    <a href="kb22-khaadi-meet-and-greet.php" class="btn-learn-more">Read More <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+
         </div>
 
-        <hr class="kb22h-divider mb-60">
+        <hr class="kb22-highlights-divider mb-60">
 
         <!-- 3. Flipbook Catalogue Embed Section -->
-        <section class="kb22h-flipbook-section">
-            <div class="kb22h-section-header text-center mb-40">
-                <span class="kb22h-flipbook-badge"><i class="fas fa-book-open me-2"></i>Digital Archive</span>
-                <h2 class="kb22h-flipbook-title">KB22 Interactive Print Catalogue</h2>
-                <p class="kb22h-flipbook-desc">Browse the official print catalogue of the Third Karachi Biennale (KB22) through our interactive Heyzine flipbook reader. Explore complete curatorial statements, artist catalogs, and venue maps.</p>
+        <section class="kb22-highlights-flipbook-section wow custom-anim-top" data-wow-duration="1.5s">
+            <div class="text-center mb-40">
+                <span class="kb22-highlights-badge"><i class="fas fa-book-reader me-2"></i>Digital Archive</span>
+                <h2 class="kb22-highlights-flipbook-title">KB22 Interactive Print Catalogue</h2>
+                <p class="kb22-highlights-flipbook-desc">Browse the official print catalogue of the Third Karachi Biennale (KB22) through our interactive Heyzine flipbook reader. Explore complete curatorial statements, artist catalogs, and venue maps.</p>
             </div>
 
-            <div class="kb22h-flipbook-wrapper">
-                <div class="kb22h-iframe-container">
-                    <iframe src="https://heyzine.com/flip-book/9a48bd7959.html" allowfullscreen class="kb22h-flipbook-iframe"></iframe>
+            <div class="kb22-highlights-flipbook-wrapper">
+                <div class="kb22-highlights-iframe-container">
+                    <iframe src="https://heyzine.com/flip-book/9a48bd7959.html" allowfullscreen class="kb22-highlights-flipbook-iframe"></iframe>
                 </div>
                 <div class="text-center mt-30">
-                    <a href="https://heyzine.com/flip-book/9a48bd7959.html" target="_blank" class="kb22h-external-btn">Open in New Tab <i class="fas fa-external-link-alt ms-2"></i></a>
+                    <a href="https://heyzine.com/flip-book/9a48bd7959.html" target="_blank" class="kb22-highlights-external-btn">Open in New Tab <i class="fas fa-external-link-alt ms-2"></i></a>
                 </div>
             </div>
         </section>

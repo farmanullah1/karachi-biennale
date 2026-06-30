@@ -1,240 +1,224 @@
 /* ==========================================================================
-   Page-Specific Styles: KB19 Projects
+   Page-Specific Styles: KB19 Projects Overview
    Scope: body.page-kb19-projects
-   Identity: "Green Matrix" - Collateral Program (Premium Upgrade)
+   Identity: "Collateral Activities" - Light Mode Custom Palette
    ========================================================================== */
 
 body.page-kb19-projects {
-    --page-accent: #1e8449; /* Forest Green */
-    --page-dark: #212f3d; /* Dark Charcoal */
-    --page-bg-light: #fafbfc;
-    --page-bg-card: #ffffff;
-    --page-border: rgba(30, 132, 73, 0.15);
+    --theme-color: #0088cb;
+    --title-color: #231f20;
+    --body-color: #7B7E86;
+    --smoke-color: #FAF9F6;
+    --smoke-color2: #F8F8F8;
+    --smoke-color3: #F5F5F6;
+    --smoke-color4: #F4F4F4;
+    --smoke-color5: #F0F2F4;
+    --black-color: #1F2528;
+    --gray-color: #303030;
+    --white-color: #ffffff;
+    --light-color: #DDDDDC;
+
+    background-color: var(--smoke-color);
+    color: var(--body-color);
 }
 
-/* Page entrance animations */
-@keyframes kb19p-fade-in-up {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* 1. Page Banner (Hero Area) */
-body.page-kb19-projects .kb19p-hero-section {
+/* 1. Hero Banner */
+.kb19-projects-hero {
     position: relative;
+    background: linear-gradient(rgba(10, 10, 10, 0.75), rgba(10, 10, 10, 0.85)), url('../../../assets/img/gallery/kb19-page-banner-2.jpg') no-repeat center center / cover;
+    padding: 130px 0;
+    border-bottom: 3px solid var(--theme-color);
     overflow: hidden;
 }
-body.page-kb19-projects .kb19p-hero-banner {
-    background-image: url('../../img/bg/kb19-page-banner-2.jpg');
-    background-size: cover;
-    background-position: center center;
-    min-height: 380px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-body.page-kb19-projects .kb19p-hero-overlay {
+.kb19-projects-hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(14, 43, 28, 0.85) 0%, rgba(30, 132, 73, 0.6) 100%);
+    background: radial-gradient(circle at center, rgba(0, 136, 203, 0.2) 0%, transparent 80%);
     z-index: 1;
 }
-body.page-kb19-projects .kb19p-hero-title {
+.kb19-projects-hero-title {
     font-family: 'Jost', sans-serif;
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    font-weight: 800;
-    color: #ffffff;
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 850;
+    color: var(--white-color);
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 10px;
-    text-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    margin-bottom: 12px;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
-body.page-kb19-projects .kb19p-hero-subtitle {
-    font-size: 1.1rem;
-    color: #f1c40f; /* Gold accent */
-    font-family: 'Georgia', serif;
-    font-style: italic;
-    letter-spacing: 1px;
+.kb19-projects-hero-subtitle {
+    font-size: 1.4rem;
+    color: var(--theme-color);
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
-body.page-kb19-projects .kb19p-breadcrumbs ul {
+.kb19-projects-breadcrumbs ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0 0;
+    margin: 25px 0 0;
     display: flex;
     justify-content: center;
     gap: 8px;
 }
-body.page-kb19-projects .kb19p-breadcrumbs li {
+.kb19-projects-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.65);
+    color: rgba(255,255,255,0.7);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-body.page-kb19-projects .kb19p-breadcrumbs li + li::before {
+.kb19-projects-breadcrumbs li + li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.4);
 }
-body.page-kb19-projects .kb19p-breadcrumbs a {
-    color: rgba(255,255,255,0.85);
+.kb19-projects-breadcrumbs a {
+    color: rgba(255,255,255,0.9);
     transition: color 0.3s ease;
 }
-body.page-kb19-projects .kb19p-breadcrumbs a:hover {
-    color: #f1c40f;
+.kb19-projects-breadcrumbs a:hover {
+    color: var(--theme-color);
 }
 
-/* 2. Main Wrapper spacing */
-body.page-kb19-projects .kb19p-main-wrapper {
-    background-color: #fafbfc;
-    padding: 100px 0;
+/* 2. Main Wrapper */
+.kb19-projects-main-wrapper {
+    background-color: var(--smoke-color);
+    padding: 80px 0 100px;
 }
 
-/* Intro block */
-body.page-kb19-projects .kb19p-intro {
-    max-width: 800px;
-    margin: 0 auto 50px;
-    animation: kb19p-fade-in-up 0.8s ease-out forwards;
-}
-body.page-kb19-projects .kb19p-section-heading {
-    font-family: 'Jost', sans-serif;
-    font-size: 28px;
+/* 3. Section Header styling */
+.kb19-projects-tag {
+    background-color: var(--theme-color);
+    color: var(--white-color);
+    font-size: 10px;
     font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 15px;
-}
-body.page-kb19-projects .kb19p-section-lead {
-    font-size: 15.5px;
-    line-height: 1.8;
-    color: #555555;
-    margin: 0;
-}
-
-/* Projects Cards Grid */
-body.page-kb19-projects .kb19p-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
-}
-body.page-kb19-projects .kp19 {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-/* Project Card layout */
-body.page-kb19-projects .kb19p-card {
-    background-color: var(--page-bg-card);
-    border: 1px solid rgba(0,0,0,0.06);
-    border-radius: 12px;
-    padding: 40px 30px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    height: 100%;
-    flex-grow: 1;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.02);
-    /* Card transform scale & shadow rise */
-    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease, border-color 0.4s ease;
-    animation: kb19p-fade-in-up 0.8s ease-out forwards;
-}
-body.page-kb19-projects .kb19p-card:nth-child(1) { animation-delay: 0.1s; }
-body.page-kb19-projects .kb19p-card:nth-child(2) { animation-delay: 0.2s; }
-body.page-kb19-projects .kb19p-card:nth-child(3) { animation-delay: 0.3s; }
-body.page-kb19-projects .kb19p-card:nth-child(4) { animation-delay: 0.4s; }
-body.page-kb19-projects .kb19p-card:nth-child(5) { animation-delay: 0.5s; }
-body.page-kb19-projects .kb19p-card:nth-child(6) { animation-delay: 0.6s; }
-
-body.page-kb19-projects .kb19p-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 45px rgba(30, 132, 73, 0.12);
-    border-color: rgba(30, 132, 73, 0.35);
-}
-
-/* Card Icons overlays */
-body.page-kb19-projects .kb19p-card-icon-wrap {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    margin-bottom: 25px;
-    color: #ffffff;
-    transition: transform 0.4s ease;
-}
-body.page-kb19-projects .kb19p-card:hover .kb19p-card-icon-wrap {
-    transform: scale(1.08) rotate(15deg);
-}
-
-/* Gradient backgrounds for card icons */
-body.page-kb19-projects .bg-gradient-yellow { background: linear-gradient(135deg, #f1c40f 0%, #f39c12 100%); }
-body.page-kb19-projects .bg-gradient-teal { background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%); }
-body.page-kb19-projects .bg-gradient-blue { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
-body.page-kb19-projects .bg-gradient-purple { background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); }
-body.page-kb19-projects .bg-gradient-orange { background: linear-gradient(135deg, #e67e22 0%, #d35400 100%); }
-
-/* Card content body */
-body.page-kb19-projects .kb19p-card-body {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-body.page-kb19-projects .kb19p-card-category {
-    font-size: 9.5px;
-    font-weight: 700;
-    color: var(--page-accent);
     text-transform: uppercase;
     letter-spacing: 1.5px;
+    padding: 6px 14px;
+    border-radius: 4px;
     display: inline-block;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
 }
-body.page-kb19-projects .kb19p-card-title {
+.kb19-projects-section-title {
     font-family: 'Jost', sans-serif;
-    font-size: 19px;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 12px;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 850;
+    color: var(--title-color);
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 15px;
 }
-body.page-kb19-projects .kb19p-card-desc {
-    font-size: 14px;
-    line-height: 1.65;
-    color: #666666;
-    margin-bottom: 20px;
+.kb19-projects-lead {
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--body-color);
 }
 
-/* Project Card redirects link arrows */
-body.page-kb19-projects .kb19p-card-link {
-    font-size: 12px;
-    font-weight: 700;
-    color: var(--page-dark);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    text-decoration: none;
-    margin-top: auto;
-    display: inline-flex;
-    align-items: center;
-    transition: color 0.3s ease;
+/* 4. Projects Grid */
+.kb19-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 30px 0;
 }
-body.page-kb19-projects .kb19p-card-link i {
+
+.kb19-project-card {
+    background: var(--white-color);
+    border-radius: 12px;
+    padding: 35px 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border-bottom: 4px solid transparent;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.kb19-project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: var(--theme-color);
+    transition: left 0.5s ease;
+}
+.kb19-project-card:hover::before {
+    left: 0;
+}
+.kb19-project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 136, 203, 0.12);
+    border-bottom-color: var(--theme-color);
+}
+
+.kb19-project-card .card-icon {
+    font-size: 44px;
+    margin-bottom: 20px;
+    color: var(--theme-color);
     transition: transform 0.3s ease;
 }
-body.page-kb19-projects .kb19p-card:hover .kb19p-card-link {
-    color: var(--page-accent);
+.kb19-project-card:hover .card-icon {
+    transform: scale(1.12) rotate(-6deg);
 }
-body.page-kb19-projects .kb19p-card:hover .kb19p-card-link i {
-    transform: translateX(4px);
+.kb19-project-card h3 {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 750;
+    margin-bottom: 12px;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.kb19-project-card p {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--body-color);
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+.kb19-project-card .btn-view-project {
+    display: inline-block;
+    margin: 5px auto 0;
+    padding: 8px 26px;
+    border: 2px solid var(--theme-color);
+    border-radius: 30px;
+    color: var(--theme-color);
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    background-color: transparent;
+}
+.kb19-project-card .btn-view-project:hover {
+    background-color: var(--theme-color);
+    color: var(--white-color);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 136, 203, 0.3);
 }
 
-/* Responsive adjustments */
-@media (max-width: 767px) {
-    body.page-kb19-projects .kb19p-hero-banner {
-        min-height: 260px;
+@media (max-width: 992px) {
+    .kb19-projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+@media (max-width: 576px) {
+    .kb19-projects-grid {
+        grid-template-columns: 1fr;
+    }
+    .kb19-project-card {
+        padding: 30px 20px;
     }
 }

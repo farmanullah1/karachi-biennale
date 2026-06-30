@@ -158,6 +158,10 @@
         <!-- Page-specific CSS for KB22 Highlights -->
         <link rel="stylesheet" href="assets/css/pages/kb22-highlights.css">
     <?php endif; ?>
+    <?php if (isset($bodyClass) && in_array($bodyClass, ['page-kb22-discursive','page-kb22-educational','page-kb22-wellness','page-kb22-storytelling','page-kb22-khaadi','page-kb22-ceremonies'])): ?>
+        <!-- Shared CSS for KB22 Program Subpages -->
+        <link rel="stylesheet" href="assets/css/pages/kb22-programs.css">
+    <?php endif; ?>
     <?php if (isset($bodyClass) && $bodyClass === 'page-kb22-art-prize-winners'): ?>
         <!-- Page-specific CSS for KB22 Art Prize Winners -->
         <link rel="stylesheet" href="assets/css/pages/kb22-art-prize-winners.css">
@@ -199,8 +203,56 @@
         <link rel="stylesheet" href="assets/css/pages/kb19-curator.css">
     <?php endif; ?>
     <?php if (isset($bodyClass) && $bodyClass === 'page-kb19-projects'): ?>
-        <!-- Page-specific CSS for KB19 Projects -->
+        <!-- Page-specific CSS for KB19 Projects Overview -->
         <link rel="stylesheet" href="assets/css/pages/kb19-projects.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb17-catalog-launch'): ?>
+        <!-- Page-specific CSS for KB17 Catalog Launch -->
+        <link rel="stylesheet" href="assets/css/pages/kb17-catalog-launch.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-performance-art-workshop-with-isabel-lewis'): ?>
+        <!-- Page-specific CSS for Isabel Lewis Workshop -->
+        <link rel="stylesheet" href="assets/css/pages/performance-art-workshop-with-isabel-lewis.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-alice-kettle-workshop-at-british-council'): ?>
+        <!-- Page-specific CSS for Alice Kettle Workshop -->
+        <link rel="stylesheet" href="assets/css/pages/alice-kettle-workshop-at-british-council.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb19-peek-freans-emerging-artist'): ?>
+        <!-- Page-specific CSS for KB19 Peek Freans Emerging Artist -->
+        <link rel="stylesheet" href="assets/css/pages/kb19-peek-freans-emerging-artist.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb19-discursive-roundtable'): ?>
+        <!-- Page-specific CSS for KB19 Discursive Roundtable -->
+        <link rel="stylesheet" href="assets/css/pages/kb19-discursive-roundtable.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kbt-steam'): ?>
+        <!-- Page-specific CSS for KBT STEAM -->
+        <link rel="stylesheet" href="assets/css/pages/kbt-steam.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-library-project'): ?>
+        <!-- Page-specific CSS for Library Project -->
+        <link rel="stylesheet" href="assets/css/pages/library-project.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-public-art-research'): ?>
+        <!-- Page-specific CSS for Public Art Research -->
+        <link rel="stylesheet" href="assets/css/pages/public-art-research.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-art-literacy'): ?>
+        <!-- Page-specific CSS for Art Literacy -->
+        <link rel="stylesheet" href="assets/css/pages/art-literacy.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-first-kbt-opp-artists-residency'): ?>
+        <!-- Page-specific CSS for First KBT-OPP Artists Residency -->
+        <link rel="stylesheet" href="assets/css/pages/first-kbt-opp-artists-residency.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-the-first-kb19-discursive-roundtable'): ?>
+        <!-- Page-specific CSS for First KB19 Discursive Roundtable -->
+        <link rel="stylesheet" href="assets/css/pages/the-first-kb19-discursive-roundtable.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb19-launch'): ?>
+        <!-- Page-specific CSS for KB19 Launch -->
+        <link rel="stylesheet" href="assets/css/pages/kb19-launch.css">
     <?php endif; ?>
     <?php if (isset($bodyClass) && $bodyClass === 'page-kb19-partners'): ?>
         <!-- Page-specific CSS for KB19 Partners -->
@@ -213,6 +265,38 @@
     <?php if (isset($bodyClass) && $bodyClass === 'page-kb19-teams'): ?>
         <!-- Page-specific CSS for KB19 Teams -->
         <link rel="stylesheet" href="assets/css/pages/kb19-teams.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb17-about'): ?>
+        <!-- Page-specific CSS for KB17 About -->
+        <link rel="stylesheet" href="assets/css/pages/kb17-about.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb17-projects'): ?>
+        <!-- Page-specific CSS for KB17 Projects Overview -->
+        <link rel="stylesheet" href="assets/css/pages/kb17-projects.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb17-prizes'): ?>
+        <!-- Page-specific CSS for KB17 Prizes -->
+        <link rel="stylesheet" href="assets/css/pages/kb17-prizes.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb17-pechakucha'): ?>
+        <!-- Page-specific CSS for KB17 PechaKucha -->
+        <link rel="stylesheet" href="assets/css/pages/kb17-pechakucha.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb17-discursive'): ?>
+        <!-- Page-specific CSS for KB17 Discursive -->
+        <link rel="stylesheet" href="assets/css/pages/kb17-discursive.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb17-art-educational-program'): ?>
+        <!-- Page-specific CSS for KB17 Art Educational Program -->
+        <link rel="stylesheet" href="assets/css/pages/kb17-art-educational-program.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb17-activities'): ?>
+        <!-- Page-specific CSS for KB17 Activities -->
+        <link rel="stylesheet" href="assets/css/pages/kb17-activities.css">
+    <?php endif; ?>
+    <?php if (isset($bodyClass) && $bodyClass === 'page-kb17-karachi-art-directory'): ?>
+        <!-- Page-specific CSS for KB17 Karachi Art Directory -->
+        <link rel="stylesheet" href="assets/css/pages/kb17-karachi-art-directory.css">
     <?php endif; ?>
     <?php if (isset($bodyClass) && $bodyClass === 'page-friends-of-kb19'): ?>
         <!-- Page-specific CSS for Friends of KB19 -->

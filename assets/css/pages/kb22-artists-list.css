@@ -1,346 +1,527 @@
 /* ==========================================================================
    Page-Specific Styles: KB22 Artists List
    Scope: body.page-kb22-artists-list
-   Identity: "Global Network of Visionaries" - Tech Directory
+   Identity: "Participating Artists" - Light Mode Custom Palette
    ========================================================================== */
 
 body.page-kb22-artists-list {
-    --page-accent: #9b59b6; /* Soft Purple */
-    --page-bg-light: #fafafa;
-    --page-bg-card: #ffffff;
-    --page-border: rgba(155, 89, 182, 0.15);
+    --theme-color: #0088cb;
+    --title-color: #231f20;
+    --body-color: #7B7E86;
+    --smoke-color: #FAF9F6;
+    --smoke-color2: #F8F8F8;
+    --smoke-color3: #F5F5F6;
+    --smoke-color4: #F4F4F4;
+    --smoke-color5: #F0F2F4;
+    --black-color: #1F2528;
+    --gray-color: #303030;
+    --white-color: #ffffff;
+    --light-color: #DDDDDC;
+
+    background-color: var(--smoke-color);
+    color: var(--body-color);
 }
 
-/* 1. Page Banner (Full Image Hero) */
-body.page-kb22-artists-list .kb22a-hero-banner-section {
-    position: relative;
-    overflow: hidden;
-}
-body.page-kb22-artists-list .kb22a-banner-img-wrap {
-    position: relative;
-    width: 100%;
-    min-height: 380px;
+/* 1. Hero Banner */
+body.page-kb22-artists-list .kb22-artists-hero {
+    background: linear-gradient(rgba(31, 37, 40, 0.75), rgba(31, 37, 40, 0.85)), url('../../../assets/img/gallery/kb19-page-banner-2.jpg') no-repeat center center / cover;
+    background-color: #727272;
+    min-height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: 3px solid var(--theme-color);
+    position: relative;
+    overflow: hidden;
 }
-body.page-kb22-artists-list .kb22a-banner-img {
+body.page-kb22-artists-list .kb22-artists-hero-overlay {
     position: absolute;
     inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    background: radial-gradient(circle at center, rgba(0, 136, 203, 0.15) 0%, transparent 80%);
     z-index: 1;
 }
-body.page-kb22-artists-list .kb22a-banner-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(18,18,24,0.85) 0%, rgba(38,25,48,0.7) 100%);
-    z-index: 2;
-}
-body.page-kb22-artists-list .kb22a-banner-text-wrap {
-    position: relative;
-    z-index: 3;
-    padding: 30px;
-}
-body.page-kb22-artists-list .kb22a-hero-title {
+body.page-kb22-artists-list .kb22-artists-hero-title {
     font-family: 'Jost', sans-serif;
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    font-weight: 800;
-    color: #ffffff;
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 850;
+    color: var(--white-color);
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
-body.page-kb22-artists-list .kb22a-hero-subtitle {
-    font-size: 1.1rem;
-    color: var(--page-accent);
-    font-family: 'Georgia', serif;
-    font-style: italic;
-    letter-spacing: 1px;
+body.page-kb22-artists-list .kb22-artists-hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--theme-color);
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
-body.page-kb22-artists-list .kb22a-breadcrumbs ul {
+body.page-kb22-artists-list .kb22-artists-breadcrumbs ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0 0;
+    margin: 25px 0 0;
     display: flex;
     justify-content: center;
     gap: 8px;
 }
-body.page-kb22-artists-list .kb22a-breadcrumbs li {
+body.page-kb22-artists-list .kb22-artists-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255,255,255,0.7);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-body.page-kb22-artists-list .kb22a-breadcrumbs li + li::before {
+body.page-kb22-artists-list .kb22-artists-breadcrumbs li + li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.4);
 }
-body.page-kb22-artists-list .kb22a-breadcrumbs a {
-    color: rgba(255,255,255,0.8);
+body.page-kb22-artists-list .kb22-artists-breadcrumbs a {
+    color: rgba(255,255,255,0.9);
     transition: color 0.3s ease;
 }
-body.page-kb22-artists-list .kb22a-breadcrumbs a:hover {
-    color: var(--page-accent);
+body.page-kb22-artists-list .kb22-artists-breadcrumbs a:hover {
+    color: var(--theme-color);
 }
 
-/* 2. Main Wrapper spacing */
-body.page-kb22-artists-list .kb22a-main-wrapper {
-    background-color: #fafbfc;
-    padding: 100px 0;
+/* 2. Controls Bar (Search & Filter) */
+body.page-kb22-artists-list .kb22-artists-main-wrapper {
+    background-color: var(--smoke-color);
+    padding: 80px 0 100px;
 }
-
-/* Featured Spotlight */
-body.page-kb22-artists-list .kb22a-featured-section {
-    margin-bottom: 80px;
-}
-body.page-kb22-artists-list .kb22a-section-header {
-    margin-bottom: 35px;
-    border-bottom: 2px solid rgba(0,0,0,0.06);
-    padding-bottom: 15px;
-}
-body.page-kb22-artists-list .kb22a-featured-label {
-    background-color: var(--page-accent);
-    color: #ffffff;
-    font-size: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    padding: 4px 10px;
-    border-radius: 4px;
-    display: inline-block;
-    margin-bottom: 10px;
-}
-body.page-kb22-artists-list .kb22a-section-title {
-    font-family: 'Jost', sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin: 0;
-}
-body.page-kb22-artists-list .kb22a-section-title i {
-    color: var(--page-accent);
-}
-
-/* Featured Card */
-body.page-kb22-artists-list .kb22a-featured-card {
-    background-color: #ffffff;
-    border: 1px solid rgba(0,0,0,0.06);
-    border-top: 4px solid var(--page-accent);
+body.page-kb22-artists-list .kb22-artists-control-bar {
+    background-color: var(--white-color);
+    border: 1px solid var(--light-color);
     border-radius: 12px;
-    padding: 50px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.03);
+    padding: 25px 30px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.02);
 }
-body.page-kb22-artists-list .kb22a-featured-img-wrap {
+body.page-kb22-artists-list .kb22-artists-search-wrap {
     position: relative;
-    width: 240px;
-    height: 240px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 4px solid var(--page-accent);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1), 0 0 0 6px rgba(155, 89, 182, 0.15);
-    margin: 0 auto 20px;
-    transition: transform 0.4s ease;
 }
-body.page-kb22-artists-list .kb22a-featured-img {
+body.page-kb22-artists-list .kb22-artists-search-wrap .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: var(--body-color);
+    font-size: 16px;
+}
+body.page-kb22-artists-list #artistSearchInput {
+    width: 100%;
+    background-color: var(--smoke-color5);
+    border: 1px solid var(--light-color);
+    border-radius: 50px;
+    padding: 12px 20px 12px 50px;
+    color: var(--black-color);
+    font-size: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+body.page-kb22-artists-list #artistSearchInput:focus {
+    border-color: var(--theme-color);
+    box-shadow: 0 0 12px rgba(0, 136, 203, 0.2);
+    outline: none;
+}
+body.page-kb22-artists-list .kb22-artists-filter-btn-group {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+body.page-kb22-artists-list .kb22-artists-filter-btn {
+    background-color: var(--smoke-color5);
+    border: 1px solid var(--light-color);
+    color: var(--body-color);
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 13.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+body.page-kb22-artists-list .kb22-artists-filter-btn:hover {
+    color: var(--black-color);
+    border-color: var(--body-color);
+}
+body.page-kb22-artists-list .kb22-artists-filter-btn.active {
+    background-color: var(--theme-color);
+    border-color: var(--theme-color);
+    color: var(--white-color);
+    box-shadow: 0 4px 15px rgba(0, 136, 203, 0.3);
+}
+
+/* 3. Grid & Cards */
+body.page-kb22-artists-list .kb22-artists-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+body.page-kb22-artists-list .kb22-artist-card {
+    background: var(--white-color);
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+body.page-kb22-artists-list .kb22-artist-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+body.page-kb22-artists-list .kb22-artists-avatar-wrap {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: var(--smoke-color5);
+}
+body.page-kb22-artists-list .kb22-artists-avatar-wrap img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease;
+    transition: transform 0.6s ease;
 }
-body.page-kb22-artists-list .kb22a-featured-card:hover .kb22a-featured-img-wrap {
-    transform: scale(1.03);
+body.page-kb22-artists-list .kb22-artist-card:hover .kb22-artists-avatar-wrap img {
+    transform: scale(1.05);
 }
-body.page-kb22-artists-list .kb22a-featured-card:hover .kb22a-featured-img {
-    transform: scale(1.06);
-}
-body.page-kb22-artists-list .kb22a-country-badge {
+body.page-kb22-artists-list .kb22-artists-card-overlay {
     position: absolute;
-    bottom: 15px; left: 50%;
-    transform: translateX(-50%);
-    font-size: 9px;
-    font-weight: 700;
-    background-color: var(--page-accent);
-    color: #ffffff;
-    padding: 3px 10px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
-
-/* Featured details */
-body.page-kb22-artists-list .kb22a-artwork-title {
-    font-family: 'Georgia', serif;
-    font-size: 24px;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 8px;
-}
-body.page-kb22-artists-list .kb22a-artwork-meta {
-    font-size: 13.5px;
-    line-height: 1.6;
-    color: #666;
-    background-color: #faf9f6;
-    padding: 10px 15px;
-    border-radius: 4px;
-    border-left: 3px solid var(--page-accent);
-    margin-bottom: 20px;
-}
-body.page-kb22-artists-list .kb22a-bio-text {
-    font-size: 15px;
-    line-height: 1.75;
-    color: #555555;
-    margin-bottom: 15px;
-    text-align: justify;
-}
-
-/* 3. Search and Filter inputs */
-body.page-kb22-artists-list .kb22a-directory-controls {
-    margin-bottom: 40px;
-}
-body.page-kb22-artists-list .kb22a-search-wrap,
-body.page-kb22-artists-list .kb22a-select-wrap {
-    position: relative;
-    width: 100%;
-}
-body.page-kb22-artists-list .kb22a-search-input,
-body.page-kb22-artists-list .kb22a-select-input {
-    width: 100%;
-    background-color: #ffffff;
-    border: 1px solid rgba(0,0,0,0.08);
-    border-radius: 6px;
-    padding: 12px 15px 12px 45px;
-    font-size: 14.5px;
-    color: #333333;
-    outline: none;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.01);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-body.page-kb22-artists-list .kb22a-search-input:focus,
-body.page-kb22-artists-list .kb22a-select-input:focus {
-    border-color: var(--page-accent);
-    box-shadow: 0 4px 15px rgba(155, 89, 182, 0.1);
-}
-body.page-kb22-artists-list .search-icon,
-body.page-kb22-artists-list .filter-icon {
-    position: absolute;
-    left: 18px; top: 50%;
-    transform: translateY(-50%);
-    color: #888888;
-    font-size: 15px;
-}
-
-/* 4. Artist Grid Directory */
-body.page-kb22-artists-list .kb22a-grid-section {
-    margin-top: 60px;
-}
-body.page-kb22-artists-list .kb22a-section-intro {
-    font-size: 14.5px;
-    color: #777777;
-    margin-top: 8px;
-    margin-bottom: 0;
-}
-body.page-kb22-artists-list .kb22a-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 30px;
-}
-body.page-kb22-artists-list .kb22a-card {
-    background-color: var(--page-bg-card);
-    border: 1px solid rgba(0,0,0,0.05);
-    border-radius: 10px;
-    padding: 30px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.01);
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.15), box-shadow 0.4s ease, border-color 0.4s ease;
-}
-body.page-kb22-artists-list .kb22a-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(155, 89, 182, 0.12);
-    border-color: rgba(155, 89, 182, 0.25);
-}
-
-/* Circular Avatars Grayscale */
-body.page-kb22-artists-list .kb22a-avatar-wrap {
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 2px solid var(--page-accent);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-    margin-bottom: 18px;
+    inset: 0;
+    background-color: rgba(0, 136, 203, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f5f0f8;
-    color: var(--page-accent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+body.page-kb22-artists-list .kb22-artist-card:hover .kb22-artists-card-overlay {
+    opacity: 1;
+}
+body.page-kb22-artists-list .kb22-artists-view-details {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 10px 24px;
+    border-radius: 4px;
+}
+body.page-kb22-artists-list .kb22-artists-card-body {
+    padding: 20px;
+}
+body.page-kb22-artists-list .kb22-artists-card-country {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--theme-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 5px;
+}
+body.page-kb22-artists-list .kb22-artist-name {
     font-family: 'Jost', sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    letter-spacing: 1px;
-    transition: transform 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+    font-size: 17px;
+    color: var(--title-color);
+    margin: 0;
 }
-body.page-kb22-artists-list .kb22a-avatar {
+
+/* Phone/Email Footer Widget */
+body.page-kb22-artists-list .kb22-artists-footer-contact {
+    background-color: var(--white-color);
+    border-top: 1px solid var(--light-color);
+    padding: 35px 0;
+    color: var(--body-color);
+}
+body.page-kb22-artists-list .text-gold {
+    color: var(--theme-color) !important;
+}
+
+/* No results info */
+body.page-kb22-artists-list .kb22-artists-no-results {
+    padding: 60px 0;
+    color: var(--body-color);
+}
+body.page-kb22-artists-list .kb22-artists-no-results i {
+    font-size: 40px;
+    color: var(--light-color);
+}
+
+@media (max-width: 992px) {
+    body.page-kb22-artists-list .kb22-artists-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 576px) {
+    body.page-kb22-artists-list .kb22-artists-grid {
+        grid-template-columns: 1fr;
+    }
+    body.page-kb22-artists-list .kb22-artists-filter-btn-group {
+        justify-content: flex-start;
+    }
+    body.page-kb22-artists-list .kb22-artists-filter-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* =====================================================================
+   Artist Profile Modal — shared kb24a- prefix classes
+   Scoped to this page body so they don't bleed into other pages
+   ===================================================================== */
+
+body.page-kb22-artists-list .kb24a-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 15, 20, 0.75);
+    backdrop-filter: blur(4px);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s ease;
+}
+body.page-kb22-artists-list .kb24a-modal-backdrop.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+body.page-kb22-artists-list .kb24a-modal {
+    background: #ffffff;
+    border-radius: 20px;
+    width: calc(100% - 40px);
+    max-width: 850px;
+    max-height: 88vh;
+    overflow-y: auto;
+    padding: 48px;
+    position: relative;
+    transform: translateY(30px) scale(0.96);
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+    scrollbar-width: thin;
+    scrollbar-color: #0088cb #f0f0f0;
+}
+body.page-kb22-artists-list .kb24a-modal-backdrop.active .kb24a-modal {
+    transform: translateY(0) scale(1);
+}
+
+body.page-kb22-artists-list .kb24a-modal-close {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    background: #f0f2f4;
+    border: none;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #1F2528;
+    line-height: 1;
+    transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+body.page-kb22-artists-list .kb24a-modal-close:hover {
+    background: #0088cb;
+    color: #fff;
+    transform: rotate(90deg) scale(1.1);
+}
+
+body.page-kb22-artists-list .kb24a-modal-img-wrap {
+    border-radius: 14px;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    background: #f0f2f4;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+body.page-kb22-artists-list .kb24a-modal-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: grayscale(100%);
-    transition: transform 0.5s ease, filter 0.5s ease;
-}
-body.page-kb22-artists-list .kb22a-card:hover .kb22a-avatar-wrap {
-    transform: scale(1.05);
-    background-color: var(--page-accent);
-    color: #ffffff;
-}
-body.page-kb22-artists-list .kb22a-card:hover .kb22a-avatar {
-    filter: grayscale(0%);
-    transform: scale(1.08);
+    display: block;
 }
 
-/* Card metadata details */
-body.page-kb22-artists-list .kb22a-artist-name {
-    font-family: 'Jost', sans-serif;
-    font-size: 16px;
+body.page-kb22-artists-list .kb24a-modal-country {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #e8f5fd;
+    color: #0088cb;
+    font-size: 12px;
     font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 6px;
-    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 14px;
+    border-radius: 50px;
+    margin-bottom: 14px;
 }
-body.page-kb22-artists-list .kb22a-card-country {
-    font-size: 11px;
-    font-weight: 600;
-    color: #888888;
+body.page-kb22-artists-list .kb24a-modal-artist-name {
+    font-family: 'Jost', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    color: #231f20;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+body.page-kb22-artists-list .kb24a-modal-section-title {
+    font-size: 12px;
+    font-weight: 800;
+    color: #0088cb;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+}
+body.page-kb22-artists-list .kb24a-modal-text {
+    font-size: 15px;
+    line-height: 1.75;
+    color: #7B7E86;
+    margin-bottom: 18px;
+}
+body.page-kb22-artists-list .kb24a-modal-artwork-box {
+    background: linear-gradient(135deg, #f8fbff 0%, #eef6ff 100%);
+    border: 1px solid #d0e8f5;
+    border-left: 4px solid #0088cb;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-top: 8px;
+}
+body.page-kb22-artists-list .kb24a-modal-artwork-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 17px;
+    color: #231f20;
+    margin-bottom: 6px;
+}
+body.page-kb22-artists-list .kb24a-modal-medium {
+    font-size: 13.5px;
+    color: #7B7E86;
+    margin-bottom: 8px;
+}
+body.page-kb22-artists-list .kb24a-modal-web-btn {
+    background: #0088cb;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    padding: 11px 20px;
+    font-size: 13px;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 14px rgba(0, 136, 203, 0.3);
+}
+body.page-kb22-artists-list .kb24a-modal-web-btn:hover {
+    background: #006ea3;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 136, 203, 0.4);
 }
 
-/* No Results section */
-body.page-kb22-artists-list .kb22a-no-results {
-    padding: 60px 0;
-    color: #888;
+/* Desktop arrow navigation */
+body.page-kb22-artists-list .kb24a-carousel-arrow {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid rgba(0, 136, 203, 0.2);
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+    font-size: 18px;
+    color: #0088cb;
+    cursor: pointer;
+    z-index: 10000;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
 }
-body.page-kb22-artists-list .kb22a-no-results i {
-    font-size: 40px;
-    color: rgba(0,0,0,0.1);
+body.page-kb22-artists-list .kb24a-carousel-arrow:hover {
+    background: #0088cb;
+    color: #fff;
+    border-color: #0088cb;
+    transform: translateY(-50%) scale(1.08);
+}
+body.page-kb22-artists-list .kb24a-carousel-arrow.left { left: 16px; }
+body.page-kb22-artists-list .kb24a-carousel-arrow.right { right: 16px; }
+
+/* Mobile navigation inside modal */
+body.page-kb22-artists-list .kb24a-mobile-nav {
+    display: none;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid #DDDDDC;
+}
+body.page-kb22-artists-list .kb24a-mobile-nav-btn {
+    flex: 1;
+    background: #f0f2f4;
+    border: 1px solid #DDDDDC;
+    border-radius: 8px;
+    padding: 11px 16px;
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #231f20;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+body.page-kb22-artists-list .kb24a-mobile-nav-btn:hover {
+    background: #0088cb;
+    color: #fff;
+    border-color: #0088cb;
 }
 
-/* Responsive adjustments */
-@media (max-width: 991px) {
-    body.page-kb22-artists-list .kb22a-featured-card {
-        padding: 30px;
-    }
+/* Share toast notification */
+body.page-kb22-artists-list .kb24a-toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: #1F2528;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10001;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    white-space: nowrap;
 }
-@media (max-width: 767px) {
-    body.page-kb22-artists-list .kb22a-hero-banner-section .kb22a-banner-img-wrap {
-        min-height: 260px;
+body.page-kb22-artists-list .kb24a-toast.active {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Responsive adjustments for modal */
+@media (max-width: 768px) {
+    body.page-kb22-artists-list .kb24a-modal {
+        padding: 28px 20px 24px;
+        max-height: 92vh;
     }
-    body.page-kb22-artists-list .kb22a-featured-details {
-        margin-top: 25px;
-        text-align: center;
+    body.page-kb22-artists-list .kb24a-carousel-arrow {
+        display: none;
+    }
+    body.page-kb22-artists-list .kb24a-mobile-nav {
+        display: flex;
+    }
+    body.page-kb22-artists-list .kb24a-modal-artist-name {
+        font-size: 22px;
     }
 }

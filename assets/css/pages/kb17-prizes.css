@@ -1,0 +1,242 @@
+/* ==========================================================================
+   Page-Specific Styles: KB17 Prizes
+   Scope: body.page-kb17-prizes
+   ========================================================================== */
+
+body.page-kb17-prizes {
+    --theme-color: #0088cb;
+    --title-color: #231f20;
+    --body-color: #7B7E86;
+    --smoke-color: #FAF9F6;
+    --smoke-color2: #F8F8F8;
+    --smoke-color3: #F5F5F6;
+    --smoke-color4: #F4F4F4;
+    --smoke-color5: #F0F2F4;
+    --black-color: #1F2528;
+    --gray-color: #303030;
+    --white-color: #ffffff;
+    --light-color: #DDDDDC;
+
+    background-color: var(--smoke-color);
+    color: var(--body-color);
+}
+
+/* 1. Hero Banner */
+.kb17-prizes-hero {
+    position: relative;
+    background: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.95)), url('../../../assets/img/KB17/kb19-page-banner-2.jpg') no-repeat center center / cover;
+    padding: 130px 0;
+    border-bottom: 3px solid var(--theme-color);
+    background-color: #474747;
+}
+.kb17-prizes-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(0, 136, 203, 0.15) 0%, transparent 85%);
+    z-index: 1;
+}
+.kb17-prizes-hero-title {
+    font-family: 'Jost', sans-serif;
+    font-size: clamp(1.8rem, 4vw, 3.2rem);
+    font-weight: 850;
+    color: var(--white-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+.kb17-prizes-hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--theme-color);
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+.kb17-prizes-breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.kb17-prizes-breadcrumbs li {
+    font-size: 12px;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.kb17-prizes-breadcrumbs li + li::before {
+    content: '/';
+    margin-right: 8px;
+    color: rgba(255,255,255,0.4);
+}
+.kb17-prizes-breadcrumbs a {
+    color: rgba(255,255,255,0.9);
+    transition: color 0.3s ease;
+}
+.kb17-prizes-breadcrumbs a:hover {
+    color: var(--theme-color);
+}
+
+/* 2. Main content wrapper */
+.kb17-prizes-main-wrapper {
+    background-color: var(--smoke-color);
+    padding: 80px 0 100px;
+}
+
+/* Intro Header */
+.kb17-prizes-section-title {
+    font-family: 'Jost', sans-serif;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 850;
+    color: var(--title-color);
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.kb17-prizes-lead {
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--body-color);
+}
+
+/* 3. Section Box */
+.kb17-prizes-section {
+    background: var(--white-color);
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    border-left: 4px solid var(--theme-color);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    border-top: 1px solid var(--light-color);
+    border-right: 1px solid var(--light-color);
+    border-bottom: 1px solid var(--light-color);
+}
+
+.kb17-prizes-heading {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+
+.meta-date {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: var(--body-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.kb17-prizes-text {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--body-color);
+}
+
+/* Recipient details */
+.kb17-prizes-recipient {
+    border-left: 3px solid var(--theme-color) !important;
+}
+
+/* Jury Pill Boxes */
+.kb17-prizes-jury {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.kb17-prizes-jury-item {
+    background: var(--smoke-color5);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13.5px;
+    color: var(--black-color);
+    border: 1px solid var(--light-color);
+}
+
+/* Trophy highlights */
+.kb17-prizes-trophy {
+    background: var(--smoke-color2);
+    padding: 20px 25px;
+    border-radius: 12px;
+    margin-top: 25px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    border: 1px solid var(--light-color);
+}
+.trophy-icon {
+    font-size: 32px;
+    color: var(--theme-color);
+    margin-top: 3px;
+}
+
+/* 4. Sidebar / Carousel */
+.kb17-prizes-sidebar {
+    background: var(--white-color);
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid var(--light-color);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.02);
+    position: sticky;
+    top: 100px;
+}
+.kb17-prizes-sidebar-heading {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.kb17-prizes-slide {
+    padding: 0 5px;
+}
+.kb17-prizes-slide a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.kb17-prizes-slide img {
+    width: 100%;
+    aspect-ratio: 1 / 1.25;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.kb17-prizes-slide:hover img {
+    transform: scale(1.04);
+}
+.slide-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 136, 203, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: var(--white-color);
+    font-size: 24px;
+}
+.kb17-prizes-slide:hover .slide-overlay {
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+    .kb17-prizes-section,
+    .kb17-prizes-sidebar {
+        padding: 30px 20px;
+    }
+}

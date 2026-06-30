@@ -1,0 +1,207 @@
+/* ==========================================================================
+   Shared Page Styles: KB22 Program Subpages
+   Applies to: page-kb22-discursive, page-kb22-educational, page-kb22-wellness,
+               page-kb22-storytelling, page-kb22-khaadi, page-kb22-ceremonies
+   ========================================================================== */
+
+body.page-kb22-discursive,
+body.page-kb22-educational,
+body.page-kb22-wellness,
+body.page-kb22-storytelling,
+body.page-kb22-khaadi,
+body.page-kb22-ceremonies {
+    --theme-color: #0088cb;
+    --title-color: #231f20;
+    --body-color: #7B7E86;
+    --smoke-color: #FAF9F6;
+    --smoke-color2: #F8F8F8;
+    --smoke-color3: #F5F5F6;
+    --smoke-color4: #F4F4F4;
+    --smoke-color5: #F0F2F4;
+    --black-color: #1F2528;
+    --gray-color: #303030;
+    --white-color: #ffffff;
+    --light-color: #DDDDDC;
+
+    background-color: var(--smoke-color);
+    color: var(--body-color);
+}
+
+/* 1. Hero Banner (shared across all program subpages) */
+.kb22-programs-hero {
+    background: linear-gradient(rgba(31, 37, 40, 0.75), rgba(31, 37, 40, 0.85)), url('../../../assets/img/gallery/kb19-page-banner-2.jpg') no-repeat center center / cover;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid var(--theme-color);
+    position: relative;
+    overflow: hidden;
+}
+.kb22-programs-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(0, 136, 203, 0.15) 0%, transparent 80%);
+    z-index: 1;
+}
+.kb22-programs-hero-title {
+    font-family: 'Jost', sans-serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 850;
+    color: var(--white-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+.kb22-programs-hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--theme-color);
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+.kb22-programs-breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.kb22-programs-breadcrumbs li {
+    font-size: 12px;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.kb22-programs-breadcrumbs li + li::before {
+    content: '/';
+    margin-right: 8px;
+    color: rgba(255,255,255,0.4);
+}
+.kb22-programs-breadcrumbs a {
+    color: rgba(255,255,255,0.9);
+    transition: color 0.3s ease;
+}
+.kb22-programs-breadcrumbs a:hover {
+    color: var(--theme-color);
+}
+
+/* 2. Main Content Wrapper */
+.kb22-programs-main-wrapper {
+    background-color: var(--smoke-color);
+    padding: 80px 0 100px;
+}
+
+/* 3. Copy Card (Left Column) */
+.kb22-programs-copy-card {
+    background-color: var(--white-color);
+    border: 1px solid var(--light-color);
+    border-radius: 16px;
+    padding: 45px;
+    height: 100%;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.02);
+}
+.kb22-programs-section-heading {
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    font-weight: 850;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid var(--light-color);
+    padding-bottom: 15px;
+}
+.kb22-programs-section-heading .text-primary {
+    color: var(--theme-color) !important;
+}
+.kb22-programs-lead-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--black-color);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.kb22-programs-body-text {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--body-color);
+    margin-bottom: 18px;
+}
+
+/* 4. Gallery Card (Right Column) */
+.kb22-programs-gallery-wrap {
+    background-color: var(--white-color);
+    border: 1px solid var(--light-color);
+    border-radius: 16px;
+    padding: 35px;
+    height: 100%;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.02);
+}
+.kb22-programs-gallery-heading {
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    font-weight: 750;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--light-color);
+}
+
+/* 5. Masonry Grid */
+.kb22-programs-masonry {
+    column-count: 2;
+    column-gap: 12px;
+}
+.kb22-programs-masonry-item {
+    break-inside: avoid;
+    margin-bottom: 12px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.kb22-programs-masonry-item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+}
+.kb22-programs-masonry-item:hover img {
+    transform: scale(1.04);
+}
+.kb22-programs-gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 136, 203, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: var(--white-color);
+    font-size: 24px;
+    cursor: pointer;
+}
+.kb22-programs-masonry-item:hover .kb22-programs-gallery-overlay {
+    opacity: 1;
+}
+.kb22-programs-lightbox {
+    display: block;
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .kb22-programs-copy-card,
+    .kb22-programs-gallery-wrap {
+        padding: 25px 20px;
+    }
+    .kb22-programs-masonry {
+        column-count: 1;
+    }
+}

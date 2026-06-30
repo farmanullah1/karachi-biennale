@@ -1,243 +1,232 @@
 /* ==========================================================================
-   Page-Specific Styles: KB22 Curator
+   Page-Specific Styles: KB22 Curator Profile
    Scope: body.page-kb22-curator
-   Identity: "The Architect of Data" - High-Contrast Blueprint (Art & Technology)
+   Identity: "Digital Curator Statement" - Light Mode Custom Palette
    ========================================================================== */
 
 body.page-kb22-curator {
-    --page-accent: #2ecc71; /* Electric Green */
-    --page-dark-indigo: #1e272c; /* Deep Indigo */
-    --page-bg-light: #fafbfc;
-    --page-bg-card: #ffffff;
-    --page-border: rgba(46, 204, 113, 0.2);
+    --theme-color: #0088cb;
+    --title-color: #231f20;
+    --body-color: #7B7E86;
+    --smoke-color: #FAF9F6;
+    --smoke-color2: #F8F8F8;
+    --smoke-color3: #F5F5F6;
+    --smoke-color4: #F4F4F4;
+    --smoke-color5: #F0F2F4;
+    --black-color: #1F2528;
+    --gray-color: #303030;
+    --white-color: #ffffff;
+    --light-color: #DDDDDC;
+
+    background-color: var(--smoke-color);
+    color: var(--body-color);
 }
 
-/* 1. Page Header (Hero Area) */
-body.page-kb22-curator .kb22u-hero-section {
-    background: linear-gradient(135deg, #0d1418 0%, #1a2a32 100%);
-    padding: 85px 0;
-    border-bottom: 2px solid var(--page-accent);
+/* 1. Hero Area */
+body.page-kb22-curator .kb22-curator-hero {
+    background: linear-gradient(rgba(31, 37, 40, 0.75), rgba(31, 37, 40, 0.85)), url('../../../assets/img/gallery/kb19-page-banner-2.jpg') no-repeat center center / cover;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid var(--theme-color);
+    position: relative;
+    overflow: hidden;
 }
-body.page-kb22-curator .kb22u-hero-title {
+body.page-kb22-curator .kb22-curator-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(0, 136, 203, 0.15) 0%, transparent 80%);
+    z-index: 1;
+}
+body.page-kb22-curator .kb22-curator-hero-title {
     font-family: 'Jost', sans-serif;
-    font-size: clamp(2.5rem, 6vw, 3.8rem);
-    font-weight: 800;
-    color: #ffffff;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 850;
+    color: var(--white-color);
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 10px;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
-body.page-kb22-curator .kb22u-hero-subtitle {
-    font-size: 1.1rem;
-    color: var(--page-accent);
-    font-family: 'Georgia', serif;
-    font-style: italic;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+body.page-kb22-curator .kb22-curator-hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--theme-color);
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
-body.page-kb22-curator .kb22u-hero-intro {
-    font-size: 15px;
-    line-height: 1.75;
-    color: rgba(255, 255, 255, 0.85);
-    max-width: 800px;
-    margin: 0 auto 25px;
-}
-body.page-kb22-curator .kb22u-breadcrumbs ul {
+body.page-kb22-curator .kb22-curator-breadcrumbs ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 25px 0 0;
     display: flex;
     justify-content: center;
     gap: 8px;
 }
-body.page-kb22-curator .kb22u-breadcrumbs li {
+body.page-kb22-curator .kb22-curator-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255,255,255,0.7);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-body.page-kb22-curator .kb22u-breadcrumbs li + li::before {
+body.page-kb22-curator .kb22-curator-breadcrumbs li + li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.4);
 }
-body.page-kb22-curator .kb22u-breadcrumbs a {
-    color: rgba(255,255,255,0.8);
+body.page-kb22-curator .kb22-curator-breadcrumbs a {
+    color: rgba(255,255,255,0.9);
     transition: color 0.3s ease;
 }
-body.page-kb22-curator .kb22u-breadcrumbs a:hover {
-    color: var(--page-accent);
+body.page-kb22-curator .kb22-curator-breadcrumbs a:hover {
+    color: var(--theme-color);
 }
 
-/* 2. Main Content & Sidebar Layout */
-body.page-kb22-curator .kb22u-content-wrap {
-    background-color: #fafbfc;
-    padding: 90px 0;
+/* 2. Main Content Wrapper */
+body.page-kb22-curator .kb22-curator-content-wrap {
+    background-color: var(--smoke-color);
+    padding: 80px 0 100px;
 }
 
 /* Sidebar Profile Card */
-body.page-kb22-curator .kb22u-sidebar-card {
-    background-color: var(--page-bg-card);
-    border: 1px solid rgba(0,0,0,0.06);
-    border-radius: 12px;
-    padding: 35px;
+body.page-kb22-curator .kb22-curator-sidebar-card {
+    background-color: var(--white-color);
+    border: 1px solid var(--light-color);
+    border-radius: 16px;
+    padding: 40px 30px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.02);
-    position: relative;
-    /* Smooth paper lift transition */
-    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
 }
-body.page-kb22-curator .kb22u-sidebar-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(46, 204, 113, 0.1);
-    border-color: rgba(46, 204, 113, 0.25);
+body.page-kb22-curator .kb22-curator-profile-img-wrap {
+    margin-bottom: 25px;
 }
-body.page-kb22-curator .kb22u-profile-img-wrap {
-    width: 200px;
-    height: 200px;
+body.page-kb22-curator .kb22-curator-profile-img {
     border-radius: 50%;
-    overflow: hidden;
-    border: 4px solid var(--page-accent);
-    margin: 0 auto 25px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.4s ease;
+    border: 4px solid var(--theme-color);
+    max-width: 200px;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.06);
 }
-body.page-kb22-curator .kb22u-sidebar-card:hover .kb22u-profile-img-wrap {
-    transform: scale(1.03);
+body.page-kb22-curator .kb22-curator-sidebar-card:hover .kb22-curator-profile-img {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 136, 203, 0.25);
 }
-body.page-kb22-curator .kb22u-profile-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-body.page-kb22-curator .kb22u-profile-details {
-    margin-bottom: 30px;
-}
-body.page-kb22-curator .kb22u-profile-name {
+body.page-kb22-curator .kb22-curator-profile-name {
     font-family: 'Jost', sans-serif;
     font-size: 22px;
-    font-weight: 700;
-    color: var(--page-dark-indigo);
+    font-weight: 800;
+    color: var(--title-color);
     margin-bottom: 5px;
 }
-body.page-kb22-curator .kb22u-profile-title {
+body.page-kb22-curator .kb22-curator-profile-title {
     font-size: 13.5px;
     font-weight: 700;
-    color: var(--page-accent);
+    color: var(--theme-color);
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
-body.page-kb22-curator .kb22u-profile-focus {
-    font-size: 12px;
-    color: #777;
-    font-style: italic;
+body.page-kb22-curator .kb22-curator-profile-theme {
+    font-size: 13px;
+    color: var(--body-color);
+    line-height: 1.4;
+    display: block;
 }
-
-/* Curatorial Directives list */
-body.page-kb22-curator .kb22u-sidebar-info {
-    border-top: 1px dashed rgba(0,0,0,0.1);
+body.page-kb22-curator .kb22-curator-sidebar-info {
+    border-top: 1px solid var(--light-color);
+    margin-top: 25px;
     padding-top: 25px;
 }
-body.page-kb22-curator .kb22u-sidebar-heading {
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--page-dark-indigo);
+body.page-kb22-curator .kb22-curator-sidebar-heading {
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    font-weight: 750;
     text-transform: uppercase;
     letter-spacing: 1px;
+    color: var(--title-color);
     margin-bottom: 15px;
 }
-body.page-kb22-curator .kb22u-directives-list {
+body.page-kb22-curator .kb22-curator-directives-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-body.page-kb22-curator .kb22u-directives-list li {
+body.page-kb22-curator .kb22-curator-directives-list li {
     font-size: 13.5px;
-    color: #555;
+    color: var(--body-color);
     margin-bottom: 12px;
     display: flex;
     align-items: center;
-    gap: 10px;
 }
-body.page-kb22-curator .kb22u-directives-list li i {
-    color: var(--page-accent);
+body.page-kb22-curator .kb22-curator-directives-list li i {
+    color: var(--theme-color);
     font-size: 14px;
     width: 20px;
-    text-align: center;
 }
 
-/* Essay and Biography blocks */
-body.page-kb22-curator .kb22u-essay-section,
-body.page-kb22-curator .kb22u-bio-section {
-    background-color: #ffffff;
-    border: 1px solid rgba(0,0,0,0.05);
-    border-radius: 12px;
-    padding: 45px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.01);
-}
-body.page-kb22-curator .kb22u-section-title {
+/* Essay Content */
+body.page-kb22-curator .kb22-curator-section-title {
     font-family: 'Jost', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--page-dark-indigo);
-    margin-bottom: 25px;
-    border-left: 4px solid var(--page-accent);
-    padding-left: 15px;
+    font-size: 28px;
+    font-weight: 850;
+    color: var(--title-color);
     text-transform: uppercase;
-    letter-spacing: 1px;
-}
-body.page-kb22-curator .kb22u-essay-subtitle {
-    font-family: 'Georgia', serif;
-    font-size: 20px;
-    font-weight: 700;
-    color: #444;
     margin-bottom: 25px;
-    line-height: 1.4;
+    border-bottom: 2px solid var(--light-color);
+    padding-bottom: 8px;
+    letter-spacing: 0.5px;
 }
-body.page-kb22-curator .kb22u-lead-paragraph {
-    font-size: 17px;
+body.page-kb22-curator .kb22-curator-statement {
+    padding: 30px;
+    background-color: var(--white-color);
+    border-left: 4px solid var(--theme-color);
+    border-radius: 0 12px 12px 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.01);
+}
+body.page-kb22-curator .kb22-curator-lead-text {
+    font-size: 16.5px;
     line-height: 1.8;
-    color: #333333;
-    margin-bottom: 20px;
+    font-weight: 600;
+    color: var(--black-color);
+    margin: 0;
 }
-body.page-kb22-curator .kb22u-dropcap {
-    font-family: 'Georgia', serif;
-    font-size: 55px;
-    line-height: 45px;
-    float: left;
-    margin-top: 5px;
-    margin-right: 10px;
-    color: var(--page-accent);
-    font-weight: 700;
-}
-body.page-kb22-curator .kb22u-essay-body p,
-body.page-kb22-curator .kb22u-bio-body p {
+body.page-kb22-curator .kb22-curator-essay-body p {
     font-size: 15.5px;
     line-height: 1.8;
-    color: #555555;
+    color: var(--body-color);
     margin-bottom: 20px;
-    text-align: justify;
 }
-body.page-kb22-curator .kb22u-essay-body p:last-child,
-body.page-kb22-curator .kb22u-bio-body p:last-child {
-    margin-bottom: 0;
+body.page-kb22-curator .kb22-curator-essay-heading {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--title-color);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+body.page-kb22-curator .kb22-curator-question-box {
+    background-color: var(--white-color);
+    border-left: 4px solid var(--black-color);
+    padding: 20px 25px;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.01);
+}
+body.page-kb22-curator .kb22-curator-question {
+    font-size: 14.5px;
+    font-weight: 700;
+    line-height: 1.7;
+    color: var(--theme-color);
+    font-style: italic;
+}
+body.page-kb22-curator .mt-40 {
+    margin-top: 40px !important;
 }
 
-body.page-kb22-curator .kb22u-divider {
-    border: 0;
-    border-top: 1px solid rgba(0,0,0,0.06);
-    margin: 40px 0;
-}
-
-/* Responsive adjustments */
-@media (max-width: 991px) {
-    body.page-kb22-curator .kb22u-essay-section,
-    body.page-kb22-curator .kb22u-bio-section {
-        padding: 30px;
-    }
-}
 @media (max-width: 767px) {
-    body.page-kb22-curator .kb22u-sidebar-card {
+    body.page-kb22-curator .kb22-curator-sidebar-card {
         margin-bottom: 40px;
     }
 }

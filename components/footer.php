@@ -127,7 +127,7 @@
         </div>
     </div>
 
-<?php if (isset($bodyClass) && $bodyClass === 'page-kb24-artists-list'): ?>
+<?php if (isset($bodyClass) && in_array($bodyClass, ['page-kb24-artists-list', 'page-kb22-artists-list'])): ?>
     <!-- Bio Modal Wrapper with Left and Right Navigation Arrows and copied link indicator -->
     <div class="kb24a-modal-backdrop" id="artistModalBackdrop" onclick="closeArtistModal()">
         <!-- Navigation Left (Desktop Only) -->
@@ -165,6 +165,7 @@
         </div>
     </div>
 <?php endif; ?>
+
 
     <!--********************************
 			Code End  Here 

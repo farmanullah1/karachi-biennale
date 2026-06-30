@@ -1,336 +1,334 @@
 /* ==========================================================================
    Page-Specific Styles: KB17 About
    Scope: body.page-kb17-about
-   Identity: "The Witness Portal" - Rust orange contrast
    ========================================================================== */
 
 body.page-kb17-about {
-    --page-accent: #d35400; /* Rust Orange */
-    --page-gold: #f1c40f;
-    --page-bg-light: #fafbfc;
-    --page-bg-card: #ffffff;
-    --page-border: rgba(211, 84, 0, 0.15);
+    --theme-color: #0088cb;
+    --title-color: #231f20;
+    --body-color: #7B7E86;
+    --smoke-color: #FAF9F6;
+    --smoke-color2: #F8F8F8;
+    --smoke-color3: #F5F5F6;
+    --smoke-color4: #F4F4F4;
+    --smoke-color5: #F0F2F4;
+    --black-color: #1F2528;
+    --gray-color: #303030;
+    --white-color: #ffffff;
+    --light-color: #DDDDDC;
+
+    background-color: var(--smoke-color);
+    color: var(--body-color);
 }
 
-/* 1. Page Banner (Hero Area) */
-body.page-kb17-about .kb17a-hero-section {
+/* 1. Hero Banner */
+.kb17-about-hero {
     position: relative;
-    overflow: hidden;
+    background: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.95)), url('../../../assets/img/KB17/kb19-page-banner-2.jpg') no-repeat center center / cover;
+    padding: 100px 0 110px;
+    border-bottom: 3px solid var(--theme-color);
+    background-color: #474747;
 }
-body.page-kb17-about .kb17a-hero-banner {
-    background-image: url('../../img/bg/kb19-page-banner-2.jpg');
-    background-size: cover;
-    background-position: center center;
-    min-height: 380px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-body.page-kb17-about .kb17a-hero-overlay {
+.kb17-about-hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(46, 20, 4, 0.85) 0%, rgba(211, 84, 0, 0.6) 100%);
+    background: radial-gradient(circle at center, rgba(0, 136, 203, 0.15) 0%, transparent 85%);
     z-index: 1;
 }
-body.page-kb17-about .kb17a-hero-title {
+.kb17-about-logo {
+    max-width: 180px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
+}
+.kb17-about-hero-title {
     font-family: 'Jost', sans-serif;
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    font-weight: 800;
-    color: #ffffff;
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 850;
+    color: var(--white-color);
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 10px;
-    text-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    margin-bottom: 8px;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
-body.page-kb17-about .kb17a-hero-subtitle {
-    font-size: 1.1rem;
-    color: var(--page-gold);
-    font-family: 'Georgia', serif;
-    font-style: italic;
-    letter-spacing: 1px;
+.kb17-about-hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--theme-color);
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
-body.page-kb17-about .kb17a-breadcrumbs ul {
+.kb17-about-breadcrumbs ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0 0;
+    margin: 25px 0 0;
     display: flex;
     justify-content: center;
     gap: 8px;
 }
-body.page-kb17-about .kb17a-breadcrumbs li {
+.kb17-about-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.65);
+    color: rgba(255,255,255,0.7);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-body.page-kb17-about .kb17a-breadcrumbs li + li::before {
+.kb17-about-breadcrumbs li + li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.4);
 }
-body.page-kb17-about .kb17a-breadcrumbs a {
-    color: rgba(255,255,255,0.85);
+.kb17-about-breadcrumbs a {
+    color: rgba(255,255,255,0.9);
     transition: color 0.3s ease;
 }
-body.page-kb17-about .kb17a-breadcrumbs a:hover {
-    color: var(--page-gold);
+.kb17-about-breadcrumbs a:hover {
+    color: var(--theme-color);
 }
 
-/* 2. Main Wrapper spacing */
-body.page-kb17-about .kb17a-main-wrapper {
-    background-color: #fafbfc;
-    padding: 100px 0;
+/* 2. Main content wrapper */
+.kb17-about-main-wrapper {
+    background-color: var(--smoke-color);
+    padding: 80px 0 100px;
 }
 
-/* Essay block typography */
-body.page-kb17-about .kb17a-essay-block {
-    background-color: #ffffff;
-    border: 1px solid rgba(0,0,0,0.05);
-    border-radius: 12px;
-    padding: 50px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+/* 3. Left Side: Copy Card */
+.kb17-about-copy-card {
+    background-color: var(--white-color);
+    border: 1px solid var(--light-color);
+    border-radius: 16px;
+    padding: 45px;
+    height: 100%;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.02);
 }
-body.page-kb17-about .kb17a-pullquote {
-    border-left: 4px solid var(--page-accent);
-    background-color: #fdf5f2;
-    padding: 25px 30px;
-    border-radius: 0 8px 8px 0;
-    margin-bottom: 35px;
-    font-style: italic;
-    font-size: 1.15rem;
-    line-height: 1.6;
-    color: #2c3e50;
-    transition: transform 0.4s ease;
-}
-body.page-kb17-about .kb17a-pullquote:hover {
-    transform: translateX(5px);
-}
-body.page-kb17-about .kb17a-essay-title {
+.kb17-about-section-title {
     font-family: 'Jost', sans-serif;
     font-size: 24px;
+    font-weight: 850;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+.kb17-about-dates-badge {
+    display: inline-block;
+    background-color: var(--theme-color);
+    color: var(--white-color);
+    font-size: 12px;
     font-weight: 700;
-    color: #1a1a1a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 6px 16px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+}
+.kb17-about-lead-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--black-color);
+    font-weight: 600;
     margin-bottom: 20px;
 }
-body.page-kb17-about .kb17a-paragraph {
-    font-size: 15.5px;
-    line-height: 1.85;
-    color: #4f5f6f;
-    margin-bottom: 25px;
-    text-align: justify;
-}
-body.page-kb17-about .kb17a-dropcap {
-    float: left;
-    font-size: 4.2rem;
-    line-height: 0.85;
-    padding-right: 8px;
-    font-weight: 800;
-    color: var(--page-accent);
-    font-family: 'Georgia', serif;
+.kb17-about-body-text {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--body-color);
+    margin-bottom: 18px;
 }
 
-/* 3. Facts Sidebar */
-body.page-kb17-about .kb17a-sidebar {
-    position: sticky;
-    top: 30px;
-}
-body.page-kb17-about .kb17a-facts-card {
-    background-color: #ffffff;
-    border: 1px solid rgba(0,0,0,0.06);
-    border-top: 4px solid var(--page-accent);
-    border-radius: 10px;
-    padding: 35px 25px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.02);
-}
-body.page-kb17-about .kb17a-facts-title {
+/* Thematic Focus Witness */
+.kb17-about-theme-heading {
     font-family: 'Jost', sans-serif;
     font-size: 18px;
+    font-weight: 750;
+    color: var(--title-color);
+    margin: 30px 0 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.kb17-about-quote {
+    font-size: 1.15rem;
+    font-style: italic;
+    color: var(--black-color);
+    padding: 22px 30px;
+    border-left: 4px solid var(--theme-color);
+    background: var(--smoke-color2);
+    border-radius: 0 12px 12px 0;
+    line-height: 1.7;
+    margin: 25px 0;
+}
+.quote-author {
+    display: block;
+    font-size: 13px;
     font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 25px;
-    border-bottom: 2px solid rgba(0,0,0,0.06);
-    padding-bottom: 12px;
+    color: var(--body-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    font-style: normal;
 }
-body.page-kb17-about .kb17a-facts-title i {
-    color: var(--page-accent);
+
+/* 4. Right Side: Sidebar */
+.kb17-about-sidebar {
+    background: var(--white-color);
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid var(--light-color);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.02);
+    height: 100%;
 }
-body.page-kb17-about .kb17a-facts-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 30px 0;
+.kb17-about-sidebar-heading {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
 }
-body.page-kb17-about .kb17a-facts-list li {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    padding: 12px 0;
-    border-bottom: 1px solid rgba(0,0,0,0.06);
-    transition: padding-left 0.3s ease;
+
+/* Map Wrap */
+.kb17-about-map-wrap a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
 }
-body.page-kb17-about .kb17a-facts-list li:last-child {
-    border-bottom: 0;
+.kb17-about-map-wrap img {
+    width: 100%;
+    transition: transform 0.5s ease;
 }
-body.page-kb17-about .kb17a-facts-list li:hover {
-    padding-left: 6px;
+.kb17-about-map-wrap:hover img {
+    transform: scale(1.03);
 }
-body.page-kb17-about .kb17a-fact-label {
+.map-zoom-overlay {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background-color: rgba(35, 31, 32, 0.85);
+    color: var(--white-color);
     font-size: 11px;
     font-weight: 700;
-    color: #999999;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
 }
-body.page-kb17-about .kb17a-fact-value {
-    font-size: 14.5px;
-    font-weight: 600;
-    color: #2c3e50;
-}
-body.page-kb17-about .kb17a-fact-value a {
-    color: var(--page-accent);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-body.page-kb17-about .kb17a-fact-value a:hover {
-    color: var(--page-gold);
-}
-body.page-kb17-about .text-theme {
-    color: var(--page-accent) !important;
+.kb17-about-map-wrap:hover .map-zoom-overlay {
+    background-color: var(--theme-color);
 }
 
-/* Quick links styling */
-body.page-kb17-about .kb17a-quick-links {
-    background-color: #fcfcfc;
-    border: 1px dashed rgba(0,0,0,0.08);
-    border-radius: 6px;
-    padding: 20px;
+/* Table layout */
+.kb17-about-table {
+    border: 1px solid var(--light-color);
+    margin-top: 15px;
 }
-body.page-kb17-about .kb17a-links-title {
+.kb17-about-table thead {
+    background-color: var(--smoke-color5);
+}
+.kb17-about-table th {
     font-family: 'Jost', sans-serif;
-    font-size: 13px;
     font-weight: 700;
-    color: #1a1a1a;
+    font-size: 13px;
     text-transform: uppercase;
+    color: var(--black-color);
+    border-bottom: 2px solid var(--light-color);
+    padding: 12px 15px;
     letter-spacing: 0.5px;
-    margin-bottom: 15px;
 }
-body.page-kb17-about .kb17a-btn-link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 13px;
-    font-weight: 700;
-    color: #444444;
-    text-decoration: none;
-    padding: 8px 0;
-    border-bottom: 1px solid rgba(0,0,0,0.03);
-    transition: color 0.3s ease, padding-left 0.3s ease;
+.kb17-about-table td {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--body-color);
+    padding: 12px 15px;
+    vertical-align: middle;
 }
-body.page-kb17-about .kb17a-btn-link:last-child {
-    border-bottom: 0;
-}
-body.page-kb17-about .kb17a-btn-link i {
-    transition: transform 0.3s ease;
-}
-body.page-kb17-about .kb17a-btn-link:hover {
-    color: var(--page-accent);
-    padding-left: 4px;
-}
-body.page-kb17-about .kb17a-btn-link:hover i {
-    transform: translateX(4px);
+.kb17-about-table td strong {
+    color: var(--black-color);
 }
 
-/* 4. Clusters Section */
-body.page-kb17-about .kb17a-clusters-section {
-    margin-top: 80px;
+/* 5. Hotspot Maps Grid */
+.kb17-about-cluster-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 20px;
 }
-body.page-kb17-about .kb17a-cluster-card {
-    background-color: #ffffff;
-    border: 1px solid rgba(0,0,0,0.05);
+.kb17-about-cluster-item {
+    background: var(--white-color);
+    border: 1px solid var(--light-color);
     border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.kb17-about-cluster-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--theme-color);
+    box-shadow: 0 12px 25px rgba(0,136,203,0.1);
+}
+.cluster-img-wrap {
+    width: 100%;
+    aspect-ratio: 1 / 1;
     overflow: hidden;
-    height: 100%;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.01);
-    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: var(--smoke-color5);
 }
-body.page-kb17-about .kb17a-cluster-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(211, 84, 0, 0.15);
-}
-body.page-kb17-about .kb17a-cluster-img-wrap {
+.cluster-img-wrap a {
+    display: block;
     position: relative;
     width: 100%;
-    height: 200px;
-    overflow: hidden;
-    background-color: #eaeaea;
+    height: 100%;
 }
-body.page-kb17-about .kb17a-cluster-img {
+.cluster-img-wrap img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: grayscale(100%);
-    transition: filter 0.5s ease, transform 0.5s ease;
+    transition: transform 0.5s ease;
 }
-body.page-kb17-about .kb17a-cluster-card:hover .kb17a-cluster-img {
-    filter: grayscale(0%);
+.kb17-about-cluster-item:hover img {
     transform: scale(1.05);
 }
-body.page-kb17-about .kb17a-cluster-badge {
+.hotspot-overlay {
     position: absolute;
-    top: 15px; left: 15px;
-    background-color: var(--page-accent);
-    color: #ffffff;
-    font-size: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 3px 10px;
-    border-radius: 3px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+    inset: 0;
+    background-color: rgba(0, 136, 203, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: var(--white-color);
+    font-size: 20px;
 }
-body.page-kb17-about .kb17a-cluster-body {
-    padding: 25px;
+.cluster-img-wrap a:hover .hotspot-overlay {
+    opacity: 1;
 }
-body.page-kb17-about .kb17a-cluster-title {
+.kb17-about-cluster-item h4 {
     font-family: 'Jost', sans-serif;
-    font-size: 13px;
-    font-weight: 700;
-    color: #999999;
+    font-weight: 750;
+    font-size: 15px;
+    color: var(--title-color);
+    margin-bottom: 4px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    margin-bottom: 15px;
-}
-body.page-kb17-about .kb17a-venue-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-body.page-kb17-about .kb17a-venue-list li {
-    font-size: 13.5px;
-    font-weight: 600;
-    color: #2c3e50;
-    line-height: 1.4;
-}
-body.page-kb17-about .kb17a-venue-list li i {
-    font-size: 12px;
 }
 
-/* Responsive adjustments */
-@media (max-width: 991px) {
-    body.page-kb17-about .kb17a-essay-block {
-        padding: 30px;
+@media (max-width: 992px) {
+    .kb17-about-cluster-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
-    body.page-kb17-about .kb17a-sidebar {
-        margin-top: 40px;
-        position: relative;
-        top: 0;
+    .kb17-about-copy-card,
+    .kb17-about-sidebar {
+        padding: 30px 20px;
     }
 }
-@media (max-width: 767px) {
-    body.page-kb17-about .kb17a-hero-banner {
-        min-height: 260px;
+@media (max-width: 576px) {
+    .kb17-about-cluster-grid {
+        grid-template-columns: 1fr;
     }
 }

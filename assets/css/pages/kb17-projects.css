@@ -1,233 +1,207 @@
 /* ==========================================================================
-   Page-Specific Styles: KB17 Projects
+   Page-Specific Styles: KB17 Projects Overview
    Scope: body.page-kb17-projects
-   Identity: "The Witness Lens" - Projects Grid
    ========================================================================== */
 
 body.page-kb17-projects {
-    --page-accent: #d35400; /* Rust Orange */
-    --page-dark: #2c3e50; /* Navy / Dark slate */
-    --page-bg-light: #fafbfc;
-    --page-bg-card: #ffffff;
-    --page-border: rgba(211, 84, 0, 0.15);
+    --theme-color: #0088cb;
+    --title-color: #231f20;
+    --body-color: #7B7E86;
+    --smoke-color: #FAF9F6;
+    --smoke-color2: #F8F8F8;
+    --smoke-color3: #F5F5F6;
+    --smoke-color4: #F4F4F4;
+    --smoke-color5: #F0F2F4;
+    --black-color: #1F2528;
+    --gray-color: #303030;
+    --white-color: #ffffff;
+    --light-color: #DDDDDC;
+
+    background-color: var(--smoke-color);
+    color: var(--body-color);
 }
 
-/* Page entrance animations */
-@keyframes kb17p-fade-in-up {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* 1. Page Banner (Hero Area) */
-body.page-kb17-projects .kb17p-hero-section {
+/* 1. Hero Banner */
+.kb17-projects-hero {
     position: relative;
-    overflow: hidden;
+    background: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.95)), url('../../../assets/img/KB17/kb19-page-banner-2.jpg') no-repeat center center / cover;
+    padding: 120px 0;
+    border-bottom: 3px solid var(--theme-color);
+    background-color: #474747;
 }
-body.page-kb17-projects .kb17p-hero-banner {
-    background-image: url('../../img/bg/kb19-page-banner-2.jpg');
-    background-size: cover;
-    background-position: center center;
-    min-height: 380px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-body.page-kb17-projects .kb17p-hero-overlay {
+.kb17-projects-hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(46, 20, 4, 0.85) 0%, rgba(211, 84, 0, 0.6) 100%);
+    background: radial-gradient(circle at center, rgba(0, 136, 203, 0.15) 0%, transparent 85%);
     z-index: 1;
 }
-body.page-kb17-projects .kb17p-hero-title {
+.kb17-projects-hero-title {
     font-family: 'Jost', sans-serif;
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    font-weight: 800;
-    color: #ffffff;
+    font-size: clamp(1.8rem, 4vw, 3.2rem);
+    font-weight: 850;
+    color: var(--white-color);
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 10px;
-    text-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    margin-bottom: 8px;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
-body.page-kb17-projects .kb17p-hero-subtitle {
-    font-size: 1.1rem;
-    color: #f1c40f; /* Gold accent */
-    font-family: 'Georgia', serif;
-    font-style: italic;
-    letter-spacing: 1px;
+.kb17-projects-hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--theme-color);
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
-body.page-kb17-projects .kb17p-breadcrumbs ul {
+.kb17-projects-breadcrumbs ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0 0;
+    margin: 25px 0 0;
     display: flex;
     justify-content: center;
     gap: 8px;
 }
-body.page-kb17-projects .kb17p-breadcrumbs li {
+.kb17-projects-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.65);
+    color: rgba(255,255,255,0.7);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-body.page-kb17-projects .kb17p-breadcrumbs li + li::before {
+.kb17-projects-breadcrumbs li + li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.4);
 }
-body.page-kb17-projects .kb17p-breadcrumbs a {
-    color: rgba(255,255,255,0.85);
+.kb17-projects-breadcrumbs a {
+    color: rgba(255,255,255,0.9);
     transition: color 0.3s ease;
 }
-body.page-kb17-projects .kb17p-breadcrumbs a:hover {
-    color: #f1c40f;
+.kb17-projects-breadcrumbs a:hover {
+    color: var(--theme-color);
 }
 
-/* 2. Main Wrapper spacing */
-body.page-kb17-projects .kb17p-main-wrapper {
-    background-color: #fafbfc;
-    padding: 100px 0;
+/* 2. Main content wrapper */
+.kb17-projects-main-wrapper {
+    background-color: var(--smoke-color);
+    padding: 80px 0 100px;
 }
 
-/* Intro block */
-body.page-kb17-projects .kb17p-intro {
-    max-width: 800px;
-    margin: 0 auto 50px;
-    animation: kb17p-fade-in-up 0.8s ease-out forwards;
-}
-body.page-kb17-projects .kb17p-section-heading {
+/* Intro Header */
+.kb17-projects-section-title {
     font-family: 'Jost', sans-serif;
-    font-size: 28px;
-    font-weight: 700;
-    color: #1a1a1a;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 850;
+    color: var(--title-color);
+    line-height: 1.2;
+    text-transform: uppercase;
     margin-bottom: 15px;
 }
-body.page-kb17-projects .kb17p-section-lead {
-    font-size: 15.5px;
+.kb17-projects-lead {
+    font-size: 16px;
     line-height: 1.8;
-    color: #555555;
-    margin: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--body-color);
 }
 
-/* Projects Cards Grid */
-body.page-kb17-projects .kb17p-grid {
+/* 3. Projects Grid */
+.kb17-projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    margin-top: 40px;
 }
 
-/* Project Card layout */
-body.page-kb17-projects .kb17p-card {
-    background-color: var(--page-bg-card);
-    border: 1px solid rgba(0,0,0,0.06);
+.kb17-project-card {
+    background-size: cover;
+    background-position: center;
+    height: 280px;
     border-radius: 12px;
-    padding: 40px 30px;
-    display: flex;
-    flex-direction: column;
     position: relative;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.02);
-    /* Card transform scale & shadow rise */
-    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease, border-color 0.4s ease;
-    animation: kb17p-fade-in-up 0.8s ease-out forwards;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    border: 1px solid var(--light-color);
 }
-body.page-kb17-projects .kb17p-card:nth-child(1) { animation-delay: 0.1s; }
-body.page-kb17-projects .kb17p-card:nth-child(2) { animation-delay: 0.2s; }
-body.page-kb17-projects .kb17p-card:nth-child(3) { animation-delay: 0.3s; }
-body.page-kb17-projects .kb17p-card:nth-child(4) { animation-delay: 0.4s; }
-body.page-kb17-projects .kb17p-card:nth-child(5) { animation-delay: 0.5s; }
-body.page-kb17-projects .kb17p-card:nth-child(6) { animation-delay: 0.6s; }
 
-body.page-kb17-projects .kb17p-card:hover {
+.kb17-project-card::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.75) 100%);
+    transition: background 0.4s ease;
+    z-index: 1;
+}
+
+.kb17-project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 45px rgba(211, 84, 0, 0.12);
-    border-color: rgba(211, 84, 0, 0.35);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    border-color: var(--theme-color);
 }
 
-/* Card Icons overlays */
-body.page-kb17-projects .kb17p-card-icon-wrap {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    margin-bottom: 25px;
-    color: #ffffff;
-    transition: transform 0.4s ease;
-}
-body.page-kb17-projects .kb17p-card:hover .kb17p-card-icon-wrap {
-    transform: scale(1.08) rotate(15deg);
+.kb17-project-card:hover::after {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.65) 100%);
 }
 
-/* Gradient backgrounds for card icons */
-body.page-kb17-projects .bg-gradient-yellow { background: linear-gradient(135deg, #f1c40f 0%, #f39c12 100%); }
-body.page-kb17-projects .bg-gradient-teal { background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%); }
-body.page-kb17-projects .bg-gradient-blue { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
-body.page-kb17-projects .bg-gradient-purple { background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); }
-body.page-kb17-projects .bg-gradient-orange { background: linear-gradient(135deg, #e67e22 0%, #d35400 100%); }
-
-/* Card content body */
-body.page-kb17-projects .kb17p-card-body {
+.kb17-project-card .card-content {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-}
-body.page-kb17-projects .kb17p-card-category {
-    font-size: 9.5px;
-    font-weight: 700;
-    color: var(--page-accent);
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    display: inline-block;
-    margin-bottom: 8px;
-}
-body.page-kb17-projects .kb17p-card-title {
-    font-family: 'Jost', sans-serif;
-    font-size: 19px;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 12px;
-}
-body.page-kb17-projects .kb17p-card-desc {
-    font-size: 14px;
-    line-height: 1.65;
-    color: #666666;
-    margin-bottom: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    color: var(--white-color);
+    padding: 30px 25px;
+    text-align: center;
 }
 
-/* Project Card redirects link arrows */
-body.page-kb17-projects .kb17p-card-link {
-    font-size: 12px;
-    font-weight: 700;
-    color: var(--page-dark);
+.kb17-project-card .card-content h3 {
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    text-decoration: none;
-    margin-top: auto;
-    display: inline-flex;
-    align-items: center;
-    transition: color 0.3s ease;
-}
-body.page-kb17-projects .kb17p-card-link i {
-    transition: transform 0.3s ease;
-}
-body.page-kb17-projects .kb17p-card:hover .kb17p-card-link {
-    color: var(--page-accent);
-}
-body.page-kb17-projects .kb17p-card:hover .kb17p-card-link i {
-    transform: translateX(4px);
+    margin-bottom: 8px;
+    color: var(--white-color);
 }
 
-/* Responsive adjustments */
-@media (max-width: 767px) {
-    body.page-kb17-projects .kb17p-hero-banner {
-        min-height: 260px;
+.kb17-project-card .card-content p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 15px !important;
+}
+
+.kb17-project-card .btn-view {
+    border: 2px solid var(--white-color);
+    padding: 7px 22px;
+    border-radius: 30px;
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+}
+
+.kb17-project-card .btn-view:hover {
+    background: var(--white-color);
+    color: var(--theme-color);
+    box-shadow: 0 4px 10px rgba(255,255,255,0.2);
+}
+
+@media (max-width: 992px) {
+    .kb17-projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+@media (max-width: 576px) {
+    .kb17-projects-grid {
+        grid-template-columns: 1fr;
     }
 }

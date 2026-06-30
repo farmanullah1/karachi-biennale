@@ -1,260 +1,242 @@
 /* ==========================================================================
-   Page-Specific Styles: KB22 Highlights & Projects
+   Page-Specific Styles: KB22 Highlights and Projects
    Scope: body.page-kb22-highlights
-   Identity: "Virtual Interventions" - Tech Highlights & Interactive Flipbook
+   Identity: "Highlights Grid" - Light Mode Custom Palette
    ========================================================================== */
 
 body.page-kb22-highlights {
-    --page-accent: #e67e22; /* Warm Orange-Copper */
-    --page-dark-slate: #1c2833;
-    --page-bg-light: #fafbfc;
-    --page-bg-card: #ffffff;
-    --page-border: rgba(230, 126, 34, 0.2);
+    --theme-color: #0088cb;
+    --title-color: #231f20;
+    --body-color: #7B7E86;
+    --smoke-color: #FAF9F6;
+    --smoke-color2: #F8F8F8;
+    --smoke-color3: #F5F5F6;
+    --smoke-color4: #F4F4F4;
+    --smoke-color5: #F0F2F4;
+    --black-color: #1F2528;
+    --gray-color: #303030;
+    --white-color: #ffffff;
+    --light-color: #DDDDDC;
+
+    background-color: var(--smoke-color);
+    color: var(--body-color);
 }
 
-/* 1. Hero Banner overrides */
-body.page-kb22-highlights .kb22h-hero-section {
-    background: linear-gradient(135deg, #181008 0%, #301f0f 100%);
-    padding: 90px 0;
-    border-bottom: 2px solid var(--page-accent);
+/* 1. Hero Area */
+body.page-kb22-highlights .kb22-highlights-hero {
+    background: linear-gradient(rgba(31, 37, 40, 0.75), rgba(31, 37, 40, 0.85)), url('../../../assets/img/gallery/kb19-page-banner-2.jpg') no-repeat center center / cover;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid var(--theme-color);
+    position: relative;
+    overflow: hidden;
 }
-body.page-kb22-highlights .kb22h-hero-title {
+body.page-kb22-highlights .kb22-highlights-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(0, 136, 203, 0.15) 0%, transparent 80%);
+    z-index: 1;
+}
+body.page-kb22-highlights .kb22-highlights-hero-title {
     font-family: 'Jost', sans-serif;
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    font-weight: 800;
-    color: #ffffff;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 850;
+    color: var(--white-color);
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 10px;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
-body.page-kb22-highlights .kb22h-hero-subtitle {
-    font-size: 1.1rem;
-    color: var(--page-accent);
-    font-family: 'Georgia', serif;
-    font-style: italic;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+body.page-kb22-highlights .kb22-highlights-hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--theme-color);
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
-body.page-kb22-highlights .kb22h-hero-intro {
-    font-size: 15.5px;
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.85);
-    max-width: 800px;
-    margin: 0 auto 25px;
-}
-body.page-kb22-highlights .kb22h-breadcrumbs ul {
+body.page-kb22-highlights .kb22-highlights-breadcrumbs ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 25px 0 0;
     display: flex;
     justify-content: center;
     gap: 8px;
 }
-body.page-kb22-highlights .kb22h-breadcrumbs li {
+body.page-kb22-highlights .kb22-highlights-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255,255,255,0.7);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-body.page-kb22-highlights .kb22h-breadcrumbs li + li::before {
+body.page-kb22-highlights .kb22-highlights-breadcrumbs li + li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.4);
 }
-body.page-kb22-highlights .kb22h-breadcrumbs a {
-    color: rgba(255,255,255,0.8);
+body.page-kb22-highlights .kb22-highlights-breadcrumbs a {
+    color: rgba(255,255,255,0.9);
     transition: color 0.3s ease;
 }
-body.page-kb22-highlights .kb22h-breadcrumbs a:hover {
-    color: var(--page-accent);
+body.page-kb22-highlights .kb22-highlights-breadcrumbs a:hover {
+    color: var(--theme-color);
 }
 
-/* 2. Main content & Highlights grid */
-body.page-kb22-highlights .kb22h-main-wrapper {
-    background-color: #fafbfc;
-    padding: 100px 0;
+/* 2. Content Wrapper */
+body.page-kb22-highlights .kb22-highlights-main-wrapper {
+    background-color: var(--smoke-color);
+    padding: 80px 0 100px;
 }
-body.page-kb22-highlights .kb22h-grid {
+
+/* Grid & Cards */
+body.page-kb22-highlights .kb22-highlights-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 35px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
-
-/* Highlight Cards */
-body.page-kb22-highlights .kb22h-card {
-    background-color: var(--page-bg-card);
-    border: 1px solid rgba(0,0,0,0.06);
+body.page-kb22-highlights .kb22-highlight-card {
+    background: var(--white-color);
     border-radius: 12px;
     padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border-bottom: 4px solid transparent;
+    border: 1px solid var(--light-color);
     display: flex;
     flex-direction: column;
-    position: relative;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.02);
-    /* Border drawing hover effect */
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.15), box-shadow 0.4s ease, border-color 0.4s ease;
+    height: 100%;
 }
-body.page-kb22-highlights .kb22h-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 45px rgba(230, 126, 34, 0.12);
-    border-color: rgba(230, 126, 34, 0.35);
+body.page-kb22-highlights .kb22-highlight-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    border-bottom: 4px solid var(--theme-color);
 }
-
-/* Icons */
-body.page-kb22-highlights .kb22h-card-icon {
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    background-color: rgba(230, 126, 34, 0.1);
-    color: var(--page-dark-slate);
-    border: 2px solid var(--page-accent);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    margin-bottom: 25px;
-    transition: transform 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+body.page-kb22-highlights .kb22-highlight-card .card-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: var(--theme-color);
 }
-body.page-kb22-highlights .kb22h-card:hover .kb22h-card-icon {
-    transform: scale(1.08) rotate(15deg);
-    background-color: var(--page-accent);
-    color: #ffffff;
-}
-
-body.page-kb22-highlights .kb22h-card-body {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-body.page-kb22-highlights .kb22h-card-title {
+body.page-kb22-highlights .kb22-highlight-card h3 {
     font-family: 'Jost', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    color: #1a1a1a;
+    font-size: 19px;
+    font-weight: 750;
+    color: var(--title-color);
     margin-bottom: 12px;
 }
-body.page-kb22-highlights .kb22h-card-desc {
-    font-size: 14.5px;
-    line-height: 1.7;
-    color: #555555;
+body.page-kb22-highlights .kb22-highlight-card .card-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--body-color);
     margin-bottom: 20px;
+    flex-grow: 1;
 }
-
-/* Link arrows shift */
-body.page-kb22-highlights .kb22h-card-link {
-    font-size: 12.5px;
+body.page-kb22-highlights .kb22-highlight-card .btn-learn-more {
+    display: inline-block;
+    padding: 8px 25px;
+    border: 2px solid var(--theme-color);
+    border-radius: 30px;
+    color: var(--theme-color);
     font-weight: 700;
-    color: var(--page-dark-slate);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    text-decoration: none;
-    margin-top: auto;
-    display: inline-flex;
-    align-items: center;
-    transition: color 0.3s ease;
+    align-self: center;
 }
-body.page-kb22-highlights .kb22h-card-link i {
-    transition: transform 0.3s ease;
-}
-body.page-kb22-highlights .kb22h-card:hover .kb22h-card-link {
-    color: var(--page-accent);
-}
-body.page-kb22-highlights .kb22h-card:hover .kb22h-card-link i {
+body.page-kb22-highlights .kb22-highlight-card .btn-learn-more:hover {
+    background: var(--theme-color);
+    color: var(--white-color);
     transform: translateX(5px);
 }
 
-body.page-kb22-highlights .kb22h-divider {
+body.page-kb22-highlights .kb22-highlights-divider {
     border: 0;
-    border-top: 1px solid rgba(0,0,0,0.06);
-    margin: 50px 0;
+    border-top: 1px solid var(--light-color);
 }
 
-/* 3. Flipbook Catalogue Embed Section */
-body.page-kb22-highlights .kb22h-flipbook-section {
-    max-width: 900px;
-    margin: 0 auto;
-}
-body.page-kb22-highlights .kb22h-flipbook-badge {
-    background-color: var(--page-accent);
-    color: #ffffff;
+/* 3. Flipbook Embed Styles */
+body.page-kb22-highlights .kb22-highlights-badge {
+    background-color: var(--theme-color);
+    color: var(--white-color);
     font-size: 10px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    padding: 4px 10px;
+    padding: 6px 14px;
     border-radius: 4px;
     display: inline-block;
-    margin-bottom: 12px;
-}
-body.page-kb22-highlights .kb22h-flipbook-title {
-    font-family: 'Jost', sans-serif;
-    font-size: 28px;
-    font-weight: 700;
-    color: #1a1a1a;
     margin-bottom: 15px;
 }
-body.page-kb22-highlights .kb22h-flipbook-desc {
-    font-size: 15.5px;
-    line-height: 1.7;
-    color: #555555;
+body.page-kb22-highlights .kb22-highlights-flipbook-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 28px;
+    font-weight: 850;
+    color: var(--title-color);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+body.page-kb22-highlights .kb22-highlights-flipbook-desc {
+    font-size: 15px;
+    color: var(--body-color);
     max-width: 700px;
-    margin: 0 auto 35px;
+    margin: 0 auto;
+    line-height: 1.7;
 }
-
-/* Flipbook Iframe box */
-body.page-kb22-highlights .kb22h-flipbook-wrapper {
-    background-color: #121212;
-    padding: 25px;
+body.page-kb22-highlights .kb22-highlights-flipbook-wrapper {
+    max-width: 900px;
+    margin: 40px auto 0;
+    background-color: var(--white-color);
+    border: 1px solid var(--light-color);
+    padding: 20px;
     border-radius: 12px;
-    border: 1px solid rgba(230, 126, 34, 0.15);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
-    transition: border-color 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
 }
-body.page-kb22-highlights .kb22h-flipbook-wrapper:hover {
-    border-color: var(--page-accent);
-    box-shadow: 0 20px 50px rgba(230, 126, 34, 0.15);
-}
-body.page-kb22-highlights .kb22h-iframe-container {
+body.page-kb22-highlights .kb22-highlights-iframe-container {
     position: relative;
+    width: 100%;
     padding-top: 56.25%; /* 16:9 Aspect Ratio */
-    height: 0;
-    overflow: hidden;
+    background-color: var(--smoke-color5);
     border-radius: 8px;
-    background-color: #000;
+    overflow: hidden;
 }
-body.page-kb22-highlights .kb22h-flipbook-iframe {
+body.page-kb22-highlights .kb22-highlights-flipbook-iframe {
     position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border: 0;
 }
-
-/* Action button */
-body.page-kb22-highlights .kb22h-external-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background-color: var(--page-accent);
-    color: #ffffff;
-    padding: 12px 28px;
+body.page-kb22-highlights .kb22-highlights-external-btn {
+    background-color: var(--black-color);
+    color: var(--white-color);
     font-weight: 700;
     font-size: 13.5px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    padding: 12px 30px;
     border-radius: 4px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
     text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 15px rgba(230, 126, 34, 0.2);
 }
-body.page-kb22-highlights .kb22h-external-btn:hover {
-    background-color: var(--page-dark-slate);
-    color: #ffffff;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(28, 40, 51, 0.4);
+body.page-kb22-highlights .kb22-highlights-external-btn:hover {
+    background-color: var(--theme-color);
 }
 
-/* Responsive adjustments */
-@media (max-width: 767px) {
-    body.page-kb22-highlights .kb22h-flipbook-wrapper {
-        padding: 15px;
+@media (max-width: 992px) {
+    body.page-kb22-highlights .kb22-highlights-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 576px) {
+    body.page-kb22-highlights .kb22-highlights-grid {
+        grid-template-columns: 1fr;
     }
 }

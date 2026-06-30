@@ -1,0 +1,291 @@
+/* ==========================================================================
+   Page-Specific Styles: KB17 Catalog Launch
+   Scope: body.page-kb17-catalog-launch
+   ========================================================================== */
+
+body.page-kb17-catalog-launch {
+    --theme-color: #0088cb;
+    --title-color: #231f20;
+    --body-color: #7B7E86;
+    --smoke-color: #FAF9F6;
+    --smoke-color2: #F8F8F8;
+    --smoke-color3: #F5F5F6;
+    --smoke-color4: #F4F4F4;
+    --smoke-color5: #F0F2F4;
+    --black-color: #1F2528;
+    --gray-color: #303030;
+    --white-color: #ffffff;
+    --light-color: #DDDDDC;
+
+    background-color: var(--smoke-color);
+    color: var(--body-color);
+}
+
+/* 1. Hero Banner */
+.kb19-catalog-hero {
+    position: relative;
+    background: linear-gradient(rgba(10, 10, 10, 0.75), rgba(10, 10, 10, 0.85)), url('../../../assets/img/gallery/kb19-page-banner-2.jpg') no-repeat center center / cover;
+    padding: 130px 0;
+    border-bottom: 3px solid var(--theme-color);
+    overflow: hidden;
+}
+.kb19-catalog-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(0, 136, 203, 0.2) 0%, transparent 80%);
+    z-index: 1;
+}
+.kb19-catalog-hero-title {
+    font-family: 'Jost', sans-serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 850;
+    color: var(--white-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+.kb19-catalog-hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--theme-color);
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+.kb19-catalog-breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.kb19-catalog-breadcrumbs li {
+    font-size: 12px;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.kb19-catalog-breadcrumbs li + li::before {
+    content: '/';
+    margin-right: 8px;
+    color: rgba(255,255,255,0.4);
+}
+.kb19-catalog-breadcrumbs a {
+    color: rgba(255,255,255,0.9);
+    transition: color 0.3s ease;
+}
+.kb19-catalog-breadcrumbs a:hover {
+    color: var(--theme-color);
+}
+
+/* 2. Main content wrapper */
+.kb19-catalog-main-wrapper {
+    background-color: var(--smoke-color);
+    padding: 80px 0 100px;
+}
+
+/* 3. Left Side: Copy Card */
+.kb19-catalog-copy-card {
+    background-color: var(--white-color);
+    border: 1px solid var(--light-color);
+    border-radius: 16px;
+    padding: 45px;
+    height: 100%;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.02);
+}
+.kb19-catalog-section-heading {
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    font-weight: 850;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid var(--light-color);
+    padding-bottom: 15px;
+}
+.kb19-catalog-section-heading .text-primary {
+    color: var(--theme-color) !important;
+}
+.kb19-catalog-lead-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--black-color);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.kb19-catalog-body-text {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--body-color);
+    margin-bottom: 18px;
+}
+.kb19-catalog-subheading {
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    font-weight: 750;
+    color: var(--title-color);
+    margin: 30px 0 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* 4. Right Side: Panel Card */
+.kb19-catalog-panel {
+    background: var(--white-color);
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid var(--light-color);
+    border-left: 5px solid var(--theme-color);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.02);
+    height: 100%;
+}
+.kb19-catalog-panel-heading {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+.kb19-catalog-panel-intro {
+    font-size: 14.5px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: var(--body-color);
+}
+.kb19-catalog-panelist-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 35px;
+}
+.kb19-catalog-panelist-list li {
+    padding: 12px 18px;
+    background-color: var(--smoke-color5);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14.5px;
+    color: var(--black-color);
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+.kb19-catalog-panelist-list li:hover {
+    border-left-color: var(--theme-color);
+    background-color: var(--smoke-color4);
+    transform: translateX(4px);
+}
+.kb19-catalog-panelist-list li strong {
+    font-weight: 700;
+}
+.kb19-catalog-panelist-list .badge {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.kb19-catalog-panelist-list .bg-primary { background-color: var(--theme-color) !important; }
+
+/* Partners Box */
+.kb19-catalog-partners-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    font-weight: 750;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+    border-top: 1px solid var(--light-color);
+    padding-top: 25px;
+}
+.kb19-catalog-partner-card {
+    background-color: var(--smoke-color2);
+    border: 1px solid var(--light-color);
+    border-radius: 8px;
+    padding: 15px 10px;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+.kb19-catalog-partner-card:hover {
+    border-color: var(--theme-color);
+    background-color: var(--white-color);
+    box-shadow: 0 6px 15px rgba(0, 136, 203, 0.08);
+}
+.kb19-catalog-partner-card .partner-role {
+    font-size: 11px;
+    display: block;
+    text-transform: uppercase;
+    color: var(--theme-color);
+    font-weight: 700;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+.kb19-catalog-partner-card strong {
+    font-size: 13.5px;
+    color: var(--black-color);
+}
+
+/* 5. Carousel styling */
+.kb19-catalog-carousel-wrap {
+    background-color: var(--white-color);
+    border: 1px solid var(--light-color);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.02);
+}
+.kb19-catalog-carousel-heading {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.kb19-catalog-slide {
+    padding: 0 10px;
+}
+.kb19-catalog-slide a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.kb19-catalog-slide img {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+.kb19-catalog-slide:hover img {
+    transform: scale(1.04);
+}
+.kb19-catalog-slide-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 136, 203, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: var(--white-color);
+    font-size: 24px;
+}
+.kb19-catalog-slide:hover .kb19-catalog-slide-overlay {
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+    .kb19-catalog-copy-card,
+    .kb19-catalog-panel,
+    .kb19-catalog-carousel-wrap {
+        padding: 30px 20px;
+    }
+}

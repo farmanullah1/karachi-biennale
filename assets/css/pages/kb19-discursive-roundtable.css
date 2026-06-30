@@ -1,0 +1,227 @@
+/* ==========================================================================
+   Page-Specific Styles: KB19 Discursive Roundtable
+   Scope: body.page-kb19-discursive-roundtable
+   ========================================================================== */
+
+body.page-kb19-discursive-roundtable {
+    --theme-color: #0088cb;
+    --title-color: #231f20;
+    --body-color: #7B7E86;
+    --smoke-color: #FAF9F6;
+    --smoke-color2: #F8F8F8;
+    --smoke-color3: #F5F5F6;
+    --smoke-color4: #F4F4F4;
+    --smoke-color5: #F0F2F4;
+    --black-color: #1F2528;
+    --gray-color: #303030;
+    --white-color: #ffffff;
+    --light-color: #DDDDDC;
+
+    background-color: var(--smoke-color);
+    color: var(--body-color);
+}
+
+/* 1. Hero Banner */
+.kb19-discursive-hero {
+    position: relative;
+    background: linear-gradient(rgba(10, 10, 10, 0.75), rgba(10, 10, 10, 0.85)), url('../../../assets/img/gallery/kb19-page-banner-2.jpg') no-repeat center center / cover;
+    padding: 130px 0;
+    border-bottom: 3px solid var(--theme-color);
+    overflow: hidden;
+}
+.kb19-discursive-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(0, 136, 203, 0.2) 0%, transparent 80%);
+    z-index: 1;
+}
+.kb19-discursive-hero-title {
+    font-family: 'Jost', sans-serif;
+    font-size: clamp(1.8rem, 4vw, 3.2rem);
+    font-weight: 850;
+    color: var(--white-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+.kb19-discursive-hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--theme-color);
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+.kb19-discursive-breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.kb19-discursive-breadcrumbs li {
+    font-size: 12px;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.kb19-discursive-breadcrumbs li + li::before {
+    content: '/';
+    margin-right: 8px;
+    color: rgba(255,255,255,0.4);
+}
+.kb19-discursive-breadcrumbs a {
+    color: rgba(255,255,255,0.9);
+    transition: color 0.3s ease;
+}
+.kb19-discursive-breadcrumbs a:hover {
+    color: var(--theme-color);
+}
+
+/* 2. Main content wrapper */
+.kb19-discursive-main-wrapper {
+    background-color: var(--smoke-color);
+    padding: 80px 0 100px;
+}
+
+/* Intro Header */
+.kb19-discursive-tag {
+    background-color: var(--theme-color);
+    color: var(--white-color);
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 6px 14px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.kb19-discursive-section-title {
+    font-family: 'Jost', sans-serif;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 850;
+    color: var(--title-color);
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.kb19-discursive-lead {
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--body-color);
+}
+
+/* 3. Roundtable Section Cards */
+.kb19-discursive-roundtable {
+    background-color: var(--white-color);
+    border: 1px solid var(--light-color);
+    border-left: 5px solid var(--theme-color);
+    border-radius: 16px;
+    padding: 45px;
+    margin-bottom: 50px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.02);
+    transition: all 0.3s ease;
+}
+.kb19-discursive-roundtable:hover {
+    box-shadow: 0 15px 35px rgba(0,136,203,0.08);
+}
+.roundtable-num {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--theme-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 5px;
+}
+.roundtable-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+.roundtable-meta {
+    font-size: 13.5px;
+    color: var(--black-color);
+    margin-bottom: 15px;
+}
+.roundtable-desc {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--body-color);
+    margin-bottom: 25px;
+}
+
+/* Panelist Badges */
+.roundtable-panelists strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: var(--black-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.kb19-discursive-panelist {
+    display: inline-block;
+    background-color: var(--smoke-color5);
+    border: 1px solid var(--light-color);
+    color: var(--black-color);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+.kb19-discursive-panelist:hover {
+    background-color: var(--theme-color);
+    color: var(--white-color);
+    border-color: var(--theme-color);
+}
+
+/* Carousel/Slide styling */
+.kb19-roundtable-slide a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.kb19-roundtable-slide img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.kb19-roundtable-slide:hover img {
+    transform: scale(1.04);
+}
+.slide-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 136, 203, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: var(--white-color);
+    font-size: 24px;
+}
+.kb19-roundtable-slide:hover .slide-overlay {
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+    .kb19-discursive-roundtable {
+        padding: 30px 20px;
+    }
+}

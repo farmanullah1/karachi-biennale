@@ -6,15 +6,15 @@
 ?>
 
 <!-- 1. Page Header (Hero Area) -->
-<section class="kb22t-hero-section text-center">
-    <div class="container">
-        <h1 class="kb22t-hero-title">Curatorial Team</h1>
-        <p class="kb22t-hero-subtitle">Third Karachi Biennale KB22</p>
-        <p class="kb22t-hero-intro">The success of the Third Karachi Biennale (KB22) was driven by a dedicated curatorial team. Led by Chief Curator Faisal Anwar, this collaborative board coordinated international artists, integrated complex technology platforms, and managed public spaces across Karachi to bring visual arts to life.</p>
+<section class="kb22-curatorial-hero text-center position-relative">
+    <div class="kb22-curatorial-hero-overlay"></div>
+    <div class="container position-relative z-index-2">
+        <h1 class="kb22-curatorial-hero-title wow custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.1s">KB22 Curatorial Team</h1>
+        <p class="kb22-curatorial-hero-subtitle wow custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.25s">Third Karachi Biennale KB22</p>
         
         <!-- Breadcrumbs -->
-        <nav class="kb22t-breadcrumbs" aria-label="breadcrumb">
-            <ul>
+        <nav class="kb22-curatorial-breadcrumbs" aria-label="breadcrumb">
+            <ul class="wow custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.4s">
                 <li><a href="index.php">Home</a></li>
                 <li>Past Biennale</li>
                 <li>KB22</li>
@@ -25,72 +25,75 @@
 </section>
 
 <!-- 2. Team Grid Section -->
-<div class="kb22t-team-wrap">
+<div class="kb22-curatorial-team-wrap">
     <div class="container">
         
-        <!-- Chief Curator - Large Feature Layout -->
-        <div class="kb22t-chief-feature mb-60">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-5 text-center">
-                    <div class="kb22t-img-wrap kb22t-chief-img-wrap">
-                        <img src="assets/img/team/Faisal_Anwar_Team.jpg" alt="Faisal Anwar" class="kb22t-img">
-                        <span class="kb22t-role-badge badge-chief">Chief Curator</span>
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="kb22t-details">
-                        <h2 class="kb22t-member-name text-start">Faisal Anwar</h2>
-                        <h3 class="kb22t-member-role">Chief Curator, KB22</h3>
-                        <p class="kb22t-bio-text">Faisal Anwar curated KB22 under the theme "Collective Imagination: Now and the Next". His vision connected international technology-driven artists with Karachi's historic venues, creating an experiential network of public art. With over two decades of international experience as a creative technologist, Faisal guided the team in executing code-based installations, community programs, and digital projections.</p>
-                        <div class="kb22t-cta-wrap">
-                            <a href="kb22-curator.php" class="kb22t-essay-link">Read Curatorial Essay <i class="fas fa-arrow-right ms-2"></i></a>
+        <div class="kb22-curatorial-carousel row g-4 justify-content-center">
+            
+            <!-- Faisal Anwar -->
+            <div class="col-lg-6 col-md-12">
+                <div class="team-member wow custom-anim-top" data-wow-delay="0.1s">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-5 text-center p-4">
+                            <img src="assets/img/team/Faisal_Anwar_Team-500x500.jpg" alt="Faisal Anwar" class="img-fluid" loading="lazy">
+                        </div>
+                        <div class="col-md-7 p-4">
+                            <h4 class="team-name">Faisal Anwar</h4>
+                            <span class="team-role">Curator, KB22</span>
+                            <p class="team-bio">Faisal Anwar (b. 1970) is a hybrid artist and an interactive producer working between Canada and Pakistan. Anwar is a graduate of the Canadian Film Centre's Habitat-LAB, Interactive Arts Program 2004, and completed his bachelor's in graphic design from the National College of Arts Lahore, Pakistan in 1996. He is the co-founder of Art Address, an artist-led collective in Oakville, Canada, and Chief Curator of Karachi Biennale 2022.</p>
+                            <p class="team-bio mb-0">Anwar explores the history and diversity of urban spaces and cultural identities. He is inspired by hybrid art, algorithms, data visualization, ecology, and cognitive sciences to create thought-provoking works.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <hr class="kb22t-divider mb-60">
-
-        <!-- Other Curatorial Board Members - Grid Layout -->
-        <div class="kb22t-grid">
-            
-            <!-- Isaac Caballero -->
-            <div class="kb22t-card">
-                <div class="kb22t-img-wrap">
-                    <img src="assets/img/team/Issac_Caballero_Team.jpg" alt="Isaac Caballero" class="kb22t-img">
-                    <span class="kb22t-role-badge">Curatorial Associate</span>
-                </div>
-                <div class="kb22t-card-content">
-                    <h4 class="kb22t-card-name">Isaac Caballero</h4>
-                    <p class="kb22t-card-role">Curatorial Associate</p>
-                    <p class="kb22t-card-bio">Isaac Caballero worked closely with the Chief Curator to coordinate digital asset collection and project alignment. His background in international art logistics enabled smooth integrations with foreign missions and digital collectives, ensuring that complex software installations matched physical venue capacities.</p>
-                </div>
-            </div>
 
             <!-- Maha Minhaj -->
-            <div class="kb22t-card">
-                <div class="kb22t-img-wrap">
-                    <img src="assets/img/team/Maha_Minhaaj_Team.jpg" alt="Maha Minhaj" class="kb22t-img">
-                    <span class="kb22t-role-badge">Curatorial Coordinator</span>
-                </div>
-                <div class="kb22t-card-content">
-                    <h4 class="kb22t-card-name">Maha Minhaj</h4>
-                    <p class="kb22t-card-role">Curatorial Assistant &amp; Coordinator</p>
-                    <p class="kb22t-card-bio">Maha Minhaj managed local operations, coordinating directly with historical venues, academic hosts, and corporate partners. Her dedicated scheduling and operations management connected artists, volunteers, and production teams, enabling smooth programming daily.</p>
+            <div class="col-lg-6 col-md-12">
+                <div class="team-member wow custom-anim-top" data-wow-delay="0.2s">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-5 text-center p-4">
+                            <img src="assets/img/team/Maha_Minhaaj_Team-500x500.jpg" alt="Maha Minhaj" class="img-fluid" loading="lazy">
+                        </div>
+                        <div class="col-md-7 p-4">
+                            <h4 class="team-name">Maha Minhaj</h4>
+                            <span class="team-role">Assistant Curator, KB22</span>
+                            <p class="team-bio">Maha is a practicing visual & performance artist based in Karachi. Minhaj completed her Bachelors in Fine Art from the Indus Valley School of Art and Architecture in 2017 and has since worked as curator and manager, and exhibited and performed in local and international group shows.</p>
+                            <p class="team-bio mb-0">Her collaborative spirit and desire to use art as a means to create tangible difference drove her to co-found Poiesis.SocialArt—a digital platform that curates and archives socially engaged art practices of practitioners throughout the world.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!-- Maham Chiragh -->
-            <div class="kb22t-card">
-                <div class="kb22t-img-wrap">
-                    <img src="assets/img/team/Maham_Chiraag_Team.jpg" alt="Maham Chiragh" class="kb22t-img">
-                    <span class="kb22t-role-badge">Curatorial Coordinator</span>
+            <div class="col-lg-6 col-md-12">
+                <div class="team-member wow custom-anim-top" data-wow-delay="0.3s">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-5 text-center p-4">
+                            <img src="assets/img/team/Maham_Chiraag_Team-500x500.jpg" alt="Maham Chiragh" class="img-fluid" loading="lazy">
+                        </div>
+                        <div class="col-md-7 p-4">
+                            <h4 class="team-name">Maham Chiragh</h4>
+                            <span class="team-role">Assistant Curator, KB22</span>
+                            <p class="team-bio">Maham Chiragh is a practicing artist, facilitator, and researcher working at the intersection of different fields, currently based in Karachi. Her academic background in Anthropology and Sociology blends into the community engagement aspect of her artistic practice as she explores the ways in which our identities interact with space, producing it and being produced by it.</p>
+                            <p class="team-bio mb-0">Maham has exhibited in shows locally and internationally, co-founded The Dabke Collective in Toronto in 2016, and serves as a board member of Charles Street Video.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="kb22t-card-content">
-                    <h4 class="kb22t-card-name">Maham Chiragh</h4>
-                    <p class="kb22t-card-role">Curatorial Assistant &amp; Coordinator</p>
-                    <p class="kb22t-card-bio">Maham Chiragh managed the extensive school and civic outreach workshops. She collaborated directly with educational institutions, mentors, and local communities, bringing contemporary arts and basic technical training directly to youth throughout Karachi.</p>
+            </div>
+
+            <!-- Isaac Caballero -->
+            <div class="col-lg-6 col-md-12">
+                <div class="team-member wow custom-anim-top" data-wow-delay="0.4s">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-5 text-center p-4">
+                            <img src="assets/img/team/Issac_Caballero_Team-500x500.jpg" alt="Isaac Caballero" class="img-fluid" loading="lazy">
+                        </div>
+                        <div class="col-md-7 p-4">
+                            <h4 class="team-name">Isaac Caballero</h4>
+                            <span class="team-role">Assistant Curator, KB22</span>
+                            <p class="team-bio">Isaac is a Montreal-based technology consultant with over twenty years of experience working mainly in the artistic field, specializing in working with artists to create a link with technology and helping bring their creations to life. Isaac Caballero is Assistant Curator and technical producer for KB22.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
