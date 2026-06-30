@@ -5,15 +5,15 @@
    ========================================================================== */
 
 body.page-kb22-exhibition-venues {
-    --page-accent: #e74c3c; /* Crimson Red */
-    --page-bg-light: #fafbfc;
+    --page-accent: #0088cb; /* KBT Blue */
+    --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
-    --page-border: rgba(231, 76, 60, 0.15);
+    --page-border: rgba(0, 136, 203, 0.15);
 }
 
 /* 1. Hero Banner overrides */
 body.page-kb22-exhibition-venues .kb22v-hero-section {
-    background: linear-gradient(135deg, #180907 0%, #351511 100%);
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
     padding: 90px 0;
     border-bottom: 2px solid var(--page-accent);
 }
@@ -102,7 +102,7 @@ body.page-kb22-exhibition-venues .kb22v-jump-link:hover {
 
 /* 3. Cluster Sections & Venue Cards */
 body.page-kb22-exhibition-venues .kb22v-sections-wrap {
-    background-color: #fafbfc;
+    background-color: #FAF9F6;
     padding: 100px 0;
 }
 body.page-kb22-exhibition-venues .kb22v-section {
@@ -143,8 +143,8 @@ body.page-kb22-exhibition-venues .kb22v-cluster-badge {
     border-radius: 4px;
     color: #ffffff;
 }
-body.page-kb22-exhibition-venues #cluster-a .kb22v-cluster-badge { background-color: #e74c3c; }
-body.page-kb22-exhibition-venues #cluster-b .kb22v-cluster-badge { background-color: #2980b9; }
+body.page-kb22-exhibition-venues #cluster-a .kb22v-cluster-badge { background-color: #0088cb; }
+body.page-kb22-exhibition-venues #cluster-b .kb22v-cluster-badge { background-color: #0088cb; }
 body.page-kb22-exhibition-venues #cluster-c .kb22v-cluster-badge { background-color: #8e44ad; }
 
 /* Venue Cards Layout */
@@ -162,8 +162,8 @@ body.page-kb22-exhibition-venues .kb22v-card {
 }
 body.page-kb22-exhibition-venues .kb22v-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 45px rgba(231, 76, 60, 0.12);
-    border-color: rgba(231, 76, 60, 0.25);
+    box-shadow: 0 20px 45px rgba(0, 136, 203, 0.12);
+    border-color: rgba(0, 136, 203, 0.25);
 }
 
 /* Image Wrap and Tags */

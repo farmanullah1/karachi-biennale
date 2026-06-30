@@ -5,11 +5,11 @@
    ========================================================================== */
 
 body.page-kb19-visitors-guide-app {
-    --page-accent: #2ecc71; /* Emerald Green */
-    --page-dark: #2c3e50; /* Charcoal */
-    --page-bg-light: #fafbfc;
+    --page-accent: #0088cb; /* KBT Blue */
+    --page-dark: #0a1628; /* Charcoal */
+    --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
-    --page-border: rgba(46, 204, 113, 0.15);
+    --page-border: rgba(0, 136, 203, 0.15);
 }
 
 /* 1. Page Banner (Hero Area) */
@@ -79,7 +79,7 @@ body.page-kb19-visitors-guide-app .kb19v-breadcrumbs a:hover {
 
 /* 2. Main Wrapper spacing */
 body.page-kb19-visitors-guide-app .kb19v-main-wrapper {
-    background-color: #fafbfc;
+    background-color: #FAF9F6;
     padding: 100px 0;
 }
 
@@ -96,8 +96,8 @@ body.page-kb19-visitors-guide-app .kb19v-download-card {
     box-shadow: 0 10px 30px rgba(0,0,0,0.02);
 }
 body.page-kb19-visitors-guide-app .kb19v-badge-tag {
-    background-color: rgba(46, 204, 113, 0.12);
-    color: #27ae60;
+    background-color: rgba(0, 136, 203, 0.12);
+    color: #0088cb;
     font-size: 10px;
     font-weight: 700;
     text-transform: uppercase;
@@ -199,7 +199,7 @@ body.page-kb19-visitors-guide-app .kb19v-feature-card {
 }
 body.page-kb19-visitors-guide-app .kb19v-feature-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(46, 204, 113, 0.15);
+    box-shadow: 0 15px 35px rgba(0, 136, 203, 0.15);
 }
 body.page-kb19-visitors-guide-app .kb19v-feature-icon-wrap {
     width: 60px;

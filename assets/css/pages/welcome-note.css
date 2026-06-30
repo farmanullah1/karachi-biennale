@@ -6,10 +6,10 @@
 
 /* Page variables */
 body.page-welcome-note {
-    --page-accent: #8b6914; /* gold accent */
-    --page-bg-light: #faf7f2; /* warm cream background */
-    --page-title-color: #1a150e; /* deep bronze-charcoal */
-    --page-border: rgba(139, 105, 20, 0.15);
+    --page-accent: #0088cb; /* KBT Blue */
+    --page-bg-light: #FAF9F6; /* warm cream background */
+    --page-title-color: #1a2332; /* deep bronze-charcoal */
+    --page-border: rgba(0, 136, 203, 0.15);
 }
 
 /* Scroll progress indicator */
@@ -26,7 +26,7 @@ body.page-welcome-note .kbt-progress-bar {
 
 /* 1. Hero Banner overrides */
 body.page-welcome-note .kbwn-hero-section {
-    background: linear-gradient(135deg, #1f1b13 0%, #3e3728 100%);
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
     padding: 80px 0;
     border-bottom: 2px solid var(--page-accent);
 }
@@ -40,7 +40,7 @@ body.page-welcome-note .kbwn-hero-title {
 }
 body.page-welcome-note .kbwn-hero-subtitle {
     font-size: 1.1rem;
-    color: var(--theme-color, #FBD451);
+    color: var(--theme-color, #0088cb);
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -68,12 +68,12 @@ body.page-welcome-note .kbwn-breadcrumbs a {
     transition: color 0.3s ease;
 }
 body.page-welcome-note .kbwn-breadcrumbs a:hover {
-    color: var(--theme-color, #FBD451);
+    color: var(--theme-color, #0088cb);
 }
 
 /* 2. Main content area */
 body.page-welcome-note .kbwn-content-section {
-    background-color: #fdfcfb;
+    background-color: #FAF9F6;
     padding: 100px 0;
 }
 body.page-welcome-note .kbwn-container {
@@ -101,7 +101,7 @@ body.page-welcome-note .kbwn-avatar-wrap {
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid var(--page-accent);
-    box-shadow: 0 8px 20px rgba(139,105,20,0.15);
+    box-shadow: 0 8px 20px rgba(0, 136, 203,0.15);
     flex-shrink: 0;
     transition: transform 0.4s ease;
 }
@@ -172,7 +172,7 @@ body.page-welcome-note .kbwn-mission-pullquote p {
     font-style: italic;
     font-size: 20px;
     line-height: 1.6;
-    color: #554422;
+    color: #2c4a5e;
     margin: 0;
     font-weight: 600;
 }
@@ -210,7 +210,7 @@ body.page-welcome-note .kbwn-sig-title {
 /* Quick links block */
 body.page-welcome-note .kbwn-quick-links {
     margin-top: 50px;
-    background-color: #faf9f6;
+    background-color: #FAF9F6;
     border-radius: 8px;
     padding: 20px;
     border: 1px solid rgba(0,0,0,0.04);

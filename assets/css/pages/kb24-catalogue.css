@@ -5,15 +5,15 @@
    ========================================================================== */
 
 body.page-kb24-catalogue {
-    --page-accent: #f1c40f; /* Gold */
-    --page-dark: #1e1e1e; /* Obsidian Charcoal */
-    --page-bg-light: #fafbfc;
-    --page-border: rgba(241, 196, 15, 0.25);
+    --page-accent: #0088cb; /* KBT Blue */
+    --page-dark: #0a1628; /* Obsidian Charcoal */
+    --page-bg-light: #FAF9F6;
+    --page-border: rgba(0, 136, 203, 0.15);
 }
 
 /* 1. Hero Banner overrides */
 body.page-kb24-catalogue .kb24c-hero-section {
-    background: linear-gradient(135deg, #121212 0%, #2c2514 100%);
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
     padding: 95px 0;
     border-bottom: 2px solid var(--page-accent);
 }
@@ -70,7 +70,7 @@ body.page-kb24-catalogue .kb24c-breadcrumbs a:hover {
 
 /* 2. Flipbook Embed Section */
 body.page-kb24-catalogue .kb24c-main-wrapper {
-    background-color: #fafbfc;
+    background-color: #FAF9F6;
     padding: 100px 0;
 }
 body.page-kb24-catalogue .kb24c-flipbook-section {
@@ -101,17 +101,17 @@ body.page-kb24-catalogue .kb24c-section-title {
 
 /* Flipbook Container Box */
 body.page-kb24-catalogue .kb24c-flipbook-container-wrap {
-    background-color: #121212;
+    background-color: #0a1628;
     padding: 30px;
     border-radius: 12px;
-    border: 1px solid rgba(251, 212, 81, 0.15);
+    border: 1px solid rgba(0, 136, 203, 0.15);
     box-shadow: 0 20px 50px rgba(0,0,0,0.3);
     margin-bottom: 40px;
     transition: box-shadow 0.4s ease, border-color 0.4s ease;
 }
 body.page-kb24-catalogue .kb24c-flipbook-container-wrap:hover {
     border-color: var(--page-accent);
-    box-shadow: 0 25px 60px rgba(241, 196, 15, 0.15);
+    box-shadow: 0 25px 60px rgba(0, 136, 203, 0.15);
 }
 body.page-kb24-catalogue .kb24c-flipbook-container {
     position: relative;
@@ -161,7 +161,7 @@ body.page-kb24-catalogue .kb24c-download-btn:hover {
     background-color: #ffffff;
     color: #121212;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(241, 196, 15, 0.4);
+    box-shadow: 0 5px 15px rgba(0, 136, 203, 0.4);
 }
 
 @keyframes kb24cpulse {

@@ -5,15 +5,15 @@
    ========================================================================== */
 
 body.page-kb24-exhibition-venues {
-    --page-accent: #c0392b; /* Crimson Red */
-    --page-bg-light: #fafafa;
+    --page-accent: #0088cb; /* KBT Blue */
+    --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
-    --page-border: rgba(192, 57, 43, 0.15);
+    --page-border: rgba(0, 136, 203, 0.15);
 }
 
 /* 1. Hero Banner overrides */
 body.page-kb24-exhibition-venues .kb24v-hero-section {
-    background: linear-gradient(135deg, #1b0d0c 0%, #3e1b18 100%);
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
     padding: 90px 0;
     border-bottom: 2px solid var(--page-accent);
 }
@@ -28,7 +28,7 @@ body.page-kb24-exhibition-venues .kb24v-hero-title {
 }
 body.page-kb24-exhibition-venues .kb24v-hero-subtitle {
     font-size: 1.1rem;
-    color: var(--theme-color, #FBD451);
+    color: var(--theme-color, #0088cb);
     font-family: 'Georgia', serif;
     font-style: italic;
     letter-spacing: 1px;
@@ -102,7 +102,7 @@ body.page-kb24-exhibition-venues .kb24v-jump-link:hover {
 
 /* 3. Cluster Sections & Venue Cards */
 body.page-kb24-exhibition-venues .kb24v-sections-wrap {
-    background-color: #fafbfc;
+    background-color: #FAF9F6;
     padding: 100px 0;
 }
 body.page-kb24-exhibition-venues .kb24v-section {
@@ -143,8 +143,8 @@ body.page-kb24-exhibition-venues .kb24v-cluster-badge {
     border-radius: 4px;
     color: #ffffff;
 }
-body.page-kb24-exhibition-venues #cluster-a .kb24v-cluster-badge { background-color: #c0392b; }
-body.page-kb24-exhibition-venues #cluster-b .kb24v-cluster-badge { background-color: #2980b9; }
+body.page-kb24-exhibition-venues #cluster-a .kb24v-cluster-badge { background-color: #0088cb; }
+body.page-kb24-exhibition-venues #cluster-b .kb24v-cluster-badge { background-color: #0088cb; }
 body.page-kb24-exhibition-venues #cluster-c .kb24v-cluster-badge { background-color: #8e44ad; }
 
 /* Venue Cards Layout */
@@ -162,8 +162,8 @@ body.page-kb24-exhibition-venues .kb24v-card {
 }
 body.page-kb24-exhibition-venues .kb24v-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 45px rgba(192, 57, 43, 0.12);
-    border-color: rgba(192, 57, 43, 0.25);
+    box-shadow: 0 20px 45px rgba(0, 136, 203, 0.12);
+    border-color: rgba(0, 136, 203, 0.25);
 }
 
 /* Image Wrap and Tags */

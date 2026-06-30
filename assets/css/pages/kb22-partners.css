@@ -5,15 +5,15 @@
    ========================================================================== */
 
 body.page-kb22-partners {
-    --page-accent: #2980b9; /* Royal Blue */
-    --page-bg-light: #fafafa;
+    --page-accent: #0088cb; /* KBT Blue */
+    --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
-    --page-border: rgba(41, 128, 185, 0.15);
+    --page-border: rgba(0, 136, 203, 0.15);
 }
 
 /* 1. Hero Banner overrides */
 body.page-kb22-partners .kb22p-hero-section {
-    background: linear-gradient(135deg, #0a111a 0%, #152232 100%);
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
     padding: 90px 0;
     border-bottom: 2px solid var(--page-accent);
 }
@@ -102,7 +102,7 @@ body.page-kb22-partners .kb22p-jump-link:hover {
 
 /* 3. Partner Sections & Grid Layouts */
 body.page-kb22-partners .kb22p-sections-wrap {
-    background-color: #fafafa;
+    background-color: #FAF9F6;
     padding: 80px 0;
 }
 body.page-kb22-partners .kb22p-section {
@@ -173,8 +173,8 @@ body.page-kb22-partners .kb22p-logo-card {
 }
 body.page-kb22-partners .kb22p-logo-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(41, 128, 185, 0.12);
-    border-color: rgba(41, 128, 185, 0.25);
+    box-shadow: 0 10px 25px rgba(0, 136, 203, 0.12);
+    border-color: rgba(0, 136, 203, 0.25);
 }
 body.page-kb22-partners .kb22p-logo {
     max-height: 80px;
@@ -250,7 +250,7 @@ body.page-kb22-partners .kb22p-tier-badge {
     color: #ffffff;
     display: inline-block;
 }
-body.page-kb22-partners .kb22p-tier-badge-gold { background-color: #d4af37; }
+body.page-kb22-partners .kb22p-tier-badge-gold { background-color: #0088cb; }
 body.page-kb22-partners .kb22p-tier-badge-silver { background-color: #bdc3c7; color: #333333; }
 body.page-kb22-partners .kb22p-tier-badge-bronze { background-color: #cd7f32; }
 
@@ -272,13 +272,13 @@ body.page-kb22-partners .kb22p-name-card {
 }
 body.page-kb22-partners .kb22p-name-card:hover {
     transform: translateX(5px);
-    box-shadow: 0 5px 15px rgba(41, 128, 185, 0.08);
-    border-color: rgba(41, 128, 185, 0.25);
+    box-shadow: 0 5px 15px rgba(0, 136, 203, 0.08);
+    border-color: rgba(0, 136, 203, 0.25);
 }
 body.page-kb22-partners .kb22p-badge-label {
     font-size: 8px;
     font-weight: 700;
-    background-color: rgba(41, 128, 185, 0.1);
+    background-color: rgba(0, 136, 203, 0.1);
     color: var(--page-accent);
     padding: 2px 6px;
     border-radius: 3px;

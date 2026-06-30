@@ -5,15 +5,15 @@
    ========================================================================== */
 
 body.page-kbt-patrons {
-    --page-accent: #c29d38; /* Soft Patrons Gold */
-    --page-bg-light: #fafafa;
+    --page-accent: #0088cb; /* KBT Blue */
+    --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
-    --page-border: rgba(194, 157, 56, 0.15);
+    --page-border: rgba(0, 136, 203, 0.15);
 }
 
 /* 1. Hero Banner overrides */
 body.page-kbt-patrons .kbtp-hero-section {
-    background: linear-gradient(135deg, #15181b 0%, #2d2613 100%);
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
     padding: 100px 0;
     border-bottom: 2px solid var(--page-accent);
 }
@@ -82,8 +82,8 @@ body.page-kbt-patrons .kbtp-card {
 }
 body.page-kbt-patrons .kbtp-card:hover {
     transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 15px 35px rgba(194, 157, 56, 0.12);
-    border-color: rgba(194, 157, 56, 0.3);
+    box-shadow: 0 15px 35px rgba(0, 136, 203, 0.12);
+    border-color: rgba(0, 136, 203, 0.3);
 }
 
 /* Monogram Initials Medallion Wrap */
@@ -111,20 +111,20 @@ body.page-kbt-patrons .kbtp-card:hover .kbtp-initials-wrap {
 }
 
 /* Dynamic Multi-Color HSL Gradients for initials medallions */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+1) .kbtp-initials-wrap { background: linear-gradient(135deg, #c29d38 0%, #8b6914 100%); } /* Patrons Gold */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+2) .kbtp-initials-wrap { background: linear-gradient(135deg, #36b9cc 0%, #1a7a8c 100%); } /* Teal */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+3) .kbtp-initials-wrap { background: linear-gradient(135deg, #e74a3b 0%, #be2617 100%); } /* Crimson */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+4) .kbtp-initials-wrap { background: linear-gradient(135deg, #4e73df 0%, #224abe 100%); } /* Royal Blue */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+5) .kbtp-initials-wrap { background: linear-gradient(135deg, #f6c23e 0%, #dda20a 100%); } /* Amber */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+6) .kbtp-initials-wrap { background: linear-gradient(135deg, #1cc88a 0%, #13855c 100%); } /* Emerald */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+7) .kbtp-initials-wrap { background: linear-gradient(135deg, #858796 0%, #60616f 100%); } /* Cool Grey */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+8) .kbtp-initials-wrap { background: linear-gradient(135deg, #8e44ad 0%, #6c3483 100%); } /* Amethyst */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+9) .kbtp-initials-wrap { background: linear-gradient(135deg, #e67e22 0%, #d35400 100%); } /* Copper */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+10) .kbtp-initials-wrap { background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%); } /* Obsidian */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+11) .kbtp-initials-wrap { background: linear-gradient(135deg, #16a085 0%, #117a65 100%); } /* Jade */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+12) .kbtp-initials-wrap { background: linear-gradient(135deg, #2980b9 0%, #20638f 100%); } /* Sky */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+13) .kbtp-initials-wrap { background: linear-gradient(135deg, #c0392b 0%, #962d22 100%); } /* Rose */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+14) .kbtp-initials-wrap { background: linear-gradient(135deg, #7f8c8d 0%, #5d6d7e 100%); } /* Slate */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+1) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Patrons Gold */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+2) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Teal */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+3) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Crimson */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+4) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Royal Blue */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+5) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Amber */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+6) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Emerald */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+7) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Cool Grey */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+8) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Amethyst */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+9) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Copper */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+10) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Obsidian */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+11) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Jade */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+12) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Sky */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+13) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Rose */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+14) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Slate */
 
 /* Name & Title alignments */
 body.page-kbt-patrons .kbtp-name {
@@ -175,7 +175,7 @@ body.page-kbt-patrons .kbtp-cta-text {
     margin: 0;
 }
 body.page-kbt-patrons .kbtp-cta-link {
-    color: #8b6914;
+    color: #0088cb;
     font-weight: 700;
     text-decoration: underline;
     transition: color 0.3s ease;

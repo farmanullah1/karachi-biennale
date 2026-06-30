@@ -5,16 +5,16 @@
    ========================================================================== */
 
 body.page-kb24-art-prize-winners {
-    --page-accent: #d4af37; /* Bright Metallic Gold */
+    --page-accent: #0088cb; /* KBT Blue */
     --page-platinum: #2c3e50;
-    --page-bg-light: #fafbfc;
+    --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
-    --page-border: rgba(212, 175, 55, 0.25);
+    --page-border: rgba(0, 136, 203, 0.15);
 }
 
 /* 1. Hero Banner overrides */
 body.page-kb24-art-prize-winners .kb24p-hero-section {
-    background: linear-gradient(135deg, #1d1912 0%, #3e3215 100%);
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
     padding: 100px 0;
     border-bottom: 2px solid var(--page-accent);
 }
@@ -71,7 +71,7 @@ body.page-kb24-art-prize-winners .kb24p-breadcrumbs a:hover {
 
 /* 2. Main content and Prizes Grid */
 body.page-kb24-art-prize-winners .kb24p-sections-wrap {
-    background-color: #fafbfc;
+    background-color: #FAF9F6;
     padding: 100px 0;
 }
 body.page-kb24-art-prize-winners .kb24p-prize-grid {
@@ -96,8 +96,8 @@ body.page-kb24-art-prize-winners .kb24p-prize-card {
 }
 body.page-kb24-art-prize-winners .kb24p-prize-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 45px rgba(212, 175, 55, 0.15);
-    border-color: rgba(212, 175, 55, 0.35);
+    box-shadow: 0 20px 45px rgba(0, 136, 203, 0.15);
+    border-color: rgba(0, 136, 203, 0.35);
 }
 
 /* Gold shimmer border on card hover */
@@ -138,7 +138,7 @@ body.page-kb24-art-prize-winners .kb24p-prize-badge {
     top: 15px; left: 15px;
     font-size: 11px;
     font-weight: 700;
-    background: linear-gradient(135deg, #d4af37 0%, #b38f3b 100%);
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
     color: #ffffff;
     padding: 5px 12px;
     border-radius: 4px;

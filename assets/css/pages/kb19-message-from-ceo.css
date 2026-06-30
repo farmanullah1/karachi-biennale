@@ -5,11 +5,11 @@
    ========================================================================== */
 
 body.page-kb19-message-from-ceo {
-    --page-accent: #556b2f; /* Olive Green */
+    --page-accent: #0088cb; /* KBT Blue */
     --page-tint: #f5f5dc; /* Beige tint */
-    --page-bg-light: #fafbfc;
+    --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
-    --page-border: rgba(85, 107, 47, 0.15);
+    --page-border: rgba(0, 136, 203, 0.15);
 }
 
 /* 1. Page Banner (Hero Area) */
@@ -79,7 +79,7 @@ body.page-kb19-message-from-ceo .kb19c-breadcrumbs a:hover {
 
 /* 2. Main Wrapper spacing */
 body.page-kb19-message-from-ceo .kb19c-main-wrapper {
-    background-color: #fafbfc;
+    background-color: #FAF9F6;
     padding: 100px 0;
 }
 
@@ -243,10 +243,10 @@ body.page-kb19-message-from-ceo .kb19c-btn-secondary {
     border-radius: 4px;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 15px rgba(85, 107, 47, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 136, 203, 0.2);
 }
 body.page-kb19-message-from-ceo .kb19c-btn-secondary:hover {
-    background-color: #2c3e50;
+    background-color: #0a1628;
     color: #ffffff;
     transform: translateY(-2px);
 }

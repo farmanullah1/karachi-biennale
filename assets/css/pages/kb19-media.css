@@ -5,11 +5,11 @@
    ========================================================================== */
 
 body.page-kb19-media {
-    --page-accent: #117a65; /* Dark Teal */
+    --page-accent: #0088cb; /* KBT Blue */
     --page-blue: #4682b4; /* Steel Blue */
-    --page-bg-light: #fafbfc;
+    --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
-    --page-border: rgba(17, 122, 101, 0.15);
+    --page-border: rgba(0, 136, 203, 0.15);
 }
 
 /* 1. Page Banner (Hero Area) */
@@ -30,7 +30,7 @@ body.page-kb19-media .kb19m-hero-banner {
 body.page-kb19-media .kb19m-hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(8, 38, 31, 0.85) 0%, rgba(17, 122, 101, 0.6) 100%);
+    background: linear-gradient(135deg, rgba(8, 38, 31, 0.85) 0%, rgba(0, 136, 203, 0.6) 100%);
     z-index: 1;
 }
 body.page-kb19-media .kb19m-hero-title {
@@ -45,7 +45,7 @@ body.page-kb19-media .kb19m-hero-title {
 }
 body.page-kb19-media .kb19m-hero-subtitle {
     font-size: 1.1rem;
-    color: #f1c40f; /* Gold accent */
+    color: #0088cb; /* Gold accent */
     font-family: 'Georgia', serif;
     font-style: italic;
     letter-spacing: 1px;
@@ -74,12 +74,12 @@ body.page-kb19-media .kb19m-breadcrumbs a {
     transition: color 0.3s ease;
 }
 body.page-kb19-media .kb19m-breadcrumbs a:hover {
-    color: #f1c40f;
+    color: #0088cb;
 }
 
 /* 2. Main Wrapper spacing */
 body.page-kb19-media .kb19m-main-wrapper {
-    background-color: #fafbfc;
+    background-color: #FAF9F6;
     padding: 100px 0;
 }
 
@@ -133,8 +133,8 @@ body.page-kb19-media .kb19m-download-card {
 }
 body.page-kb19-media .kb19m-download-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 18px 35px rgba(17, 122, 101, 0.12);
-    border-color: rgba(17, 122, 101, 0.25);
+    box-shadow: 0 18px 35px rgba(0, 136, 203, 0.12);
+    border-color: rgba(0, 136, 203, 0.25);
 }
 
 body.page-kb19-media .kb19m-download-icon {
@@ -148,9 +148,9 @@ body.page-kb19-media .kb19m-download-icon {
     color: #ffffff;
     margin-bottom: 20px;
 }
-body.page-kb19-media .bg-gradient-yellow { background: linear-gradient(135deg, #f1c40f 0%, #f39c12 100%); }
-body.page-kb19-media .bg-gradient-teal { background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%); }
-body.page-kb19-media .bg-gradient-blue { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+body.page-kb19-media .bg-gradient-yellow { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
+body.page-kb19-media .bg-gradient-teal { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
+body.page-kb19-media .bg-gradient-blue { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
 
 body.page-kb19-media .kb19m-download-title {
     font-family: 'Jost', sans-serif;
@@ -225,7 +225,7 @@ body.page-kb19-media .kb19m-gallery-card:hover .kb19m-gallery-img {
 body.page-kb19-media .kb19m-gallery-hover-overlay {
     position: absolute;
     inset: 0;
-    background-color: rgba(17, 122, 101, 0.45);
+    background-color: rgba(0, 136, 203, 0.45);
     opacity: 0;
     display: flex;
     align-items: center;

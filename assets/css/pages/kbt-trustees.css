@@ -5,15 +5,15 @@
    ========================================================================== */
 
 body.page-kbt-trustees {
-    --page-accent: #c5a03a; /* Matte Gold */
-    --page-bg-light: #faf8f5;
+    --page-accent: #0088cb; /* KBT Blue */
+    --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
-    --page-border: rgba(197, 160, 58, 0.2);
+    --page-border: rgba(0, 136, 203, 0.15);
 }
 
 /* 1. Hero Banner overrides */
 body.page-kbt-trustees .kbtt-hero-section {
-    background: linear-gradient(135deg, #181b1c 0%, #2f2818 100%);
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
     padding: 100px 0;
     border-bottom: 2px solid var(--page-accent);
 }
@@ -98,7 +98,7 @@ body.page-kbt-trustees .kbtt-card::after {
 }
 body.page-kbt-trustees .kbtt-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(197, 160, 58, 0.15);
+    box-shadow: 0 20px 40px rgba(0, 136, 203, 0.15);
 }
 body.page-kbt-trustees .kbtt-card:hover::after {
     opacity: 1;
@@ -181,7 +181,7 @@ body.page-kbt-trustees .kbtt-more-btn {
 body.page-kbt-trustees .kbtt-more-btn:hover {
     background-color: var(--page-accent);
     color: #ffffff;
-    box-shadow: 0 4px 10px rgba(197, 160, 58, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 136, 203, 0.2);
 }
 
 /* 3. Trustees Legacy Block */
@@ -234,7 +234,7 @@ body.page-kbt-trustees .kbtt-cta-text {
     margin: 0;
 }
 body.page-kbt-trustees .kbtt-cta-link {
-    color: #c5a03a;
+    color: #0088cb;
     font-weight: 700;
     text-decoration: underline;
     transition: color 0.3s ease;

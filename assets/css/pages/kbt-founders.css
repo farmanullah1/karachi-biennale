@@ -5,15 +5,15 @@
    ========================================================================== */
 
 body.page-kbt-founders {
-    --page-accent: #B38F3B; /* Metallic Ochre */
+    --page-accent: #0088cb; /* KBT Blue */
     --page-bg-card: #ffffff;
-    --page-bg-light: #FAF6EB;
-    --page-border: rgba(179, 143, 59, 0.2);
+    --page-bg-light: #FAF9F6;
+    --page-border: rgba(0, 136, 203, 0.15);
 }
 
 /* 1. Hero Banner overrides */
 body.page-kbt-founders .kbtf-hero-section {
-    background: linear-gradient(135deg, #20170a 0%, #46341a 100%);
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
     padding: 100px 0;
     border-bottom: 2px solid var(--page-accent);
 }
@@ -82,7 +82,7 @@ body.page-kbt-founders .kbtf-card {
 }
 body.page-kbt-founders .kbtf-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(179, 143, 59, 0.12);
+    box-shadow: 0 20px 40px rgba(0, 136, 203, 0.12);
     border-color: var(--page-accent);
 }
 
@@ -93,7 +93,7 @@ body.page-kbt-founders .kbtf-avatar-wrap {
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid var(--page-accent);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1), 0 0 0 5px rgba(179, 143, 59, 0.15);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1), 0 0 0 5px rgba(0, 136, 203, 0.15);
     margin-bottom: 25px;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
@@ -106,7 +106,7 @@ body.page-kbt-founders .kbtf-avatar {
 }
 body.page-kbt-founders .kbtf-card:hover .kbtf-avatar-wrap {
     transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15), 0 0 0 8px rgba(179, 143, 59, 0.25);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15), 0 0 0 8px rgba(0, 136, 203, 0.25);
 }
 body.page-kbt-founders .kbtf-card:hover .kbtf-avatar {
     transform: scale(1.06);
@@ -169,7 +169,7 @@ body.page-kbt-founders .kbtf-more-btn {
 body.page-kbt-founders .kbtf-more-btn:hover {
     background-color: var(--page-accent);
     color: #ffffff;
-    box-shadow: 0 4px 10px rgba(179, 143, 59, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 136, 203, 0.2);
 }
 
 /* Responsive adjustments */

@@ -5,11 +5,11 @@
    ========================================================================== */
 
 body.page-kb19-about {
-    --page-accent: #1e8449; /* Forest Green */
+    --page-accent: #0088cb; /* KBT Blue */
     --page-gold: #d4ac0d;
-    --page-bg-light: #fafbfc;
+    --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
-    --page-border: rgba(30, 132, 73, 0.15);
+    --page-border: rgba(0, 136, 203, 0.15);
 }
 
 /* 1. Page Banner (Hero Area) */
@@ -79,7 +79,7 @@ body.page-kb19-about .kb19a-breadcrumbs a:hover {
 
 /* 2. Main Wrapper spacing */
 body.page-kb19-about .kb19a-main-wrapper {
-    background-color: #fafbfc;
+    background-color: #FAF9F6;
     padding: 100px 0;
 }
 
@@ -125,12 +125,12 @@ body.page-kb19-about .kb19a-dropcap {
 
 /* Gibran quote box */
 body.page-kb19-about .kb19a-gibran-quote-card {
-    background: linear-gradient(135deg, #11311b 0%, #1e5230 100%);
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
     border-radius: 10px;
     padding: 40px;
     margin: 40px 0;
     color: #ffffff;
-    box-shadow: 0 12px 35px rgba(30, 132, 73, 0.15);
+    box-shadow: 0 12px 35px rgba(0, 136, 203, 0.15);
 }
 body.page-kb19-about .kb19a-gibran-title {
     font-family: 'Jost', sans-serif;

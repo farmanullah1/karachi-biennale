@@ -5,11 +5,11 @@
    ========================================================================== */
 
 body.page-kb19-catalogue {
-    --page-accent: #3e2723; /* Chocolate Brown */
+    --page-accent: #0088cb; /* KBT Blue */
     --page-gold: #ffb300; /* Warm Gold */
-    --page-bg-light: #fafbfc;
+    --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
-    --page-border: rgba(62, 39, 35, 0.15);
+    --page-border: rgba(0, 136, 203, 0.15);
 }
 
 /* 1. Page Banner (Hero Area) */
@@ -30,7 +30,7 @@ body.page-kb19-catalogue .kb19c-hero-banner {
 body.page-kb19-catalogue .kb19c-hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(38, 22, 17, 0.85) 0%, rgba(62, 39, 35, 0.6) 100%);
+    background: linear-gradient(135deg, rgba(38, 22, 17, 0.85) 0%, rgba(0, 136, 203, 0.6) 100%);
     z-index: 1;
 }
 body.page-kb19-catalogue .kb19c-hero-title {
@@ -79,7 +79,7 @@ body.page-kb19-catalogue .kb19c-breadcrumbs a:hover {
 
 /* 2. Main Wrapper spacing */
 body.page-kb19-catalogue .kb19c-main-wrapper {
-    background-color: #fafbfc;
+    background-color: #FAF9F6;
     padding: 100px 0;
 }
 
@@ -93,7 +93,7 @@ body.page-kb19-catalogue .kb19c-cover-wrap {
 body.page-kb19-catalogue .kb19c-cover-mockup {
     width: 250px;
     height: 350px;
-    background: linear-gradient(135deg, #241512 0%, #3e2723 100%);
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
     border-radius: 4px 12px 12px 4px;
     box-shadow: 0 15px 35px rgba(0,0,0,0.25), -5px 0 15px rgba(0,0,0,0.1);
     padding: 30px;
@@ -109,7 +109,7 @@ body.page-kb19-catalogue .kb19c-cover-mockup {
 }
 body.page-kb19-catalogue .kb19c-cover-wrap:hover .kb19c-cover-mockup {
     transform: rotateY(0deg) rotateX(0deg) scale(1.02);
-    box-shadow: 0 20px 45px rgba(62, 39, 35, 0.3), -2px 0 8px rgba(0,0,0,0.05);
+    box-shadow: 0 20px 45px rgba(0, 136, 203, 0.3), -2px 0 8px rgba(0,0,0,0.05);
 }
 
 /* Spine bind line effect */
@@ -172,7 +172,7 @@ body.page-kb19-catalogue .kb19c-details-card {
     box-shadow: 0 10px 30px rgba(0,0,0,0.02);
 }
 body.page-kb19-catalogue .kb19c-tag {
-    background-color: rgba(62, 39, 35, 0.08);
+    background-color: rgba(0, 136, 203, 0.08);
     color: var(--page-accent);
     font-size: 10px;
     font-weight: 700;
@@ -225,7 +225,7 @@ body.page-kb19-catalogue .kb19c-btn-secondary {
 body.page-kb19-catalogue .kb19c-btn-primary {
     background-color: var(--page-accent);
     color: #ffffff;
-    box-shadow: 0 4px 15px rgba(62, 39, 35, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 136, 203, 0.2);
 }
 body.page-kb19-catalogue .kb19c-btn-primary:hover {
     background-color: var(--page-gold);

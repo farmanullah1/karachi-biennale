@@ -5,11 +5,11 @@
    ========================================================================== */
 
 body.page-friends-of-kb19 {
-    --page-accent: #3e2723; /* Dark Mahogany/Brown */
+    --page-accent: #0088cb; /* KBT Blue */
     --page-gold: #d4ac0d; /* Gold */
-    --page-bg-light: #fafbfc;
+    --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
-    --page-border: rgba(62, 39, 35, 0.15);
+    --page-border: rgba(0, 136, 203, 0.15);
 }
 
 /* 1. Page Banner (Hero Area) */
@@ -30,7 +30,7 @@ body.page-friends-of-kb19 .kb19f-hero-banner {
 body.page-friends-of-kb19 .kb19f-hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(38, 22, 17, 0.85) 0%, rgba(62, 39, 35, 0.6) 100%);
+    background: linear-gradient(135deg, rgba(38, 22, 17, 0.85) 0%, rgba(0, 136, 203, 0.6) 100%);
     z-index: 1;
 }
 body.page-friends-of-kb19 .kb19f-hero-title {
@@ -79,7 +79,7 @@ body.page-friends-of-kb19 .kb19f-breadcrumbs a:hover {
 
 /* 2. Main Wrapper spacing */
 body.page-friends-of-kb19 .kb19f-main-wrapper {
-    background-color: #fafbfc;
+    background-color: #FAF9F6;
     padding: 100px 0;
 }
 
@@ -215,7 +215,7 @@ body.page-friends-of-kb19 .kb19f-cta-section {
     margin-right: auto;
 }
 body.page-friends-of-kb19 .kb19f-cta-card {
-    background: linear-gradient(135deg, #241512 0%, #3e2723 100%);
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
     border-radius: 12px;
     padding: 50px 40px;
     color: #ffffff;

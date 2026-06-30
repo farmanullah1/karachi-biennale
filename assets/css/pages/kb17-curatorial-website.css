@@ -5,11 +5,11 @@
    ========================================================================== */
 
 body.page-kb17-curatorial-website {
-    --page-accent: #f39c12; /* Golden Amber */
-    --page-teal: #117a65; /* Deep Teal */
-    --page-bg-light: #fafbfc;
+    --page-accent: #0088cb; /* KBT Blue */
+    --page-teal: #0f2035; /* Deep Teal */
+    --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
-    --page-border: rgba(243, 156, 18, 0.15);
+    --page-border: rgba(0, 136, 203, 0.15);
 }
 
 /* 1. Page Banner (Hero Area) */
@@ -30,7 +30,7 @@ body.page-kb17-curatorial-website .kb17cw-hero-banner {
 body.page-kb17-curatorial-website .kb17cw-hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(38, 24, 4, 0.85) 0%, rgba(243, 156, 18, 0.6) 100%);
+    background: linear-gradient(135deg, rgba(38, 24, 4, 0.85) 0%, rgba(0, 136, 203, 0.6) 100%);
     z-index: 1;
 }
 body.page-kb17-curatorial-website .kb17cw-hero-title {
@@ -79,7 +79,7 @@ body.page-kb17-curatorial-website .kb17cw-breadcrumbs a:hover {
 
 /* 2. Main Wrapper spacing */
 body.page-kb17-curatorial-website .kb17cw-main-wrapper {
-    background-color: #fafbfc;
+    background-color: #FAF9F6;
     padding: 100px 0;
 }
 
@@ -129,8 +129,8 @@ body.page-kb17-curatorial-website .kb17cw-card-icon {
     color: #ffffff;
     font-size: 28px;
 }
-body.page-kb17-curatorial-website .bg-gradient-yellow { background: linear-gradient(135deg, #f1c40f 0%, #f39c12 100%); }
-body.page-kb17-curatorial-website .bg-gradient-teal { background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%); }
+body.page-kb17-curatorial-website .bg-gradient-yellow { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
+body.page-kb17-curatorial-website .bg-gradient-teal { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
 
 body.page-kb17-curatorial-website .kb17cw-portal-title {
     font-family: 'Jost', sans-serif;
@@ -164,20 +164,20 @@ body.page-kb17-curatorial-website .kb17cw-portal-btn {
 body.page-kb17-curatorial-website .btn-primary-gradient {
     background-color: var(--page-accent);
     color: #ffffff;
-    box-shadow: 0 4px 15px rgba(243, 156, 18, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 136, 203, 0.2);
 }
 body.page-kb17-curatorial-website .btn-primary-gradient:hover {
-    background-color: #2c3e50;
+    background-color: #0a1628;
     color: #ffffff;
     transform: translateY(-2px);
 }
 body.page-kb17-curatorial-website .btn-secondary-gradient {
     background-color: var(--page-teal);
     color: #ffffff;
-    box-shadow: 0 4px 15px rgba(22, 160, 133, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 136, 203, 0.2);
 }
 body.page-kb17-curatorial-website .btn-secondary-gradient:hover {
-    background-color: #2c3e50;
+    background-color: #0a1628;
     color: #ffffff;
     transform: translateY(-2px);
 }

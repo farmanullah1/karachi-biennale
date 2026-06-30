@@ -5,11 +5,11 @@
    ========================================================================== */
 
 body.page-kb17-message-from-ceo {
-    --page-accent: #4a235a; /* Royal Mahogany / Purple */
-    --page-gold: #f1c40f;
-    --page-bg-light: #fafbfc;
+    --page-accent: #0088cb; /* KBT Blue */
+    --page-gold: #0088cb;
+    --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
-    --page-border: rgba(74, 35, 90, 0.15);
+    --page-border: rgba(0, 136, 203, 0.15);
 }
 
 /* 1. Page Banner (Hero Area) */
@@ -30,7 +30,7 @@ body.page-kb17-message-from-ceo .kb17m-hero-banner {
 body.page-kb17-message-from-ceo .kb17m-hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(23, 8, 30, 0.85) 0%, rgba(74, 35, 90, 0.6) 100%);
+    background: linear-gradient(135deg, rgba(23, 8, 30, 0.85) 0%, rgba(0, 136, 203, 0.6) 100%);
     z-index: 1;
 }
 body.page-kb17-message-from-ceo .kb17m-hero-title {
@@ -79,7 +79,7 @@ body.page-kb17-message-from-ceo .kb17m-breadcrumbs a:hover {
 
 /* 2. Main Wrapper spacing */
 body.page-kb17-message-from-ceo .kb17m-main-wrapper {
-    background-color: #fafbfc;
+    background-color: #FAF9F6;
     padding: 100px 0;
 }
 
@@ -131,7 +131,7 @@ body.page-kb17-message-from-ceo .kb17m-avatar-role {
 }
 body.page-kb17-message-from-ceo .kb17m-content-card:hover .kb17m-avatar-wrap {
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(74, 35, 90, 0.15);
+    box-shadow: 0 15px 35px rgba(0, 136, 203, 0.15);
 }
 
 /* Formal message letter details */
@@ -139,7 +139,7 @@ body.page-kb17-message-from-ceo .kb17m-letter-body {
     padding-left: 20px;
 }
 body.page-kb17-message-from-ceo .kb17m-letter-tag {
-    background-color: rgba(74, 35, 90, 0.08);
+    background-color: rgba(0, 136, 203, 0.08);
     color: var(--page-accent);
     font-size: 10px;
     font-weight: 700;

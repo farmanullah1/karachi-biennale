@@ -5,16 +5,16 @@
    ========================================================================== */
 
 body.page-kb22-report {
-    --page-accent: #e74c3c; /* Crimson Red */
+    --page-accent: #0088cb; /* KBT Blue */
     --page-dark-slate: #1c1c1c;
-    --page-bg-light: #fafbfc;
+    --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
-    --page-border: rgba(231, 76, 60, 0.2);
+    --page-border: rgba(0, 136, 203, 0.15);
 }
 
 /* 1. Page Header (Hero Area) */
 body.page-kb22-report .kb22e-hero-section {
-    background: linear-gradient(135deg, #160a08 0%, #30140f 100%);
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
     padding: 95px 0;
     border-bottom: 2px solid var(--page-accent);
 }
@@ -71,7 +71,7 @@ body.page-kb22-report .kb22e-breadcrumbs a:hover {
 
 /* 2. Main Wrapper content */
 body.page-kb22-report .kb22e-content-wrap {
-    background-color: #fafbfc;
+    background-color: #FAF9F6;
     padding: 100px 0;
 }
 
@@ -86,7 +86,7 @@ body.page-kb22-report .kb22e-report-card {
 
 /* Cover Image box graphic */
 body.page-kb22-report .kb22e-cover-box {
-    background-color: #fafafa;
+    background-color: #FAF9F6;
     border: 1px solid rgba(0,0,0,0.05);
     border-radius: 8px;
     padding: 40px 30px;
@@ -152,7 +152,7 @@ body.page-kb22-report .kb22e-btn {
 body.page-kb22-report .kb22e-btn-primary {
     background-color: var(--page-accent);
     color: #ffffff;
-    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 136, 203, 0.2);
 }
 body.page-kb22-report .kb22e-btn-primary:hover {
     background-color: var(--page-dark-slate);
@@ -247,7 +247,7 @@ body.page-kb22-report .kb22e-chapter-list li span {
 
 @keyframes kb22epulse {
     0% { transform: scale(1); opacity: 0.9; }
-    50% { transform: scale(1.06); opacity: 1; text-shadow: 0 0 10px rgba(231,76,60,0.3); }
+    50% { transform: scale(1.06); opacity: 1; text-shadow: 0 0 10px rgba(0, 136, 203,0.3); }
     100% { transform: scale(1); opacity: 0.9; }
 }
 

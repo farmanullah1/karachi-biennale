@@ -5,15 +5,15 @@
    ========================================================================== */
 
 body.page-kb24-partners {
-    --page-accent: #b89028; /* Deep Matte Gold */
-    --page-bg-light: #fafaf8;
+    --page-accent: #0088cb; /* KBT Blue */
+    --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
-    --page-border: rgba(184, 144, 40, 0.15);
+    --page-border: rgba(0, 136, 203, 0.15);
 }
 
 /* 1. Hero Banner overrides */
 body.page-kb24-partners .kb24p-hero-section {
-    background: linear-gradient(135deg, #1b1915 0%, #3a321d 100%);
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
     padding: 90px 0;
     border-bottom: 2px solid var(--page-accent);
 }
@@ -70,7 +70,7 @@ body.page-kb24-partners .kb24p-breadcrumbs a:hover {
 
 /* 2. Sticky Category Jump Bar */
 body.page-kb24-partners .kb24p-jump-bar-wrap {
-    background-color: #1b1915;
+    background-color: #0a1628;
     border-bottom: 1px solid rgba(255,255,255,0.08);
     padding: 15px 0;
     position: sticky;
@@ -102,7 +102,7 @@ body.page-kb24-partners .kb24p-jump-link:hover {
 
 /* 3. Partner Sections & Grid Layouts */
 body.page-kb24-partners .kb24p-sections-wrap {
-    background-color: #fafafa;
+    background-color: #FAF9F6;
     padding: 80px 0;
 }
 body.page-kb24-partners .kb24p-section {
@@ -152,8 +152,8 @@ body.page-kb24-partners .kb24p-logo-card {
 }
 body.page-kb24-partners .kb24p-logo-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(184, 144, 40, 0.12);
-    border-color: rgba(184, 144, 40, 0.25);
+    box-shadow: 0 10px 25px rgba(0, 136, 203, 0.12);
+    border-color: rgba(0, 136, 203, 0.25);
 }
 body.page-kb24-partners .kb24p-logo {
     max-height: 80px;
@@ -208,7 +208,7 @@ body.page-kb24-partners .kb24p-tier-badge {
     display: inline-block;
     margin-bottom: 20px;
 }
-body.page-kb24-partners .kb24p-tier-badge-gold { background-color: #d4af37; }
+body.page-kb24-partners .kb24p-tier-badge-gold { background-color: #0088cb; }
 body.page-kb24-partners .kb24p-tier-badge-bronze { background-color: #cd7f32; }
 body.page-kb24-partners .kb24p-sub-title {
     font-size: 15px;
@@ -242,13 +242,13 @@ body.page-kb24-partners .kb24p-name-badge {
 }
 body.page-kb24-partners .kb24p-name-badge:hover {
     transform: translateX(4px);
-    box-shadow: 0 5px 15px rgba(184, 144, 40, 0.08);
-    border-color: rgba(184, 144, 40, 0.25);
+    box-shadow: 0 5px 15px rgba(0, 136, 203, 0.08);
+    border-color: rgba(0, 136, 203, 0.25);
 }
 body.page-kb24-partners .kb24p-badge-label {
     font-size: 8px;
     font-weight: 700;
-    background-color: rgba(184, 144, 40, 0.12);
+    background-color: rgba(0, 136, 203, 0.12);
     color: var(--page-accent);
     padding: 2px 6px;
     border-radius: 3px;
@@ -262,7 +262,7 @@ body.page-kb24-partners .kb24p-supporter-name {
 
 /* 5. Gratitude Card bottom */
 body.page-kb24-partners .kb24p-gratitude-section {
-    background-color: #fafafa;
+    background-color: #FAF9F6;
     padding-bottom: 80px;
 }
 body.page-kb24-partners .kb24p-gratitude-card {

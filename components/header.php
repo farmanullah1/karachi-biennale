@@ -624,7 +624,7 @@
                                 <ul>
                                     <li><a href="index.php">Home</a></li>
                                     <li class="menu-item-has-children">
-                                        <a href="https://karachibiennale.org.pk/about/">About</a>
+                                        <a href="about-kbt.php">About</a>
                                         <ul class="sub-menu">
                                             <li><a href="welcome-note.php">Welcome Note</a></li>
                                             <li><a href="about-kbt.php">About KBT</a></li>

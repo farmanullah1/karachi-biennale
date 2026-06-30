@@ -5,11 +5,11 @@
    ========================================================================== */
 
 body.page-kb19-curator {
-    --page-accent: #708090; /* Slate Gray */
+    --page-accent: #0088cb; /* KBT Blue */
     --page-green: #2e8b57; /* Leaf Green */
-    --page-bg-light: #fafbfc;
+    --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
-    --page-border: rgba(112, 128, 144, 0.15);
+    --page-border: rgba(0, 136, 203, 0.15);
 }
 
 /* 1. Page Banner (Hero Area) */
@@ -30,7 +30,7 @@ body.page-kb19-curator .kb19u-hero-banner {
 body.page-kb19-curator .kb19u-hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(30, 36, 42, 0.85) 0%, rgba(112, 128, 144, 0.6) 100%);
+    background: linear-gradient(135deg, rgba(30, 36, 42, 0.85) 0%, rgba(0, 136, 203, 0.6) 100%);
     z-index: 1;
 }
 body.page-kb19-curator .kb19u-hero-title {
@@ -79,7 +79,7 @@ body.page-kb19-curator .kb19u-breadcrumbs a:hover {
 
 /* 2. Main Wrapper spacing */
 body.page-kb19-curator .kb19u-main-wrapper {
-    background-color: #fafbfc;
+    background-color: #FAF9F6;
     padding: 100px 0;
 }
 
@@ -249,11 +249,11 @@ body.page-kb19-curator .kb19u-expert-placeholder {
     margin: 0 auto 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
-body.page-kb19-curator .bg-gradient-yellow { background: linear-gradient(135deg, #f1c40f 0%, #f39c12 100%); }
-body.page-kb19-curator .bg-gradient-teal { background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%); }
-body.page-kb19-curator .bg-gradient-blue { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
-body.page-kb19-curator .bg-gradient-purple { background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); }
-body.page-kb19-curator .bg-gradient-orange { background: linear-gradient(135deg, #e67e22 0%, #d35400 100%); }
+body.page-kb19-curator .bg-gradient-yellow { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
+body.page-kb19-curator .bg-gradient-teal { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
+body.page-kb19-curator .bg-gradient-blue { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
+body.page-kb19-curator .bg-gradient-purple { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
+body.page-kb19-curator .bg-gradient-orange { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
 
 body.page-kb19-curator .kb19u-expert-name {
     font-family: 'Jost', sans-serif;

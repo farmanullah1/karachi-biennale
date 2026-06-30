@@ -5,15 +5,15 @@
    ========================================================================== */
 
 body.page-kbt-support-team {
-    --page-accent: #2980b9; /* Indigo Blue */
-    --page-bg-light: #f5f7fa;
+    --page-accent: #0088cb; /* KBT Blue */
+    --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
-    --page-border: rgba(41, 128, 185, 0.15);
+    --page-border: rgba(0, 136, 203, 0.15);
 }
 
 /* 1. Hero Banner overrides */
 body.page-kbt-support-team .kbst-hero-section {
-    background: linear-gradient(135deg, #0d1217 0%, #1c2b3e 100%);
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
     padding: 100px 0;
     border-bottom: 2px solid var(--page-accent);
 }
@@ -62,7 +62,7 @@ body.page-kbt-support-team .kbst-breadcrumbs a:hover {
 
 /* 2. Support Grid & Cards */
 body.page-kbt-support-team .kbst-grid-section {
-    background-color: #fafbfc;
+    background-color: #FAF9F6;
     padding: 100px 0;
 }
 body.page-kbt-support-team .kbst-grid {
@@ -86,8 +86,8 @@ body.page-kbt-support-team .kbst-card {
 }
 body.page-kbt-support-team .kbst-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 45px rgba(41, 128, 185, 0.15);
-    border-color: rgba(41, 128, 185, 0.3);
+    box-shadow: 0 20px 45px rgba(0, 136, 203, 0.15);
+    border-color: rgba(0, 136, 203, 0.3);
 }
 
 /* Category Color Badges */
@@ -103,7 +103,7 @@ body.page-kbt-support-team .kbst-badge {
     border-radius: 4px;
     color: #ffffff;
 }
-body.page-kbt-support-team .kbst-badge-social { background-color: #1abc9c; }
+body.page-kbt-support-team .kbst-badge-social { background-color: #0088cb; }
 body.page-kbt-support-team .kbst-badge-marketing { background-color: #9b59b6; }
 body.page-kbt-support-team .kbst-badge-pr { background-color: #e67e22; }
 body.page-kbt-support-team .kbst-badge-dev { background-color: #3498db; }
@@ -132,10 +132,10 @@ body.page-kbt-support-team .kbst-card:hover .kbst-avatar-placeholder {
 }
 
 /* Placeholder colors based on child ordering */
-body.page-kbt-support-team .kbst-card:nth-child(4n+1) .kbst-avatar-placeholder { background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%); }
-body.page-kbt-support-team .kbst-card:nth-child(4n+2) .kbst-avatar-placeholder { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
-body.page-kbt-support-team .kbst-card:nth-child(4n+3) .kbst-avatar-placeholder { background: linear-gradient(135deg, #e67e22 0%, #d35400 100%); }
-body.page-kbt-support-team .kbst-card:nth-child(4n+4) .kbst-avatar-placeholder { background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); }
+body.page-kbt-support-team .kbst-card:nth-child(4n+1) .kbst-avatar-placeholder { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
+body.page-kbt-support-team .kbst-card:nth-child(4n+2) .kbst-avatar-placeholder { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
+body.page-kbt-support-team .kbst-card:nth-child(4n+3) .kbst-avatar-placeholder { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
+body.page-kbt-support-team .kbst-card:nth-child(4n+4) .kbst-avatar-placeholder { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
 
 /* Agency & Info layout */
 body.page-kbt-support-team .kbst-agency-name {
@@ -187,14 +187,14 @@ body.page-kbt-support-team .kbst-link-placeholder {
 
 /* 3. Support Legacy Block */
 body.page-kbt-support-team .kbst-legacy-section {
-    background-color: #fafbfc;
+    background-color: #FAF9F6;
     padding-bottom: 80px;
 }
 body.page-kbt-support-team .kbst-legacy-card {
     max-width: 800px;
     margin: 0 auto;
     background: #ffffff;
-    border: 1px dashed rgba(41, 128, 185, 0.2);
+    border: 1px dashed rgba(0, 136, 203, 0.2);
     border-radius: 8px;
     padding: 40px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.01);

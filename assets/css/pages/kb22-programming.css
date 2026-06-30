@@ -5,16 +5,16 @@
    ========================================================================== */
 
 body.page-kb22-programming {
-    --page-accent: #f39c12; /* Vibrant Orange */
+    --page-accent: #0088cb; /* KBT Blue */
     --page-dark-slate: #1a1e21;
-    --page-bg-light: #fafbfc;
+    --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
-    --page-border: rgba(243, 156, 18, 0.2);
+    --page-border: rgba(0, 136, 203, 0.15);
 }
 
 /* 1. Hero Banner overrides */
 body.page-kb22-programming .kb22r-hero-section {
-    background: linear-gradient(135deg, #181109 0%, #352511 100%);
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
     padding: 90px 0;
     border-bottom: 2px solid var(--page-accent);
 }
@@ -100,18 +100,18 @@ body.page-kb22-programming .kb22r-filter-btn {
 body.page-kb22-programming .kb22r-filter-btn:hover {
     border-color: var(--page-accent);
     color: var(--page-accent);
-    background-color: rgba(243, 156, 18, 0.05);
+    background-color: rgba(0, 136, 203, 0.05);
 }
 body.page-kb22-programming .kb22r-filter-btn.active {
     background-color: var(--page-accent);
     border-color: var(--page-accent);
     color: #181109;
-    box-shadow: 0 4px 15px rgba(243, 156, 18, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 136, 203, 0.3);
 }
 
 /* 3. Schedule Wrapper */
 body.page-kb22-programming .kb22r-schedule-wrap {
-    background-color: #fafbfc;
+    background-color: #FAF9F6;
     padding: 90px 0;
 }
 body.page-kb22-programming .kb22r-accordion-list {
@@ -133,7 +133,7 @@ body.page-kb22-programming .kb22r-day-card {
 }
 body.page-kb22-programming .kb22r-day-card:hover {
     border-color: var(--page-accent);
-    box-shadow: 0 10px 25px rgba(243, 156, 18, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 136, 203, 0.1);
 }
 
 /* Accordion Header */
@@ -161,7 +161,7 @@ body.page-kb22-programming .kb22r-date {
     color: var(--page-accent);
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    background-color: rgba(243, 156, 18, 0.1);
+    background-color: rgba(0, 136, 203, 0.1);
     padding: 6px 12px;
     border-radius: 4px;
     min-width: 80px;
@@ -236,10 +236,10 @@ body.page-kb22-programming .kb22r-event-badge {
     color: #ffffff;
     display: inline-block;
 }
-body.page-kb22-programming .badge-tours { background-color: #2980b9; }
-body.page-kb22-programming .badge-talks { background-color: #27ae60; }
+body.page-kb22-programming .badge-tours { background-color: #0088cb; }
+body.page-kb22-programming .badge-talks { background-color: #0088cb; }
 body.page-kb22-programming .badge-seminars { background-color: #8e44ad; }
-body.page-kb22-programming .badge-performances { background-color: #e74c3c; }
+body.page-kb22-programming .badge-performances { background-color: #0088cb; }
 
 /* Responsive adjustments */
 @media (max-width: 767px) {

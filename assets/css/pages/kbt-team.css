@@ -5,15 +5,15 @@
    ========================================================================== */
 
 body.page-kbt-team {
-    --page-accent: #16a085; /* Operational Teal */
-    --page-bg-light: #f4f7f6;
+    --page-accent: #0088cb; /* KBT Blue */
+    --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
-    --page-border: rgba(22, 160, 133, 0.15);
+    --page-border: rgba(0, 136, 203, 0.15);
 }
 
 /* 1. Hero Banner overrides */
 body.page-kbt-team .kbtm-hero-section {
-    background: linear-gradient(135deg, #10191c 0%, #173634 100%);
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
     padding: 100px 0;
     border-bottom: 2px solid var(--page-accent);
 }
@@ -83,8 +83,8 @@ body.page-kbt-team .kbtm-card {
 }
 body.page-kbt-team .kbtm-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 45px rgba(22, 160, 133, 0.12);
-    border-color: rgba(22, 160, 133, 0.3);
+    box-shadow: 0 20px 45px rgba(0, 136, 203, 0.12);
+    border-color: rgba(0, 136, 203, 0.3);
 }
 
 /* Avatar positioning with rotating background shapes */
@@ -108,7 +108,7 @@ body.page-kbt-team .kbtm-avatar {
 }
 body.page-kbt-team .kbtm-card:hover .kbtm-avatar-wrap {
     transform: scale(1.05) rotate(2deg);
-    box-shadow: 0 12px 25px rgba(22, 160, 133, 0.2);
+    box-shadow: 0 12px 25px rgba(0, 136, 203, 0.2);
 }
 body.page-kbt-team .kbtm-card:hover .kbtm-avatar {
     transform: scale(1.08);
@@ -138,16 +138,16 @@ body.page-kbt-team .kbtm-role {
 
 /* Color Coding based on Card Order */
 /* Bushra Hussain (Director) - Gold Badge */
-body.page-kbt-team .kbtm-card:nth-child(7n+1) .kbtm-role { background-color: #B38F3B; }
+body.page-kbt-team .kbtm-card:nth-child(7n+1) .kbtm-role { background-color: #0088cb; }
 /* Assistant to CEO & Social Media (Coordinators) - Teal Badge */
 body.page-kbt-team .kbtm-card:nth-child(7n+2) .kbtm-role,
 body.page-kbt-team .kbtm-card:nth-child(7n+5) .kbtm-role,
-body.page-kbt-team .kbtm-card:nth-child(7n+6) .kbtm-role { background-color: #16a085; }
+body.page-kbt-team .kbtm-card:nth-child(7n+6) .kbtm-role { background-color: #0088cb; }
 /* Accountant (Finance) - Purple Badge */
 body.page-kbt-team .kbtm-card:nth-child(7n+3) .kbtm-role { background-color: #8e44ad; }
 /* Deputy GM & Office Manager (Managers) - Indigo Badge */
 body.page-kbt-team .kbtm-card:nth-child(7n+4) .kbtm-role,
-body.page-kbt-team .kbtm-card:nth-child(7n+7) .kbtm-role { background-color: #2980b9; }
+body.page-kbt-team .kbtm-card:nth-child(7n+7) .kbtm-role { background-color: #0088cb; }
 
 /* Biography wrap */
 body.page-kbt-team .kbtm-bio-wrap {
@@ -180,7 +180,7 @@ body.page-kbt-team .kbtm-more-btn {
 body.page-kbt-team .kbtm-more-btn:hover {
     background-color: var(--page-accent);
     color: #ffffff;
-    box-shadow: 0 4px 10px rgba(22, 160, 133, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 136, 203, 0.2);
 }
 
 /* 3. Team Legacy Section */

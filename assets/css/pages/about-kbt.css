@@ -5,15 +5,15 @@
    ========================================================================== */
 
 body.page-about-kbt {
-    --page-accent: #d4a325; /* Amber Gold */
-    --page-bg-dark: #121212;
-    --page-text-dark: #333333;
-    --page-border: rgba(212, 163, 37, 0.2);
+    --page-accent: #0088cb; /* KBT Blue */
+    --page-bg-dark: #0a1628;
+    --page-text-dark: #2c3e50;
+    --page-border: rgba(0, 136, 203, 0.15);
 }
 
 /* 1. Hero Banner overrides */
 body.page-about-kbt .akbt-hero-section {
-    background: linear-gradient(135deg, #18191a 0%, #302611 100%);
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
     padding: 90px 0;
     border-bottom: 2px solid var(--page-accent);
 }
@@ -63,7 +63,7 @@ body.page-about-kbt .akbt-breadcrumbs a:hover {
 /* 2. Main content area */
 body.page-about-kbt .akbt-content-section {
     padding: 100px 0;
-    background-color: #fafafa;
+    background-color: #FAF9F6;
 }
 body.page-about-kbt .akbt-content-grid {
     display: grid;
@@ -98,7 +98,7 @@ body.page-about-kbt .akbt-img {
 }
 body.page-about-kbt .akbt-image-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(212, 163, 37, 0.15);
+    box-shadow: 0 15px 35px rgba(0, 136, 203, 0.15);
 }
 body.page-about-kbt .akbt-image-card:nth-child(even):hover {
     transform: translate(20px, -8px);
@@ -142,16 +142,16 @@ body.page-about-kbt .akbt-paragraph:last-child {
 
 /* 3. Microtonal Featured Installation Section */
 body.page-about-kbt .akbt-video-section {
-    background-color: #121212;
+    background-color: #0a1628;
     padding: 100px 0;
     color: #ffffff;
-    border-top: 1px solid #222222;
+    border-top: 1px solid #1a3050;
 }
 body.page-about-kbt .akbt-video-card {
     max-width: 900px;
     margin: 0 auto;
-    background-color: #1a1a1a;
-    border: 1px solid #2d2d2d;
+    background-color: #0a1628;
+    border: 1px solid #1a3050;
     border-radius: 12px;
     padding: 40px;
     box-shadow: 0 20px 50px rgba(0,0,0,0.5);
@@ -159,7 +159,7 @@ body.page-about-kbt .akbt-video-card {
 }
 body.page-about-kbt .akbt-video-card:hover {
     border-color: var(--page-accent);
-    box-shadow: 0 25px 60px rgba(212, 163, 37, 0.15);
+    box-shadow: 0 25px 60px rgba(0, 136, 203, 0.15);
 }
 body.page-about-kbt .akbt-badge {
     background-color: var(--page-accent);

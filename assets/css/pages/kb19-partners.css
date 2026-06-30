@@ -5,10 +5,10 @@
    ========================================================================== */
 
 body.page-kb19-partners {
-    --page-accent: #27ae60; /* Emerald Green */
-    --page-bg-light: #fafbfc;
+    --page-accent: #0088cb; /* KBT Blue */
+    --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
-    --page-border: rgba(39, 174, 96, 0.15);
+    --page-border: rgba(0, 136, 203, 0.15);
 }
 
 /* 1. Page Banner (Hero Area) */
@@ -29,7 +29,7 @@ body.page-kb19-partners .kb19pt-hero-banner {
 body.page-kb19-partners .kb19pt-hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(14, 48, 25, 0.85) 0%, rgba(39, 174, 96, 0.6) 100%);
+    background: linear-gradient(135deg, rgba(14, 48, 25, 0.85) 0%, rgba(0, 136, 203, 0.6) 100%);
     z-index: 1;
 }
 body.page-kb19-partners .kb19pt-hero-title {
@@ -44,7 +44,7 @@ body.page-kb19-partners .kb19pt-hero-title {
 }
 body.page-kb19-partners .kb19pt-hero-subtitle {
     font-size: 1.1rem;
-    color: #f1c40f; /* Gold accent */
+    color: #0088cb; /* Gold accent */
     font-family: 'Georgia', serif;
     font-style: italic;
     letter-spacing: 1px;
@@ -73,12 +73,12 @@ body.page-kb19-partners .kb19pt-breadcrumbs a {
     transition: color 0.3s ease;
 }
 body.page-kb19-partners .kb19pt-breadcrumbs a:hover {
-    color: #f1c40f;
+    color: #0088cb;
 }
 
 /* 2. Main Wrapper spacing */
 body.page-kb19-partners .kb19pt-main-wrapper {
-    background-color: #fafbfc;
+    background-color: #FAF9F6;
     padding: 90px 0;
 }
 
@@ -137,8 +137,8 @@ body.page-kb19-partners .kb19pt-partner-card {
 }
 body.page-kb19-partners .kb19pt-partner-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 15px 30px rgba(39, 174, 96, 0.12);
-    border-color: rgba(39, 174, 96, 0.25);
+    box-shadow: 0 15px 30px rgba(0, 136, 203, 0.12);
+    border-color: rgba(0, 136, 203, 0.25);
 }
 
 body.page-kb19-partners .kb19pt-logo-wrap {

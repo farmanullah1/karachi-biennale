@@ -5,11 +5,11 @@
    ========================================================================== */
 
 body.page-kb17-partners {
-    --page-accent: #1abc9c; /* Teal */
-    --page-dark: #2c3e50; /* Charcoal */
-    --page-bg-light: #fafbfc;
+    --page-accent: #0088cb; /* KBT Blue */
+    --page-dark: #0a1628; /* Charcoal */
+    --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
-    --page-border: rgba(26, 188, 156, 0.15);
+    --page-border: rgba(0, 136, 203, 0.15);
 }
 
 /* 1. Page Banner (Hero Area) */
@@ -30,7 +30,7 @@ body.page-kb17-partners .kb17pt-hero-banner {
 body.page-kb17-partners .kb17pt-hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(8, 38, 32, 0.85) 0%, rgba(26, 188, 156, 0.6) 100%);
+    background: linear-gradient(135deg, rgba(8, 38, 32, 0.85) 0%, rgba(0, 136, 203, 0.6) 100%);
     z-index: 1;
 }
 body.page-kb17-partners .kb17pt-hero-title {
@@ -45,7 +45,7 @@ body.page-kb17-partners .kb17pt-hero-title {
 }
 body.page-kb17-partners .kb17pt-hero-subtitle {
     font-size: 1.1rem;
-    color: #f1c40f; /* Gold accent */
+    color: #0088cb; /* Gold accent */
     font-family: 'Georgia', serif;
     font-style: italic;
     letter-spacing: 1px;
@@ -74,12 +74,12 @@ body.page-kb17-partners .kb17pt-breadcrumbs a {
     transition: color 0.3s ease;
 }
 body.page-kb17-partners .kb17pt-breadcrumbs a:hover {
-    color: #f1c40f;
+    color: #0088cb;
 }
 
 /* 2. Main Wrapper spacing */
 body.page-kb17-partners .kb17pt-main-wrapper {
-    background-color: #fafbfc;
+    background-color: #FAF9F6;
     padding: 90px 0;
 }
 
@@ -138,8 +138,8 @@ body.page-kb17-partners .kb17pt-partner-card {
 }
 body.page-kb17-partners .kb17pt-partner-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 15px 30px rgba(26, 188, 156, 0.12);
-    border-color: rgba(26, 188, 156, 0.25);
+    box-shadow: 0 15px 30px rgba(0, 136, 203, 0.12);
+    border-color: rgba(0, 136, 203, 0.25);
 }
 
 body.page-kb17-partners .kb17pt-logo-wrap {
@@ -200,11 +200,11 @@ body.page-kb17-partners .kb17pt-partner-detail {
 }
 
 /* Gradient backgrounds for placeholders */
-body.page-kb17-partners .bg-gradient-yellow { background: linear-gradient(135deg, #f1c40f 0%, #f39c12 100%); }
-body.page-kb17-partners .bg-gradient-teal { background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%); }
-body.page-kb17-partners .bg-gradient-blue { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
-body.page-kb17-partners .bg-gradient-purple { background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); }
-body.page-kb17-partners .bg-gradient-orange { background: linear-gradient(135deg, #e67e22 0%, #d35400 100%); }
+body.page-kb17-partners .bg-gradient-yellow { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
+body.page-kb17-partners .bg-gradient-teal { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
+body.page-kb17-partners .bg-gradient-blue { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
+body.page-kb17-partners .bg-gradient-purple { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
+body.page-kb17-partners .bg-gradient-orange { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
 
 /* Responsive adjustments */
 @media (max-width: 767px) {
