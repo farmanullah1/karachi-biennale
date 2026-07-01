@@ -5,7 +5,8 @@
    ========================================================================== */
 
 body.page-kb19-teams {
-    --page-accent: #0088cb; /* KBT Blue */
+    --page-accent: #0088cb;
+    /* KBT Blue */
     --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
     --page-border: rgba(0, 136, 203, 0.15);
@@ -17,6 +18,7 @@ body.page-kb19-teams {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -28,6 +30,7 @@ body.page-kb19-teams .kb19t-hero-section {
     position: relative;
     overflow: hidden;
 }
+
 body.page-kb19-teams .kb19t-hero-banner {
     background-image: url('../../img/bg/kb19-page-banner-2.jpg');
     background-size: cover;
@@ -38,12 +41,14 @@ body.page-kb19-teams .kb19t-hero-banner {
     justify-content: center;
     position: relative;
 }
+
 body.page-kb19-teams .kb19t-hero-overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(135deg, rgba(10, 36, 15, 0.85) 0%, rgba(0, 136, 203, 0.6) 100%);
     z-index: 1;
 }
+
 body.page-kb19-teams .kb19t-hero-title {
     font-family: 'Jost', sans-serif;
     font-size: clamp(2.5rem, 6vw, 4rem);
@@ -52,15 +57,18 @@ body.page-kb19-teams .kb19t-hero-title {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 10px;
-    text-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
+
 body.page-kb19-teams .kb19t-hero-subtitle {
     font-size: 1.1rem;
-    color: #0088cb; /* Gold accent */
+    color: #0088cb;
+    /* Gold accent */
     font-family: 'Georgia', serif;
     font-style: italic;
     letter-spacing: 1px;
 }
+
 body.page-kb19-teams .kb19t-breadcrumbs ul {
     list-style: none;
     padding: 0;
@@ -69,21 +77,25 @@ body.page-kb19-teams .kb19t-breadcrumbs ul {
     justify-content: center;
     gap: 8px;
 }
+
 body.page-kb19-teams .kb19t-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.65);
+    color: rgba(255, 255, 255, 0.65);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-body.page-kb19-teams .kb19t-breadcrumbs li + li::before {
+
+body.page-kb19-teams .kb19t-breadcrumbs li+li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
 }
+
 body.page-kb19-teams .kb19t-breadcrumbs a {
-    color: rgba(255,255,255,0.85);
+    color: rgba(255, 255, 255, 0.85);
     transition: color 0.3s ease;
 }
+
 body.page-kb19-teams .kb19t-breadcrumbs a:hover {
     color: #0088cb;
 }
@@ -100,6 +112,7 @@ body.page-kb19-teams .kb19t-intro {
     margin: 0 auto 50px;
     animation: kb19t-fade-in-up 0.8s ease-out forwards;
 }
+
 body.page-kb19-teams .kb19t-section-heading {
     font-family: 'Jost', sans-serif;
     font-size: 28px;
@@ -107,6 +120,7 @@ body.page-kb19-teams .kb19t-section-heading {
     color: #1a1a1a;
     margin-bottom: 15px;
 }
+
 body.page-kb19-teams .kb19t-section-lead {
     font-size: 15.5px;
     line-height: 1.8;
@@ -120,6 +134,7 @@ body.page-kb19-teams .kb19t-grid {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
 }
+
 body.page-kb19-teams .kp19 {
     display: flex;
     flex-direction: column;
@@ -129,25 +144,43 @@ body.page-kb19-teams .kp19 {
 /* Team Card structure */
 body.page-kb19-teams .kb19t-team-card {
     background-color: var(--page-bg-card);
-    border: 1px solid rgba(0,0,0,0.06);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 12px;
     overflow: hidden;
     height: 100%;
     flex-grow: 1;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.02);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.02);
     /* Card transform scale & shadow rise */
     transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease, border-color 0.4s ease;
     animation: kb19t-fade-in-up 0.8s ease-out forwards;
 }
-body.page-kb19-teams .kb19t-team-card:nth-child(1) { animation-delay: 0.1s; }
-body.page-kb19-teams .kb19t-team-card:nth-child(2) { animation-delay: 0.2s; }
-body.page-kb19-teams .kb19t-team-card:nth-child(3) { animation-delay: 0.3s; }
-body.page-kb19-teams .kb19t-team-card:nth-child(4) { animation-delay: 0.4s; }
-body.page-kb19-teams .kb19t-team-card:nth-child(5) { animation-delay: 0.5s; }
-body.page-kb19-teams .kb19t-team-card:nth-child(6) { animation-delay: 0.6s; }
+
+body.page-kb19-teams .kb19t-team-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+body.page-kb19-teams .kb19t-team-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+body.page-kb19-teams .kb19t-team-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+body.page-kb19-teams .kb19t-team-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+body.page-kb19-teams .kb19t-team-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+body.page-kb19-teams .kb19t-team-card:nth-child(6) {
+    animation-delay: 0.6s;
+}
 
 body.page-kb19-teams .kb19t-team-card:hover {
-    transform: translateY(-8px);
+    transform: scale(1.02);
     box-shadow: 0 15px 35px rgba(0, 136, 203, 0.12);
     border-color: rgba(0, 136, 203, 0.25);
 }
@@ -163,16 +196,31 @@ body.page-kb19-teams .kb19t-card-header {
     display: flex;
     align-items: center;
 }
+
 body.page-kb19-teams .kb19t-card-header i {
     font-size: 18px;
 }
 
 /* Gradients for card headers */
-body.page-kb19-teams .bg-gradient-yellow { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
-body.page-kb19-teams .bg-gradient-teal { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
-body.page-kb19-teams .bg-gradient-blue { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
-body.page-kb19-teams .bg-gradient-purple { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
-body.page-kb19-teams .bg-gradient-orange { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
+body.page-kb19-teams .bg-gradient-yellow {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
+
+body.page-kb19-teams .bg-gradient-teal {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
+
+body.page-kb19-teams .bg-gradient-blue {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
+
+body.page-kb19-teams .bg-gradient-purple {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
+
+body.page-kb19-teams .bg-gradient-orange {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
 
 body.page-kb19-teams .kb19t-card-body {
     padding: 30px 25px;
@@ -187,25 +235,30 @@ body.page-kb19-teams .kb19t-member-list {
     flex-direction: column;
     gap: 15px;
 }
+
 body.page-kb19-teams .kb19t-member-list li {
     display: flex;
     flex-direction: column;
     gap: 2px;
     padding-bottom: 12px;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     transition: padding-left 0.3s ease;
 }
+
 body.page-kb19-teams .kb19t-member-list li:last-child {
     border-bottom: 0;
     padding-bottom: 0;
 }
+
 body.page-kb19-teams .kb19t-member-list li:hover {
     padding-left: 6px;
 }
+
 body.page-kb19-teams .kb19t-member-list strong {
     font-size: 14.5px;
     color: #1a1a1a;
 }
+
 body.page-kb19-teams .kb19t-member-role {
     font-size: 11px;
     color: #888888;
@@ -217,20 +270,23 @@ body.page-kb19-teams .kb19t-member-role {
 body.page-kb19-teams .kb19t-board-section {
     margin-top: 60px;
 }
+
 body.page-kb19-teams .kb19t-board-card {
     background-color: #ffffff;
-    border: 1px solid rgba(0,0,0,0.06);
-    border-top: 4px solid var(--page-accent);
-    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    /* /* border-top: 4px solid var(--page-accent); */
+    */ border-radius: 12px;
     padding: 40px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.02);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.02);
     animation: kb19t-fade-in-up 0.8s ease-out forwards;
 }
+
 body.page-kb19-teams .kb19t-board-header {
-    border-bottom: 1px solid rgba(0,0,0,0.06);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
     padding-bottom: 20px;
     margin-bottom: 30px;
 }
+
 body.page-kb19-teams .kb19t-board-title {
     font-family: 'Jost', sans-serif;
     font-size: 20px;
@@ -238,12 +294,15 @@ body.page-kb19-teams .kb19t-board-title {
     color: #1a1a1a;
     margin: 0;
 }
+
 body.page-kb19-teams .kb19t-board-title i {
     color: var(--page-accent);
 }
+
 body.page-kb19-teams .kb19t-board-member {
     padding: 10px;
 }
+
 body.page-kb19-teams .kb19t-board-member strong {
     font-family: 'Jost', sans-serif;
     font-size: 16px;
@@ -252,6 +311,7 @@ body.page-kb19-teams .kb19t-board-member strong {
     display: block;
     margin-bottom: 4px;
 }
+
 body.page-kb19-teams .kb19t-board-member span {
     font-size: 12.5px;
     color: #777777;

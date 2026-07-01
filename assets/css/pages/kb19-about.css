@@ -5,7 +5,8 @@
    ========================================================================== */
 
 body.page-kb19-about {
-    --page-accent: #0088cb; /* KBT Blue */
+    --page-accent: #0088cb;
+    /* KBT Blue */
     --page-gold: #d4ac0d;
     --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
@@ -17,6 +18,7 @@ body.page-kb19-about .kb19a-hero-section {
     position: relative;
     overflow: hidden;
 }
+
 body.page-kb19-about .kb19a-hero-banner {
     background-image: url('../../img/bg/kb19-page-banner-2.jpg');
     background-size: cover;
@@ -27,12 +29,14 @@ body.page-kb19-about .kb19a-hero-banner {
     justify-content: center;
     position: relative;
 }
+
 body.page-kb19-about .kb19a-hero-overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(135deg, rgba(14, 52, 28, 0.85) 0%, rgba(20, 82, 40, 0.6) 100%);
     z-index: 1;
 }
+
 body.page-kb19-about .kb19a-hero-title {
     font-family: 'Jost', sans-serif;
     font-size: clamp(2.5rem, 6vw, 4rem);
@@ -41,8 +45,9 @@ body.page-kb19-about .kb19a-hero-title {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 10px;
-    text-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
+
 body.page-kb19-about .kb19a-hero-subtitle {
     font-size: 1.1rem;
     color: var(--page-gold);
@@ -50,6 +55,7 @@ body.page-kb19-about .kb19a-hero-subtitle {
     font-style: italic;
     letter-spacing: 1px;
 }
+
 body.page-kb19-about .kb19a-breadcrumbs ul {
     list-style: none;
     padding: 0;
@@ -58,21 +64,25 @@ body.page-kb19-about .kb19a-breadcrumbs ul {
     justify-content: center;
     gap: 8px;
 }
+
 body.page-kb19-about .kb19a-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.65);
+    color: rgba(255, 255, 255, 0.65);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-body.page-kb19-about .kb19a-breadcrumbs li + li::before {
+
+body.page-kb19-about .kb19a-breadcrumbs li+li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
 }
+
 body.page-kb19-about .kb19a-breadcrumbs a {
-    color: rgba(255,255,255,0.85);
+    color: rgba(255, 255, 255, 0.85);
     transition: color 0.3s ease;
 }
+
 body.page-kb19-about .kb19a-breadcrumbs a:hover {
     color: var(--page-gold);
 }
@@ -86,11 +96,12 @@ body.page-kb19-about .kb19a-main-wrapper {
 /* Essay block layout & typography */
 body.page-kb19-about .kb19a-essay-block {
     background-color: #ffffff;
-    border: 1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 12px;
     padding: 50px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
 }
+
 body.page-kb19-about .kb19a-pullquote {
     border-left: 4px solid var(--page-accent);
     background-color: #f4faf7;
@@ -103,9 +114,11 @@ body.page-kb19-about .kb19a-pullquote {
     color: #2c3e50;
     transition: transform 0.4s ease;
 }
+
 body.page-kb19-about .kb19a-pullquote:hover {
     transform: translateX(5px);
 }
+
 body.page-kb19-about .kb19a-paragraph {
     font-size: 15.5px;
     line-height: 1.85;
@@ -113,6 +126,7 @@ body.page-kb19-about .kb19a-paragraph {
     margin-bottom: 25px;
     text-align: justify;
 }
+
 body.page-kb19-about .kb19a-dropcap {
     float: left;
     font-size: 4.2rem;
@@ -132,6 +146,7 @@ body.page-kb19-about .kb19a-gibran-quote-card {
     color: #ffffff;
     box-shadow: 0 12px 35px rgba(0, 136, 203, 0.15);
 }
+
 body.page-kb19-about .kb19a-gibran-title {
     font-family: 'Jost', sans-serif;
     font-size: 20px;
@@ -141,6 +156,7 @@ body.page-kb19-about .kb19a-gibran-title {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
 body.page-kb19-about .kb19a-gibran-quote {
     font-style: italic;
     font-size: 14.5px;
@@ -154,45 +170,53 @@ body.page-kb19-about .kb19a-sidebar {
     position: sticky;
     top: 30px;
 }
+
 body.page-kb19-about .kb19a-facts-card {
     background-color: #ffffff;
-    border: 1px solid rgba(0,0,0,0.06);
-    border-top: 4px solid var(--page-accent);
-    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    /* /* border-top: 4px solid var(--page-accent); */
+    */ border-radius: 10px;
     padding: 35px 25px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.02);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.02);
 }
+
 body.page-kb19-about .kb19a-facts-title {
     font-family: 'Jost', sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #1a1a1a;
     margin-bottom: 25px;
-    border-bottom: 2px solid rgba(0,0,0,0.06);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.06);
     padding-bottom: 12px;
 }
+
 body.page-kb19-about .kb19a-facts-title i {
     color: var(--page-accent);
 }
+
 body.page-kb19-about .kb19a-facts-list {
     list-style: none;
     padding: 0;
     margin: 0 0 30px 0;
 }
+
 body.page-kb19-about .kb19a-facts-list li {
     display: flex;
     flex-direction: column;
     gap: 4px;
     padding: 12px 0;
-    border-bottom: 1px solid rgba(0,0,0,0.06);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
     transition: padding-left 0.3s ease;
 }
+
 body.page-kb19-about .kb19a-facts-list li:last-child {
     border-bottom: 0;
 }
+
 body.page-kb19-about .kb19a-facts-list li:hover {
     padding-left: 6px;
 }
+
 body.page-kb19-about .kb19a-fact-label {
     font-size: 11px;
     font-weight: 700;
@@ -200,19 +224,23 @@ body.page-kb19-about .kb19a-fact-label {
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
+
 body.page-kb19-about .kb19a-fact-value {
     font-size: 14.5px;
     font-weight: 600;
     color: #2c3e50;
 }
+
 body.page-kb19-about .kb19a-fact-value a {
     color: var(--page-accent);
     text-decoration: none;
     transition: color 0.3s ease;
 }
+
 body.page-kb19-about .kb19a-fact-value a:hover {
     color: var(--page-gold);
 }
+
 body.page-kb19-about .text-theme {
     color: var(--page-accent) !important;
 }
@@ -220,10 +248,11 @@ body.page-kb19-about .text-theme {
 /* Quick links styling */
 body.page-kb19-about .kb19a-quick-links {
     background-color: #fcfcfc;
-    border: 1px dashed rgba(0,0,0,0.08);
+    border: 1px dashed rgba(0, 0, 0, 0.08);
     border-radius: 6px;
     padding: 20px;
 }
+
 body.page-kb19-about .kb19a-links-title {
     font-family: 'Jost', sans-serif;
     font-size: 13px;
@@ -233,6 +262,7 @@ body.page-kb19-about .kb19a-links-title {
     letter-spacing: 0.5px;
     margin-bottom: 15px;
 }
+
 body.page-kb19-about .kb19a-btn-link {
     display: flex;
     align-items: center;
@@ -242,19 +272,23 @@ body.page-kb19-about .kb19a-btn-link {
     color: #444444;
     text-decoration: none;
     padding: 8px 0;
-    border-bottom: 1px solid rgba(0,0,0,0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
     transition: color 0.3s ease, padding-left 0.3s ease;
 }
+
 body.page-kb19-about .kb19a-btn-link:last-child {
     border-bottom: 0;
 }
+
 body.page-kb19-about .kb19a-btn-link i {
     transition: transform 0.3s ease;
 }
+
 body.page-kb19-about .kb19a-btn-link:hover {
     color: var(--page-accent);
     padding-left: 4px;
 }
+
 body.page-kb19-about .kb19a-btn-link:hover i {
     transform: translateX(4px);
 }
@@ -264,16 +298,19 @@ body.page-kb19-about .kb19a-btn-link:hover i {
     body.page-kb19-about .kb19a-essay-block {
         padding: 30px;
     }
+
     body.page-kb19-about .kb19a-sidebar {
         margin-top: 40px;
         position: relative;
         top: 0;
     }
 }
+
 @media (max-width: 767px) {
     body.page-kb19-about .kb19a-hero-banner {
         min-height: 260px;
     }
+
     body.page-kb19-about .kb19a-gibran-quote-card {
         padding: 25px;
     }

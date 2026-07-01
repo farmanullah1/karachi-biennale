@@ -5,7 +5,8 @@
    ========================================================================== */
 
 body.page-kb24-art-prize-winners {
-    --page-accent: #0088cb; /* KBT Blue */
+    --page-accent: #0088cb;
+    /* KBT Blue */
     --page-platinum: #2c3e50;
     --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
@@ -18,6 +19,7 @@ body.page-kb24-art-prize-winners .kb24p-hero-section {
     padding: 100px 0;
     border-bottom: 2px solid var(--page-accent);
 }
+
 body.page-kb24-art-prize-winners .kb24p-hero-title {
     font-family: 'Jost', sans-serif;
     font-size: clamp(2.5rem, 6vw, 4rem);
@@ -27,6 +29,7 @@ body.page-kb24-art-prize-winners .kb24p-hero-title {
     letter-spacing: 2px;
     margin-bottom: 10px;
 }
+
 body.page-kb24-art-prize-winners .kb24p-hero-subtitle {
     font-size: 1.1rem;
     color: var(--page-accent);
@@ -35,6 +38,7 @@ body.page-kb24-art-prize-winners .kb24p-hero-subtitle {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
+
 body.page-kb24-art-prize-winners .kb24p-hero-intro {
     font-size: 15.5px;
     line-height: 1.7;
@@ -42,6 +46,7 @@ body.page-kb24-art-prize-winners .kb24p-hero-intro {
     max-width: 800px;
     margin: 0 auto 25px;
 }
+
 body.page-kb24-art-prize-winners .kb24p-breadcrumbs ul {
     list-style: none;
     padding: 0;
@@ -50,21 +55,25 @@ body.page-kb24-art-prize-winners .kb24p-breadcrumbs ul {
     justify-content: center;
     gap: 8px;
 }
+
 body.page-kb24-art-prize-winners .kb24p-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-body.page-kb24-art-prize-winners .kb24p-breadcrumbs li + li::before {
+
+body.page-kb24-art-prize-winners .kb24p-breadcrumbs li+li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
 }
+
 body.page-kb24-art-prize-winners .kb24p-breadcrumbs a {
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     transition: color 0.3s ease;
 }
+
 body.page-kb24-art-prize-winners .kb24p-breadcrumbs a:hover {
     color: var(--page-accent);
 }
@@ -74,6 +83,7 @@ body.page-kb24-art-prize-winners .kb24p-sections-wrap {
     background-color: #FAF9F6;
     padding: 100px 0;
 }
+
 body.page-kb24-art-prize-winners .kb24p-prize-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -83,19 +93,20 @@ body.page-kb24-art-prize-winners .kb24p-prize-grid {
 /* Prize Card styling */
 body.page-kb24-art-prize-winners .kb24p-prize-card {
     background-color: var(--page-bg-card);
-    border: 1px solid rgba(0,0,0,0.06);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 12px;
     overflow: hidden;
     height: 100%;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
     display: flex;
     flex-direction: column;
     position: relative;
     /* Card transform scale & shadow rise */
     transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease, border-color 0.4s ease;
 }
+
 body.page-kb24-art-prize-winners .kb24p-prize-card:hover {
-    transform: translateY(-8px);
+    transform: scale(1.02);
     box-shadow: 0 20px 45px rgba(0, 136, 203, 0.15);
     border-color: rgba(0, 136, 203, 0.35);
 }
@@ -104,13 +115,17 @@ body.page-kb24-art-prize-winners .kb24p-prize-card:hover {
 body.page-kb24-art-prize-winners .kb24p-prize-card::after {
     content: '';
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     border: 2px solid var(--page-accent);
     opacity: 0;
     border-radius: 12px;
     transition: opacity 0.3s ease;
     pointer-events: none;
 }
+
 body.page-kb24-art-prize-winners .kb24p-prize-card:hover::after {
     opacity: 1;
 }
@@ -122,12 +137,14 @@ body.page-kb24-art-prize-winners .kb24p-prize-img-wrap {
     height: 240px;
     overflow: hidden;
 }
+
 body.page-kb24-art-prize-winners .kb24p-prize-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
 }
+
 body.page-kb24-art-prize-winners .kb24p-prize-card:hover .kb24p-prize-img {
     transform: scale(1.05);
 }
@@ -135,7 +152,8 @@ body.page-kb24-art-prize-winners .kb24p-prize-card:hover .kb24p-prize-img {
 /* Gold Gradient Prize badges */
 body.page-kb24-art-prize-winners .kb24p-prize-badge {
     position: absolute;
-    top: 15px; left: 15px;
+    top: 15px;
+    left: 15px;
     font-size: 11px;
     font-weight: 700;
     background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
@@ -144,8 +162,8 @@ body.page-kb24-art-prize-winners .kb24p-prize-badge {
     border-radius: 4px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    border: 1px solid rgba(255,255,255,0.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     display: flex;
     align-items: center;
     gap: 6px;
@@ -159,6 +177,7 @@ body.page-kb24-art-prize-winners .kb24p-prize-body {
     flex-direction: column;
     flex-grow: 1;
 }
+
 body.page-kb24-art-prize-winners .kb24p-winner-title {
     font-size: 11px;
     font-weight: 700;
@@ -168,6 +187,7 @@ body.page-kb24-art-prize-winners .kb24p-winner-title {
     display: inline-block;
     margin-bottom: 5px;
 }
+
 body.page-kb24-art-prize-winners .kb24p-winner-name {
     font-family: 'Jost', sans-serif;
     font-size: 22px;
@@ -175,6 +195,7 @@ body.page-kb24-art-prize-winners .kb24p-winner-name {
     color: #1a1a1a;
     margin-bottom: 12px;
 }
+
 body.page-kb24-art-prize-winners .kb24p-prize-desc {
     font-size: 14.5px;
     line-height: 1.7;

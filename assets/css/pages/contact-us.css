@@ -5,7 +5,8 @@
    ========================================================================== */
 
 body.page-contact-us {
-    --page-accent: #0088cb; /* KBT Blue */
+    --page-accent: #0088cb;
+    /* KBT Blue */
     --page-dark: #0a1628;
     --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
@@ -17,6 +18,7 @@ body.page-contact-us .contact-us-hero-section {
     position: relative;
     overflow: hidden;
 }
+
 body.page-contact-us .contact-us-hero-banner {
     background-image: url('../../img/bg/kb19-page-banner-2.jpg');
     background-size: cover;
@@ -27,12 +29,14 @@ body.page-contact-us .contact-us-hero-banner {
     justify-content: center;
     position: relative;
 }
+
 body.page-contact-us .contact-us-hero-overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(135deg, rgba(16, 44, 63, 0.85) 0%, rgba(0, 136, 203, 0.6) 100%);
     z-index: 1;
 }
+
 body.page-contact-us .contact-us-hero-title {
     font-family: 'Jost', sans-serif;
     font-size: clamp(2.5rem, 6vw, 4rem);
@@ -41,8 +45,9 @@ body.page-contact-us .contact-us-hero-title {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 10px;
-    text-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
+
 body.page-contact-us .contact-us-hero-subtitle {
     font-size: 1.1rem;
     color: #ffffff;
@@ -50,6 +55,7 @@ body.page-contact-us .contact-us-hero-subtitle {
     font-style: italic;
     letter-spacing: 1px;
 }
+
 body.page-contact-us .contact-us-breadcrumbs ul {
     list-style: none;
     padding: 0;
@@ -58,21 +64,25 @@ body.page-contact-us .contact-us-breadcrumbs ul {
     justify-content: center;
     gap: 8px;
 }
+
 body.page-contact-us .contact-us-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.65);
+    color: rgba(255, 255, 255, 0.65);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-body.page-contact-us .contact-us-breadcrumbs li + li::before {
+
+body.page-contact-us .contact-us-breadcrumbs li+li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
 }
+
 body.page-contact-us .contact-us-breadcrumbs a {
-    color: rgba(255,255,255,0.85);
+    color: rgba(255, 255, 255, 0.85);
     transition: color 0.3s ease;
 }
+
 body.page-contact-us .contact-us-breadcrumbs a:hover {
     color: var(--page-accent);
 }
@@ -88,6 +98,7 @@ body.page-contact-us .contact-us-intro {
     max-width: 800px;
     margin: 0 auto 60px;
 }
+
 body.page-contact-us .contact-us-section-heading {
     font-family: 'Jost', sans-serif;
     font-size: 28px;
@@ -95,6 +106,7 @@ body.page-contact-us .contact-us-section-heading {
     color: #1a1a1a;
     margin-bottom: 15px;
 }
+
 body.page-contact-us .contact-us-section-lead {
     font-size: 15.5px;
     line-height: 1.8;
@@ -105,21 +117,23 @@ body.page-contact-us .contact-us-section-lead {
 /* Left: Contact Info Card */
 body.page-contact-us .contact-us-info-card {
     background-color: #ffffff;
-    border: 1px solid rgba(0,0,0,0.06);
-    border-top: 4px solid var(--page-accent);
-    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    /* /* border-top: 4px solid var(--page-accent); */
+    */ border-radius: 12px;
     padding: 40px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.02);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.02);
 }
+
 body.page-contact-us .contact-us-info-title {
     font-family: 'Jost', sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #1a1a1a;
     margin-bottom: 30px;
-    border-bottom: 2px solid rgba(0,0,0,0.06);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.06);
     padding-bottom: 12px;
 }
+
 body.page-contact-us .contact-us-info-title i {
     color: var(--page-accent);
 }
@@ -131,9 +145,11 @@ body.page-contact-us .contact-us-method {
     align-items: flex-start;
     margin-bottom: 25px;
 }
+
 body.page-contact-us .contact-us-method:last-of-type {
     margin-bottom: 0;
 }
+
 body.page-contact-us .contact-us-icon {
     width: 42px;
     height: 42px;
@@ -146,21 +162,34 @@ body.page-contact-us .contact-us-icon {
     flex-shrink: 0;
     transition: transform 0.3s ease;
 }
+
 body.page-contact-us .contact-us-method:hover .contact-us-icon {
     transform: scale(1.08) rotate(15deg);
 }
 
 /* Icon gradients */
-body.page-contact-us .bg-gradient-yellow { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
-body.page-contact-us .bg-gradient-teal { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
-body.page-contact-us .bg-gradient-blue { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
-body.page-contact-us .bg-gradient-purple { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
+body.page-contact-us .bg-gradient-yellow {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
+
+body.page-contact-us .bg-gradient-teal {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
+
+body.page-contact-us .bg-gradient-blue {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
+
+body.page-contact-us .bg-gradient-purple {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
 
 body.page-contact-us .contact-us-details {
     display: flex;
     flex-direction: column;
     gap: 3px;
 }
+
 body.page-contact-us .contact-us-label {
     font-size: 10px;
     font-weight: 700;
@@ -168,6 +197,7 @@ body.page-contact-us .contact-us-label {
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
+
 body.page-contact-us .contact-us-link {
     font-size: 14.5px;
     font-weight: 600;
@@ -175,9 +205,11 @@ body.page-contact-us .contact-us-link {
     text-decoration: none;
     transition: color 0.3s ease;
 }
+
 body.page-contact-us .contact-us-link:hover {
     color: var(--page-accent);
 }
+
 body.page-contact-us .contact-us-text {
     font-size: 14px;
     line-height: 1.5;
@@ -186,9 +218,10 @@ body.page-contact-us .contact-us-text {
 
 /* Social links */
 body.page-contact-us .contact-us-social-wrap {
-    border-top: 1px solid rgba(0,0,0,0.06);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
     padding-top: 25px;
 }
+
 body.page-contact-us .contact-us-social-title {
     font-family: 'Jost', sans-serif;
     font-size: 12px;
@@ -198,17 +231,19 @@ body.page-contact-us .contact-us-social-title {
     letter-spacing: 0.5px;
     margin-bottom: 15px;
 }
+
 body.page-contact-us .contact-us-social-links {
     display: flex;
     gap: 12px;
 }
+
 body.page-contact-us .contact-us-social-links a {
     width: 38px;
     height: 38px;
     border-radius: 50%;
     background-color: #FAF9F6;
     color: #555555;
-    border: 1px solid rgba(0,0,0,0.08);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -216,6 +251,7 @@ body.page-contact-us .contact-us-social-links a {
     text-decoration: none;
     transition: all 0.3s ease;
 }
+
 body.page-contact-us .contact-us-social-links a:hover {
     background-color: var(--page-accent);
     color: #ffffff;
@@ -226,20 +262,22 @@ body.page-contact-us .contact-us-social-links a:hover {
 /* Right: Form Wrap layout */
 body.page-contact-us .contact-us-form-wrap {
     background-color: #ffffff;
-    border: 1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 12px;
     padding: 40px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
 }
+
 body.page-contact-us .contact-us-form-title {
     font-family: 'Jost', sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #1a1a1a;
     margin-bottom: 30px;
-    border-bottom: 2px solid rgba(0,0,0,0.06);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.06);
     padding-bottom: 12px;
 }
+
 body.page-contact-us .contact-us-form-title i {
     color: var(--page-accent);
 }
@@ -248,6 +286,7 @@ body.page-contact-us .contact-us-form-title i {
 body.page-contact-us .form-group {
     margin-bottom: 5px;
 }
+
 body.page-contact-us .form-label {
     font-family: 'Jost', sans-serif;
     font-size: 12px;
@@ -258,39 +297,46 @@ body.page-contact-us .form-label {
     margin-bottom: 8px;
     display: block;
 }
+
 body.page-contact-us .input-icon-wrap {
     position: relative;
     width: 100%;
 }
+
 body.page-contact-us .input-icon {
     position: absolute;
-    left: 15px; top: 50%;
+    left: 15px;
+    top: 50%;
     transform: translateY(-50%);
     color: #999999;
     font-size: 14px;
     pointer-events: none;
     transition: color 0.3s ease;
 }
+
 body.page-contact-us .text-area-wrap .input-icon {
     top: 20px;
     transform: none;
 }
+
 body.page-contact-us .form-control {
     width: 100%;
     padding: 12px 15px 12px 42px;
     font-size: 14px;
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 6px;
     background-color: #FAF9F6;
     color: #2c3e50;
     transition: all 0.3s ease;
 }
+
 body.page-contact-us .form-control:focus {
     border-color: var(--page-accent);
     background-color: #ffffff;
     box-shadow: 0 4px 12px rgba(0, 136, 203, 0.08);
 }
-body.page-contact-us .form-control:focus + .input-icon {
+
+body.page-contact-us .form-control:focus+.input-icon {
     color: var(--page-accent);
 }
 
@@ -315,14 +361,17 @@ body.page-contact-us .contact-us-submit-btn {
     gap: 8px;
     transition: all 0.3s ease;
 }
+
 body.page-contact-us .contact-us-submit-btn:hover {
     background-color: var(--page-dark);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
+
 body.page-contact-us .contact-us-submit-btn i {
     transition: transform 0.3s ease;
 }
+
 body.page-contact-us .contact-us-submit-btn:hover i {
     transform: translateX(4px);
 }
@@ -331,9 +380,10 @@ body.page-contact-us .contact-us-submit-btn:hover i {
 body.page-contact-us .contact-us-map-wrap {
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
     border: 4px solid #ffffff;
 }
+
 body.page-contact-us .contact-us-map-wrap iframe {
     width: 100%;
     height: 400px;
@@ -343,15 +393,18 @@ body.page-contact-us .contact-us-map-wrap iframe {
 
 /* Responsive adjustments */
 @media (max-width: 991px) {
+
     body.page-contact-us .contact-us-info-card,
     body.page-contact-us .contact-us-form-wrap {
         padding: 30px;
     }
 }
+
 @media (max-width: 767px) {
     body.page-contact-us .contact-us-hero-banner {
         min-height: 260px;
     }
+
     body.page-contact-us .contact-us-map-wrap iframe {
         height: 300px;
     }

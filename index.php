@@ -241,7 +241,7 @@
                     <div class="col-lg-4 col-md-6 exhibition-card-wrap">
                         <div class="exhibition-card gtop">
                             <div class="exhibition-card-thumb">
-                                <img src="assets/img/biennale-images/Landing_Page_Catalogue.jpg" alt="Exhibition Catalogue">
+                                <img src="assets/img/KB22HighlightsandProjects/Discursive-Karokonnect-768x511.webp" alt="Exhibition Catalogue">
                                 <div class="shadow-text">Catalog</div>
                             </div>
                             <div class="exhibition-card-details">
@@ -285,24 +285,65 @@
                     <div class="row global-carousel testi-slider2" data-slide-show="1" data-arrows="false">
                         <div class="col-lg-12">
                             <div class="testi-box2">
+                                
+                                <div class="testi-box2_avatar" style="margin-bottom: 25px;">
+                                    <img src="assets/img/trustees/nilofer.jpg" alt="Niilofur Farrukh" style="width: 100px; height: 100px; border-radius: 50%; border: 3px solid var(--theme-color); object-fit: cover; box-shadow: 0 8px 20px rgba(0, 136, 203, 0.25);">
+                                </div>
+                                <p class="testi-box2_text" style="text-transform: none; font-size: 24px; line-height: 1.5; font-style: italic;">“Art holds tremendous power to stimulate reflection and critical thinking by appealing to human emotions and senses.”</p>
+                                <div class="testi-box2_profile">
+                                    <h4 class="testi-box2_name">Niilofur Farrukh</h4>
+                                    <span style="font-size: 13px; ; text-transform: uppercase; letter-spacing: 1px; display: block; margin-top: 5px;">Managing Trustee &amp; CEO, Karachi Biennale Trust</span>
+
+                                </div>
                                 <div class="testi-box2_icon">
                                     <img src="assets/img/testimonial/testi_2_quote.webp" alt="img">
-                                </div> 
-                                <p class="testi-box2_text">“Lorem ipsum dolor sit amet consectetur adipiscing elit, felis blandit vehicula fusce proin primis, malesuada ante tincidunt”</p>                        
-                                <div class="testi-box2_profile">
-                                    <h4 class="testi-box2_name">By David Smith</h4>                    
-                                </div>                       
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-12">
                             <div class="testi-box2">
+                                
+                                <div class="testi-box2_avatar" style="margin-bottom: 25px;">
+                                    <img src="assets/img/trustees/amin.jpg" alt="Amin Gulgee" style="width: 100px; height: 100px; border-radius: 50%; border: 3px solid var(--theme-color); object-fit: cover; box-shadow: 0 8px 20px rgba(0, 136, 203, 0.25);">
+                                </div>
+                                <p class="testi-box2_text" style="text-transform: none; font-size: 24px; line-height: 1.5; font-style: italic;">“We all bear witness to our times and ourselves, both in the present and the past.”</p>
+                                <div class="testi-box2_profile">
+                                    <h4 class="testi-box2_name">Amin Gulgee</h4>
+                                    <span style="font-size: 13px; ; text-transform: uppercase; letter-spacing: 1px; display: block; margin-top: 5px;">Trustee &amp; Chief Curator, KB17</span>
+                                </div>
                                 <div class="testi-box2_icon">
                                     <img src="assets/img/testimonial/testi_2_quote.webp" alt="img">
-                                </div> 
-                                <p class="testi-box2_text">“Lorem ipsum dolor sit amet consectetur adipiscing elit, felis blandit vehicula fusce proin primis, malesuada ante tincidunt”</p>                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="testi-box2">
+                                <div class="testi-box2_avatar" style="margin-bottom: 25px;">
+                                    <img src="assets/img/KB19App/zeeshan-1.png" alt="Muhammad Zeeshan" style="width: 100px; height: 100px; border-radius: 50%; border: 3px solid var(--theme-color); object-fit: cover; box-shadow: 0 8px 20px rgba(0, 136, 203, 0.25);">
+                                </div>
+                                <p class="testi-box2_text" style="text-transform: none; font-size: 24px; line-height: 1.5; font-style: italic;">“Using the nuance of her volatile and ephemeral ecology, her challenges are unpacked and used as impetus to imagine and to contextualise memory.”</p>
                                 <div class="testi-box2_profile">
-                                    <h4 class="testi-box2_name">By David Smith</h4>                    
-                                </div>                       
+                                    <h4 class="testi-box2_name">Muhammad Zeeshan</h4>
+                                    <span style="font-size: 13px; ; text-transform: uppercase; letter-spacing: 1px; display: block; margin-top: 5px;">Chief Curator, KB19</span>
+                                </div>
+                                <div class="testi-box2_icon">
+                                    <img src="assets/img/testimonial/testi_2_quote.webp" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="testi-box2">
+                                <div class="testi-box2_avatar" style="margin-bottom: 25px;">
+                                    <img src="assets/img/biennale-images/Faisal_Anwar_Team.jpg" alt="Faisal Anwar" style="width: 100px; height: 100px; border-radius: 50%; border: 3px solid var(--theme-color); object-fit: cover; box-shadow: 0 8px 20px rgba(0, 136, 203, 0.25);">
+                                </div>
+                                <p class="testi-box2_text" style="text-transform: none; font-size: 24px; line-height: 1.5; font-style: italic;">“Arts have the potential to bridge the physical and imaginative worlds, recognize innovation, and harness the power of technology.”</p>
+                                <div class="testi-box2_profile">
+                                    <h4 class="testi-box2_name">Faisal Anwar</h4>
+                                    <span style="font-size: 13px; text-transform: uppercase; letter-spacing: 1px; display: block; margin-top: 5px;">Chief Curator, KB22</span>
+                                </div>
+                                <div class="testi-box2_icon">
+                                    <img src="assets/img/testimonial/testi_2_quote.webp" alt="img">
+                                </div>
                             </div>
                         </div>
                     </div> 
@@ -343,7 +384,8 @@
                 <div class="row justify-content-between text-lg-start text-center">
                     <div class="col-lg-8">
                         <div class="title-area wow custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.1s">
-                            <h2 class="sec-title text-white">Our Lets Stories</h2>
+                            <h2 class="sec-title text-white">KBT TRUSTEES</h2>
+                            <p class="mt-3 text-white-50" style="font-size: 16px; margin-bottom: 0;">Art, the city and its people will always be at the core of our initiatives.</p>
                         </div>
                     </div>
                     <div class="col-lg-auto">
@@ -357,89 +399,148 @@
             <div class="container-fluid wow custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.1s">
                 <div class="row global-carousel portfolio-slider1 gx-20" data-slide-show="3" >
                     <div class="col-lg-4">
-                        <div class="portfolio-card ">
+                        <div class="portfolio-card">
                             <div class="portfolio-thumb">
-                                <a class="popup-image icon-btn" href="assets/img/portfolio/portfolio1_1.png"><i class="far fa-eye"></i></a>
-                                <img src="assets/img/portfolio/portfolio1_1.png" alt="portfolio">
+                                <a class="popup-image icon-btn" href="assets/img/trustees/Shahnaz-Rizvi.png"><i class="far fa-eye"></i></a>
+                                <img src="assets/img/trustees/Shahnaz-Rizvi.png" alt="Shanaz Ramzi">
                             </div>
                             <div class="portfolio-details">
-                                <h3 class="portfilio-card-title"><a href="project-details.html">Sculpting Dreams into Reality</a></h3>
-                                <a href="project-details.html" class="btn btn-border btn-radius">
-                                    CARVER IN STONE
-                                </a>
+                                <h3 class="portfilio-card-title"><a href="kbt-trustees.php">Shanaz Ramzi</a></h3>
+                                <p style="color: var(--light-color); font-size: 14px; margin-top: 15px; margin-bottom: 20px; line-height: 1.6; min-height: 90px;">Freelance journalist since 1994, author of "Food Prints" and "Food Tales", editor of publications, runs StarLinks PR and Events.</p>
+                                <a href="kbt-trustees.php" class="btn btn-border btn-radius">MANAGING TRUSTEE</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="portfolio-card ">
+                        <div class="portfolio-card">
                             <div class="portfolio-thumb">
-                                <a class="popup-image icon-btn" href="assets/img/portfolio/portfolio1_2.png"><i class="far fa-eye"></i></a>
-                                <img src="assets/img/portfolio/portfolio1_2.png" alt="portfolio">
+                                <a class="popup-image icon-btn" href="assets/img/trustees/atteqa.jpg"><i class="far fa-eye"></i></a>
+                                <img src="assets/img/trustees/atteqa.jpg" alt="Atteqa Malik">
                             </div>
                             <div class="portfolio-details">
-                                <h3 class="portfilio-card-title"><a href="project-details.html">Echoes of Genius Hues of Heritage</a></h3>
-                                <a href="project-details.html" class="btn btn-border btn-radius">
-                                    CARVER IN STONE
-                                </a>
-                            </div>
-                        </div>
-                    </div>    
-                    <div class="col-lg-4">
-                        <div class="portfolio-card ">
-                            <div class="portfolio-thumb">
-                                <a class="popup-image icon-btn" href="assets/img/portfolio/portfolio1_3.png"><i class="far fa-eye"></i></a>
-                                <img src="assets/img/portfolio/portfolio1_3.png" alt="portfolio">
-                            </div>
-                            <div class="portfolio-details">
-                                <h3 class="portfilio-card-title"><a href="project-details.html">Carving Moments, Capturing Emotic</a></h3>
-                                <a href="project-details.html" class="btn btn-border btn-radius">
-                                    CARVER IN STONE
-                                </a>
-                            </div>
-                        </div>                        
-                    </div> 
-                    <div class="col-lg-4">
-                        <div class="portfolio-card ">
-                            <div class="portfolio-thumb">
-                                <a class="popup-image icon-btn" href="assets/img/portfolio/portfolio1_1.png"><i class="far fa-eye"></i></a>
-                                <img src="assets/img/portfolio/portfolio1_1.png" alt="portfolio">
-                            </div>
-                            <div class="portfolio-details">
-                                <h3 class="portfilio-card-title"><a href="project-details.html">Sculpting Dreams into Reality</a></h3>
-                                <a href="project-details.html" class="btn btn-border btn-radius">
-                                    CARVER IN STONE
-                                </a>
+                                <h3 class="portfilio-card-title"><a href="kbt-trustees.php">Atteqa Malik</a></h3>
+                                <p style="color: var(--light-color); font-size: 14px; margin-top: 15px; margin-bottom: 20px; line-height: 1.6; min-height: 90px;">Digital artist, scholar, MA from New School University, founding member of Mauj media art collective.</p>
+                                <a href="kbt-trustees.php" class="btn btn-border btn-radius">CHAIRPERSON, TRUSTEE</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="portfolio-card ">
+                        <div class="portfolio-card">
                             <div class="portfolio-thumb">
-                                <a class="popup-image icon-btn" href="assets/img/portfolio/portfolio1_2.png"><i class="far fa-eye"></i></a>
-                                <img src="assets/img/portfolio/portfolio1_2.png" alt="portfolio">
+                                <a class="popup-image icon-btn" href="assets/img/trustees/ainee.jpg"><i class="far fa-eye"></i></a>
+                                <img src="assets/img/trustees/ainee.jpg" alt="Ainee Shehzad Salim">
                             </div>
                             <div class="portfolio-details">
-                                <h3 class="portfilio-card-title"><a href="project-details.html">Echoes of Genius Hues of Heritage</a></h3>
-                                <a href="project-details.html" class="btn btn-border btn-radius">
-                                    CARVER IN STONE
-                                </a>
+                                <h3 class="portfilio-card-title"><a href="kbt-trustees.php">Ainee Shehzad Salim</a></h3>
+                                <p style="color: var(--light-color); font-size: 14px; margin-top: 15px; margin-bottom: 20px; line-height: 1.6; min-height: 90px;">Commonwealth scholar, Head of Department at Karachi Grammar School, author, interior designer.</p>
+                                <a href="kbt-trustees.php" class="btn btn-border btn-radius">VICE CHAIRPERSON, TRUSTEE</a>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                     <div class="col-lg-4">
-                        <div class="portfolio-card ">
+                        <div class="portfolio-card">
                             <div class="portfolio-thumb">
-                                <a class="popup-image icon-btn" href="assets/img/portfolio/portfolio1_3.png"><i class="far fa-eye"></i></a>
-                                <img src="assets/img/portfolio/portfolio1_3.png" alt="portfolio">
+                                <a class="popup-image icon-btn" href="assets/img/trustees/AsadHasan79A-e1686650424659.jpg"><i class="far fa-eye"></i></a>
+                                <img src="assets/img/trustees/AsadHasan79A-e1686650424659.jpg" alt="Asad Hasan">
                             </div>
                             <div class="portfolio-details">
-                                <h3 class="portfilio-card-title"><a href="project-details.html">Carving Moments, Capturing Emotic</a></h3>
-                                <a href="project-details.html" class="btn btn-border btn-radius">
-                                    CARVER IN STONE
-                                </a>
+                                <h3 class="portfilio-card-title"><a href="kbt-trustees.php">Asad Hasan</a></h3>
+                                <p style="color: var(--light-color); font-size: 14px; margin-top: 15px; margin-bottom: 20px; line-height: 1.6; min-height: 90px;">Professional consultant in capacity building and financial modeling.</p>
+                                <a href="kbt-trustees.php" class="btn btn-border btn-radius">TREASURER, TRUSTEE</a>
                             </div>
-                        </div>                        
-                    </div>                 
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="portfolio-card">
+                            <div class="portfolio-thumb">
+                                <a class="popup-image icon-btn" href="assets/img/trustees/farzana.jpg"><i class="far fa-eye"></i></a>
+                                <img src="assets/img/trustees/farzana.jpg" alt="Farzana Tunio">
+                            </div>
+                            <div class="portfolio-details">
+                                <h3 class="portfilio-card-title"><a href="kbt-trustees.php">Farzana Tunio</a></h3>
+                                <p style="color: var(--light-color); font-size: 14px; margin-top: 15px; margin-bottom: 20px; line-height: 1.6; min-height: 90px;">Designer, visiting faculty at Indus Valley School, Co-Chairperson of Akhuwat Core Committee in Sindh.</p>
+                                <a href="kbt-trustees.php" class="btn btn-border btn-radius">GENERAL SECRETARY, TRUSTEE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="portfolio-card">
+                            <div class="portfolio-thumb">
+                                <a class="popup-image icon-btn" href="assets/img/trustees/nilofer.jpg"><i class="far fa-eye"></i></a>
+                                <img src="assets/img/trustees/nilofer.jpg" alt="Niilofur Farrukh">
+                            </div>
+                            <div class="portfolio-details">
+                                <h3 class="portfilio-card-title"><a href="kbt-trustees.php">Niilofur Farrukh</a></h3>
+                                <p style="color: var(--light-color); font-size: 14px; margin-top: 15px; margin-bottom: 20px; line-height: 1.6; min-height: 90px;">Art interventionist, co-founder of ASNA and Karachi Biennale, co-founder of NuktaArt.</p>
+                                <a href="kbt-trustees.php" class="btn btn-border btn-radius">TRUSTEE, CEO</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="portfolio-card">
+                            <div class="portfolio-thumb">
+                                <a class="popup-image icon-btn" href="assets/img/trustees/amin.jpg"><i class="far fa-eye"></i></a>
+                                <img src="assets/img/trustees/amin.jpg" alt="Amin Gulgee">
+                            </div>
+                            <div class="portfolio-details">
+                                <h3 class="portfilio-card-title"><a href="kbt-trustees.php">Amin Gulgee</a></h3>
+                                <p style="color: var(--light-color); font-size: 14px; margin-top: 15px; margin-bottom: 20px; line-height: 1.6; min-height: 90px;">Sculptor, Yale graduate, President's Pride of Performance award.</p>
+                                <a href="kbt-trustees.php" class="btn btn-border btn-radius">CURATOR KB17, TRUSTEE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="portfolio-card">
+                            <div class="portfolio-thumb">
+                                <a class="popup-image icon-btn" href="assets/img/trustees/seema-e1597132043809.jpg"><i class="far fa-eye"></i></a>
+                                <img src="assets/img/trustees/seema-e1597132043809.jpg" alt="Seema Jaffer">
+                            </div>
+                            <div class="portfolio-details">
+                                <h3 class="portfilio-card-title"><a href="kbt-trustees.php">Seema Jaffer</a></h3>
+                                <p style="color: var(--light-color); font-size: 14px; margin-top: 15px; margin-bottom: 20px; line-height: 1.6; min-height: 90px;">Socio-economic development expert, Pakistan Advertising Association Vice Chairperson.</p>
+                                <a href="kbt-trustees.php" class="btn btn-border btn-radius">TRUSTEE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="portfolio-card">
+                            <div class="portfolio-thumb">
+                                <a class="popup-image icon-btn" href="assets/img/trustees/almas.jpg"><i class="far fa-eye"></i></a>
+                                <img src="assets/img/trustees/almas.jpg" alt="Almas Bana">
+                            </div>
+                            <div class="portfolio-details">
+                                <h3 class="portfilio-card-title"><a href="kbt-trustees.php">Almas Bana</a></h3>
+                                <p style="color: var(--light-color); font-size: 14px; margin-top: 15px; margin-bottom: 20px; line-height: 1.6; min-height: 90px;">Not-for-profit experience with Aga Khan University, strategic program development.</p>
+                                <a href="kbt-trustees.php" class="btn btn-border btn-radius">TRUSTEE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="portfolio-card">
+                            <div class="portfolio-thumb">
+                                <a class="popup-image icon-btn" href="assets/img/trustees/Nadeem-Ahmad.png"><i class="far fa-eye"></i></a>
+                                <img src="assets/img/trustees/Nadeem-Ahmad.png" alt="Nadeem Ahmad">
+                            </div>
+                            <div class="portfolio-details">
+                                <h3 class="portfilio-card-title"><a href="kbt-trustees.php">Nadeem Ahmad</a></h3>
+                                <p style="color: var(--light-color); font-size: 14px; margin-top: 15px; margin-bottom: 20px; line-height: 1.6; min-height: 90px;">Senior Corporate Counsel at Orr, Dignam & Co., experts in corporate law.</p>
+                                <a href="kbt-trustees.php" class="btn btn-border btn-radius">TRUSTEE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="portfolio-card">
+                            <div class="portfolio-thumb">
+                                <a class="popup-image icon-btn" href="assets/img/trustees/jehan-500x500.jpg"><i class="far fa-eye"></i></a>
+                                <img src="assets/img/trustees/jehan-500x500.jpg" alt="Jehan Ara">
+                            </div>
+                            <div class="portfolio-details">
+                                <h3 class="portfilio-card-title"><a href="kbt-trustees.php">Jehan Ara</a></h3>
+                                <p style="color: var(--light-color); font-size: 14px; margin-top: 15px; margin-bottom: 20px; line-height: 1.6; min-height: 90px;">President of P@SHA, Founder of The Nest I/O tech incubator.</p>
+                                <a href="kbt-trustees.php" class="btn btn-border btn-radius">PREVIOUS TRUSTEE</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

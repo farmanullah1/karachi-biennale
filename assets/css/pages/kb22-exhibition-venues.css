@@ -5,7 +5,8 @@
    ========================================================================== */
 
 body.page-kb22-exhibition-venues {
-    --page-accent: #0088cb; /* KBT Blue */
+    --page-accent: #0088cb;
+    /* KBT Blue */
     --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
     --page-border: rgba(0, 136, 203, 0.15);
@@ -17,6 +18,7 @@ body.page-kb22-exhibition-venues .kb22v-hero-section {
     padding: 90px 0;
     border-bottom: 2px solid var(--page-accent);
 }
+
 body.page-kb22-exhibition-venues .kb22v-hero-title {
     font-family: 'Jost', sans-serif;
     font-size: clamp(2.5rem, 6vw, 4rem);
@@ -26,6 +28,7 @@ body.page-kb22-exhibition-venues .kb22v-hero-title {
     letter-spacing: 2px;
     margin-bottom: 10px;
 }
+
 body.page-kb22-exhibition-venues .kb22v-hero-subtitle {
     font-size: 1.1rem;
     color: var(--page-accent);
@@ -34,6 +37,7 @@ body.page-kb22-exhibition-venues .kb22v-hero-subtitle {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
+
 body.page-kb22-exhibition-venues .kb22v-hero-intro {
     font-size: 15.5px;
     line-height: 1.7;
@@ -41,6 +45,7 @@ body.page-kb22-exhibition-venues .kb22v-hero-intro {
     max-width: 800px;
     margin: 0 auto 25px;
 }
+
 body.page-kb22-exhibition-venues .kb22v-breadcrumbs ul {
     list-style: none;
     padding: 0;
@@ -49,21 +54,25 @@ body.page-kb22-exhibition-venues .kb22v-breadcrumbs ul {
     justify-content: center;
     gap: 8px;
 }
+
 body.page-kb22-exhibition-venues .kb22v-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-body.page-kb22-exhibition-venues .kb22v-breadcrumbs li + li::before {
+
+body.page-kb22-exhibition-venues .kb22v-breadcrumbs li+li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
 }
+
 body.page-kb22-exhibition-venues .kb22v-breadcrumbs a {
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     transition: color 0.3s ease;
 }
+
 body.page-kb22-exhibition-venues .kb22v-breadcrumbs a:hover {
     color: var(--page-accent);
 }
@@ -71,24 +80,26 @@ body.page-kb22-exhibition-venues .kb22v-breadcrumbs a:hover {
 /* 2. Jump Bar */
 body.page-kb22-exhibition-venues .kb22v-jump-bar-wrap {
     background-color: #180907;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 99;
 }
+
 body.page-kb22-exhibition-venues .kb22v-jump-title {
     font-size: 11px;
     font-weight: 700;
-    color: rgba(255,255,255,0.4);
+    color: rgba(255, 255, 255, 0.4);
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-right: 15px;
 }
+
 body.page-kb22-exhibition-venues .kb22v-jump-link {
     font-size: 12px;
     font-weight: 700;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     text-decoration: none;
@@ -96,6 +107,7 @@ body.page-kb22-exhibition-venues .kb22v-jump-link {
     transition: color 0.3s ease;
     display: inline-block;
 }
+
 body.page-kb22-exhibition-venues .kb22v-jump-link:hover {
     color: var(--page-accent);
 }
@@ -105,21 +117,26 @@ body.page-kb22-exhibition-venues .kb22v-sections-wrap {
     background-color: #FAF9F6;
     padding: 100px 0;
 }
+
 body.page-kb22-exhibition-venues .kb22v-section {
-    scroll-margin-top: 60px; /* Offset for jumpbar */
+    scroll-margin-top: 60px;
+    /* Offset for jumpbar */
     margin-bottom: 80px;
 }
+
 body.page-kb22-exhibition-venues .kb22v-section:last-child {
     margin-bottom: 0;
 }
+
 body.page-kb22-exhibition-venues .kb22v-section-header {
-    border-bottom: 2px solid rgba(0,0,0,0.06);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.06);
     padding-bottom: 15px;
     margin-bottom: 40px;
     display: flex;
     align-items: center;
     gap: 15px;
 }
+
 body.page-kb22-exhibition-venues .kb22v-section-title {
     font-family: 'Jost', sans-serif;
     font-size: 24px;
@@ -129,6 +146,7 @@ body.page-kb22-exhibition-venues .kb22v-section-title {
     display: flex;
     align-items: center;
 }
+
 body.page-kb22-exhibition-venues .kb22v-section-title i {
     color: var(--page-accent);
 }
@@ -143,25 +161,35 @@ body.page-kb22-exhibition-venues .kb22v-cluster-badge {
     border-radius: 4px;
     color: #ffffff;
 }
-body.page-kb22-exhibition-venues #cluster-a .kb22v-cluster-badge { background-color: #0088cb; }
-body.page-kb22-exhibition-venues #cluster-b .kb22v-cluster-badge { background-color: #0088cb; }
-body.page-kb22-exhibition-venues #cluster-c .kb22v-cluster-badge { background-color: #8e44ad; }
+
+body.page-kb22-exhibition-venues #cluster-a .kb22v-cluster-badge {
+    background-color: #0088cb;
+}
+
+body.page-kb22-exhibition-venues #cluster-b .kb22v-cluster-badge {
+    background-color: #0088cb;
+}
+
+body.page-kb22-exhibition-venues #cluster-c .kb22v-cluster-badge {
+    background-color: #8e44ad;
+}
 
 /* Venue Cards Layout */
 body.page-kb22-exhibition-venues .kb22v-card {
     background-color: var(--page-bg-card);
-    border: 1px solid rgba(0,0,0,0.06);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 12px;
     overflow: hidden;
     height: 100%;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
     display: flex;
     flex-direction: column;
     /* 3D lift card transition */
     transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease, border-color 0.4s ease;
 }
+
 body.page-kb22-exhibition-venues .kb22v-card:hover {
-    transform: translateY(-8px);
+    transform: scale(1.02);
     box-shadow: 0 20px 45px rgba(0, 136, 203, 0.12);
     border-color: rgba(0, 136, 203, 0.25);
 }
@@ -173,27 +201,31 @@ body.page-kb22-exhibition-venues .kb22v-img-wrap {
     height: 250px;
     overflow: hidden;
 }
+
 body.page-kb22-exhibition-venues .kb22v-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
 }
+
 body.page-kb22-exhibition-venues .kb22v-card:hover .kb22v-img {
     transform: scale(1.05);
 }
+
 body.page-kb22-exhibition-venues .kb22v-card-tag {
     position: absolute;
-    top: 15px; left: 15px;
+    top: 15px;
+    left: 15px;
     font-size: 10px;
     font-weight: 700;
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(0, 0, 0, 0.75);
     color: #ffffff;
     padding: 4px 10px;
     border-radius: 4px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    border: 1px solid rgba(255,255,255,0.12);
+    border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 /* Card details */
@@ -203,6 +235,7 @@ body.page-kb22-exhibition-venues .kb22v-card-content {
     flex-direction: column;
     flex-grow: 1;
 }
+
 body.page-kb22-exhibition-venues .kb22v-venue-name {
     font-family: 'Jost', sans-serif;
     font-size: 20px;
@@ -210,6 +243,7 @@ body.page-kb22-exhibition-venues .kb22v-venue-name {
     color: #1a1a1a;
     margin-bottom: 12px;
 }
+
 body.page-kb22-exhibition-venues .kb22v-venue-desc {
     font-size: 14.5px;
     line-height: 1.7;
@@ -220,12 +254,13 @@ body.page-kb22-exhibition-venues .kb22v-venue-desc {
 /* Card metadata footer */
 body.page-kb22-exhibition-venues .kb22v-venue-meta {
     margin-top: auto;
-    border-top: 1px solid rgba(0,0,0,0.06);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
     padding-top: 18px;
     display: flex;
     justify-content: space-between;
     gap: 15px;
 }
+
 body.page-kb22-exhibition-venues .kb22v-meta-item {
     font-size: 12px;
     font-weight: 600;
@@ -234,6 +269,7 @@ body.page-kb22-exhibition-venues .kb22v-meta-item {
     align-items: center;
     gap: 6px;
 }
+
 body.page-kb22-exhibition-venues .kb22v-meta-item i {
     color: var(--page-accent);
 }
@@ -244,13 +280,14 @@ body.page-kb22-exhibition-venues .kb22v-meta-item i {
         display: none;
     }
 }
+
 @media (max-width: 575px) {
     body.page-kb22-exhibition-venues .kb22v-card-content {
         padding: 20px;
     }
+
     body.page-kb22-exhibition-venues .kb22v-venue-meta {
         flex-direction: column;
         gap: 8px;
     }
 }
- 

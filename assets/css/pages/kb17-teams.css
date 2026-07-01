@@ -5,7 +5,8 @@
    ========================================================================== */
 
 body.page-kb17-teams {
-    --page-accent: #0088cb; /* KBT Blue */
+    --page-accent: #0088cb;
+    /* KBT Blue */
     --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
     --page-border: rgba(0, 136, 203, 0.15);
@@ -16,6 +17,7 @@ body.page-kb17-teams .kb17t-hero-section {
     position: relative;
     overflow: hidden;
 }
+
 body.page-kb17-teams .kb17t-hero-banner {
     background-image: url('../../img/bg/kb19-page-banner-2.jpg');
     background-size: cover;
@@ -26,12 +28,14 @@ body.page-kb17-teams .kb17t-hero-banner {
     justify-content: center;
     position: relative;
 }
+
 body.page-kb17-teams .kb17t-hero-overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(135deg, rgba(30, 4, 14, 0.85) 0%, rgba(0, 136, 203, 0.6) 100%);
     z-index: 1;
 }
+
 body.page-kb17-teams .kb17t-hero-title {
     font-family: 'Jost', sans-serif;
     font-size: clamp(2.5rem, 6vw, 4rem);
@@ -40,15 +44,18 @@ body.page-kb17-teams .kb17t-hero-title {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 10px;
-    text-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
+
 body.page-kb17-teams .kb17t-hero-subtitle {
     font-size: 1.1rem;
-    color: #0088cb; /* Gold accent */
+    color: #0088cb;
+    /* Gold accent */
     font-family: 'Georgia', serif;
     font-style: italic;
     letter-spacing: 1px;
 }
+
 body.page-kb17-teams .kb17t-breadcrumbs ul {
     list-style: none;
     padding: 0;
@@ -57,21 +64,25 @@ body.page-kb17-teams .kb17t-breadcrumbs ul {
     justify-content: center;
     gap: 8px;
 }
+
 body.page-kb17-teams .kb17t-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.65);
+    color: rgba(255, 255, 255, 0.65);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-body.page-kb17-teams .kb17t-breadcrumbs li + li::before {
+
+body.page-kb17-teams .kb17t-breadcrumbs li+li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
 }
+
 body.page-kb17-teams .kb17t-breadcrumbs a {
-    color: rgba(255,255,255,0.85);
+    color: rgba(255, 255, 255, 0.85);
     transition: color 0.3s ease;
 }
+
 body.page-kb17-teams .kb17t-breadcrumbs a:hover {
     color: #0088cb;
 }
@@ -87,6 +98,7 @@ body.page-kb17-teams .kb17t-intro {
     max-width: 800px;
     margin: 0 auto 50px;
 }
+
 body.page-kb17-teams .kb17t-section-heading {
     font-family: 'Jost', sans-serif;
     font-size: 28px;
@@ -94,6 +106,7 @@ body.page-kb17-teams .kb17t-section-heading {
     color: #1a1a1a;
     margin-bottom: 15px;
 }
+
 body.page-kb17-teams .kb17t-section-lead {
     font-size: 15.5px;
     line-height: 1.8;
@@ -105,19 +118,22 @@ body.page-kb17-teams .kb17t-section-lead {
 body.page-kb17-teams .kb17t-trustees-section {
     margin-bottom: 70px;
 }
+
 body.page-kb17-teams .kb17t-trustee-card {
     background-color: var(--page-bg-card);
-    border: 1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 12px;
     padding: 25px 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.01);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
+
 body.page-kb17-teams .kb17t-trustee-card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.02);
     border-color: rgba(0, 136, 203, 0.25);
     box-shadow: 0 12px 25px rgba(0, 136, 203, 0.08);
 }
+
 body.page-kb17-teams .kb17t-avatar-wrap {
     width: 130px;
     height: 130px;
@@ -125,13 +141,15 @@ body.page-kb17-teams .kb17t-avatar-wrap {
     overflow: hidden;
     margin: 0 auto 15px;
     border: 3px solid var(--page-accent);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
+
 body.page-kb17-teams .kb17t-avatar {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 body.page-kb17-teams .kb17t-trustee-name {
     font-family: 'Jost', sans-serif;
     font-size: 16px;
@@ -139,6 +157,7 @@ body.page-kb17-teams .kb17t-trustee-name {
     color: #1a1a1a;
     margin-bottom: 4px;
 }
+
 body.page-kb17-teams .kb17t-trustee-role {
     font-size: 11px;
     font-weight: 700;
@@ -157,16 +176,17 @@ body.page-kb17-teams .kb17t-grid {
 /* Team Card structure */
 body.page-kb17-teams .kb17t-team-card {
     background-color: var(--page-bg-card);
-    border: 1px solid rgba(0,0,0,0.06);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 12px;
     overflow: hidden;
     height: 100%;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.02);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.02);
     /* Card rise transforms */
     transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease, border-color 0.4s ease;
 }
+
 body.page-kb17-teams .kb17t-team-card:hover {
-    transform: translateY(-8px);
+    transform: scale(1.02);
     box-shadow: 0 15px 35px rgba(0, 136, 203, 0.12);
     border-color: rgba(0, 136, 203, 0.25);
 }
@@ -182,16 +202,31 @@ body.page-kb17-teams .kb17t-card-header {
     display: flex;
     align-items: center;
 }
+
 body.page-kb17-teams .kb17t-card-header i {
     font-size: 18px;
 }
 
 /* Gradients for card headers */
-body.page-kb17-teams .bg-gradient-yellow { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
-body.page-kb17-teams .bg-gradient-teal { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
-body.page-kb17-teams .bg-gradient-blue { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
-body.page-kb17-teams .bg-gradient-purple { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
-body.page-kb17-teams .bg-gradient-orange { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
+body.page-kb17-teams .bg-gradient-yellow {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
+
+body.page-kb17-teams .bg-gradient-teal {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
+
+body.page-kb17-teams .bg-gradient-blue {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
+
+body.page-kb17-teams .bg-gradient-purple {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
+
+body.page-kb17-teams .bg-gradient-orange {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
 
 body.page-kb17-teams .kb17t-card-body {
     padding: 30px 25px;
@@ -206,25 +241,30 @@ body.page-kb17-teams .kb17t-member-list {
     flex-direction: column;
     gap: 15px;
 }
+
 body.page-kb17-teams .kb17t-member-list li {
     display: flex;
     flex-direction: column;
     gap: 2px;
     padding-bottom: 12px;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     transition: padding-left 0.3s ease;
 }
+
 body.page-kb17-teams .kb17t-member-list li:last-child {
     border-bottom: 0;
     padding-bottom: 0;
 }
+
 body.page-kb17-teams .kb17t-member-list li:hover {
     padding-left: 6px;
 }
+
 body.page-kb17-teams .kb17t-member-list strong {
     font-size: 14.5px;
     color: #1a1a1a;
 }
+
 body.page-kb17-teams .kb17t-member-role {
     font-size: 11px;
     color: #888888;

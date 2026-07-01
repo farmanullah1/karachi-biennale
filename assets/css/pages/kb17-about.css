@@ -29,17 +29,20 @@ body.page-kb17-about {
     border-bottom: 3px solid var(--theme-color);
     background-color: #474747;
 }
+
 .kb17-about-hero-overlay {
     position: absolute;
     inset: 0;
     background: radial-gradient(circle at center, rgba(0, 136, 203, 0.15) 0%, transparent 85%);
     z-index: 1;
 }
+
 .kb17-about-logo {
     max-width: 180px;
     margin-bottom: 20px;
-    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3));
 }
+
 .kb17-about-hero-title {
     font-family: 'Jost', sans-serif;
     font-size: clamp(2.2rem, 5vw, 3.8rem);
@@ -48,8 +51,9 @@ body.page-kb17-about {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 8px;
-    text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
+
 .kb17-about-hero-subtitle {
     font-size: 1.3rem;
     color: var(--theme-color);
@@ -58,8 +62,9 @@ body.page-kb17-about {
     font-weight: 600;
     letter-spacing: 3px;
     margin-bottom: 0;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
+
 .kb17-about-breadcrumbs ul {
     list-style: none;
     padding: 0;
@@ -68,21 +73,25 @@ body.page-kb17-about {
     justify-content: center;
     gap: 8px;
 }
+
 .kb17-about-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-.kb17-about-breadcrumbs li + li::before {
+
+.kb17-about-breadcrumbs li+li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.4);
+    color: rgba(255, 255, 255, 0.4);
 }
+
 .kb17-about-breadcrumbs a {
-    color: rgba(255,255,255,0.9);
+    color: rgba(255, 255, 255, 0.9);
     transition: color 0.3s ease;
 }
+
 .kb17-about-breadcrumbs a:hover {
     color: var(--theme-color);
 }
@@ -100,8 +109,9 @@ body.page-kb17-about {
     border-radius: 16px;
     padding: 45px;
     height: 100%;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.02);
 }
+
 .kb17-about-section-title {
     font-family: 'Jost', sans-serif;
     font-size: 24px;
@@ -111,6 +121,7 @@ body.page-kb17-about {
     letter-spacing: 0.5px;
     margin-bottom: 10px;
 }
+
 .kb17-about-dates-badge {
     display: inline-block;
     background-color: var(--theme-color);
@@ -123,6 +134,7 @@ body.page-kb17-about {
     border-radius: 4px;
     margin-bottom: 25px;
 }
+
 .kb17-about-lead-text {
     font-size: 16px;
     line-height: 1.8;
@@ -130,6 +142,7 @@ body.page-kb17-about {
     font-weight: 600;
     margin-bottom: 20px;
 }
+
 .kb17-about-body-text {
     font-size: 15px;
     line-height: 1.8;
@@ -147,6 +160,7 @@ body.page-kb17-about {
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
+
 .kb17-about-quote {
     font-size: 1.15rem;
     font-style: italic;
@@ -158,6 +172,7 @@ body.page-kb17-about {
     line-height: 1.7;
     margin: 25px 0;
 }
+
 .quote-author {
     display: block;
     font-size: 13px;
@@ -175,9 +190,10 @@ body.page-kb17-about {
     padding: 40px;
     border-radius: 16px;
     border: 1px solid var(--light-color);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.02);
     height: 100%;
 }
+
 .kb17-about-sidebar-heading {
     font-family: 'Jost', sans-serif;
     font-size: 20px;
@@ -195,13 +211,16 @@ body.page-kb17-about {
     overflow: hidden;
     border-radius: 8px;
 }
+
 .kb17-about-map-wrap img {
     width: 100%;
     transition: transform 0.5s ease;
 }
+
 .kb17-about-map-wrap:hover img {
     transform: scale(1.03);
 }
+
 .map-zoom-overlay {
     position: absolute;
     bottom: 12px;
@@ -216,6 +235,7 @@ body.page-kb17-about {
     border-radius: 4px;
     transition: background 0.3s ease;
 }
+
 .kb17-about-map-wrap:hover .map-zoom-overlay {
     background-color: var(--theme-color);
 }
@@ -225,9 +245,11 @@ body.page-kb17-about {
     border: 1px solid var(--light-color);
     margin-top: 15px;
 }
+
 .kb17-about-table thead {
     background-color: var(--smoke-color5);
 }
+
 .kb17-about-table th {
     font-family: 'Jost', sans-serif;
     font-weight: 700;
@@ -238,6 +260,7 @@ body.page-kb17-about {
     padding: 12px 15px;
     letter-spacing: 0.5px;
 }
+
 .kb17-about-table td {
     font-size: 13.5px;
     line-height: 1.6;
@@ -245,6 +268,7 @@ body.page-kb17-about {
     padding: 12px 15px;
     vertical-align: middle;
 }
+
 .kb17-about-table td strong {
     color: var(--black-color);
 }
@@ -256,20 +280,23 @@ body.page-kb17-about {
     gap: 25px;
     margin-top: 20px;
 }
+
 .kb17-about-cluster-item {
     background: var(--white-color);
     border: 1px solid var(--light-color);
     border-radius: 12px;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
 .kb17-about-cluster-item:hover {
-    transform: translateY(-5px);
+    transform: scale(1.02);
     border-color: var(--theme-color);
-    box-shadow: 0 12px 25px rgba(0,136,203,0.1);
+    box-shadow: 0 12px 25px rgba(0, 136, 203, 0.1);
 }
+
 .cluster-img-wrap {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -278,21 +305,25 @@ body.page-kb17-about {
     margin-bottom: 15px;
     background-color: var(--smoke-color5);
 }
+
 .cluster-img-wrap a {
     display: block;
     position: relative;
     width: 100%;
     height: 100%;
 }
+
 .cluster-img-wrap img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
 }
+
 .kb17-about-cluster-item:hover img {
     transform: scale(1.05);
 }
+
 .hotspot-overlay {
     position: absolute;
     inset: 0;
@@ -305,9 +336,11 @@ body.page-kb17-about {
     color: var(--white-color);
     font-size: 20px;
 }
+
 .cluster-img-wrap a:hover .hotspot-overlay {
     opacity: 1;
 }
+
 .kb17-about-cluster-item h4 {
     font-family: 'Jost', sans-serif;
     font-weight: 750;
@@ -322,11 +355,13 @@ body.page-kb17-about {
     .kb17-about-cluster-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .kb17-about-copy-card,
     .kb17-about-sidebar {
         padding: 30px 20px;
     }
 }
+
 @media (max-width: 576px) {
     .kb17-about-cluster-grid {
         grid-template-columns: 1fr;

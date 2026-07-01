@@ -8,9 +8,11 @@ body.page-home .kbi-vision-section {
     background-color: #FAF9F6;
     padding: 100px 0;
 }
+
 body.page-home .kbi-vision-content {
     padding-right: 30px;
 }
+
 body.page-home .kbi-vision-title {
     font-size: 42px;
     font-weight: 700;
@@ -18,12 +20,14 @@ body.page-home .kbi-vision-title {
     color: var(--title-color, #1a1a1a);
     margin-bottom: 24px;
 }
+
 body.page-home .kbi-vision-text {
     font-size: 16px;
     line-height: 1.8;
     color: var(--body-color, #4A4A4A);
     margin-bottom: 30px;
 }
+
 body.page-home .kbi-vision-cta {
     display: inline-flex;
     align-items: center;
@@ -35,6 +39,7 @@ body.page-home .kbi-vision-cta {
     transition: all 0.3s ease;
     text-transform: uppercase;
 }
+
 body.page-home .kbi-cta-line {
     display: inline-block;
     width: 20px;
@@ -42,13 +47,16 @@ body.page-home .kbi-cta-line {
     background-color: var(--theme-color, #FBD451);
     transition: width 0.3s ease;
 }
+
 body.page-home .kbi-vision-cta:hover {
     color: var(--title-color, #1a1a1a);
 }
+
 body.page-home .kbi-vision-cta:hover .kbi-cta-line {
     width: 35px;
     background-color: var(--title-color, #1a1a1a);
 }
+
 body.page-home .vision-img-wrap {
     border: 12px solid #ffffff;
     outline: 1px solid rgba(0, 0, 0, 0.06);
@@ -57,16 +65,19 @@ body.page-home .vision-img-wrap {
     overflow: hidden;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
+
 body.page-home .vision-img-wrap img {
     width: 100%;
     height: auto;
     display: block;
     transition: transform 0.6s ease;
 }
+
 body.page-home .vision-img-wrap:hover {
-    transform: translateY(-8px);
+    transform: scale(1.02);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
+
 body.page-home .vision-img-wrap:hover img {
     transform: scale(1.03);
 }
@@ -76,6 +87,7 @@ body.page-home .kbi-video-section {
     padding: 100px 0;
     background-color: #ffffff;
 }
+
 body.page-home .kbi-video-text h2.sec-title {
     font-size: 42px;
     font-weight: 700;
@@ -83,16 +95,19 @@ body.page-home .kbi-video-text h2.sec-title {
     color: var(--title-color, #1a1a1a);
     margin-bottom: 20px;
 }
+
 body.page-home .kbi-video-dates {
     font-size: 18px;
     color: var(--body-color, #4A4A4A);
     margin-bottom: 12px;
 }
+
 body.page-home .kbi-video-venues {
     font-size: 16px;
     color: #777777;
     margin-bottom: 0;
 }
+
 body.page-home .kbi-video-thumb-wrap {
     position: relative;
     border-radius: 8px;
@@ -100,10 +115,12 @@ body.page-home .kbi-video-thumb-wrap {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
     background-color: #000000;
 }
+
 body.page-home .kbi-video-play-link {
     display: block;
     position: relative;
 }
+
 body.page-home .kbi-video-thumb-img {
     width: 100%;
     height: auto;
@@ -113,6 +130,7 @@ body.page-home .kbi-video-thumb-img {
     opacity: 0.85;
     transition: transform 0.6s ease, opacity 0.4s ease;
 }
+
 body.page-home .kbi-video-play-link::before {
     content: '';
     position: absolute;
@@ -124,6 +142,7 @@ body.page-home .kbi-video-play-link::before {
     z-index: 1;
     transition: opacity 0.4s ease;
 }
+
 body.page-home .kbi-play-btn {
     position: absolute;
     top: 50%;
@@ -142,10 +161,12 @@ body.page-home .kbi-play-btn {
     box-shadow: 0 0 0 0 rgba(251, 212, 81, 0.5);
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
+
 body.page-home .kbi-video-play-link:hover .kbi-video-thumb-img {
     transform: scale(1.05);
     opacity: 0.95;
 }
+
 body.page-home .kbi-video-play-link:hover .kbi-play-btn {
     transform: translate(-50%, -50%) scale(1.15);
     background-color: var(--title-color, #1a1a1a);
@@ -158,9 +179,11 @@ body.page-home .space.bg-title {
     background-color: #151515 !important;
     padding: 100px 0;
 }
+
 body.page-home .kbi-activity-row {
     margin-top: 50px;
 }
+
 body.page-home .kbi-activity-card {
     background-color: #1E1E1E;
     padding: 40px 30px;
@@ -172,19 +195,23 @@ body.page-home .kbi-activity-card {
     display: flex;
     flex-direction: column;
 }
+
 body.page-home .kbi-activity-card:hover {
-    transform: translateY(-8px);
+    transform: scale(1.02);
     box-shadow: 0 15px 35px rgba(251, 212, 81, 0.1);
 }
+
 body.page-home .kbi-activity-icon {
     font-size: 36px;
     color: var(--theme-color, #FBD451);
     margin-bottom: 25px;
     transition: transform 0.4s ease;
 }
+
 body.page-home .kbi-activity-card:hover .kbi-activity-icon {
     transform: scale(1.1) rotate(5deg);
 }
+
 body.page-home .kbi-activity-title {
     font-size: 22px;
     font-weight: 700;
@@ -192,6 +219,7 @@ body.page-home .kbi-activity-title {
     margin-bottom: 15px;
     line-height: 1.3;
 }
+
 body.page-home .kbi-activity-text {
     font-size: 15px;
     line-height: 1.6;
@@ -199,6 +227,7 @@ body.page-home .kbi-activity-text {
     margin-bottom: 20px;
     flex-grow: 1;
 }
+
 body.page-home .kbi-activity-link {
     font-size: 14px;
     font-weight: 700;
@@ -210,9 +239,11 @@ body.page-home .kbi-activity-link {
     gap: 8px;
     transition: color 0.3s ease, gap 0.3s ease;
 }
+
 body.page-home .kbi-activity-link i {
     font-size: 12px;
 }
+
 body.page-home .kbi-activity-link:hover {
     color: #ffffff;
     gap: 12px;
@@ -227,6 +258,7 @@ body.page-home .kbi-stats-section {
     background-repeat: no-repeat;
     z-index: 1;
 }
+
 body.page-home .kbi-stats-section::before {
     content: '';
     position: absolute;
@@ -237,6 +269,7 @@ body.page-home .kbi-stats-section::before {
     background-color: rgba(17, 17, 17, 0.85);
     z-index: -1;
 }
+
 body.page-home .kbi-stats-row {
     margin-top: 50px;
     display: flex;
@@ -244,15 +277,18 @@ body.page-home .kbi-stats-row {
     flex-wrap: wrap;
     gap: 30px;
 }
+
 body.page-home .kbi-stat-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s ease;
 }
+
 body.page-home .kbi-stat-item:hover {
     transform: scale(1.08);
 }
+
 body.page-home .kbi-stat-number {
     font-size: 48px;
     font-weight: 800;
@@ -261,6 +297,7 @@ body.page-home .kbi-stat-number {
     margin-bottom: 10px;
     font-family: var(--title-font, 'Jost', sans-serif);
 }
+
 body.page-home .kbi-stat-label {
     font-size: 14px;
     font-weight: 500;
@@ -274,15 +311,18 @@ body.page-home .kbi-edu-section {
     background-color: #111111 !important;
     padding: 100px 0;
 }
+
 body.page-home .kbi-edu-subtitle {
     font-size: 20px;
     font-weight: 500;
     margin-top: 10px;
     color: var(--theme-color, #FBD451) !important;
 }
+
 body.page-home .kbi-edu-videos-row {
     margin-top: 50px;
 }
+
 body.page-home .kbi-edu-video-card {
     background-color: #1a1a1a;
     border-radius: 8px;
@@ -291,15 +331,18 @@ body.page-home .kbi-edu-video-card {
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     height: 100%;
 }
+
 body.page-home .kbi-edu-video-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 15px 35px rgba(251, 212, 81, 0.1);
 }
+
 body.page-home .kbi-edu-thumb-link {
     display: block;
     position: relative;
     overflow: hidden;
 }
+
 body.page-home .kbi-edu-thumb-img {
     width: 100%;
     aspect-ratio: 16/9;
@@ -307,6 +350,7 @@ body.page-home .kbi-edu-thumb-img {
     display: block;
     transition: transform 0.6s ease;
 }
+
 body.page-home .kbi-edu-thumb-link::before {
     content: '';
     position: absolute;
@@ -318,6 +362,7 @@ body.page-home .kbi-edu-thumb-link::before {
     z-index: 1;
     transition: opacity 0.4s ease;
 }
+
 body.page-home .kbi-edu-play-btn {
     position: absolute;
     top: 50%;
@@ -335,14 +380,17 @@ body.page-home .kbi-edu-play-btn {
     z-index: 2;
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s ease, color 0.3s ease;
 }
+
 body.page-home .kbi-edu-video-card:hover .kbi-edu-thumb-img {
     transform: scale(1.06);
 }
+
 body.page-home .kbi-edu-video-card:hover .kbi-edu-play-btn {
     transform: translate(-50%, -50%) scale(1.2);
     background-color: #ffffff;
     color: var(--title-color, #1a1a1a);
 }
+
 body.page-home .kbi-edu-video-label {
     padding: 18px 15px;
     font-size: 16px;
@@ -353,6 +401,7 @@ body.page-home .kbi-edu-video-label {
     background-color: #1a1a1a;
     transition: color 0.3s ease;
 }
+
 body.page-home .kbi-edu-video-card:hover .kbi-edu-video-label {
     color: var(--theme-color, #FBD451);
 }
@@ -362,9 +411,11 @@ body.page-home .portfolio-area-1.bg-title {
     background-color: #181818 !important;
     padding: 100px 0;
 }
+
 body.page-home .kbi-trustees-slider {
     padding-bottom: 20px;
 }
+
 body.page-home .kbi-trustee-card {
     background-color: #222222;
     border-radius: 8px;
@@ -373,10 +424,12 @@ body.page-home .kbi-trustee-card {
     border: 1px solid rgba(255, 255, 255, 0.05);
     margin: 10px 0;
 }
+
 body.page-home .kbi-trustee-card:hover {
-    transform: translateY(-8px);
+    transform: scale(1.02);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
 }
+
 body.page-home .kbi-trustee-thumb {
     position: relative;
     overflow: hidden;
@@ -384,6 +437,7 @@ body.page-home .kbi-trustee-thumb {
     aspect-ratio: 1/1;
     background-color: #222222;
 }
+
 body.page-home .kbi-trustee-thumb img {
     width: 100%;
     height: 100%;
@@ -391,28 +445,34 @@ body.page-home .kbi-trustee-thumb img {
     transition: transform 0.6s ease, filter 0.6s ease;
     filter: grayscale(85%);
 }
+
 body.page-home .kbi-trustee-card:hover .kbi-trustee-thumb img {
     transform: scale(1.05);
     filter: grayscale(0%);
 }
+
 body.page-home .kbi-trustee-details {
     padding: 25px 20px;
     text-align: center;
     background-color: #222222;
 }
+
 body.page-home .kbi-trustee-details .portfilio-card-title {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 12px;
     line-height: 1.3;
 }
+
 body.page-home .kbi-trustee-details .portfilio-card-title a {
     color: #ffffff;
     transition: color 0.3s ease;
 }
+
 body.page-home .kbi-trustee-details .portfilio-card-title a:hover {
     color: var(--theme-color, #FBD451);
 }
+
 body.page-home .kbi-trustee-details .btn-border.btn-radius {
     font-size: 12px;
     padding: 6px 16px;
@@ -423,6 +483,7 @@ body.page-home .kbi-trustee-details .btn-border.btn-radius {
     background-color: transparent;
     display: inline-block;
 }
+
 body.page-home .kbi-trustee-card:hover .kbi-trustee-details .btn-border.btn-radius {
     border-color: var(--theme-color, #FBD451);
     color: var(--theme-color, #FBD451);
@@ -434,15 +495,18 @@ body.page-home .kbi-flipbox-section {
     background-color: #FAF9F6;
     padding: 100px 0;
 }
+
 body.page-home .kbi-flipbox-row {
     margin-top: 50px;
 }
+
 body.page-home .kbi-flipbox {
     position: relative;
     width: 100%;
     height: 420px;
     perspective: 1500px;
 }
+
 body.page-home .kbi-flipbox-front,
 body.page-home .kbi-flipbox-back {
     position: absolute;
@@ -457,10 +521,12 @@ body.page-home .kbi-flipbox-back {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     overflow: hidden;
 }
+
 body.page-home .kbi-flipbox-front {
     transform: rotateY(0deg);
     background-color: #ffffff;
 }
+
 body.page-home .kbi-flipbox-back {
     transform: rotateY(180deg);
     background-color: #1a1a1a;
@@ -470,25 +536,30 @@ body.page-home .kbi-flipbox-back {
     justify-content: center;
     border: 2px solid var(--theme-color, #FBD451);
 }
+
 body.page-home .kbi-flipbox:hover .kbi-flipbox-front {
     transform: rotateY(-180deg);
 }
+
 body.page-home .kbi-flipbox:hover .kbi-flipbox-back {
     transform: rotateY(0deg);
 }
+
 body.page-home .kbi-flipbox-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
+
 body.page-home .kbi-flipbox-front::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 60%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 60%);
     z-index: 1;
 }
+
 body.page-home .kbi-flipbox-front-label {
     position: absolute;
     bottom: 25px;
@@ -499,9 +570,10 @@ body.page-home .kbi-flipbox-front-label {
     font-size: 22px;
     font-weight: 700;
     z-index: 2;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     padding: 0 15px;
 }
+
 body.page-home .kbi-flipbox-back-title {
     font-size: 24px;
     font-weight: 700;
@@ -509,12 +581,14 @@ body.page-home .kbi-flipbox-back-title {
     margin-bottom: 20px;
     line-height: 1.3;
 }
+
 body.page-home .kbi-flipbox-back-text {
     font-size: 15px;
     line-height: 1.6;
     color: #BBBBBB;
     margin-bottom: 25px;
 }
+
 body.page-home .kbi-flipbox-back-link {
     font-size: 14px;
     font-weight: 700;
@@ -528,9 +602,11 @@ body.page-home .kbi-flipbox-back-link {
     margin-top: auto;
     align-self: flex-start;
 }
+
 body.page-home .kbi-flipbox-back-link i {
     font-size: 12px;
 }
+
 body.page-home .kbi-flipbox-back-link:hover {
     color: #ffffff;
     gap: 12px;
@@ -540,10 +616,12 @@ body.page-home .kbi-flipbox-back-link:hover {
    Responsive Breakpoints
    ========================================================================== */
 @media (max-width: 1199px) {
+
     body.page-home .kbi-vision-title,
     body.page-home .kbi-video-text h2.sec-title {
         font-size: 36px;
     }
+
     body.page-home .kbi-flipbox {
         height: 380px;
     }
@@ -554,9 +632,11 @@ body.page-home .kbi-flipbox-back-link:hover {
         padding-right: 0;
         margin-bottom: 40px;
     }
+
     body.page-home .kbi-video-text {
         margin-bottom: 40px;
     }
+
     body.page-home .kbi-vision-title,
     body.page-home .kbi-video-text h2.sec-title {
         font-size: 32px;
@@ -564,6 +644,7 @@ body.page-home .kbi-flipbox-back-link:hover {
 }
 
 @media (max-width: 767px) {
+
     body.page-home .kbi-vision-section,
     body.page-home .kbi-video-section,
     body.page-home .space.bg-title,
@@ -572,19 +653,23 @@ body.page-home .kbi-flipbox-back-link:hover {
     body.page-home .kbi-flipbox-section {
         padding: 60px 0;
     }
+
     body.page-home .kbi-stat-number {
         font-size: 38px;
     }
 }
 
 @media (max-width: 575px) {
+
     body.page-home .kbi-vision-title,
     body.page-home .kbi-video-text h2.sec-title {
         font-size: 28px;
     }
+
     body.page-home .kbi-stat-number {
         font-size: 34px;
     }
+
     body.page-home .kbi-flipbox {
         height: 360px;
     }

@@ -5,8 +5,10 @@
    ========================================================================== */
 
 body.page-kb22-outreach {
-    --page-accent: #0088cb; /* KBT Blue */
-    --page-orange: #0088cb; /* Burnt Orange */
+    --page-accent: #0088cb;
+    /* KBT Blue */
+    --page-orange: #0088cb;
+    /* Burnt Orange */
     --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
     --page-border: rgba(0, 136, 203, 0.15);
@@ -18,6 +20,7 @@ body.page-kb22-outreach .kb22o-hero-section {
     padding: 90px 0;
     border-bottom: 2px solid var(--page-accent);
 }
+
 body.page-kb22-outreach .kb22o-hero-title {
     font-family: 'Jost', sans-serif;
     font-size: clamp(2.5rem, 6vw, 4rem);
@@ -27,6 +30,7 @@ body.page-kb22-outreach .kb22o-hero-title {
     letter-spacing: 2px;
     margin-bottom: 10px;
 }
+
 body.page-kb22-outreach .kb22o-hero-subtitle {
     font-size: 1.1rem;
     color: var(--page-orange);
@@ -35,6 +39,7 @@ body.page-kb22-outreach .kb22o-hero-subtitle {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
+
 body.page-kb22-outreach .kb22o-hero-intro {
     font-size: 15.5px;
     line-height: 1.7;
@@ -42,6 +47,7 @@ body.page-kb22-outreach .kb22o-hero-intro {
     max-width: 800px;
     margin: 0 auto 25px;
 }
+
 body.page-kb22-outreach .kb22o-breadcrumbs ul {
     list-style: none;
     padding: 0;
@@ -50,21 +56,25 @@ body.page-kb22-outreach .kb22o-breadcrumbs ul {
     justify-content: center;
     gap: 8px;
 }
+
 body.page-kb22-outreach .kb22o-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-body.page-kb22-outreach .kb22o-breadcrumbs li + li::before {
+
+body.page-kb22-outreach .kb22o-breadcrumbs li+li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
 }
+
 body.page-kb22-outreach .kb22o-breadcrumbs a {
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     transition: color 0.3s ease;
 }
+
 body.page-kb22-outreach .kb22o-breadcrumbs a:hover {
     color: var(--page-orange);
 }
@@ -72,24 +82,26 @@ body.page-kb22-outreach .kb22o-breadcrumbs a:hover {
 /* 2. Jump Bar */
 body.page-kb22-outreach .kb22o-jump-bar-wrap {
     background-color: #0a1714;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 99;
 }
+
 body.page-kb22-outreach .kb22o-jump-title {
     font-size: 11px;
     font-weight: 700;
-    color: rgba(255,255,255,0.4);
+    color: rgba(255, 255, 255, 0.4);
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-right: 15px;
 }
+
 body.page-kb22-outreach .kb22o-jump-link {
     font-size: 12px;
     font-weight: 700;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     text-decoration: none;
@@ -97,6 +109,7 @@ body.page-kb22-outreach .kb22o-jump-link {
     transition: color 0.3s ease;
     display: inline-block;
 }
+
 body.page-kb22-outreach .kb22o-jump-link:hover {
     color: var(--page-orange);
 }
@@ -106,20 +119,25 @@ body.page-kb22-outreach .kb22o-sections-wrap {
     background-color: #FAF9F6;
     padding: 100px 0;
 }
+
 body.page-kb22-outreach .kb22o-section {
-    scroll-margin-top: 60px; /* offset for jumpbar */
+    scroll-margin-top: 60px;
+    /* offset for jumpbar */
 }
+
 body.page-kb22-outreach .kb22o-content-card {
     background-color: var(--page-bg-card);
-    border: 1px solid rgba(0,0,0,0.05);
-    border-top: 4px solid var(--page-accent);
-    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    /* /* border-top: 4px solid var(--page-accent); */
+    */ border-radius: 8px;
     padding: 40px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
 }
+
 body.page-kb22-outreach .kb22o-section-header {
     margin-bottom: 25px;
 }
+
 body.page-kb22-outreach .kb22o-tag {
     font-size: 10px;
     font-weight: 700;
@@ -132,6 +150,7 @@ body.page-kb22-outreach .kb22o-tag {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
 body.page-kb22-outreach .kb22o-section-title {
     font-family: 'Jost', sans-serif;
     font-size: 24px;
@@ -141,9 +160,11 @@ body.page-kb22-outreach .kb22o-section-title {
     align-items: center;
     margin: 0;
 }
+
 body.page-kb22-outreach .kb22o-section-title i {
     color: var(--page-orange);
 }
+
 body.page-kb22-outreach .kb22o-desc {
     font-size: 15px;
     line-height: 1.75;
@@ -153,9 +174,10 @@ body.page-kb22-outreach .kb22o-desc {
 
 /* Metadata lists */
 body.page-kb22-outreach .kb22o-meta-box {
-    border-top: 1px solid rgba(0,0,0,0.06);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
     padding-top: 20px;
 }
+
 body.page-kb22-outreach .kb22o-meta-box h5 {
     font-size: 14px;
     font-weight: 700;
@@ -164,11 +186,13 @@ body.page-kb22-outreach .kb22o-meta-box h5 {
     letter-spacing: 0.5px;
     margin-bottom: 12px;
 }
+
 body.page-kb22-outreach .kb22o-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 body.page-kb22-outreach .kb22o-list li {
     font-size: 13.5px;
     line-height: 1.6;
@@ -177,18 +201,21 @@ body.page-kb22-outreach .kb22o-list li {
     position: relative;
     padding-left: 15px;
 }
+
 body.page-kb22-outreach .kb22o-list li::before {
     content: '•';
     color: var(--page-orange);
     font-weight: bold;
     position: absolute;
-    left: 0; top: 0;
+    left: 0;
+    top: 0;
 }
 
 /* 4. Galleries */
 body.page-kb22-outreach .kb22o-gallery-wrap {
     padding-left: 20px;
 }
+
 body.page-kb22-outreach .kb22o-gallery-title {
     font-family: 'Jost', sans-serif;
     font-size: 15px;
@@ -197,7 +224,7 @@ body.page-kb22-outreach .kb22o-gallery-title {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-bottom: 25px;
-    border-bottom: 1px dashed rgba(0,0,0,0.1);
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
     padding-bottom: 10px;
 }
 
@@ -206,12 +233,15 @@ body.page-kb22-outreach .kb22o-grid {
     display: grid;
     gap: 15px;
 }
+
 body.page-kb22-outreach .kb22o-grid-4 {
     grid-template-columns: repeat(4, 1fr);
 }
+
 body.page-kb22-outreach .kb22o-grid-3 {
     grid-template-columns: repeat(3, 1fr);
 }
+
 body.page-kb22-outreach .kb22o-grid-2 {
     grid-template-columns: repeat(2, 1fr);
 }
@@ -220,19 +250,22 @@ body.page-kb22-outreach .kb22o-grid-2 {
 body.page-kb22-outreach .kb22o-gallery-item {
     border-radius: 6px;
     overflow: hidden;
-    border: 1px solid rgba(0,0,0,0.06);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
     aspect-ratio: 4/3;
     transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
 }
+
 body.page-kb22-outreach .kb22o-gallery-item a {
     display: block;
     width: 100%;
     height: 100%;
     position: relative;
 }
+
 body.page-kb22-outreach .kb22o-gallery-item a::after {
-    content: '\f00e'; /* search-plus */
+    content: '\f00e';
+    /* search-plus */
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     position: absolute;
@@ -246,6 +279,7 @@ body.page-kb22-outreach .kb22o-gallery-item a::after {
     opacity: 0;
     transition: opacity 0.3s ease;
 }
+
 body.page-kb22-outreach .kb22o-thumb {
     width: 100%;
     height: 100%;
@@ -253,13 +287,16 @@ body.page-kb22-outreach .kb22o-thumb {
     display: block;
     transition: transform 0.4s ease;
 }
+
 body.page-kb22-outreach .kb22o-gallery-item:hover {
     transform: translateY(-4px) scale(1.03);
     box-shadow: 0 8px 20px rgba(0, 136, 203, 0.15);
 }
+
 body.page-kb22-outreach .kb22o-gallery-item:hover a::after {
     opacity: 1;
 }
+
 body.page-kb22-outreach .kb22o-gallery-item:hover .kb22o-thumb {
     transform: scale(1.05);
 }
@@ -267,10 +304,11 @@ body.page-kb22-outreach .kb22o-gallery-item:hover .kb22o-thumb {
 /* Dividers */
 body.page-kb22-outreach .kb22o-divider {
     border: 0;
-    border-top: 1px solid rgba(0,0,0,0.06);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
     margin: 50px 0;
     transition: border-color 0.3s ease;
 }
+
 body.page-kb22-outreach .kb22o-divider:hover {
     border-color: var(--page-orange);
 }
@@ -280,10 +318,12 @@ body.page-kb22-outreach .kb22o-divider:hover {
     body.page-kb22-outreach .kb22o-jump-bar-wrap {
         display: none;
     }
+
     body.page-kb22-outreach .kb22o-gallery-wrap {
         padding-left: 0;
         margin-top: 30px;
     }
+
     body.page-kb22-outreach .kb22o-grid-4 {
         grid-template-columns: repeat(2, 1fr);
     }

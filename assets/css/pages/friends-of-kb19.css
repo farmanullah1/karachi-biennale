@@ -5,8 +5,11 @@
    ========================================================================== */
 
 body.page-friends-of-kb19 {
-    --page-accent: #0088cb; /* KBT Blue */
-    --page-gold: #d4ac0d; /* Gold */
+    --page-accent: #0088cb;
+    /* KBT Blue */
+    --page-gold: #0088cb;
+    ;
+    /* Gold */
     --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
     --page-border: rgba(0, 136, 203, 0.15);
@@ -17,6 +20,7 @@ body.page-friends-of-kb19 .kb19f-hero-section {
     position: relative;
     overflow: hidden;
 }
+
 body.page-friends-of-kb19 .kb19f-hero-banner {
     background-image: url('../../img/bg/kb19-page-banner-2.jpg');
     background-size: cover;
@@ -27,12 +31,14 @@ body.page-friends-of-kb19 .kb19f-hero-banner {
     justify-content: center;
     position: relative;
 }
+
 body.page-friends-of-kb19 .kb19f-hero-overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(135deg, rgba(38, 22, 17, 0.85) 0%, rgba(0, 136, 203, 0.6) 100%);
     z-index: 1;
 }
+
 body.page-friends-of-kb19 .kb19f-hero-title {
     font-family: 'Jost', sans-serif;
     font-size: clamp(2.5rem, 6vw, 4rem);
@@ -41,8 +47,9 @@ body.page-friends-of-kb19 .kb19f-hero-title {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 10px;
-    text-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
+
 body.page-friends-of-kb19 .kb19f-hero-subtitle {
     font-size: 1.1rem;
     color: var(--page-gold);
@@ -50,6 +57,7 @@ body.page-friends-of-kb19 .kb19f-hero-subtitle {
     font-style: italic;
     letter-spacing: 1px;
 }
+
 body.page-friends-of-kb19 .kb19f-breadcrumbs ul {
     list-style: none;
     padding: 0;
@@ -58,21 +66,25 @@ body.page-friends-of-kb19 .kb19f-breadcrumbs ul {
     justify-content: center;
     gap: 8px;
 }
+
 body.page-friends-of-kb19 .kb19f-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.65);
+    color: rgba(255, 255, 255, 0.65);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-body.page-friends-of-kb19 .kb19f-breadcrumbs li + li::before {
+
+body.page-friends-of-kb19 .kb19f-breadcrumbs li+li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
 }
+
 body.page-friends-of-kb19 .kb19f-breadcrumbs a {
-    color: rgba(255,255,255,0.85);
+    color: rgba(255, 255, 255, 0.85);
     transition: color 0.3s ease;
 }
+
 body.page-friends-of-kb19 .kb19f-breadcrumbs a:hover {
     color: var(--page-gold);
 }
@@ -87,6 +99,7 @@ body.page-friends-of-kb19 .kb19f-main-wrapper {
 body.page-friends-of-kb19 .kb19f-intro-content {
     padding-right: 20px;
 }
+
 body.page-friends-of-kb19 .kb19f-tag {
     background-color: rgba(212, 172, 13, 0.12);
     color: var(--page-gold);
@@ -99,6 +112,7 @@ body.page-friends-of-kb19 .kb19f-tag {
     display: inline-block;
     margin-bottom: 15px;
 }
+
 body.page-friends-of-kb19 .kb19f-section-heading {
     font-family: 'Jost', sans-serif;
     font-size: 28px;
@@ -106,6 +120,7 @@ body.page-friends-of-kb19 .kb19f-section-heading {
     color: #1a1a1a;
     margin-bottom: 20px;
 }
+
 body.page-friends-of-kb19 .kb19f-section-lead {
     font-size: 16px;
     line-height: 1.75;
@@ -114,6 +129,7 @@ body.page-friends-of-kb19 .kb19f-section-lead {
     margin-bottom: 20px;
     text-align: justify;
 }
+
 body.page-friends-of-kb19 .kb19f-text {
     font-size: 15px;
     line-height: 1.8;
@@ -129,6 +145,7 @@ body.page-friends-of-kb19 .kb19f-quote-card {
     padding: 20px 25px;
     border-radius: 0 6px 6px 0;
 }
+
 body.page-friends-of-kb19 .kb19f-quote {
     font-style: italic;
     font-size: 14.5px;
@@ -140,21 +157,23 @@ body.page-friends-of-kb19 .kb19f-quote {
 /* 3. Benefits Card Right */
 body.page-friends-of-kb19 .kb19f-benefits-card {
     background-color: #ffffff;
-    border: 1px solid rgba(0,0,0,0.06);
-    border-top: 4px solid var(--page-accent);
-    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    /* /* border-top: 4px solid var(--page-accent); */
+    */ border-radius: 12px;
     padding: 40px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
 }
+
 body.page-friends-of-kb19 .kb19f-benefits-title {
     font-family: 'Jost', sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #1a1a1a;
     margin-bottom: 30px;
-    border-bottom: 2px solid rgba(0,0,0,0.06);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.06);
     padding-bottom: 12px;
 }
+
 body.page-friends-of-kb19 .kb19f-benefits-title i {
     color: var(--page-gold);
 }
@@ -168,11 +187,13 @@ body.page-friends-of-kb19 .kb19f-benefits-list {
     flex-direction: column;
     gap: 20px;
 }
+
 body.page-friends-of-kb19 .kb19f-benefits-list li {
     display: flex;
     gap: 15px;
     align-items: flex-start;
 }
+
 body.page-friends-of-kb19 .kb19f-benefit-icon {
     width: 32px;
     height: 32px;
@@ -187,20 +208,24 @@ body.page-friends-of-kb19 .kb19f-benefit-icon {
     flex-shrink: 0;
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
+
 body.page-friends-of-kb19 .kb19f-benefits-list li:hover .kb19f-benefit-icon {
     transform: scale(1.08) rotate(15deg);
     background-color: var(--page-gold);
     color: #ffffff;
 }
+
 body.page-friends-of-kb19 .kb19f-benefit-text {
     display: flex;
     flex-direction: column;
     gap: 3px;
 }
+
 body.page-friends-of-kb19 .kb19f-benefit-text strong {
     font-size: 14.5px;
     color: #1a1a1a;
 }
+
 body.page-friends-of-kb19 .kb19f-benefit-text span {
     font-size: 13px;
     line-height: 1.5;
@@ -214,6 +239,7 @@ body.page-friends-of-kb19 .kb19f-cta-section {
     margin-left: auto;
     margin-right: auto;
 }
+
 body.page-friends-of-kb19 .kb19f-cta-card {
     background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
     border-radius: 12px;
@@ -221,6 +247,7 @@ body.page-friends-of-kb19 .kb19f-cta-card {
     color: #ffffff;
     box-shadow: 0 12px 35px rgba(62, 39, 37, 0.15);
 }
+
 body.page-friends-of-kb19 .kb19f-cta-title {
     font-family: 'Jost', sans-serif;
     font-size: 26px;
@@ -228,9 +255,10 @@ body.page-friends-of-kb19 .kb19f-cta-title {
     color: var(--page-gold);
     margin-bottom: 15px;
 }
+
 body.page-friends-of-kb19 .kb19f-cta-desc {
     font-size: 15px;
-    color: rgba(255,255,255,0.85);
+    color: rgba(255, 255, 255, 0.85);
     max-width: 600px;
     margin: 0 auto 30px;
 }
@@ -251,6 +279,7 @@ body.page-friends-of-kb19 .kb19f-btn-primary {
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 15px rgba(212, 172, 13, 0.2);
 }
+
 body.page-friends-of-kb19 .kb19f-btn-primary:hover {
     background-color: #ffffff;
     color: var(--page-accent);
@@ -264,14 +293,17 @@ body.page-friends-of-kb19 .kb19f-btn-primary:hover {
         padding-right: 0;
         margin-bottom: 40px;
     }
+
     body.page-friends-of-kb19 .kb19f-benefits-card {
         padding: 30px;
     }
 }
+
 @media (max-width: 767px) {
     body.page-friends-of-kb19 .kb19f-hero-banner {
         min-height: 260px;
     }
+
     body.page-friends-of-kb19 .kb19f-cta-card {
         padding: 35px 25px;
     }

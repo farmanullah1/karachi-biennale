@@ -17,7 +17,7 @@ footer.footer-wrapper .footer-top {
 }
 
 footer.footer-wrapper .footer-logo img {
-    max-height: 70px;
+    max-height: 100px;
     width: auto;
 }
 
@@ -72,7 +72,8 @@ footer.footer-wrapper .widget_title::before {
 }
 
 footer.footer-wrapper .widget_title::after {
-    display: none !important; /* Hide old design underlines */
+    display: none !important;
+    /* Hide old design underlines */
 }
 
 /* Widget Lists */
@@ -201,7 +202,7 @@ footer.footer-wrapper .newsletter-form button.btn:hover {
     background-color: #ffffff;
     color: #111111;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(255,255,255,0.1);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
 }
 
 /* Footer Bottom Menu Area */
@@ -286,18 +287,22 @@ footer.footer-wrapper .footer1-shape1 {
     footer.footer-wrapper .widget-area {
         padding: 60px 0 30px;
     }
+
     footer.footer-wrapper .widget_title {
         margin-bottom: 20px;
     }
 }
+
 @media (max-width: 767px) {
     footer.footer-wrapper .footer-top {
         text-align: center;
     }
+
     footer.footer-wrapper .social-btn.style2 {
         margin-top: 20px;
         justify-content: center;
     }
+
     footer.footer-wrapper .footer-menu-list {
         gap: 15px 25px;
     }

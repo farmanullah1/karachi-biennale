@@ -5,8 +5,10 @@
    ========================================================================== */
 
 body.page-kb17-curatorial-website {
-    --page-accent: #0088cb; /* KBT Blue */
-    --page-teal: #0f2035; /* Deep Teal */
+    --page-accent: #0088cb;
+    /* KBT Blue */
+    --page-teal: #0f2035;
+    /* Deep Teal */
     --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
     --page-border: rgba(0, 136, 203, 0.15);
@@ -17,6 +19,7 @@ body.page-kb17-curatorial-website .kb17cw-hero-section {
     position: relative;
     overflow: hidden;
 }
+
 body.page-kb17-curatorial-website .kb17cw-hero-banner {
     background-image: url('../../img/bg/kb19-page-banner-2.jpg');
     background-size: cover;
@@ -27,12 +30,14 @@ body.page-kb17-curatorial-website .kb17cw-hero-banner {
     justify-content: center;
     position: relative;
 }
+
 body.page-kb17-curatorial-website .kb17cw-hero-overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(135deg, rgba(38, 24, 4, 0.85) 0%, rgba(0, 136, 203, 0.6) 100%);
     z-index: 1;
 }
+
 body.page-kb17-curatorial-website .kb17cw-hero-title {
     font-family: 'Jost', sans-serif;
     font-size: clamp(2.5rem, 6vw, 4rem);
@@ -41,8 +46,9 @@ body.page-kb17-curatorial-website .kb17cw-hero-title {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 10px;
-    text-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
+
 body.page-kb17-curatorial-website .kb17cw-hero-subtitle {
     font-size: 1.1rem;
     color: #ffffff;
@@ -50,6 +56,7 @@ body.page-kb17-curatorial-website .kb17cw-hero-subtitle {
     font-style: italic;
     letter-spacing: 1px;
 }
+
 body.page-kb17-curatorial-website .kb17cw-breadcrumbs ul {
     list-style: none;
     padding: 0;
@@ -58,21 +65,25 @@ body.page-kb17-curatorial-website .kb17cw-breadcrumbs ul {
     justify-content: center;
     gap: 8px;
 }
+
 body.page-kb17-curatorial-website .kb17cw-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.65);
+    color: rgba(255, 255, 255, 0.65);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-body.page-kb17-curatorial-website .kb17cw-breadcrumbs li + li::before {
+
+body.page-kb17-curatorial-website .kb17cw-breadcrumbs li+li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
 }
+
 body.page-kb17-curatorial-website .kb17cw-breadcrumbs a {
-    color: rgba(255,255,255,0.85);
+    color: rgba(255, 255, 255, 0.85);
     transition: color 0.3s ease;
 }
+
 body.page-kb17-curatorial-website .kb17cw-breadcrumbs a:hover {
     color: var(--page-accent);
 }
@@ -88,6 +99,7 @@ body.page-kb17-curatorial-website .kb17cw-intro {
     max-width: 800px;
     margin: 0 auto 60px;
 }
+
 body.page-kb17-curatorial-website .kb17cw-section-heading {
     font-family: 'Jost', sans-serif;
     font-size: 28px;
@@ -95,6 +107,7 @@ body.page-kb17-curatorial-website .kb17cw-section-heading {
     color: #1a1a1a;
     margin-bottom: 15px;
 }
+
 body.page-kb17-curatorial-website .kb17cw-section-lead {
     font-size: 15.5px;
     line-height: 1.8;
@@ -105,17 +118,18 @@ body.page-kb17-curatorial-website .kb17cw-section-lead {
 /* Portal Cards */
 body.page-kb17-curatorial-website .kb17cw-portal-card {
     background-color: var(--page-bg-card);
-    border: 1px solid rgba(0,0,0,0.06);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 12px;
     padding: 40px;
     text-align: center;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.02);
     /* Portal card lift on hover */
     transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
 }
+
 body.page-kb17-curatorial-website .kb17cw-portal-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+    transform: scale(1.02);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
 }
 
 body.page-kb17-curatorial-website .kb17cw-card-icon {
@@ -129,8 +143,14 @@ body.page-kb17-curatorial-website .kb17cw-card-icon {
     color: #ffffff;
     font-size: 28px;
 }
-body.page-kb17-curatorial-website .bg-gradient-yellow { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
-body.page-kb17-curatorial-website .bg-gradient-teal { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); }
+
+body.page-kb17-curatorial-website .bg-gradient-yellow {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
+
+body.page-kb17-curatorial-website .bg-gradient-teal {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
 
 body.page-kb17-curatorial-website .kb17cw-portal-title {
     font-family: 'Jost', sans-serif;
@@ -139,6 +159,7 @@ body.page-kb17-curatorial-website .kb17cw-portal-title {
     color: #1a1a1a;
     margin-bottom: 15px;
 }
+
 body.page-kb17-curatorial-website .kb17cw-portal-desc {
     font-size: 14.5px;
     line-height: 1.7;
@@ -161,21 +182,25 @@ body.page-kb17-curatorial-website .kb17cw-portal-btn {
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 body.page-kb17-curatorial-website .btn-primary-gradient {
     background-color: var(--page-accent);
     color: #ffffff;
     box-shadow: 0 4px 15px rgba(0, 136, 203, 0.2);
 }
+
 body.page-kb17-curatorial-website .btn-primary-gradient:hover {
     background-color: #0a1628;
     color: #ffffff;
     transform: translateY(-2px);
 }
+
 body.page-kb17-curatorial-website .btn-secondary-gradient {
     background-color: var(--page-teal);
     color: #ffffff;
     box-shadow: 0 4px 15px rgba(0, 136, 203, 0.2);
 }
+
 body.page-kb17-curatorial-website .btn-secondary-gradient:hover {
     background-color: #0a1628;
     color: #ffffff;
@@ -187,6 +212,7 @@ body.page-kb17-curatorial-website .btn-secondary-gradient:hover {
     body.page-kb17-curatorial-website .kb17cw-hero-banner {
         min-height: 260px;
     }
+
     body.page-kb17-curatorial-website .kb17cw-portal-card {
         padding: 30px 20px;
     }

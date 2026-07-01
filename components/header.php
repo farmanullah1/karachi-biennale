@@ -698,9 +698,9 @@
                                                     <li><a href="kb17-teams.php">KB17 – Teams</a></li>
                                                     <li><a href="kb17-partners.php">KB17 – Partners</a></li>
                                                     <li class="menu-item-has-children">
-                                                        <a href="kb17-curatorial-website.php">KB17 – Curatorial (Website)</a>
+                                                        <a href="https://www.kbcuratorial.com/">KB17 – Curatorial (Website)</a>
                                                         <ul class="sub-menu">
-                                                            <li><a href="kb22-curator.php">Karachi Biennale 2022</a></li>
+                                                            <li><a href="https://www.kbcuratorial.com/>Karachi Biennale 2022</a></li>
                                                         </ul>
                                                     </li>
                                                     <li><a href="kb17-catalogue.php">KB17 – Karachi Biennale Catalogue</a></li>

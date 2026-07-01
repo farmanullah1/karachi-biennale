@@ -5,8 +5,10 @@
    ========================================================================== */
 
 body.page-kb19-programming {
-    --page-accent: #0088cb; /* KBT Blue */
-    --page-coral: #0088cb; /* Coral Accent */
+    --page-accent: #0088cb;
+    /* KBT Blue */
+    --page-coral: #0088cb;
+    /* Coral Accent */
     --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
     --page-border: rgba(0, 136, 203, 0.15);
@@ -17,6 +19,7 @@ body.page-kb19-programming .kb19p-hero-section {
     position: relative;
     overflow: hidden;
 }
+
 body.page-kb19-programming .kb19p-hero-banner {
     background-image: url('../../img/bg/kb19-page-banner-2.jpg');
     background-size: cover;
@@ -27,12 +30,14 @@ body.page-kb19-programming .kb19p-hero-banner {
     justify-content: center;
     position: relative;
 }
+
 body.page-kb19-programming .kb19p-hero-overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(135deg, rgba(5, 34, 28, 0.85) 0%, rgba(0, 136, 203, 0.6) 100%);
     z-index: 1;
 }
+
 body.page-kb19-programming .kb19p-hero-title {
     font-family: 'Jost', sans-serif;
     font-size: clamp(2.5rem, 6vw, 4rem);
@@ -41,8 +46,9 @@ body.page-kb19-programming .kb19p-hero-title {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 10px;
-    text-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
+
 body.page-kb19-programming .kb19p-hero-subtitle {
     font-size: 1.1rem;
     color: var(--page-coral);
@@ -50,6 +56,7 @@ body.page-kb19-programming .kb19p-hero-subtitle {
     font-style: italic;
     letter-spacing: 1px;
 }
+
 body.page-kb19-programming .kb19p-breadcrumbs ul {
     list-style: none;
     padding: 0;
@@ -58,21 +65,25 @@ body.page-kb19-programming .kb19p-breadcrumbs ul {
     justify-content: center;
     gap: 8px;
 }
+
 body.page-kb19-programming .kb19p-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.65);
+    color: rgba(255, 255, 255, 0.65);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-body.page-kb19-programming .kb19p-breadcrumbs li + li::before {
+
+body.page-kb19-programming .kb19p-breadcrumbs li+li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
 }
+
 body.page-kb19-programming .kb19p-breadcrumbs a {
-    color: rgba(255,255,255,0.85);
+    color: rgba(255, 255, 255, 0.85);
     transition: color 0.3s ease;
 }
+
 body.page-kb19-programming .kb19p-breadcrumbs a:hover {
     color: var(--page-coral);
 }
@@ -87,14 +98,16 @@ body.page-kb19-programming .kb19p-main-wrapper {
 body.page-kb19-programming .kb19p-info-section {
     margin-bottom: 60px;
 }
+
 body.page-kb19-programming .kb19p-info-card {
     background-color: #ffffff;
-    border: 1px solid rgba(0,0,0,0.06);
-    border-top: 4px solid var(--page-accent);
-    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    /* /* border-top: 4px solid var(--page-accent); */
+    */ border-radius: 12px;
     padding: 50px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
 }
+
 body.page-kb19-programming .kb19p-info-title {
     font-family: 'Jost', sans-serif;
     font-size: 26px;
@@ -102,6 +115,7 @@ body.page-kb19-programming .kb19p-info-title {
     color: #1a1a1a;
     margin-bottom: 15px;
 }
+
 body.page-kb19-programming .kb19p-info-text {
     font-size: 15.5px;
     line-height: 1.8;
@@ -113,10 +127,11 @@ body.page-kb19-programming .kb19p-info-text {
 /* Opening hours panel */
 body.page-kb19-programming .kb19p-hours-box {
     background-color: #f7faf9;
-    border: 1px dashed rgba(0,0,0,0.08);
+    border: 1px dashed rgba(0, 0, 0, 0.08);
     border-radius: 8px;
     padding: 25px;
 }
+
 body.page-kb19-programming .kb19p-hours-title {
     font-family: 'Jost', sans-serif;
     font-size: 15px;
@@ -126,31 +141,38 @@ body.page-kb19-programming .kb19p-hours-title {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
+
 body.page-kb19-programming .kb19p-hours-title i {
     color: var(--page-coral);
 }
+
 body.page-kb19-programming .kb19p-hours-list {
     list-style: none;
     padding: 0;
     margin: 0 0 15px 0;
 }
+
 body.page-kb19-programming .kb19p-hours-list li {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 13.5px;
     padding: 8px 0;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
+
 body.page-kb19-programming .kb19p-hours-list li:last-child {
     border-bottom: 0;
 }
+
 body.page-kb19-programming .kb19p-hours-list span {
     color: #666;
 }
+
 body.page-kb19-programming .kb19p-hours-list strong {
     color: var(--page-accent);
 }
+
 body.page-kb19-programming .kb19p-hours-note {
     font-size: 11px;
     color: #888888;
@@ -161,6 +183,7 @@ body.page-kb19-programming .kb19p-hours-note {
 body.page-kb19-programming .kb19p-schedule-section {
     margin-bottom: 80px;
 }
+
 body.page-kb19-programming .kb19p-filter-tabs {
     display: flex;
     justify-content: center;
@@ -168,9 +191,10 @@ body.page-kb19-programming .kb19p-filter-tabs {
     gap: 12px;
     margin-bottom: 45px;
 }
+
 body.page-kb19-programming .kb19p-filter-btn {
     background: transparent;
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     color: #555555;
     padding: 8px 20px;
     border-radius: 4px;
@@ -181,11 +205,13 @@ body.page-kb19-programming .kb19p-filter-btn {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 body.page-kb19-programming .kb19p-filter-btn:hover {
     border-color: var(--page-accent);
     color: var(--page-accent);
     background-color: rgba(0, 136, 203, 0.05);
 }
+
 body.page-kb19-programming .kb19p-filter-btn.active {
     background-color: var(--page-accent);
     border-color: var(--page-accent);
@@ -199,20 +225,22 @@ body.page-kb19-programming .kb19p-schedule-grid {
     flex-direction: column;
     gap: 20px;
 }
+
 body.page-kb19-programming .kb19p-row-card {
     background-color: var(--page-bg-card);
-    border: 1px solid rgba(0,0,0,0.06);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 8px;
     padding: 25px 30px;
     display: flex;
     align-items: center;
     gap: 30px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.01);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
     /* Card rise transform */
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
+
 body.page-kb19-programming .kb19p-row-card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.02);
     border-color: rgba(0, 136, 203, 0.2);
     box-shadow: 0 10px 25px rgba(0, 136, 203, 0.08);
 }
@@ -232,16 +260,19 @@ body.page-kb19-programming .kb19p-date-badge {
     flex-shrink: 0;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 body.page-kb19-programming .kb19p-row-card:hover .kb19p-date-badge {
     background-color: var(--page-accent);
     color: #ffffff;
 }
+
 body.page-kb19-programming .kb19p-date-day {
     font-family: 'Jost', sans-serif;
     font-size: 24px;
     font-weight: 800;
     line-height: 1;
 }
+
 body.page-kb19-programming .kb19p-date-month {
     font-size: 11px;
     font-weight: 700;
@@ -254,6 +285,7 @@ body.page-kb19-programming .kb19p-date-month {
 body.page-kb19-programming .kb19p-row-details {
     flex-grow: 1;
 }
+
 body.page-kb19-programming .kb19p-row-meta {
     display: flex;
     flex-wrap: wrap;
@@ -261,6 +293,7 @@ body.page-kb19-programming .kb19p-row-meta {
     align-items: center;
     margin-bottom: 10px;
 }
+
 body.page-kb19-programming .kb19p-meta-tag {
     font-size: 10px;
     font-weight: 700;
@@ -273,9 +306,18 @@ body.page-kb19-programming .kb19p-meta-tag {
     align-items: center;
     gap: 5px;
 }
-body.page-kb19-programming .tag-discursive { background-color: #0088cb; }
-body.page-kb19-programming .tag-educational { background-color: #0088cb; }
-body.page-kb19-programming .tag-special { background-color: #e67e22; }
+
+body.page-kb19-programming .tag-discursive {
+    background-color: #0088cb;
+}
+
+body.page-kb19-programming .tag-educational {
+    background-color: #0088cb;
+}
+
+body.page-kb19-programming .tag-special {
+    background-color: #e67e22;
+}
 
 body.page-kb19-programming .kb19p-meta-time,
 body.page-kb19-programming .kb19p-meta-loc {
@@ -286,6 +328,7 @@ body.page-kb19-programming .kb19p-meta-loc {
     align-items: center;
     gap: 6px;
 }
+
 body.page-kb19-programming .kb19p-meta-time i,
 body.page-kb19-programming .kb19p-meta-loc i {
     color: var(--page-accent);
@@ -298,6 +341,7 @@ body.page-kb19-programming .kb19p-event-title {
     color: #1a1a1a;
     margin-bottom: 8px;
 }
+
 body.page-kb19-programming .kb19p-event-desc {
     font-size: 14.5px;
     line-height: 1.6;
@@ -310,6 +354,7 @@ body.page-kb19-programming .kb19p-promo-section {
     max-width: 800px;
     margin: 0 auto;
 }
+
 body.page-kb19-programming .kb19p-promo-card {
     background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
     border-radius: 12px;
@@ -317,6 +362,7 @@ body.page-kb19-programming .kb19p-promo-card {
     color: #ffffff;
     box-shadow: 0 12px 35px rgba(0, 136, 203, 0.15);
 }
+
 body.page-kb19-programming .kb19p-promo-title {
     font-family: 'Jost', sans-serif;
     font-size: 26px;
@@ -324,19 +370,22 @@ body.page-kb19-programming .kb19p-promo-title {
     color: var(--page-coral);
     margin-bottom: 12px;
 }
+
 body.page-kb19-programming .kb19p-promo-text {
     font-size: 15px;
-    color: rgba(255,255,255,0.85);
+    color: rgba(255, 255, 255, 0.85);
     max-width: 600px;
     margin: 0 auto 30px;
 }
+
 body.page-kb19-programming .kb19p-app-preview {
     max-width: 140px;
     border-radius: 10px;
-    border: 3px solid rgba(255,255,255,0.1);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.35);
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35);
     transition: transform 0.3s ease;
 }
+
 body.page-kb19-programming .kb19p-app-preview:hover {
     transform: translateY(-5px) scale(1.03);
 }
@@ -357,6 +406,7 @@ body.page-kb19-programming .kb19p-btn-primary {
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 136, 203, 0.2);
 }
+
 body.page-kb19-programming .kb19p-btn-primary:hover {
     background-color: #ffffff;
     color: var(--page-accent);
@@ -369,20 +419,24 @@ body.page-kb19-programming .kb19p-btn-primary:hover {
     body.page-kb19-programming .kb19p-info-card {
         padding: 30px;
     }
+
     body.page-kb19-programming .kb19p-hours-box {
         margin-top: 30px;
     }
 }
+
 @media (max-width: 767px) {
     body.page-kb19-programming .kb19p-hero-banner {
         min-height: 260px;
     }
+
     body.page-kb19-programming .kb19p-row-card {
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
         padding: 25px;
     }
+
     body.page-kb19-programming .kb19p-promo-card {
         padding: 35px 25px;
     }

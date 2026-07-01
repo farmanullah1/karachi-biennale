@@ -146,8 +146,8 @@
                     ['Curator with Natasha Howes', 'image-16.jpg'],
                     ['Curator with Esme Ward & Stephen Welsh', 'image-17.jpg'],
                     ['Muhammad Zeeshan at Tetley, Leeds', 'Image-21.jpg'],
-                    ['Curator at Whitechapel Gallery', 'Image-24.jpg'],
-                    ['Curator with Henrik Mayer & Martin Keil', 'image-25.jpg'],
+                    // ['Curator at Whitechapel Gallery', 'Image-24.jpg'],
+                    // ['Curator with Henrik Mayer & Martin Keil', 'image-25.jpg'],
                     ['Studio visit with Frances Disley', 'Image-26-768x576.jpg']
                 ];
                 foreach($euroMeetings as $meet):
@@ -178,7 +178,7 @@
             <div class="row g-3 popup-gallery">
                 <?php 
                 $lahoreVisits = [
-                    ['Curator with Jamil Baloch', 'image-3.jpg'],
+                    // ['Curator with Jamil Baloch', 'image-3.jpg'],
                     ['Curator with Ali Kazim', 'image-5.jpg'],
                     ['Curator with R.M Naeem & Manisha Gera Baswani', 'image-6-768x576.jpg'],
                     ['Curator with Rashid Rana', 'faisal-min.jpg']

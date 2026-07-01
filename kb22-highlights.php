@@ -31,7 +31,7 @@
         <div class="kb22-highlights-grid row g-4 justify-content-center mb-60">
             
             <!-- Card 1: Ceremonies -->
-            <div class="col-lg-4 col-md-6">
+            <div class="">
                 <div class="kb22-highlight-card wow custom-anim-top" data-wow-delay="0.1s">
                     <div class="card-icon"><i class="fas fa-award"></i></div>
                     <h3>Inaugural and Closing Ceremonies</h3>
@@ -41,7 +41,7 @@
             </div>
 
             <!-- Card 2: Discursive -->
-            <div class="col-lg-4 col-md-6">
+            <div class="">
                 <div class="kb22-highlight-card wow custom-anim-top" data-wow-delay="0.2s">
                     <div class="card-icon"><i class="fas fa-comments"></i></div>
                     <h3>Discursive Sessions</h3>
@@ -51,7 +51,7 @@
             </div>
 
             <!-- Card 3: Educational -->
-            <div class="col-lg-4 col-md-6">
+            <div class="">
                 <div class="kb22-highlight-card wow custom-anim-top" data-wow-delay="0.3s">
                     <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
                     <h3>Educational Programming</h3>
@@ -61,7 +61,7 @@
             </div>
 
             <!-- Card 4: Wellness -->
-            <div class="col-lg-4 col-md-6">
+            <div class="">
                 <div class="kb22-highlight-card wow custom-anim-top" data-wow-delay="0.4s">
                     <div class="card-icon"><i class="fas fa-heartbeat"></i></div>
                     <h3>Art and Wellness Workshop</h3>
@@ -71,7 +71,7 @@
             </div>
 
             <!-- Card 5: Storytelling -->
-            <div class="col-lg-4 col-md-6">
+            <div class="">
                 <div class="kb22-highlight-card wow custom-anim-top" data-wow-delay="0.5s">
                     <div class="card-icon"><i class="fas fa-book-open"></i></div>
                     <h3>Storytelling by Artists</h3>
@@ -81,7 +81,7 @@
             </div>
 
             <!-- Card 6: Khaadi -->
-            <div class="col-lg-4 col-md-6">
+            <div class="">
                 <div class="kb22-highlight-card wow custom-anim-top" data-wow-delay="0.6s">
                     <div class="card-icon"><i class="fas fa-handshake"></i></div>
                     <h3>Khaadi Meet and Greet</h3>

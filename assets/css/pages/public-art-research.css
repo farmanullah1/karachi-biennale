@@ -29,12 +29,14 @@ body.page-public-art-research {
     border-bottom: 3px solid var(--theme-color);
     overflow: hidden;
 }
+
 .kb19-publicart-hero-overlay {
     position: absolute;
     inset: 0;
     background: radial-gradient(circle at center, rgba(0, 136, 203, 0.2) 0%, transparent 80%);
     z-index: 1;
 }
+
 .kb19-publicart-hero-title {
     font-family: 'Jost', sans-serif;
     font-size: clamp(1.8rem, 4vw, 3.2rem);
@@ -43,8 +45,9 @@ body.page-public-art-research {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 12px;
-    text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
+
 .kb19-publicart-hero-subtitle {
     font-size: 1.3rem;
     color: var(--theme-color);
@@ -53,8 +56,9 @@ body.page-public-art-research {
     font-weight: 600;
     letter-spacing: 3px;
     margin-bottom: 0;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
+
 .kb19-publicart-breadcrumbs ul {
     list-style: none;
     padding: 0;
@@ -63,21 +67,25 @@ body.page-public-art-research {
     justify-content: center;
     gap: 8px;
 }
+
 .kb19-publicart-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-.kb19-publicart-breadcrumbs li + li::before {
+
+.kb19-publicart-breadcrumbs li+li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.4);
+    color: rgba(255, 255, 255, 0.4);
 }
+
 .kb19-publicart-breadcrumbs a {
-    color: rgba(255,255,255,0.9);
+    color: rgba(255, 255, 255, 0.9);
     transition: color 0.3s ease;
 }
+
 .kb19-publicart-breadcrumbs a:hover {
     color: var(--theme-color);
 }
@@ -95,34 +103,41 @@ body.page-public-art-research {
     gap: 30px;
     margin-bottom: 50px;
 }
+
 .kb19-publicart-stat {
     background: var(--white-color);
     border: 1px solid var(--light-color);
     border-radius: 16px;
     padding: 35px 25px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     position: relative;
     overflow: hidden;
 }
+
 .kb19-publicart-stat::before {
     content: '';
     position: absolute;
-    top: 0; left: 0; right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 3px;
     background-color: var(--theme-color);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
+
 .kb19-publicart-stat:hover::before {
     opacity: 1;
 }
+
 .kb19-publicart-stat:hover {
-    transform: translateY(-8px);
+    transform: scale(1.02);
     border-color: rgba(0, 136, 203, 0.3);
     box-shadow: 0 15px 35px rgba(0, 136, 203, 0.12);
 }
+
 .kb19-publicart-stat .number {
     font-family: 'Jost', sans-serif;
     font-size: 3rem;
@@ -132,6 +147,7 @@ body.page-public-art-research {
     display: block;
     margin-bottom: 8px;
 }
+
 .kb19-publicart-stat .label {
     font-family: 'Jost', sans-serif;
     font-size: 14px;
@@ -149,8 +165,9 @@ body.page-public-art-research {
     border-radius: 16px;
     padding: 45px;
     height: 100%;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.02);
 }
+
 .kb19-publicart-section-heading {
     font-family: 'Jost', sans-serif;
     font-size: 24px;
@@ -162,9 +179,11 @@ body.page-public-art-research {
     border-bottom: 2px solid var(--light-color);
     padding-bottom: 15px;
 }
+
 .kb19-publicart-section-heading .text-primary {
     color: var(--theme-color) !important;
 }
+
 .kb19-publicart-lead-text {
     font-size: 16px;
     line-height: 1.8;
@@ -172,12 +191,14 @@ body.page-public-art-research {
     font-weight: 600;
     margin-bottom: 20px;
 }
+
 .kb19-publicart-body-text {
     font-size: 15px;
     line-height: 1.8;
     color: var(--body-color);
     margin-bottom: 18px;
 }
+
 .kb19-publicart-subheading {
     font-family: 'Jost', sans-serif;
     font-size: 18px;
@@ -194,9 +215,10 @@ body.page-public-art-research {
     padding: 40px;
     border-radius: 16px;
     border: 1px solid var(--light-color);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.02);
     height: 100%;
 }
+
 .kb19-publicart-sidebar-heading {
     font-family: 'Jost', sans-serif;
     font-size: 20px;
@@ -212,9 +234,11 @@ body.page-public-art-research {
     border: 1px solid var(--light-color);
     margin-top: 15px;
 }
+
 .kb19-publicart-table thead {
     background-color: var(--smoke-color5);
 }
+
 .kb19-publicart-table th {
     font-family: 'Jost', sans-serif;
     font-weight: 700;
@@ -224,12 +248,14 @@ body.page-public-art-research {
     border-bottom: 2px solid var(--light-color);
     padding: 12px 15px;
 }
+
 .kb19-publicart-table td {
     font-size: 14px;
     color: var(--body-color);
     padding: 12px 15px;
     vertical-align: middle;
 }
+
 .kb19-publicart-table td strong {
     color: var(--black-color);
 }
@@ -240,8 +266,9 @@ body.page-public-art-research {
     border: 1px solid var(--light-color);
     border-radius: 16px;
     padding: 40px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.02);
 }
+
 .kb19-publicart-carousel-heading {
     font-family: 'Jost', sans-serif;
     font-size: 20px;
@@ -250,24 +277,29 @@ body.page-public-art-research {
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
+
 .kb19-publicart-slide {
     padding: 0 10px;
 }
+
 .kb19-publicart-slide a {
     display: block;
     position: relative;
     overflow: hidden;
     border-radius: 8px;
 }
+
 .kb19-publicart-slide img {
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
     transition: transform 0.5s ease;
 }
+
 .kb19-publicart-slide:hover img {
     transform: scale(1.04);
 }
+
 .slide-overlay {
     position: absolute;
     inset: 0;
@@ -280,6 +312,7 @@ body.page-public-art-research {
     color: var(--white-color);
     font-size: 24px;
 }
+
 .kb19-publicart-slide:hover .slide-overlay {
     opacity: 1;
 }
@@ -288,12 +321,14 @@ body.page-public-art-research {
     .kb19-publicart-stats {
         gap: 20px;
     }
+
     .kb19-publicart-copy-card,
     .kb19-publicart-sidebar,
     .kb19-publicart-carousel-wrap {
         padding: 30px 20px;
     }
 }
+
 @media (max-width: 768px) {
     .kb19-publicart-stats {
         grid-template-columns: 1fr;

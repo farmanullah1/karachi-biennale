@@ -5,7 +5,8 @@
    ========================================================================== */
 
 body.page-kbt-trustees {
-    --page-accent: #0088cb; /* KBT Blue */
+    --page-accent: #0088cb;
+    /* KBT Blue */
     --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
     --page-border: rgba(0, 136, 203, 0.15);
@@ -17,6 +18,7 @@ body.page-kbt-trustees .kbtt-hero-section {
     padding: 100px 0;
     border-bottom: 2px solid var(--page-accent);
 }
+
 body.page-kbt-trustees .kbtt-hero-title {
     font-family: 'Georgia', serif;
     font-size: clamp(2.5rem, 6vw, 4rem);
@@ -24,6 +26,7 @@ body.page-kbt-trustees .kbtt-hero-title {
     color: #ffffff;
     margin-bottom: 15px;
 }
+
 body.page-kbt-trustees .kbtt-hero-intro {
     font-size: 16px;
     line-height: 1.75;
@@ -31,6 +34,7 @@ body.page-kbt-trustees .kbtt-hero-intro {
     max-width: 850px;
     margin: 0 auto 25px;
 }
+
 body.page-kbt-trustees .kbtt-breadcrumbs ul {
     list-style: none;
     padding: 0;
@@ -39,21 +43,25 @@ body.page-kbt-trustees .kbtt-breadcrumbs ul {
     justify-content: center;
     gap: 8px;
 }
+
 body.page-kbt-trustees .kbtt-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-body.page-kbt-trustees .kbtt-breadcrumbs li + li::before {
+
+body.page-kbt-trustees .kbtt-breadcrumbs li+li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
 }
+
 body.page-kbt-trustees .kbtt-breadcrumbs a {
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     transition: color 0.3s ease;
 }
+
 body.page-kbt-trustees .kbtt-breadcrumbs a:hover {
     color: var(--page-accent);
 }
@@ -63,17 +71,19 @@ body.page-kbt-trustees .kbtt-grid-section {
     background-color: #fcfcfc;
     padding: 100px 0;
     /* Soft background micro-pattern grid */
-    background-image: radial-gradient(rgba(0,0,0,0.03) 1px, transparent 0);
+    background-image: radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 0);
     background-size: 24px 24px;
 }
+
 body.page-kbt-trustees .kbtt-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 40px;
 }
+
 body.page-kbt-trustees .kbtt-card {
     background-color: var(--page-bg-card);
-    border: 1px solid rgba(0,0,0,0.06);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 8px;
     padding: 40px 30px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
@@ -89,17 +99,22 @@ body.page-kbt-trustees .kbtt-card {
 body.page-kbt-trustees .kbtt-card::after {
     content: '';
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     border: 2px solid var(--page-accent);
     opacity: 0;
     border-radius: 8px;
     transition: opacity 0.3s ease;
     pointer-events: none;
 }
+
 body.page-kbt-trustees .kbtt-card:hover {
-    transform: translateY(-8px);
+    transform: scale(1.02);
     box-shadow: 0 20px 40px rgba(0, 136, 203, 0.15);
 }
+
 body.page-kbt-trustees .kbtt-card:hover::after {
     opacity: 1;
 }
@@ -111,19 +126,22 @@ body.page-kbt-trustees .kbtt-avatar-wrap {
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid var(--page-accent);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     margin-bottom: 25px;
     transition: transform 0.4s ease;
 }
+
 body.page-kbt-trustees .kbtt-avatar {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
 }
+
 body.page-kbt-trustees .kbtt-card:hover .kbtt-avatar-wrap {
     transform: scale(1.05);
 }
+
 body.page-kbt-trustees .kbtt-card:hover .kbtt-avatar {
     transform: scale(1.08);
 }
@@ -136,6 +154,7 @@ body.page-kbt-trustees .kbtt-name {
     color: #1a1a1a;
     margin-bottom: 6px;
 }
+
 body.page-kbt-trustees .kbtt-role {
     font-size: 12px;
     font-weight: 700;
@@ -156,6 +175,7 @@ body.page-kbt-trustees .kbtt-bio-wrap {
     width: 100%;
     margin-top: 10px;
 }
+
 body.page-kbt-trustees .kbtt-bio {
     font-size: 14.5px;
     line-height: 1.7;
@@ -163,6 +183,7 @@ body.page-kbt-trustees .kbtt-bio {
     margin-bottom: 15px;
     min-height: 100px;
 }
+
 body.page-kbt-trustees .kbtt-more-btn {
     background: none;
     border: 1px solid var(--page-accent);
@@ -178,6 +199,7 @@ body.page-kbt-trustees .kbtt-more-btn {
     display: block;
     margin: 0 auto;
 }
+
 body.page-kbt-trustees .kbtt-more-btn:hover {
     background-color: var(--page-accent);
     color: #ffffff;
@@ -189,20 +211,23 @@ body.page-kbt-trustees .kbtt-legacy-section {
     background-color: #fcfcfc;
     padding-bottom: 80px;
 }
+
 body.page-kbt-trustees .kbtt-legacy-card {
     max-width: 800px;
     margin: 0 auto;
     background: #ffffff;
-    border: 1px solid rgba(0,0,0,0.06);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 8px;
     padding: 45px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.01);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.01);
 }
+
 body.page-kbt-trustees .kbtt-structure-wrap {
-    border-bottom: 1px solid rgba(0,0,0,0.06);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
     padding-bottom: 25px;
     margin-bottom: 25px;
 }
+
 body.page-kbt-trustees .kbtt-structure-title {
     font-family: 'Georgia', serif;
     font-size: 20px;
@@ -210,12 +235,14 @@ body.page-kbt-trustees .kbtt-structure-title {
     color: #1a1a1a;
     margin-bottom: 10px;
 }
+
 body.page-kbt-trustees .kbtt-structure-text {
     font-size: 14.5px;
     line-height: 1.6;
     color: #666666;
     margin: 0;
 }
+
 body.page-kbt-trustees .kbtt-legacy-statement {
     font-family: 'Georgia', serif;
     font-size: 16px;
@@ -224,21 +251,25 @@ body.page-kbt-trustees .kbtt-legacy-statement {
     font-style: italic;
     margin-bottom: 25px;
 }
+
 body.page-kbt-trustees .kbtt-cta-wrap {
-    border-top: 1px solid rgba(0,0,0,0.06);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
     padding-top: 25px;
 }
+
 body.page-kbt-trustees .kbtt-cta-text {
     font-size: 15px;
     color: #555555;
     margin: 0;
 }
+
 body.page-kbt-trustees .kbtt-cta-link {
     color: #0088cb;
     font-weight: 700;
     text-decoration: underline;
     transition: color 0.3s ease;
 }
+
 body.page-kbt-trustees .kbtt-cta-link:hover {
     color: #1a1a1a;
 }
@@ -248,6 +279,7 @@ body.page-kbt-trustees .kbtt-cta-link:hover {
     body.page-kbt-trustees .kbtt-grid {
         grid-template-columns: 1fr;
     }
+
     body.page-kbt-trustees .kbtt-legacy-card {
         padding: 25px;
     }

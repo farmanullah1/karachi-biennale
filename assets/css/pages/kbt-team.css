@@ -5,7 +5,8 @@
    ========================================================================== */
 
 body.page-kbt-team {
-    --page-accent: #0088cb; /* KBT Blue */
+    --page-accent: #0088cb;
+    /* KBT Blue */
     --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
     --page-border: rgba(0, 136, 203, 0.15);
@@ -17,6 +18,7 @@ body.page-kbt-team .kbtm-hero-section {
     padding: 100px 0;
     border-bottom: 2px solid var(--page-accent);
 }
+
 body.page-kbt-team .kbtm-hero-title {
     font-family: 'Jost', sans-serif;
     font-size: clamp(2.5rem, 6vw, 4rem);
@@ -26,6 +28,7 @@ body.page-kbt-team .kbtm-hero-title {
     letter-spacing: 2px;
     margin-bottom: 15px;
 }
+
 body.page-kbt-team .kbtm-hero-intro {
     font-size: 16px;
     line-height: 1.75;
@@ -33,6 +36,7 @@ body.page-kbt-team .kbtm-hero-intro {
     max-width: 850px;
     margin: 0 auto 25px;
 }
+
 body.page-kbt-team .kbtm-breadcrumbs ul {
     list-style: none;
     padding: 0;
@@ -41,21 +45,25 @@ body.page-kbt-team .kbtm-breadcrumbs ul {
     justify-content: center;
     gap: 8px;
 }
+
 body.page-kbt-team .kbtm-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-body.page-kbt-team .kbtm-breadcrumbs li + li::before {
+
+body.page-kbt-team .kbtm-breadcrumbs li+li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
 }
+
 body.page-kbt-team .kbtm-breadcrumbs a {
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     transition: color 0.3s ease;
 }
+
 body.page-kbt-team .kbtm-breadcrumbs a:hover {
     color: var(--page-accent);
 }
@@ -65,14 +73,16 @@ body.page-kbt-team .kbtm-grid-section {
     background-color: #f8faf9;
     padding: 100px 0;
 }
+
 body.page-kbt-team .kbtm-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 40px;
 }
+
 body.page-kbt-team .kbtm-card {
     background-color: var(--page-bg-card);
-    border: 1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 12px;
     padding: 40px 30px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
@@ -81,8 +91,9 @@ body.page-kbt-team .kbtm-card {
     flex-direction: column;
     align-items: center;
 }
+
 body.page-kbt-team .kbtm-card:hover {
-    transform: translateY(-8px);
+    transform: scale(1.02);
     box-shadow: 0 20px 45px rgba(0, 136, 203, 0.12);
     border-color: rgba(0, 136, 203, 0.3);
 }
@@ -95,21 +106,24 @@ body.page-kbt-team .kbtm-avatar-wrap {
     overflow: hidden;
     position: relative;
     border: 3px solid var(--page-accent);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     margin-bottom: 25px;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     z-index: 1;
 }
+
 body.page-kbt-team .kbtm-avatar {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
 }
+
 body.page-kbt-team .kbtm-card:hover .kbtm-avatar-wrap {
     transform: scale(1.05) rotate(2deg);
     box-shadow: 0 12px 25px rgba(0, 136, 203, 0.2);
 }
+
 body.page-kbt-team .kbtm-card:hover .kbtm-avatar {
     transform: scale(1.08);
 }
@@ -138,16 +152,27 @@ body.page-kbt-team .kbtm-role {
 
 /* Color Coding based on Card Order */
 /* Bushra Hussain (Director) - Gold Badge */
-body.page-kbt-team .kbtm-card:nth-child(7n+1) .kbtm-role { background-color: #0088cb; }
+body.page-kbt-team .kbtm-card:nth-child(7n+1) .kbtm-role {
+    background-color: #0088cb;
+}
+
 /* Assistant to CEO & Social Media (Coordinators) - Teal Badge */
 body.page-kbt-team .kbtm-card:nth-child(7n+2) .kbtm-role,
 body.page-kbt-team .kbtm-card:nth-child(7n+5) .kbtm-role,
-body.page-kbt-team .kbtm-card:nth-child(7n+6) .kbtm-role { background-color: #0088cb; }
+body.page-kbt-team .kbtm-card:nth-child(7n+6) .kbtm-role {
+    background-color: #0088cb;
+}
+
 /* Accountant (Finance) - Purple Badge */
-body.page-kbt-team .kbtm-card:nth-child(7n+3) .kbtm-role { background-color: #8e44ad; }
+body.page-kbt-team .kbtm-card:nth-child(7n+3) .kbtm-role {
+    background-color: #8e44ad;
+}
+
 /* Deputy GM & Office Manager (Managers) - Indigo Badge */
 body.page-kbt-team .kbtm-card:nth-child(7n+4) .kbtm-role,
-body.page-kbt-team .kbtm-card:nth-child(7n+7) .kbtm-role { background-color: #0088cb; }
+body.page-kbt-team .kbtm-card:nth-child(7n+7) .kbtm-role {
+    background-color: #0088cb;
+}
 
 /* Biography wrap */
 body.page-kbt-team .kbtm-bio-wrap {
@@ -155,6 +180,7 @@ body.page-kbt-team .kbtm-bio-wrap {
     width: 100%;
     margin-top: 10px;
 }
+
 body.page-kbt-team .kbtm-bio {
     font-size: 14.5px;
     line-height: 1.75;
@@ -162,6 +188,7 @@ body.page-kbt-team .kbtm-bio {
     margin-bottom: 15px;
     min-height: 100px;
 }
+
 body.page-kbt-team .kbtm-more-btn {
     background: none;
     border: 1px solid var(--page-accent);
@@ -177,6 +204,7 @@ body.page-kbt-team .kbtm-more-btn {
     display: block;
     margin: 0 auto;
 }
+
 body.page-kbt-team .kbtm-more-btn:hover {
     background-color: var(--page-accent);
     color: #ffffff;
@@ -188,15 +216,17 @@ body.page-kbt-team .kbtm-legacy-section {
     background-color: #f8faf9;
     padding-bottom: 80px;
 }
+
 body.page-kbt-team .kbtm-legacy-card {
     max-width: 800px;
     margin: 0 auto;
     background: #ffffff;
-    border: 1px solid rgba(0,0,0,0.06);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 8px;
     padding: 40px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.01);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.01);
 }
+
 body.page-kbt-team .kbtm-legacy-statement {
     font-family: 'Georgia', serif;
     font-size: 16px;
@@ -205,21 +235,25 @@ body.page-kbt-team .kbtm-legacy-statement {
     font-style: italic;
     margin-bottom: 25px;
 }
+
 body.page-kbt-team .kbtm-cta-wrap {
-    border-top: 1px solid rgba(0,0,0,0.06);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
     padding-top: 20px;
 }
+
 body.page-kbt-team .kbtm-cta-text {
     font-size: 15px;
     color: #555555;
     margin: 0;
 }
+
 body.page-kbt-team .kbtm-cta-link {
     color: var(--page-accent);
     font-weight: 700;
     text-decoration: underline;
     transition: color 0.3s ease;
 }
+
 body.page-kbt-team .kbtm-cta-link:hover {
     color: #1a1a1a;
 }
@@ -229,6 +263,7 @@ body.page-kbt-team .kbtm-cta-link:hover {
     body.page-kbt-team .kbtm-grid {
         grid-template-columns: 1fr;
     }
+
     body.page-kbt-team .kbtm-legacy-card {
         padding: 25px;
     }

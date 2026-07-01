@@ -5,7 +5,8 @@
    ========================================================================== */
 
 body.page-kbt-patrons {
-    --page-accent: #0088cb; /* KBT Blue */
+    --page-accent: #0088cb;
+    /* KBT Blue */
     --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
     --page-border: rgba(0, 136, 203, 0.15);
@@ -17,6 +18,7 @@ body.page-kbt-patrons .kbtp-hero-section {
     padding: 100px 0;
     border-bottom: 2px solid var(--page-accent);
 }
+
 body.page-kbt-patrons .kbtp-hero-title {
     font-family: 'Georgia', serif;
     font-size: clamp(2.5rem, 6vw, 4rem);
@@ -24,6 +26,7 @@ body.page-kbt-patrons .kbtp-hero-title {
     color: #ffffff;
     margin-bottom: 15px;
 }
+
 body.page-kbt-patrons .kbtp-hero-intro {
     font-size: 16px;
     line-height: 1.75;
@@ -31,6 +34,7 @@ body.page-kbt-patrons .kbtp-hero-intro {
     max-width: 850px;
     margin: 0 auto 25px;
 }
+
 body.page-kbt-patrons .kbtp-breadcrumbs ul {
     list-style: none;
     padding: 0;
@@ -39,21 +43,25 @@ body.page-kbt-patrons .kbtp-breadcrumbs ul {
     justify-content: center;
     gap: 8px;
 }
+
 body.page-kbt-patrons .kbtp-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-body.page-kbt-patrons .kbtp-breadcrumbs li + li::before {
+
+body.page-kbt-patrons .kbtp-breadcrumbs li+li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
 }
+
 body.page-kbt-patrons .kbtp-breadcrumbs a {
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     transition: color 0.3s ease;
 }
+
 body.page-kbt-patrons .kbtp-breadcrumbs a:hover {
     color: var(--page-accent);
 }
@@ -63,25 +71,28 @@ body.page-kbt-patrons .kbtp-grid-section {
     background-color: #fcfcfc;
     padding: 100px 0;
 }
+
 body.page-kbt-patrons .kbtp-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 30px;
 }
+
 body.page-kbt-patrons .kbtp-card {
     background-color: var(--page-bg-card);
-    border: 1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 8px;
     padding: 35px 25px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.02);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.02);
     transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease, border-color 0.4s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
 }
+
 body.page-kbt-patrons .kbtp-card:hover {
-    transform: translateY(-8px) scale(1.02);
+    transform: translateY(3px);
     box-shadow: 0 15px 35px rgba(0, 136, 203, 0.12);
     border-color: rgba(0, 136, 203, 0.3);
 }
@@ -95,9 +106,10 @@ body.page-kbt-patrons .kbtp-initials-wrap {
     align-items: center;
     justify-content: center;
     margin-bottom: 25px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
+
 body.page-kbt-patrons .kbtp-initials {
     font-size: 24px;
     font-weight: 800;
@@ -105,26 +117,83 @@ body.page-kbt-patrons .kbtp-initials {
     letter-spacing: 0.5px;
     font-family: 'Jost', sans-serif;
 }
+
 body.page-kbt-patrons .kbtp-card:hover .kbtp-initials-wrap {
     transform: scale(1.1) rotate(3deg);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
 }
 
 /* Dynamic Multi-Color HSL Gradients for initials medallions */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+1) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Patrons Gold */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+2) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Teal */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+3) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Crimson */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+4) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Royal Blue */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+5) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Amber */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+6) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Emerald */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+7) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Cool Grey */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+8) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Amethyst */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+9) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Copper */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+10) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Obsidian */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+11) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Jade */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+12) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Sky */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+13) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Rose */
-body.page-kbt-patrons .kbtp-card:nth-child(14n+14) .kbtp-initials-wrap { background: linear-gradient(135deg, #0a1628 0%, #001a33 100%); } /* Slate */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+1) .kbtp-initials-wrap {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
+
+/* Patrons Gold */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+2) .kbtp-initials-wrap {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
+
+/* Teal */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+3) .kbtp-initials-wrap {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
+
+/* Crimson */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+4) .kbtp-initials-wrap {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
+
+/* Royal Blue */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+5) .kbtp-initials-wrap {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
+
+/* Amber */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+6) .kbtp-initials-wrap {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
+
+/* Emerald */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+7) .kbtp-initials-wrap {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
+
+/* Cool Grey */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+8) .kbtp-initials-wrap {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
+
+/* Amethyst */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+9) .kbtp-initials-wrap {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
+
+/* Copper */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+10) .kbtp-initials-wrap {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
+
+/* Obsidian */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+11) .kbtp-initials-wrap {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
+
+/* Jade */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+12) .kbtp-initials-wrap {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
+
+/* Sky */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+13) .kbtp-initials-wrap {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
+
+/* Rose */
+body.page-kbt-patrons .kbtp-card:nth-child(14n+14) .kbtp-initials-wrap {
+    background: linear-gradient(135deg, #0a1628 0%, #001a33 100%);
+}
+
+/* Slate */
 
 /* Name & Title alignments */
 body.page-kbt-patrons .kbtp-name {
@@ -135,6 +204,7 @@ body.page-kbt-patrons .kbtp-name {
     margin-bottom: 8px;
     text-align: center;
 }
+
 body.page-kbt-patrons .kbtp-title {
     font-size: 13.5px;
     line-height: 1.6;
@@ -148,6 +218,7 @@ body.page-kbt-patrons .kbtp-legacy-section {
     background-color: #fcfcfc;
     padding-bottom: 80px;
 }
+
 body.page-kbt-patrons .kbtp-legacy-card {
     max-width: 800px;
     margin: 0 auto;
@@ -155,8 +226,9 @@ body.page-kbt-patrons .kbtp-legacy-card {
     border: 1px dashed var(--page-border);
     border-radius: 8px;
     padding: 40px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.01);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.01);
 }
+
 body.page-kbt-patrons .kbtp-legacy-statement {
     font-family: 'Georgia', serif;
     font-size: 16px;
@@ -165,21 +237,25 @@ body.page-kbt-patrons .kbtp-legacy-statement {
     font-style: italic;
     margin-bottom: 30px;
 }
+
 body.page-kbt-patrons .kbtp-cta-wrap {
-    border-top: 1px solid rgba(0,0,0,0.06);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
     padding-top: 25px;
 }
+
 body.page-kbt-patrons .kbtp-cta-text {
     font-size: 15px;
     color: #555555;
     margin: 0;
 }
+
 body.page-kbt-patrons .kbtp-cta-link {
     color: #0088cb;
     font-weight: 700;
     text-decoration: underline;
     transition: color 0.3s ease;
 }
+
 body.page-kbt-patrons .kbtp-cta-link:hover {
     color: #1a1a1a;
 }
@@ -189,6 +265,7 @@ body.page-kbt-patrons .kbtp-cta-link:hover {
     body.page-kbt-patrons .kbtp-grid {
         grid-template-columns: 1fr;
     }
+
     body.page-kbt-patrons .kbtp-legacy-card {
         padding: 25px;
     }

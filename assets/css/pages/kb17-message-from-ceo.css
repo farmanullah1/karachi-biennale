@@ -5,7 +5,8 @@
    ========================================================================== */
 
 body.page-kb17-message-from-ceo {
-    --page-accent: #0088cb; /* KBT Blue */
+    --page-accent: #0088cb;
+    /* KBT Blue */
     --page-gold: #0088cb;
     --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
@@ -17,6 +18,7 @@ body.page-kb17-message-from-ceo .kb17m-hero-section {
     position: relative;
     overflow: hidden;
 }
+
 body.page-kb17-message-from-ceo .kb17m-hero-banner {
     background-image: url('../../img/bg/kb19-page-banner-2.jpg');
     background-size: cover;
@@ -27,12 +29,14 @@ body.page-kb17-message-from-ceo .kb17m-hero-banner {
     justify-content: center;
     position: relative;
 }
+
 body.page-kb17-message-from-ceo .kb17m-hero-overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(135deg, rgba(23, 8, 30, 0.85) 0%, rgba(0, 136, 203, 0.6) 100%);
     z-index: 1;
 }
+
 body.page-kb17-message-from-ceo .kb17m-hero-title {
     font-family: 'Jost', sans-serif;
     font-size: clamp(2.5rem, 6vw, 4rem);
@@ -41,8 +45,9 @@ body.page-kb17-message-from-ceo .kb17m-hero-title {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 10px;
-    text-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
+
 body.page-kb17-message-from-ceo .kb17m-hero-subtitle {
     font-size: 1.1rem;
     color: var(--page-gold);
@@ -50,6 +55,7 @@ body.page-kb17-message-from-ceo .kb17m-hero-subtitle {
     font-style: italic;
     letter-spacing: 1px;
 }
+
 body.page-kb17-message-from-ceo .kb17m-breadcrumbs ul {
     list-style: none;
     padding: 0;
@@ -58,21 +64,25 @@ body.page-kb17-message-from-ceo .kb17m-breadcrumbs ul {
     justify-content: center;
     gap: 8px;
 }
+
 body.page-kb17-message-from-ceo .kb17m-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.65);
+    color: rgba(255, 255, 255, 0.65);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-body.page-kb17-message-from-ceo .kb17m-breadcrumbs li + li::before {
+
+body.page-kb17-message-from-ceo .kb17m-breadcrumbs li+li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
 }
+
 body.page-kb17-message-from-ceo .kb17m-breadcrumbs a {
-    color: rgba(255,255,255,0.85);
+    color: rgba(255, 255, 255, 0.85);
     transition: color 0.3s ease;
 }
+
 body.page-kb17-message-from-ceo .kb17m-breadcrumbs a:hover {
     color: var(--page-gold);
 }
@@ -86,10 +96,10 @@ body.page-kb17-message-from-ceo .kb17m-main-wrapper {
 /* CEO Message Card content */
 body.page-kb17-message-from-ceo .kb17m-content-card {
     background-color: #ffffff;
-    border: 1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 12px;
     padding: 50px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
 }
 
 /* Portrait container wraps */
@@ -100,21 +110,24 @@ body.page-kb17-message-from-ceo .kb17m-avatar-wrap {
     margin: 0 auto;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
     border: 4px solid var(--page-accent);
     background-color: #f6f5f8;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
+
 body.page-kb17-message-from-ceo .kb17m-avatar {
     width: 100%;
     height: auto;
     display: block;
 }
+
 body.page-kb17-message-from-ceo .kb17m-avatar-details {
     padding: 20px 15px;
     background-color: #ffffff;
-    border-top: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
+
 body.page-kb17-message-from-ceo .kb17m-avatar-name {
     font-family: 'Jost', sans-serif;
     font-size: 20px;
@@ -122,6 +135,7 @@ body.page-kb17-message-from-ceo .kb17m-avatar-name {
     color: #1a1a1a;
     margin-bottom: 4px;
 }
+
 body.page-kb17-message-from-ceo .kb17m-avatar-role {
     font-size: 11px;
     font-weight: 700;
@@ -129,8 +143,9 @@ body.page-kb17-message-from-ceo .kb17m-avatar-role {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
 body.page-kb17-message-from-ceo .kb17m-content-card:hover .kb17m-avatar-wrap {
-    transform: translateY(-5px);
+    transform: scale(1.02);
     box-shadow: 0 15px 35px rgba(0, 136, 203, 0.15);
 }
 
@@ -138,6 +153,7 @@ body.page-kb17-message-from-ceo .kb17m-content-card:hover .kb17m-avatar-wrap {
 body.page-kb17-message-from-ceo .kb17m-letter-body {
     padding-left: 20px;
 }
+
 body.page-kb17-message-from-ceo .kb17m-letter-tag {
     background-color: rgba(0, 136, 203, 0.08);
     color: var(--page-accent);
@@ -150,6 +166,7 @@ body.page-kb17-message-from-ceo .kb17m-letter-tag {
     display: inline-block;
     margin-bottom: 15px;
 }
+
 body.page-kb17-message-from-ceo .kb17m-letter-heading {
     font-family: 'Jost', sans-serif;
     font-size: 28px;
@@ -157,6 +174,7 @@ body.page-kb17-message-from-ceo .kb17m-letter-heading {
     color: #1a1a1a;
     margin-bottom: 25px;
 }
+
 body.page-kb17-message-from-ceo .kb17m-letter-text p {
     font-size: 15.5px;
     line-height: 1.85;
@@ -174,6 +192,7 @@ body.page-kb17-message-from-ceo .kb17m-signature-wrap {
     border-radius: 0 6px 6px 0;
     display: inline-block;
 }
+
 body.page-kb17-message-from-ceo .kb17m-signature-name {
     font-family: 'Georgia', serif;
     font-style: italic;
@@ -183,6 +202,7 @@ body.page-kb17-message-from-ceo .kb17m-signature-name {
     display: block;
     margin-bottom: 2px;
 }
+
 body.page-kb17-message-from-ceo .kb17m-signature-title {
     font-size: 12px;
     color: #666666;
@@ -194,11 +214,13 @@ body.page-kb17-message-from-ceo .kb17m-signature-title {
     body.page-kb17-message-from-ceo .kb17m-content-card {
         padding: 30px;
     }
+
     body.page-kb17-message-from-ceo .kb17m-letter-body {
         padding-left: 0;
         margin-top: 30px;
     }
 }
+
 @media (max-width: 767px) {
     body.page-kb17-message-from-ceo .kb17m-hero-banner {
         min-height: 260px;

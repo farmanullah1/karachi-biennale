@@ -5,8 +5,10 @@
    ========================================================================== */
 
 body.page-kb24-media {
-    --page-accent: #0088cb; /* KBT Blue */
-    --page-copper: #0088cb; /* Warm Copper */
+    --page-accent: #0088cb;
+    /* KBT Blue */
+    --page-copper: #0088cb;
+    /* Warm Copper */
     --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
     --page-border: rgba(0, 136, 203, 0.15);
@@ -18,6 +20,7 @@ body.page-kb24-media .kb24m-hero-section {
     padding: 90px 0;
     border-bottom: 2px solid var(--page-accent);
 }
+
 body.page-kb24-media .kb24m-hero-title {
     font-family: 'Jost', sans-serif;
     font-size: clamp(2.5rem, 6vw, 4rem);
@@ -27,6 +30,7 @@ body.page-kb24-media .kb24m-hero-title {
     letter-spacing: 2px;
     margin-bottom: 10px;
 }
+
 body.page-kb24-media .kb24m-hero-subtitle {
     font-size: 1.1rem;
     color: var(--page-copper);
@@ -35,6 +39,7 @@ body.page-kb24-media .kb24m-hero-subtitle {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
+
 body.page-kb24-media .kb24m-hero-intro {
     font-size: 15.5px;
     line-height: 1.7;
@@ -42,6 +47,7 @@ body.page-kb24-media .kb24m-hero-intro {
     max-width: 800px;
     margin: 0 auto 25px;
 }
+
 body.page-kb24-media .kb24m-breadcrumbs ul {
     list-style: none;
     padding: 0;
@@ -50,21 +56,25 @@ body.page-kb24-media .kb24m-breadcrumbs ul {
     justify-content: center;
     gap: 8px;
 }
+
 body.page-kb24-media .kb24m-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-body.page-kb24-media .kb24m-breadcrumbs li + li::before {
+
+body.page-kb24-media .kb24m-breadcrumbs li+li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
 }
+
 body.page-kb24-media .kb24m-breadcrumbs a {
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     transition: color 0.3s ease;
 }
+
 body.page-kb24-media .kb24m-breadcrumbs a:hover {
     color: var(--page-copper);
 }
@@ -72,24 +82,26 @@ body.page-kb24-media .kb24m-breadcrumbs a:hover {
 /* 2. Sticky Jump Bar */
 body.page-kb24-media .kb24m-jump-bar-wrap {
     background-color: #0e1b13;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 99;
 }
+
 body.page-kb24-media .kb24m-jump-title {
     font-size: 11px;
     font-weight: 700;
-    color: rgba(255,255,255,0.4);
+    color: rgba(255, 255, 255, 0.4);
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-right: 15px;
 }
+
 body.page-kb24-media .kb24m-jump-link {
     font-size: 12px;
     font-weight: 700;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     text-decoration: none;
@@ -97,6 +109,7 @@ body.page-kb24-media .kb24m-jump-link {
     transition: color 0.3s ease;
     display: inline-block;
 }
+
 body.page-kb24-media .kb24m-jump-link:hover {
     color: var(--page-copper);
 }
@@ -106,20 +119,25 @@ body.page-kb24-media .kb24m-sections-wrap {
     background-color: #FAF9F6;
     padding: 80px 0;
 }
+
 body.page-kb24-media .kb24m-section {
-    scroll-margin-top: 60px; /* Offset for jumpbar */
+    scroll-margin-top: 60px;
+    /* Offset for jumpbar */
 }
+
 body.page-kb24-media .kb24m-section-header {
-    border-bottom: 2px solid rgba(0,0,0,0.06);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.06);
     padding-bottom: 15px;
     margin-bottom: 35px;
 }
+
 body.page-kb24-media .kb24m-section-title {
     font-family: 'Jost', sans-serif;
     font-size: 24px;
     font-weight: 700;
     color: #1a1a1a;
 }
+
 body.page-kb24-media .kb24m-section-title i {
     color: var(--page-accent);
 }
@@ -135,18 +153,19 @@ body.page-kb24-media .kb24m-grid {
 /* Editorial Paper Card */
 body.page-kb24-media .kb24m-media-card {
     background-color: var(--page-bg-card);
-    border: 1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 8px;
     padding: 35px 25px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.01);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.01);
     display: flex;
     flex-direction: column;
     position: relative;
     /* Smooth paper lift transition */
     transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease, border-color 0.4s ease;
 }
+
 body.page-kb24-media .kb24m-media-card:hover {
-    transform: translateY(-8px);
+    transform: scale(1.02);
     box-shadow: 0 18px 40px rgba(0, 136, 203, 0.12);
     border-color: rgba(0, 136, 203, 0.25);
 }
@@ -155,12 +174,15 @@ body.page-kb24-media .kb24m-media-card:hover {
 body.page-kb24-media .kb24m-media-card::before {
     content: '';
     position: absolute;
-    top: 0; left: 0;
-    width: 0; height: 3px;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
     background-color: var(--page-copper);
     transition: width 0.3s ease;
     border-radius: 8px 8px 0 0;
 }
+
 body.page-kb24-media .kb24m-media-card:hover::before {
     width: 100%;
 }
@@ -179,6 +201,7 @@ body.page-kb24-media .kb24m-source-badge {
     color: #ffffff;
     background-color: var(--page-accent);
 }
+
 /* Color overrides based on typical sources */
 body.page-kb24-media .kb24m-media-card:nth-child(even) .kb24m-source-badge {
     background-color: var(--page-copper);
@@ -193,6 +216,7 @@ body.page-kb24-media .kb24m-article-title {
     line-height: 1.4;
     margin-bottom: 12px;
 }
+
 body.page-kb24-media .kb24m-article-excerpt {
     font-size: 14px;
     line-height: 1.6;
@@ -213,12 +237,15 @@ body.page-kb24-media .kb24m-read-btn {
     align-items: center;
     transition: color 0.3s ease;
 }
+
 body.page-kb24-media .kb24m-read-btn i {
     transition: transform 0.3s ease;
 }
+
 body.page-kb24-media .kb24m-media-card:hover .kb24m-read-btn {
     color: var(--page-copper);
 }
+
 body.page-kb24-media .kb24m-media-card:hover .kb24m-read-btn i {
     transform: translateX(4px);
 }
@@ -226,7 +253,7 @@ body.page-kb24-media .kb24m-media-card:hover .kb24m-read-btn i {
 /* Dividers */
 body.page-kb24-media .kb24m-divider {
     border: 0;
-    border-top: 1px solid rgba(0,0,0,0.06);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
     margin: 50px 0;
 }
 
@@ -236,6 +263,7 @@ body.page-kb24-media .kb24m-divider {
         display: none;
     }
 }
+
 @media (max-width: 575px) {
     body.page-kb24-media .kb24m-media-card {
         padding: 30px 20px;

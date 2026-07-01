@@ -25,7 +25,7 @@
                 <div class="widget-area">
                     <div class="row justify-content-between">
                         <!-- Column 1: KBT Info -->
-                        <div class="col-md-6 col-xl-4 col-lg-4">
+                        <div class="col-md-5 col-xl-3 col-lg-3">
                             <div class="widget footer-widget">
                                 <div class="widget-contact">
                                     <h3 class="widget_title">Karachi Biennale Trust</h3>

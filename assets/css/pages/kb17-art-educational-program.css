@@ -29,12 +29,14 @@ body.page-kb17-art-educational-program {
     border-bottom: 3px solid var(--theme-color);
     background-color: #474747;
 }
+
 .kb17-education-hero-overlay {
     position: absolute;
     inset: 0;
     background: radial-gradient(circle at center, rgba(0, 136, 203, 0.15) 0%, transparent 85%);
     z-index: 1;
 }
+
 .kb17-education-hero-title {
     font-family: 'Jost', sans-serif;
     font-size: clamp(1.8rem, 4vw, 3.2rem);
@@ -43,8 +45,9 @@ body.page-kb17-art-educational-program {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 8px;
-    text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
+
 .kb17-education-hero-subtitle {
     font-size: 1.3rem;
     color: var(--theme-color);
@@ -53,8 +56,9 @@ body.page-kb17-art-educational-program {
     font-weight: 600;
     letter-spacing: 3px;
     margin-bottom: 0;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
+
 .kb17-education-breadcrumbs ul {
     list-style: none;
     padding: 0;
@@ -63,21 +67,25 @@ body.page-kb17-art-educational-program {
     justify-content: center;
     gap: 8px;
 }
+
 .kb17-education-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-.kb17-education-breadcrumbs li + li::before {
+
+.kb17-education-breadcrumbs li+li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.4);
+    color: rgba(255, 255, 255, 0.4);
 }
+
 .kb17-education-breadcrumbs a {
-    color: rgba(255,255,255,0.9);
+    color: rgba(255, 255, 255, 0.9);
     transition: color 0.3s ease;
 }
+
 .kb17-education-breadcrumbs a:hover {
     color: var(--theme-color);
 }
@@ -98,6 +106,7 @@ body.page-kb17-art-educational-program {
     text-transform: uppercase;
     margin-bottom: 15px;
 }
+
 .kb17-education-lead {
     font-size: 16px;
     line-height: 1.8;
@@ -112,20 +121,23 @@ body.page-kb17-art-educational-program {
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
 }
+
 .kb17-education-stat {
     background: var(--white-color);
     border: 1px solid var(--light-color);
     border-radius: 12px;
     padding: 25px 20px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
     transition: all 0.3s ease;
 }
+
 .kb17-education-stat:hover {
-    transform: translateY(-5px);
+    transform: scale(1.02);
     box-shadow: 0 8px 25px rgba(0, 136, 203, 0.08);
     border-color: var(--theme-color);
 }
+
 .kb17-education-stat .number {
     font-family: 'Jost', sans-serif;
     font-size: 32px;
@@ -141,14 +153,16 @@ body.page-kb17-art-educational-program {
     border-radius: 16px;
     padding: 45px;
     height: 100%;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.02);
 }
+
 .kb17-education-program-category {
     background: var(--smoke-color5);
     padding: 25px 30px;
     border-radius: 8px;
     border-left: 3px solid var(--theme-color) !important;
 }
+
 .kb17-education-heading {
     font-family: 'Jost', sans-serif;
     font-size: 18px;
@@ -158,9 +172,11 @@ body.page-kb17-art-educational-program {
     letter-spacing: 0.5px;
     margin-bottom: 12px;
 }
+
 .kb17-education-heading i {
     color: var(--theme-color) !important;
 }
+
 .kb17-education-body-text {
     font-size: 14.5px;
     line-height: 1.7;
@@ -173,9 +189,10 @@ body.page-kb17-art-educational-program {
     padding: 40px;
     border-radius: 16px;
     border: 1px solid var(--light-color);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.02);
     height: 100%;
 }
+
 .kb17-education-sidebar-heading {
     font-family: 'Jost', sans-serif;
     font-size: 20px;
@@ -190,6 +207,7 @@ body.page-kb17-art-educational-program {
 .kb17-education-philosophy {
     border-left: 3px solid var(--theme-color) !important;
 }
+
 .philosophy-title {
     font-family: 'Jost', sans-serif;
     font-size: 15px;
@@ -206,8 +224,9 @@ body.page-kb17-art-educational-program {
     border: 1px solid var(--light-color);
     border-radius: 16px;
     padding: 40px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.02);
 }
+
 .kb17-education-carousel-heading {
     font-family: 'Jost', sans-serif;
     font-size: 20px;
@@ -216,24 +235,29 @@ body.page-kb17-art-educational-program {
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
+
 .kb17-education-slide {
     padding: 0 10px;
 }
+
 .kb17-education-slide a {
     display: block;
     position: relative;
     overflow: hidden;
     border-radius: 8px;
 }
+
 .kb17-education-slide img {
     width: 100%;
     aspect-ratio: 3 / 2;
     object-fit: cover;
     transition: transform 0.5s ease;
 }
+
 .kb17-education-slide:hover img {
     transform: scale(1.04);
 }
+
 .slide-overlay {
     position: absolute;
     inset: 0;
@@ -246,6 +270,7 @@ body.page-kb17-art-educational-program {
     color: var(--white-color);
     font-size: 24px;
 }
+
 .kb17-education-slide:hover .slide-overlay {
     opacity: 1;
 }
@@ -254,12 +279,14 @@ body.page-kb17-art-educational-program {
     .kb17-education-stats {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .kb17-education-copy-card,
     .kb17-education-sidebar,
     .kb17-education-carousel-wrap {
         padding: 30px 20px;
     }
 }
+
 @media (max-width: 576px) {
     .kb17-education-stats {
         grid-template-columns: 1fr;

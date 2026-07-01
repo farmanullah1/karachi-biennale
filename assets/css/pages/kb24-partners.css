@@ -5,7 +5,8 @@
    ========================================================================== */
 
 body.page-kb24-partners {
-    --page-accent: #0088cb; /* KBT Blue */
+    --page-accent: #0088cb;
+    /* KBT Blue */
     --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
     --page-border: rgba(0, 136, 203, 0.15);
@@ -17,6 +18,7 @@ body.page-kb24-partners .kb24p-hero-section {
     padding: 90px 0;
     border-bottom: 2px solid var(--page-accent);
 }
+
 body.page-kb24-partners .kb24p-hero-title {
     font-family: 'Jost', sans-serif;
     font-size: clamp(2.5rem, 6vw, 4rem);
@@ -26,6 +28,7 @@ body.page-kb24-partners .kb24p-hero-title {
     letter-spacing: 2px;
     margin-bottom: 10px;
 }
+
 body.page-kb24-partners .kb24p-hero-subtitle {
     font-size: 1.1rem;
     color: var(--page-accent);
@@ -34,6 +37,7 @@ body.page-kb24-partners .kb24p-hero-subtitle {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
+
 body.page-kb24-partners .kb24p-hero-intro {
     font-size: 15.5px;
     line-height: 1.7;
@@ -41,6 +45,7 @@ body.page-kb24-partners .kb24p-hero-intro {
     max-width: 800px;
     margin: 0 auto 25px;
 }
+
 body.page-kb24-partners .kb24p-breadcrumbs ul {
     list-style: none;
     padding: 0;
@@ -49,21 +54,25 @@ body.page-kb24-partners .kb24p-breadcrumbs ul {
     justify-content: center;
     gap: 8px;
 }
+
 body.page-kb24-partners .kb24p-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-body.page-kb24-partners .kb24p-breadcrumbs li + li::before {
+
+body.page-kb24-partners .kb24p-breadcrumbs li+li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
 }
+
 body.page-kb24-partners .kb24p-breadcrumbs a {
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     transition: color 0.3s ease;
 }
+
 body.page-kb24-partners .kb24p-breadcrumbs a:hover {
     color: var(--page-accent);
 }
@@ -71,24 +80,26 @@ body.page-kb24-partners .kb24p-breadcrumbs a:hover {
 /* 2. Sticky Category Jump Bar */
 body.page-kb24-partners .kb24p-jump-bar-wrap {
     background-color: #0a1628;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 99;
 }
+
 body.page-kb24-partners .kb24p-jump-title {
     font-size: 11px;
     font-weight: 700;
-    color: rgba(255,255,255,0.4);
+    color: rgba(255, 255, 255, 0.4);
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-right: 15px;
 }
+
 body.page-kb24-partners .kb24p-jump-link {
     font-size: 12px;
     font-weight: 700;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     text-decoration: none;
@@ -96,6 +107,7 @@ body.page-kb24-partners .kb24p-jump-link {
     transition: color 0.3s ease;
     display: inline-block;
 }
+
 body.page-kb24-partners .kb24p-jump-link:hover {
     color: var(--page-accent);
 }
@@ -105,14 +117,18 @@ body.page-kb24-partners .kb24p-sections-wrap {
     background-color: #FAF9F6;
     padding: 80px 0;
 }
+
 body.page-kb24-partners .kb24p-section {
-    scroll-margin-top: 60px; /* Offset for sticky jump-bar */
+    scroll-margin-top: 60px;
+    /* Offset for sticky jump-bar */
 }
+
 body.page-kb24-partners .kb24p-section-header {
-    border-bottom: 2px solid rgba(0,0,0,0.06);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.06);
     padding-bottom: 15px;
     margin-bottom: 35px;
 }
+
 body.page-kb24-partners .kb24p-section-title {
     font-family: 'Jost', sans-serif;
     font-size: 24px;
@@ -121,6 +137,7 @@ body.page-kb24-partners .kb24p-section-title {
     display: flex;
     align-items: center;
 }
+
 body.page-kb24-partners .kb24p-section-title i {
     color: var(--page-accent);
 }
@@ -131,6 +148,7 @@ body.page-kb24-partners .kb24p-grid {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 25px;
 }
+
 body.page-kb24-partners .kb24p-grid-small {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
@@ -138,7 +156,7 @@ body.page-kb24-partners .kb24p-grid-small {
 /* Logo Cards */
 body.page-kb24-partners .kb24p-logo-card {
     background-color: var(--page-bg-card);
-    border: 1px solid rgba(0,0,0,0.06);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 8px;
     height: 140px;
     display: flex;
@@ -147,14 +165,16 @@ body.page-kb24-partners .kb24p-logo-card {
     justify-content: center;
     padding: 20px;
     position: relative;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
     transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease, border-color 0.4s ease;
 }
+
 body.page-kb24-partners .kb24p-logo-card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.02);
     box-shadow: 0 10px 25px rgba(0, 136, 203, 0.12);
     border-color: rgba(0, 136, 203, 0.25);
 }
+
 body.page-kb24-partners .kb24p-logo {
     max-height: 80px;
     max-width: 100%;
@@ -162,6 +182,7 @@ body.page-kb24-partners .kb24p-logo {
     filter: grayscale(100%);
     transition: filter 0.4s ease, transform 0.4s ease;
 }
+
 body.page-kb24-partners .kb24p-logo-card:hover .kb24p-logo {
     filter: grayscale(0%);
     transform: scale(1.03);
@@ -177,6 +198,7 @@ body.page-kb24-partners .kb24p-logo-label {
     margin-top: 10px;
     text-align: center;
 }
+
 body.page-kb24-partners .kb24p-card-text {
     font-family: 'Georgia', serif;
     font-size: 15px;
@@ -184,9 +206,11 @@ body.page-kb24-partners .kb24p-card-text {
     color: #333;
     text-align: center;
 }
+
 body.page-kb24-partners .kb24p-badge {
     position: absolute;
-    top: 8px; left: 8px;
+    top: 8px;
+    left: 8px;
     font-size: 9px;
     font-weight: 700;
     background-color: var(--page-accent);
@@ -208,8 +232,15 @@ body.page-kb24-partners .kb24p-tier-badge {
     display: inline-block;
     margin-bottom: 20px;
 }
-body.page-kb24-partners .kb24p-tier-badge-gold { background-color: #0088cb; }
-body.page-kb24-partners .kb24p-tier-badge-bronze { background-color: #cd7f32; }
+
+body.page-kb24-partners .kb24p-tier-badge-gold {
+    background-color: #0088cb;
+}
+
+body.page-kb24-partners .kb24p-tier-badge-bronze {
+    background-color: #cd7f32;
+}
+
 body.page-kb24-partners .kb24p-sub-title {
     font-size: 15px;
     font-weight: 700;
@@ -227,12 +258,14 @@ body.page-kb24-partners .kb24p-names-grid {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 15px;
 }
+
 body.page-kb24-partners .kb24p-names-grid-3 {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
+
 body.page-kb24-partners .kb24p-name-badge {
     background-color: #ffffff;
-    border: 1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 6px;
     padding: 12px 18px;
     display: flex;
@@ -240,11 +273,13 @@ body.page-kb24-partners .kb24p-name-badge {
     gap: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
+
 body.page-kb24-partners .kb24p-name-badge:hover {
     transform: translateX(4px);
     box-shadow: 0 5px 15px rgba(0, 136, 203, 0.08);
     border-color: rgba(0, 136, 203, 0.25);
 }
+
 body.page-kb24-partners .kb24p-badge-label {
     font-size: 8px;
     font-weight: 700;
@@ -254,6 +289,7 @@ body.page-kb24-partners .kb24p-badge-label {
     border-radius: 3px;
     text-transform: uppercase;
 }
+
 body.page-kb24-partners .kb24p-supporter-name {
     font-size: 13.5px;
     font-weight: 600;
@@ -265,6 +301,7 @@ body.page-kb24-partners .kb24p-gratitude-section {
     background-color: #FAF9F6;
     padding-bottom: 80px;
 }
+
 body.page-kb24-partners .kb24p-gratitude-card {
     max-width: 800px;
     margin: 0 auto;
@@ -272,8 +309,9 @@ body.page-kb24-partners .kb24p-gratitude-card {
     border: 1px dashed var(--page-border);
     border-radius: 8px;
     padding: 40px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.01);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.01);
 }
+
 body.page-kb24-partners .kb24p-gratitude-statement {
     font-family: 'Georgia', serif;
     font-size: 16px;
@@ -282,21 +320,25 @@ body.page-kb24-partners .kb24p-gratitude-statement {
     font-style: italic;
     margin-bottom: 30px;
 }
+
 body.page-kb24-partners .kb24p-cta-wrap {
-    border-top: 1px solid rgba(0,0,0,0.06);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
     padding-top: 25px;
 }
+
 body.page-kb24-partners .kb24p-cta-text {
     font-size: 15px;
     color: #555555;
     margin: 0;
 }
+
 body.page-kb24-partners .kb24p-cta-link {
     color: var(--page-accent);
     font-weight: 700;
     text-decoration: underline;
     transition: color 0.3s ease;
 }
+
 body.page-kb24-partners .kb24p-cta-link:hover {
     color: #1a1a1a;
 }

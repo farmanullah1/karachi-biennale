@@ -5,8 +5,10 @@
    ========================================================================== */
 
 body.page-kb19-visitors-guide-app {
-    --page-accent: #0088cb; /* KBT Blue */
-    --page-dark: #0a1628; /* Charcoal */
+    --page-accent: #0088cb;
+    /* KBT Blue */
+    --page-dark: #0a1628;
+    /* Charcoal */
     --page-bg-light: #FAF9F6;
     --page-bg-card: #ffffff;
     --page-border: rgba(0, 136, 203, 0.15);
@@ -17,6 +19,7 @@ body.page-kb19-visitors-guide-app .kb19v-hero-section {
     position: relative;
     overflow: hidden;
 }
+
 body.page-kb19-visitors-guide-app .kb19v-hero-banner {
     background-image: url('../../img/bg/kb19-page-banner-2.jpg');
     background-size: cover;
@@ -27,12 +30,14 @@ body.page-kb19-visitors-guide-app .kb19v-hero-banner {
     justify-content: center;
     position: relative;
 }
+
 body.page-kb19-visitors-guide-app .kb19v-hero-overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(135deg, rgba(21, 31, 25, 0.85) 0%, rgba(44, 62, 80, 0.6) 100%);
     z-index: 1;
 }
+
 body.page-kb19-visitors-guide-app .kb19v-hero-title {
     font-family: 'Jost', sans-serif;
     font-size: clamp(2.5rem, 6vw, 4rem);
@@ -41,8 +46,9 @@ body.page-kb19-visitors-guide-app .kb19v-hero-title {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 10px;
-    text-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
+
 body.page-kb19-visitors-guide-app .kb19v-hero-subtitle {
     font-size: 1.1rem;
     color: var(--page-accent);
@@ -50,6 +56,7 @@ body.page-kb19-visitors-guide-app .kb19v-hero-subtitle {
     font-style: italic;
     letter-spacing: 1px;
 }
+
 body.page-kb19-visitors-guide-app .kb19v-breadcrumbs ul {
     list-style: none;
     padding: 0;
@@ -58,21 +65,25 @@ body.page-kb19-visitors-guide-app .kb19v-breadcrumbs ul {
     justify-content: center;
     gap: 8px;
 }
+
 body.page-kb19-visitors-guide-app .kb19v-breadcrumbs li {
     font-size: 12px;
-    color: rgba(255,255,255,0.65);
+    color: rgba(255, 255, 255, 0.65);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-body.page-kb19-visitors-guide-app .kb19v-breadcrumbs li + li::before {
+
+body.page-kb19-visitors-guide-app .kb19v-breadcrumbs li+li::before {
     content: '/';
     margin-right: 8px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
 }
+
 body.page-kb19-visitors-guide-app .kb19v-breadcrumbs a {
-    color: rgba(255,255,255,0.85);
+    color: rgba(255, 255, 255, 0.85);
     transition: color 0.3s ease;
 }
+
 body.page-kb19-visitors-guide-app .kb19v-breadcrumbs a:hover {
     color: var(--page-accent);
 }
@@ -87,14 +98,16 @@ body.page-kb19-visitors-guide-app .kb19v-main-wrapper {
 body.page-kb19-visitors-guide-app .kb19v-download-section {
     margin-bottom: 70px;
 }
+
 body.page-kb19-visitors-guide-app .kb19v-download-card {
     background-color: #ffffff;
-    border: 1px solid rgba(0,0,0,0.06);
-    border-top: 4px solid var(--page-accent);
-    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    /* /* border-top: 4px solid var(--page-accent); */
+    */ border-radius: 12px;
     padding: 50px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
 }
+
 body.page-kb19-visitors-guide-app .kb19v-badge-tag {
     background-color: rgba(0, 136, 203, 0.12);
     color: #0088cb;
@@ -107,6 +120,7 @@ body.page-kb19-visitors-guide-app .kb19v-badge-tag {
     display: inline-block;
     margin-bottom: 15px;
 }
+
 body.page-kb19-visitors-guide-app .kb19v-intro-title {
     font-family: 'Jost', sans-serif;
     font-size: 28px;
@@ -114,6 +128,7 @@ body.page-kb19-visitors-guide-app .kb19v-intro-title {
     color: #1a1a1a;
     margin-bottom: 15px;
 }
+
 body.page-kb19-visitors-guide-app .kb19v-intro-text {
     font-size: 15.5px;
     line-height: 1.85;
@@ -125,10 +140,11 @@ body.page-kb19-visitors-guide-app .kb19v-intro-text {
 /* App stores container */
 body.page-kb19-visitors-guide-app .kb19v-stores-box {
     background-color: #f8faf9;
-    border: 1px dashed rgba(0,0,0,0.08);
+    border: 1px dashed rgba(0, 0, 0, 0.08);
     border-radius: 8px;
     padding: 30px 25px;
 }
+
 body.page-kb19-visitors-guide-app .kb19v-stores-title {
     font-family: 'Jost', sans-serif;
     font-size: 16px;
@@ -138,6 +154,7 @@ body.page-kb19-visitors-guide-app .kb19v-stores-title {
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
+
 body.page-kb19-visitors-guide-app .kb19v-store-buttons {
     display: flex;
     flex-direction: column;
@@ -145,21 +162,25 @@ body.page-kb19-visitors-guide-app .kb19v-store-buttons {
     margin-bottom: 20px;
     align-items: center;
 }
+
 body.page-kb19-visitors-guide-app .kb19v-store-link {
     display: block;
     width: 100%;
     max-width: 170px;
     transition: transform 0.3s ease;
 }
+
 body.page-kb19-visitors-guide-app .kb19v-store-link:hover {
     transform: scale(1.05);
 }
+
 body.page-kb19-visitors-guide-app .kb19v-store-img {
     width: 100%;
     height: auto;
     display: block;
     border-radius: 4px;
 }
+
 body.page-kb19-visitors-guide-app .kb19v-compatibility-note {
     font-size: 11px;
     color: #888888;
@@ -169,9 +190,11 @@ body.page-kb19-visitors-guide-app .kb19v-compatibility-note {
 body.page-kb19-visitors-guide-app .kb19v-features-section {
     margin-bottom: 80px;
 }
+
 body.page-kb19-visitors-guide-app .kb19v-section-header {
     margin-bottom: 45px;
 }
+
 body.page-kb19-visitors-guide-app .kb19v-section-title {
     font-family: 'Jost', sans-serif;
     font-size: 26px;
@@ -179,6 +202,7 @@ body.page-kb19-visitors-guide-app .kb19v-section-title {
     color: #1a1a1a;
     margin-bottom: 12px;
 }
+
 body.page-kb19-visitors-guide-app .kb19v-header-divider {
     width: 60px;
     height: 3px;
@@ -186,21 +210,24 @@ body.page-kb19-visitors-guide-app .kb19v-header-divider {
     margin: 0 auto;
     border-radius: 2px;
 }
+
 body.page-kb19-visitors-guide-app .kb19v-feature-card {
     background-color: #ffffff;
-    border: 1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 10px;
     padding: 30px 20px;
     text-align: center;
     height: 100%;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.01);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
     /* Feature cards transform rise and scale */
     transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
 }
+
 body.page-kb19-visitors-guide-app .kb19v-feature-card:hover {
-    transform: translateY(-8px);
+    transform: scale(1.02);
     box-shadow: 0 15px 35px rgba(0, 136, 203, 0.15);
 }
+
 body.page-kb19-visitors-guide-app .kb19v-feature-icon-wrap {
     width: 60px;
     height: 60px;
@@ -211,9 +238,11 @@ body.page-kb19-visitors-guide-app .kb19v-feature-icon-wrap {
     justify-content: center;
     margin: 0 auto 20px;
 }
+
 body.page-kb19-visitors-guide-app .kb19v-feature-icon {
     font-size: 26px;
 }
+
 body.page-kb19-visitors-guide-app .kb19v-feature-name {
     font-family: 'Jost', sans-serif;
     font-size: 16px;
@@ -221,6 +250,7 @@ body.page-kb19-visitors-guide-app .kb19v-feature-name {
     color: #1a1a1a;
     margin-bottom: 10px;
 }
+
 body.page-kb19-visitors-guide-app .kb19v-feature-desc {
     font-size: 13.5px;
     line-height: 1.6;
@@ -232,24 +262,28 @@ body.page-kb19-visitors-guide-app .kb19v-feature-desc {
 body.page-kb19-visitors-guide-app .kb19v-screenshots-section {
     padding-bottom: 20px;
 }
+
 body.page-kb19-visitors-guide-app .kb19v-screenshot-card {
     position: relative;
     border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     border: 4px solid #ffffff;
     background-color: #ffffff;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
+
 body.page-kb19-visitors-guide-app .kb19v-screenshot-card:hover {
     transform: scale(1.03);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
+
 body.page-kb19-visitors-guide-app .kb19v-screenshot-img {
     width: 100%;
     height: auto;
     display: block;
 }
+
 body.page-kb19-visitors-guide-app .kb19v-screenshot-overlay {
     position: absolute;
     inset: 0;
@@ -262,6 +296,7 @@ body.page-kb19-visitors-guide-app .kb19v-screenshot-overlay {
     font-size: 24px;
     transition: opacity 0.3s ease;
 }
+
 body.page-kb19-visitors-guide-app .kb19v-screenshot-card:hover .kb19v-screenshot-overlay {
     opacity: 1;
 }
@@ -272,10 +307,12 @@ body.page-kb19-visitors-guide-app .kb19v-screenshot-card:hover .kb19v-screenshot
         padding: 30px;
     }
 }
+
 @media (max-width: 767px) {
     body.page-kb19-visitors-guide-app .kb19v-hero-banner {
         min-height: 260px;
     }
+
     body.page-kb19-visitors-guide-app .kb19v-stores-box {
         margin-top: 20px;
     }
